@@ -1,0 +1,25 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Welcome" />
+
+# Welcome to Jigsaw!
+Jigsaw is a reusable component library that I have built - and build upon - for use across my projects.<br />
+It aims to provide a universal set of components that I can use to speed up developing projects that use React and Tailwind.
+It's basically just my custom version of libraries like [MUI](https://mui.com/) and [Chakra UI](https://chakra-ui.com/).
+
+## Basics
+This library tries to follow a [component based](https://www.componentdriven.org/) / [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) approach.
+
+**Adding a new component**<br />
+Before adding a component to this library I must already be using the component in two or three projects. This is to try
+and make sure that I've explored the components usage and won't add a component that's too opinionated to a specific project.
+
+## Theming
+This library exports two versions of each component and draws inspiration from the API design of [Headless UI](https://headlessui.dev/):
+- `@ben-ryder/jigsaw/base` exports completely unstyled components with only the component functionality.
+- `@ben-ryder/jigsaw/styled` exports the full, styled components.
+
+## Contributions
+This project is currently open source, not open contribution.<br />
+You're welcome to make suggestions, raise bugs or ask questions on [GitHub](https://github.com/Ben-Ryder/jigsaw) if you want
+but as I'm primarily developing this for myself I wouldn't really consider this project stable for general use.
