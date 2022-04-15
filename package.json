@@ -18,9 +18,9 @@
     "build-storybook": "build-storybook",
     "prepublishOnly": "npm run build"
   },
-  "main": "dist/styled/cjs/index.js",
-  "module": "dist/styled/esm/index.js",
-  "types": "dist/styled/index.d.ts",
+  "main": "styled/cjs/index.js",
+  "module": "styled/esm/index.js",
+  "types": "styled/index.d.ts",
   "files": [
     "base",
     "styled"
