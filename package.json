@@ -13,8 +13,8 @@
     "url": "https://github.com/Ben-Ryder/jigsaw/issues"
   },
   "scripts": {
-    "storybook": "BROWSER=none start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
+    "start": "BROWSER=none start-storybook -p 3000",
+    "build-storybook": "build-storybook",
     "prepare": "husky install"
   },
   "dependencies": {
