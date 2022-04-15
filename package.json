@@ -1,7 +1,6 @@
 {
   "name": "@ben-ryder/jigsaw",
   "description": "A React component library with Tailwind CSS for use in my personal projects.",
-  "main": "dist/index.js",
   "version": "0.0.1",
   "license": "AGPL-3.0-only",
   "author": "Ben-Ryder",
@@ -13,10 +12,17 @@
     "url": "https://github.com/Ben-Ryder/jigsaw/issues"
   },
   "scripts": {
+    "prepare": "husky install",
     "start": "BROWSER=none start-storybook -p 3000",
-    "build-storybook": "build-storybook",
-    "prepare": "husky install"
+    "build": "rollup -c",
+    "build-storybook": "build-storybook"
   },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
   "dependencies": {
     "@types/node": "^16.11.27",
     "@types/react": "^18.0.5",
@@ -29,6 +35,9 @@
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
+    "@rollup/plugin-commonjs": "^21.0.3",
+    "@rollup/plugin-node-resolve": "^13.2.0",
+    "@rollup/plugin-typescript": "^8.3.2",
     "@storybook/addon-actions": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.22",
     "@storybook/addon-interactions": "^6.4.22",
@@ -42,6 +51,8 @@
     "autoprefixer": "^10.4.4",
     "husky": "^7.0.4",
     "postcss": "^8.4.12",
+    "rollup": "^2.70.2",
+    "rollup-plugin-dts": "^4.2.1",
     "tailwindcss": "^3.0.24",
     "webpack": "^5.72.0"
   },
