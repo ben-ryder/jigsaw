@@ -8,12 +8,12 @@ const baseConfig = {
     input: "src/base.ts",
     output: [
         {
-            file: "dist/base/cjs/index.js",
+            file: "base/cjs/index.js",
             format: "cjs",
             sourcemap: true,
         },
         {
-            file: "dist/base/esm/index.js",
+            file: "base/esm/index.js",
             format: "esm",
             sourcemap: true,
         },
@@ -25,8 +25,8 @@ const baseConfig = {
     ],
 };
 const baseTypesConfig = {
-    input: "dist/base/esm/types/base.d.ts",
-    output: [{ file: "dist/base/index.d.ts", format: "esm" }],
+    input: "base/esm/types/base.d.ts",
+    output: [{ file: "base/index.d.ts", format: "esm" }],
     plugins: [dts()],
 };
 
@@ -35,12 +35,12 @@ const styledConfig = {
     input: "src/styled.ts",
     output: [
         {
-            file: "dist/styled/cjs/index.js",
+            file: "styled/cjs/index.js",
             format: "cjs",
             sourcemap: true,
         },
         {
-            file: "dist/styled/esm/index.js",
+            file: "styled/esm/index.js",
             format: "esm",
             sourcemap: true,
         },
@@ -52,8 +52,8 @@ const styledConfig = {
     ],
 };
 const styledTypesConfig = {
-    input: "dist/base/esm/types/styled.d.ts",
-    output: [{ file: "dist/styled/index.d.ts", format: "esm" }],
+    input: "base/esm/types/styled.d.ts",
+    output: [{ file: "styled/index.d.ts", format: "esm" }],
     plugins: [dts()],
 };
 

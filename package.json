@@ -18,12 +18,13 @@
     "build-storybook": "build-storybook",
     "prepublishOnly": "npm run build"
   },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/styled/cjs/index.js",
+  "module": "dist/styled/esm/index.js",
+  "types": "dist/styled/index.d.ts",
   "files": [
-    "dist"
+    "base",
+    "styled"
   ],
-  "types": "dist/index.d.ts",
   "dependencies": {
     "classnames": "^2.3.1",
     "react": "^17.0.2",

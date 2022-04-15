@@ -6,6 +6,8 @@ storybook-static
 # builds
 /build
 /dist
+/base
+/styled
 /*.tgz
 
 # dependencies
