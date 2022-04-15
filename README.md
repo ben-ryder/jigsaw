@@ -1,5 +1,5 @@
 # Jigsaw
-A reusable React & Tailwind component library for use in my personal projects.
+A React component library with Tailwind CSS for use in my personal projects.
 
 ## Development
 This repo was bootstrapped with [create-react-app](https://create-react-app.dev/) and uses [Storybook](https://storybook.js.org/)
