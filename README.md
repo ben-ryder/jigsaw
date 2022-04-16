@@ -53,7 +53,7 @@ export function HelloWorld() {
 ```
 
 ## Development
-This repo uses [Storybook](https://storybook.js.org/) for component development and is packaged via [Rollup](https://github.com/rollup/rollup).
+This repo uses [Storybook](https://storybook.js.org/) for component development.
 
 **Adding a new component**  
 Before adding a component to this library I must already be using the component in two or three projects. This is to try
@@ -63,10 +63,6 @@ and make sure that I've explored the components usage and won't add a component 
 This project is currently open source, not open contribution.  
 You're welcome to make suggestions, raise bugs and ask questions if you want
 but as I'm primarily developing this for myself I wouldn't really consider this project stable for general use.
-
-
-## Credits
-Thanks to Alex Eagleson on dev.to for [his article on setting up a React component library](https://dev.to/alexeagleson/how-to-create-and-publish-a-react-component-library-2oe#adding-rollup) which helped with my initial Rollup setup.
 
 ## License
 This project is released under the [GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/) license.
