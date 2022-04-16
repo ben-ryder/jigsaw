@@ -8,7 +8,7 @@ export interface ButtonProps extends ComponentProps<'button'> {
   styling?: ButtonStyling
 }
 
-export function Button(props: ButtonProps) {
+export function BaseButton(props: ButtonProps) {
   return (
       <button {...props} />
   )

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button as ButtonBase, ButtonProps } from './button.base';
+import { BaseButton, ButtonProps } from './button.base';
 import classNames from 'classnames';
 
 
@@ -20,6 +20,6 @@ export function Button(props: ButtonProps) {
   )
 
   return (
-    <ButtonBase className={processedClassName} {...passThroughProps} />
+    <BaseButton className={processedClassName} {...passThroughProps} />
   )
 }
