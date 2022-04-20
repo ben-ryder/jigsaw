@@ -1,8 +1,8 @@
 ---
 name: New Component
 about: Suggest a new component
-title: "[New Component] Add <NEW> Component"
-labels: ''
+title: Add This Component
+labels: new component
 assignees: Ben-Ryder
 
 ---
