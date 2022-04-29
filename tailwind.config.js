@@ -1,9 +1,15 @@
+const colours = require("./src/patterns/01-base/colour-palette.json");
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        br: colours
+      }
+    },
   },
   plugins: [],
 }
