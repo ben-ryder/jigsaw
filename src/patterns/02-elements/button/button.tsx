@@ -47,10 +47,18 @@ export function processButtonStyling(props: ButtonProps) {
 
 
 export function Button(props: ButtonProps) {
-  const {className, ...passThroughProps} = props;
+  const {className, disabled, ...passThroughProps} = props;
   const processedClassName = processButtonStyling(props);
 
+  const processedDisabled = disabled !== undefined
+    ? disabled
+    : (props.status === 'disabled' || props.status === 'awaiting');
+
   return (
-    <button className={processedClassName} {...passThroughProps} disabled={props.disabled ?? props.status !== 'normal'} />
+    <button
+      className={processedClassName}
+      disabled={processedDisabled}
+      {...passThroughProps}
+    />
   )
 }
