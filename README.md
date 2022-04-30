@@ -9,7 +9,7 @@ npm install @ben-ryder/jigsaw
 
 2. Configure Jigsaw to work with Tailwind CSS:
 ```js
-const plugin = require("@ben-ryder/jigsaw").plugin;
+const jigsawPlugins = require("@ben-ryder/jigsaw").plugins;
 
 module.exports = {
     content: [
@@ -20,7 +20,7 @@ module.exports = {
         extend: {},
     },
     plugins: [
-        plugin // <-- add the plugin to use custom colours etc
+        ...jigsawPlugins // <-- add the plugins to use custom colours etc
     ],
 }
 ```

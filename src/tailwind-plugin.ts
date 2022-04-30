@@ -14,5 +14,12 @@ export const plugins: TailwindPlugin[] = [
         css: tailwindTypographyCSS
       }
     }
+  }),
+  plugin(({theme}) => {
+    theme.typography = {
+      DEFAULT: {
+        css: tailwindTypographyCSS
+      }
+    }
   })
 ];
