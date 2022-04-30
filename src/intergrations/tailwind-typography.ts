@@ -3,7 +3,7 @@ import { colourPalette } from "../patterns/01-base/colour-palette";
 /**
  * CSS declarations to be used to extend the default @tailwind/typography declarations.
  */
-export const css = {
+export const tailwindTypographyCSS = {
   '--tw-prose-body': colourPalette.whiteGrey['200'],
   '--tw-prose-headings': colourPalette.whiteGrey['100'],
   '--tw-prose-lead': colourPalette.whiteGrey['100'],
