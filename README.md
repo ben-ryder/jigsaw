@@ -1,5 +1,5 @@
 # Jigsaw
-A React component library with Tailwind CSS for use in my personal projects.
+A React & Tailwind CSS component library for use in my personal projects.
 
 ## Installation
 1. Install the [npm package](https://www.npmjs.com/package/@ben-ryder/jigsaw) as follows:
@@ -9,41 +9,27 @@ npm install @ben-ryder/jigsaw
 
 2. Configure Jigsaw to work with Tailwind CSS:
 ```js
+const plugin = require("@ben-ryder/jigsaw").plugin;
+
 module.exports = {
     content: [
         "./src/**/*.{js,jsx,ts,tsx}",
-        "./node_modules/@ben-ryder/jigsaw/styled/**/*.js" // <-- add to ensure styles are included at build time
+        "./node_modules/@ben-ryder/jigsaw/**/*.js" // <-- add to ensure styles are included at build time
     ],
     theme: {
         extend: {},
     },
     plugins: [
-        require("@ben-ryder/jigsaw/plugin") // <-- add the plugin to use custom colours etc
+        plugin // <-- add the plugin to use custom colours etc
     ],
 }
 ```
 
 ## Usage
-The package exports two component library versions:
-
-### Base
-`@ben-ryder/jigsaw/base` exports completely un-styled components that are purely functional.
+The package exports all the components, extras etc at the same level:
 
 ```tsx
-import { Button } from '@ben-ryder/jigsaw/base';
-
-export function HelloWorld() {
-  return (
-    <Button>Hello World</Button>
-  )
-}
-```
-
-### Styled
-`@ben-ryder/jigsaw/styled` exports styled components that are ready to use.
-
-```tsx
-import { Button } from '@ben-ryder/jigsaw/styled';
+import { Button } from '@ben-ryder/jigsaw';
 
 export function HelloWorld() {
   return (
@@ -53,7 +39,7 @@ export function HelloWorld() {
 ```
 
 ## Development
-This repo uses [Storybook](https://storybook.js.org/) for component development.
+This repo uses [Storybook](https://storybook.js.org/) for component development. A public instance is available at [jigsaw.benryder.dev](https://jigsaw.benryder.dev/).
 
 **Adding a new component**  
 Before adding a component to this library I must already be using the component in two or three projects. This is to try
@@ -62,7 +48,7 @@ and make sure that I've explored the components usage and won't add a component 
 ## Contributions
 This project is currently open source, not open contribution.  
 You're welcome to make suggestions, raise bugs and ask questions if you want
-but as I'm primarily developing this for myself I wouldn't really consider this project stable for general use.
+but as I'm primarily developing this for use in my own projects I wouldn't really consider this library stable for other people as I may change things unexpectedly (although I do use semantic versioning).
 
 ## License
-This project is released under the [GNU AGPLv3](https://choosealicense.com/licenses/agpl-3.0/) license.
+This project is released under the [GNU AGPLv3 license](https://github.com/Ben-Ryder/jigsaw/blob/main/LICENSE.txt).
