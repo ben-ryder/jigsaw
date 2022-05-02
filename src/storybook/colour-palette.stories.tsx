@@ -4,9 +4,9 @@ import { colourPalette } from '../patterns/01-base/colour-palette';
 
 export function ColourPalette() {
   return (
-    <div>
+    <div className="text-br-whiteGrey-200">
       <div>
-        <h1 className="text-3xl font-bold">Colour Palette</h1>
+        <h1 className="text-3xl font-bold text-br-whiteGrey-100">Colour Palette</h1>
         <p>
           These are all the colours used in this component library.
           Most of them are directly copied from Tailwind <a className="underline hover:text-br-teal-600" href="https://tailwindcss.com/docs/customizing-colors">default colours</a> but "atom" and some of the naming is custom.
@@ -15,7 +15,7 @@ export function ColourPalette() {
       <div className="mt-3">
         {Object.keys(colourPalette).map(colourName => (
           <div key={colourName} className="mb-4">
-            <h2 className="text-2xl font-bold">{colourName}</h2>
+            <h2 className="text-2xl font-bold text-br-whiteGrey-100">{colourName}</h2>
             <div className="mt-1 flex flex-wrap">
               {/** @ts-ignore **/}
               {Object.keys(colourPalette[colourName]).map(colourShade => (
@@ -25,7 +25,7 @@ export function ColourPalette() {
                   <div className="p-2 border-t">
                     <p>{colourShade}</p>
                     {/** @ts-ignore **/}
-                    <p className="font-bold">{colourPalette[colourName][colourShade]}</p>
+                    <p className="font-bold text-br-whiteGrey-100">{colourPalette[colourName][colourShade]}</p>
                   </div>
                 </div>
               ))}
