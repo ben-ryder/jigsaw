@@ -14,5 +14,13 @@ export const Default = Template.bind({});
 Default.args = {
   type: "text",
   id: "default",
-  label: "Default"
+  label: "This is an input"
+};
+
+export const HiddenLabel = Template.bind({});
+HiddenLabel.args = {
+  type: "text",
+  id: "default",
+  hideLabel: true,
+  label: "This label can't be seen"
 };

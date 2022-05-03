@@ -1,31 +1,21 @@
-import React, { ComponentProps } from 'react';
+import React, { ComponentProps, forwardRef } from 'react';
 import classNames from "classnames";
 
-import { FormError } from "../form-error/form-error";
+import { ErrorText } from "../error-text/error-text";
+import { Label } from '../label/label';
 
 export interface InputProps extends ComponentProps<'input'> {
   id: string,
   label: string,
   error?: string,
+  hideLabel?: boolean,
 }
 
-export function Input(props: InputProps) {
+export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
   return (
     <>
       {props.label && props.id &&
-          <label
-              className={
-                classNames(
-                  "font-bold text-br-whiteGrey-100",
-                  {
-                    "hidden": props.type === "hidden"
-                  }
-                )
-              }
-              htmlFor={props.id}
-          >
-            {props.label}
-          </label>
+          <Label htmlFor={props.id} isHidden={props.hideLabel || false}>{ props.label }</Label>
       }
       <input
         {...props}
@@ -41,8 +31,8 @@ export function Input(props: InputProps) {
         )}
       />
       {props.error &&
-          <FormError>{props.error}</FormError>
+          <ErrorText>{props.error}</ErrorText>
       }
     </>
   )
-}
+});

@@ -19,10 +19,10 @@ export function ColourPalette() {
             <div className="mt-1 flex flex-wrap">
               {/** @ts-ignore **/}
               {Object.keys(colourPalette[colourName]).map(colourShade => (
-                <div key={colourShade} className="border mr-2">
+                <div key={colourShade} className="border mr-2 border-br-blueGrey-600">
                   {/** @ts-ignore **/}
                   <span className="block w-full min-w-[150px] h-[150px]" style={{backgroundColor: colourPalette[colourName][colourShade]}}></span>
-                  <div className="p-2 border-t">
+                  <div className="p-2 border-t border-br-blueGrey-600">
                     <p>{colourShade}</p>
                     {/** @ts-ignore **/}
                     <p className="font-bold text-br-whiteGrey-100">{colourPalette[colourName][colourShade]}</p>
