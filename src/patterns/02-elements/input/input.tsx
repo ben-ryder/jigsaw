@@ -12,13 +12,15 @@ export interface InputProps extends ComponentProps<'input'> {
 }
 
 export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+  const {hideLabel, error, label, ...passThroughProps} = props;
+
   return (
     <>
       {props.label && props.id &&
           <Label htmlFor={props.id} isHidden={props.hideLabel || false}>{ props.label }</Label>
       }
       <input
-        {...props}
+        {...passThroughProps}
         className={classNames(
           "mt-1 block w-full rounded-md outline-none py-1.5 bg-br-atom-700",
           "border-2 text-br-whiteGrey-200",

@@ -8,8 +8,11 @@ export interface LabelProps extends ComponentProps<'label'> {
 }
 
 export function Label(props: LabelProps) {
+  const {isHidden, ...passThroughProps} = props;
+
   return (
     <label
+      {...passThroughProps}
       className={
         classNames(
           "font-bold text-br-whiteGrey-100",
