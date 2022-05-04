@@ -1,5 +1,5 @@
 // Base
-export * from "./patterns/01-base/colour-palette";
+export * from "./patterns/01-base/colour-palette/colour-palette";
 
 // Partials
 export * from "./patterns/02-partials/label/label";

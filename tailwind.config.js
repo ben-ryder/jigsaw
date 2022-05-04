@@ -1,4 +1,4 @@
-const colours = require("./src/patterns/01-base/colour-palette.json");
+const colours = require("./src/patterns/01-base/colour-palette/colour-palette.json");
 
 module.exports = {
   content: [

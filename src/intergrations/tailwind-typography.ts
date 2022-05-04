@@ -1,4 +1,4 @@
-import { colourPalette } from "../patterns/01-base/colour-palette";
+import { colourPalette } from "../patterns/01-base/colour-palette/colour-palette";
 
 /**
  * CSS declarations to be used to extend the default @tailwind/typography declarations.

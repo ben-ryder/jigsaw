@@ -1,5 +1,5 @@
 import plugin, {TailwindPlugin} from "tailwindcss/plugin";
-import { colourPalette } from "./patterns/01-base/colour-palette";
+import { colourPalette } from "./patterns/01-base/colour-palette/colour-palette";
 import { tailwindTypographyCSS } from './intergrations/tailwind-typography';
 // @ts-ignore
 import forms from '@tailwindcss/forms';
