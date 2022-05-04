@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta } from '@storybook/react';
-import { colourPalette } from '../patterns/01-base/colour-palette';
+import { colourPalette } from '../patterns/01-base/colour-palette/colour-palette';
 
 export function ColourPalette() {
   return (
