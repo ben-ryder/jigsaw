@@ -1,8 +1,8 @@
 import React, { ComponentProps, forwardRef } from 'react';
 import classNames from "classnames";
 
-import { ErrorText } from "../error-text/error-text";
-import { Label } from '../label/label';
+import { ErrorText } from "../../02-partials/error-text/error-text";
+import { Label } from "../../02-partials/label/label";
 
 export interface InputProps extends ComponentProps<'input'> {
   id: string,
