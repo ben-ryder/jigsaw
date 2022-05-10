@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta } from '@storybook/react';
-import { colourPalette } from '../patterns/01-base/colour-palette/colour-palette';
+import { colourPalette } from './colour-palette';
 
 export function ColourPalette() {
   return (
@@ -39,5 +39,6 @@ export function ColourPalette() {
 
 export default {
   title: 'Colour Palette',
-  component: ColourPalette
+  component: ColourPalette,
+  parameters: { options: { showPanel: false } },
 } as ComponentMeta<typeof ColourPalette>;

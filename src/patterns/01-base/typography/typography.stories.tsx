@@ -98,5 +98,6 @@ export function Typography() {
 
 export default {
   title: 'Typography',
-  component: Typography
+  component: Typography,
+  parameters: { options: { showPanel: false } },
 } as ComponentMeta<typeof Typography>;

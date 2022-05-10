@@ -8,6 +8,9 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  options: {
+    showPanel: true,
+  },
   backgrounds: {
     default: "jigsaw",
     values: [
