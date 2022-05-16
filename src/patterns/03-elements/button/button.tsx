@@ -1,6 +1,8 @@
 import React, { ComponentProps } from 'react';
 import classNames from 'classnames';
 
+import {Loader2 as LoadingIcon} from "lucide-react";
+
 export type ButtonVariant = 'solid' | 'outline';
 export type ButtonStyling = 'primary' | 'secondary' | 'constructive' | 'destructive';
 export type ButtonStatus = 'normal' | 'awaiting' | 'disabled';
@@ -47,7 +49,7 @@ export function processButtonStyling(props: ButtonProps) {
 
 
 export function Button(props: ButtonProps) {
-  const {className, disabled, ...passThroughProps} = props;
+  const {className, disabled, children, ...passThroughProps} = props;
   const processedClassName = processButtonStyling(props);
 
   const processedDisabled = disabled !== undefined
@@ -59,6 +61,15 @@ export function Button(props: ButtonProps) {
       className={processedClassName}
       disabled={processedDisabled}
       {...passThroughProps}
-    />
+    >
+      {props.status !== 'awaiting'
+        ? <>{props.children}</>
+        :
+          <span className="flex justify-center items-center">
+            {props.children}
+            <LoadingIcon size={20} className="ml-2 animate-spin" />
+          </span>
+      }
+    </button>
   )
 }
