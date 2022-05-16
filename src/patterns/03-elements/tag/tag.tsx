@@ -28,10 +28,12 @@ export function Tag(props: TagsProps) {
 
   return (
     <div className={className} style={style}>
-      <span className="px-1.5 py-0.5">
-        {props.text}
+      <span className="flex justify-center items-center px-1.5 py-0.5">
+        <span className={classNames({"mx-[5px]": props.rightContent})}>
+          {props.text}
+        </span>
+        {props.rightContent && props.rightContent}
       </span>
-      {props.rightContent && props.rightContent}
     </div>
   )
 }

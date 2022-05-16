@@ -2,6 +2,8 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { Tag } from './tag';
+import { X as XIcon } from 'lucide-react';
+import { IconButton } from "../icon-button/icon-button";
 
 export default {
   title: 'Tag',
@@ -20,4 +22,15 @@ CustomColors.args = {
   text: "custom color",
   bgColor: "#ff7700",
   fgColor: "#000"
+};
+
+export const RightContent = Template.bind({});
+RightContent.args = {
+  text: "right content",
+  rightContent: <IconButton
+    className="hover:text-br-whiteGrey-200"
+    label="Remove Tag"
+    icon={<XIcon size={20} strokeWidth={3} />}
+    onClick={() => {}}
+  />
 };

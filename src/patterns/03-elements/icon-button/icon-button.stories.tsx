@@ -1,8 +1,8 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import {defaultIconProps, IconButton} from './icon-button';
-import { XIcon } from "@heroicons/react/outline";
+import {defaultIconClassName, defaultIconSize, IconButton} from './icon-button';
+import { X as XIcon } from "lucide-react";
 
 export default {
   title: 'Icon Button',
@@ -14,6 +14,6 @@ const Template: ComponentStory<typeof IconButton> = (args) => <IconButton {...ar
 export const Default = Template.bind({});
 Default.args = {
   label: "Icon Button",
-  icon: <XIcon className={defaultIconProps.sizingClassName} />,
-  className: defaultIconProps.colorClassName
+  icon: <XIcon size={defaultIconSize}/>,
+  className: defaultIconClassName
 };
