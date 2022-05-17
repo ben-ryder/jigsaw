@@ -2,6 +2,7 @@ import React, { ComponentProps } from 'react';
 import classNames from 'classnames';
 
 import {Loader2 as LoadingIcon} from "lucide-react";
+import {iconSizes} from "../../01-base/icons/icon-defaults";
 
 export type ButtonVariant = 'solid' | 'outline';
 export type ButtonStyling = 'primary' | 'secondary' | 'constructive' | 'destructive';
@@ -67,7 +68,7 @@ export function Button(props: ButtonProps) {
         :
           <span className="flex justify-center items-center">
             {props.children}
-            <LoadingIcon size={20} className="ml-2 animate-spin" />
+            <LoadingIcon size={iconSizes.small} className="ml-2 animate-spin" />
           </span>
       }
     </button>

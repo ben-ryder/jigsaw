@@ -4,6 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Tag } from './tag';
 import { X as XIcon } from 'lucide-react';
 import { IconButton } from "../icon-button/icon-button";
+import {iconSizes} from "../../01-base/icons/icon-defaults";
 
 export default {
   title: 'Tag',
@@ -30,7 +31,7 @@ RightContent.args = {
   rightContent: <IconButton
     className="hover:text-br-whiteGrey-200"
     label="Remove Tag"
-    icon={<XIcon size={20} strokeWidth={3} />}
+    icon={<XIcon size={iconSizes.small} strokeWidth={3} />}
     onClick={() => {}}
   />
 };

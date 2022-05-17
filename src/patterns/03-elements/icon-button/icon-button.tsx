@@ -8,8 +8,6 @@ export interface IconButtonProps extends ComponentProps<'button'> {
   onClick: () => void
 }
 
-export const defaultIconSize = 36;
-export const defaultIconClassName = "text-br-teal-600 hover:text-br-teal-700 focus:text-br-teal-700 active:text-br-teal-700";
 
 export function IconButton(props: IconButtonProps) {
   const {label, icon, ...passThroughProps} = props;
