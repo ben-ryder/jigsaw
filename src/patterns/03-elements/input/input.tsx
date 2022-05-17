@@ -16,9 +16,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
 
   return (
     <>
-      {props.label && props.id &&
-          <Label htmlFor={props.id} isHidden={props.hideLabel || false}>{ props.label }</Label>
-      }
+      <Label htmlFor={props.id} isHidden={props.hideLabel || false}>{ props.label }</Label>
       <input
         {...passThroughProps}
         className={classNames(

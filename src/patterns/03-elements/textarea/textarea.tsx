@@ -16,9 +16,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>((props, r
 
   return (
     <>
-      {props.label && props.id &&
-          <Label htmlFor={props.id} isHidden={props.hideLabel || false}>{ props.label }</Label>
-      }
+      <Label htmlFor={props.id} isHidden={props.hideLabel || false}>{ props.label }</Label>
       <textarea
         {...passThroughProps}
         className={classNames(

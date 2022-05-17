@@ -1,5 +1,5 @@
 import { StrictReactNode } from '../../../extras/strict-react-children';
-import React, { ComponentProps } from 'react';
+import React, {ComponentProps, forwardRef} from 'react';
 import classNames from 'classnames';
 
 export interface LabelProps extends ComponentProps<'label'> {
@@ -7,7 +7,7 @@ export interface LabelProps extends ComponentProps<'label'> {
   isHidden?: boolean,
 }
 
-export function Label(props: LabelProps) {
+export const Label = forwardRef<HTMLLabelElement, LabelProps>((props, ref) => {
   const {isHidden, ...passThroughProps} = props;
 
   return (
@@ -21,9 +21,9 @@ export function Label(props: LabelProps) {
           }
         )
       }
-      htmlFor={props.id}
+      ref={ref}
     >
       {props.children}
     </label>
   )
-}
+})

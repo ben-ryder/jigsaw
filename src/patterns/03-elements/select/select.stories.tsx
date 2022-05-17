@@ -2,13 +2,19 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { Select } from './select';
+import { P } from "../../01-base/typography/text";
 
 export default {
   title: 'Select',
   component: Select
 } as ComponentMeta<typeof Select>;
 
-const Template: ComponentStory<typeof Select> = (args) => <Select {...args} />;
+const Template: ComponentStory<typeof Select> = (args) => (
+  <div className="max-w-xs">
+    <Select {...args} />
+    <P className="text-br-whiteGrey-200 mt-5">A maximum width has been specifically set on a container element</P>
+  </div>
+)
 
 const options = [
   {name: "--- Select Option ---", value: ""},
