@@ -8,6 +8,7 @@ export interface TagsProps {
   bgColor?: string,
   fgColor?: string,
   rightContent?: StrictReactNode,
+  className?: string
 }
 
 export function Tag(props: TagsProps) {
@@ -15,7 +16,8 @@ export function Tag(props: TagsProps) {
     "inline-block rounded",
     {
       "bg-br-teal-600 text-br-whiteGrey-50" : !props.bgColor && !props.fgColor
-    }
+    },
+    props.className
   )
 
   let style = {};

@@ -5,7 +5,7 @@ import {StrictReactNode} from "../../../extras/strict-react-children";
 export interface IconButtonProps extends ComponentProps<'button'> {
   label: string,
   icon: StrictReactNode,
-  onClick: () => void
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 
 
