@@ -7,7 +7,7 @@ import { IconButton } from "../icon-button/icon-button";
 import {iconSizes} from "../../01-base/icons/icon-defaults";
 
 export default {
-  title: 'Tag',
+  title: 'Elements/Tag',
   component: Tag
 } as ComponentMeta<typeof Tag>;
 

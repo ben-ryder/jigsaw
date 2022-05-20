@@ -34,7 +34,7 @@ export function IconStyles() {
 }
 
 export default {
-  title: 'Icon Styles',
+  title: 'Base/Icon Styles',
   component: IconStyles,
   parameters: { options: { showPanel: false } },
 } as ComponentMeta<typeof IconStyles>;

@@ -38,7 +38,7 @@ export function ColourPalette() {
 }
 
 export default {
-  title: 'Colour Palette',
+  title: 'Base/Colour Palette',
   component: ColourPalette,
   parameters: { options: { showPanel: false } },
 } as ComponentMeta<typeof ColourPalette>;

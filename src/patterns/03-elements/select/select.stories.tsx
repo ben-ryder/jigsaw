@@ -5,7 +5,7 @@ import { Select } from './select';
 import { P } from "../../01-base/typography/text";
 
 export default {
-  title: 'Select',
+  title: 'Elements/Select',
   component: Select
 } as ComponentMeta<typeof Select>;
 

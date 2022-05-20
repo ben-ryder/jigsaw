@@ -5,7 +5,7 @@ import { MultiSelect } from './multi-select';
 import { P } from "../../01-base/typography/text";
 
 export default {
-  title: 'Multi Select',
+  title: 'Elements/Multi Select',
   component: MultiSelect
 } as ComponentMeta<typeof MultiSelect>;
 
