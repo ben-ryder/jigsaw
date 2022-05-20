@@ -111,12 +111,18 @@ export const MultiSelect = forwardRef<HTMLSelectElement, MultiSelectProps>((prop
                       <li className={classNames(
                         "text-center py-2",
                         {
-                          "bg-br-teal-600 font-semibold": selected,
-                          "bg-br-atom-800 cursor-pointer": active
+                          "font-semibold": selected,
+                          "cursor-pointer": active,
+                          "bg-br-teal-700 ": selected && active,
+                          "bg-br-teal-600": selected && !active,
+                          "bg-br-atom-800": active && !selected
                         })}>{option.name}</li>
                     )}
                   </Combobox.Option>
                 ))}
+                {filteredOptions.length === 0 &&
+                  <li className="text-center py-2">No Options Found</li>
+                }
               </Combobox.Options>
             </>
           </>
