@@ -7,6 +7,8 @@ import { ChevronDown as ClosedIcon, ChevronUp as OpenedIcon } from "lucide-react
 import { ErrorText } from "../../02-partials/error-text/error-text";
 import { Label } from "../../02-partials/label/label";
 import { iconSizes } from "../../01-base/icons/icon-defaults";
+import {DropdownOption} from "../../02-partials/dropdown/dropdown-option";
+import {DropdownContainer} from "../../02-partials/dropdown/dropdown-container";
 
 export interface SelectOption {
   name: string,
@@ -51,31 +53,21 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>((props, ref) =>
                 }
               </Listbox.Button>
               <Listbox.Options
-                className={classNames(
-                  "absolute mt-2 block w-full rounded-md outline-none bg-br-atom-600",
-                  "border-2 text-br-whiteGrey-200",
-                  "border-br-blueGrey-600"
-                )}
+                as={Fragment}
               >
-                {props.options.map((option) => (
-                  <Listbox.Option
-                    key={option.value}
-                    value={option}
-                    as={Fragment}
-                  >
-                    {({ active, selected }) => (
-                      <li className={classNames(
-                        "text-center py-2",
-                        {
-                          "font-semibold": selected,
-                          "cursor-pointer": active,
-                          "bg-br-teal-700 ": selected && active,
-                          "bg-br-teal-600": selected && !active,
-                          "bg-br-atom-800": active && !selected
-                        })}>{option.name}</li>
-                    )}
-                  </Listbox.Option>
-                ))}
+                <DropdownContainer>
+                  {props.options.map((option) => (
+                    <Listbox.Option
+                      key={option.value}
+                      value={option}
+                      as={Fragment}
+                    >
+                      {({ active, selected }) => (
+                        <DropdownOption active={active} selected={selected}>{option.name}</DropdownOption>
+                      )}
+                    </Listbox.Option>
+                  ))}
+                </DropdownContainer>
               </Listbox.Options>
             </>
           </>

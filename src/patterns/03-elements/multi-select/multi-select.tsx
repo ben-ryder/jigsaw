@@ -9,6 +9,8 @@ import { Label } from "../../02-partials/label/label";
 import {iconColorClassNames, iconSizes} from "../../01-base/icons/icon-defaults";
 import {Tag} from "../tag/tag";
 import {IconButton} from "../icon-button/icon-button";
+import {DropdownOption} from "../../02-partials/dropdown/dropdown-option";
+import {DropdownContainer} from "../../02-partials/dropdown/dropdown-container";
 
 export interface MultiSelectOption {
   name: string,
@@ -95,34 +97,24 @@ export const MultiSelect = forwardRef<HTMLSelectElement, MultiSelectProps>((prop
                 </Combobox.Button>
               </div>
               <Combobox.Options
-                className={classNames(
-                  "absolute mt-2 block w-full rounded-md outline-none bg-br-atom-600",
-                  "border-2 text-br-whiteGrey-200",
-                  "border-br-blueGrey-600"
-                )}
+                as={Fragment}
               >
-                {filteredOptions.map((option) => (
-                  <Combobox.Option
-                    key={option.value}
-                    value={option}
-                    as={Fragment}
-                  >
-                    {({ active, selected }) => (
-                      <li className={classNames(
-                        "text-center py-2",
-                        {
-                          "font-semibold": selected,
-                          "cursor-pointer": active,
-                          "bg-br-teal-700 ": selected && active,
-                          "bg-br-teal-600": selected && !active,
-                          "bg-br-atom-800": active && !selected
-                        })}>{option.name}</li>
-                    )}
-                  </Combobox.Option>
-                ))}
-                {filteredOptions.length === 0 &&
-                  <li className="text-center py-2">No Options Found</li>
-                }
+                <DropdownContainer>
+                  {filteredOptions.map((option) => (
+                    <Combobox.Option
+                      key={option.value}
+                      value={option}
+                      as={Fragment}
+                    >
+                      {({ active, selected }) => (
+                        <DropdownOption active={active} selected={selected}>{option.name}</DropdownOption>
+                      )}
+                    </Combobox.Option>
+                  ))}
+                  {filteredOptions.length === 0 &&
+                      <DropdownOption active={false} selected={false}>No Options Found</DropdownOption>
+                  }
+                </DropdownContainer>
               </Combobox.Options>
             </>
           </>
