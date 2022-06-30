@@ -9,18 +9,16 @@ npm install @ben-ryder/jigsaw
 
 2. Configure Jigsaw to work with Tailwind CSS:
 ```js
-const jigsawPlugins = require("@ben-ryder/jigsaw").plugins;
-
 module.exports = {
     content: [
         "./src/**/*.{js,jsx,ts,tsx}",
-        "./node_modules/@ben-ryder/jigsaw/**/*.js" // <-- add to ensure styles are included at build time
+        "./node_modules/@ben-ryder/jigsaw/dist/**/*.js" // <-- add to ensure styles are included at build time
     ],
     theme: {
         extend: {},
     },
     plugins: [
-        ...jigsawPlugins // <-- add the plugins to use custom colours etc
+        ...(require("@ben-ryder/jigsaw").plugins) // <-- add the plugins to use custom colours etc
     ],
 }
 ```
