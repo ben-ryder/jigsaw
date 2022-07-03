@@ -13,6 +13,7 @@ export * from "./patterns/02-partials/error-text/error-text";
 export * from "./patterns/03-elements/button/button";
 export * from "./patterns/03-elements/icon-button/icon-button";
 export * from "./patterns/03-elements/input/input";
+export * from "./patterns/03-elements/link-button/link-button";
 export * from "./patterns/03-elements/multi-select/multi-select";
 export * from "./patterns/03-elements/select/select";
 export * from "./patterns/03-elements/tag/tag";

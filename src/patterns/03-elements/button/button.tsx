@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 import {Loader2 as LoadingIcon} from "lucide-react";
 import {iconSizes} from "../../01-base/icons/icon-defaults";
+import {LinkButtonProps} from "../link-button/link-button";
 
 export type ButtonVariant = 'solid' | 'outline';
 export type ButtonStyling = 'primary' | 'secondary' | 'constructive' | 'destructive';
@@ -14,10 +15,10 @@ export interface ButtonProps extends ComponentProps<'button'> {
   status?: ButtonStatus;
 }
 
-export function processButtonStyling(props: ButtonProps) {
+export function processButtonStyling(props: ButtonProps | LinkButtonProps) {
   const variant = props.variant ?? 'solid';
   const styling = props.styling ?? 'primary';
-  const status = props.status ?? 'normal';
+  const status = "status" in props ? props.status : 'normal';
 
   return classNames(
     props.className,
