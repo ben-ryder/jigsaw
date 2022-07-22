@@ -1,7 +1,7 @@
 {
   "name": "@ben-ryder/jigsaw",
   "description": "A React component library with Tailwind CSS for use in my personal projects.",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "license": "AGPL-3.0-only",
   "author": "Ben-Ryder",
   "repository": {
