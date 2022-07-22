@@ -74,7 +74,7 @@ export const MultiSelect = forwardRef<HTMLSelectElement, MultiSelectProps>((prop
                               onClick={(event) => {
                                 event.stopPropagation()
                                 event.preventDefault()
-                                props.onOptionsChange(props.options.filter((filterOption) => filterOption !== option))
+                                props.onOptionsChange(props.currentOptions.filter((filterOption) => filterOption !== option))
                               }}
                             />
                         }

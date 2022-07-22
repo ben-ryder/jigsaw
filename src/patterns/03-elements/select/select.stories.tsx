@@ -1,5 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { useArgs } from "@storybook/client-api";
 
 import { Select } from './select';
 import { P } from "../../01-base/typography/text";
@@ -9,12 +10,23 @@ export default {
   component: Select
 } as ComponentMeta<typeof Select>;
 
-const Template: ComponentStory<typeof Select> = (args) => (
-  <div className="max-w-xs">
-    <Select {...args} />
-    <P className="text-br-whiteGrey-200 mt-5">A maximum width has been specifically set on a container element</P>
-  </div>
-)
+const Template: ComponentStory<typeof Select> = (args) => {
+  const [{ currentOption, onOptionChange }, updateArgs] = useArgs();
+
+  return (
+    <div className="max-w-xs">
+      <Select
+        {...args}
+        currentOption={currentOption}
+        onOptionChange={(option) => {
+          updateArgs({currentOption: option});
+          onOptionChange(option);
+        }}
+      />
+      <P className="text-br-whiteGrey-200 mt-5">A maximum width has been specifically set on a container element</P>
+    </div>
+  )
+};
 
 const options = [
   {name: "--- Select Option ---", value: ""},
