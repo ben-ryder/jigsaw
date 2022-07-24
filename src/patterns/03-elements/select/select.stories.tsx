@@ -1,9 +1,12 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { useArgs } from "@storybook/client-api";
+import {userEvent, within} from "@storybook/testing-library";
+import { expect as expectStorybook } from '@storybook/jest';
 
 import { Select } from './select';
 import { P } from "../../01-base/typography/text";
+
 
 export default {
   title: 'Elements/Select',
@@ -44,6 +47,19 @@ Default.args = {
   label: "Select Option",
   options: options,
   currentOption: options[0]
+};
+
+Default.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+
+  const select = canvas.getByLabelText("Select Option");
+
+  await userEvent.click(select);
+  const option2 = canvas.getByRole("option", {name: "Option 2"});
+
+  await userEvent.click(option2);
+
+  await expectStorybook(select.textContent).toEqual("Option 2")
 };
 
 export const HiddenLabel = Template.bind({});
