@@ -5,5 +5,5 @@ export interface ErrorTextProps {
 }
 
 export function ErrorText(props: ErrorTextProps) {
-  return <p className="mt-1 text-sm text-red-500">{ props.children }</p>
+  return <p className="mt-1 text-sm text-br-red-500">{ props.children }</p>
 }
