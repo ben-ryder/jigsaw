@@ -3,7 +3,7 @@ import { ComponentProps } from 'react';
 
 // Paragraph
 export interface PProps extends ComponentProps<'p'> {
-  children: StrictReactNode,
+  children: string | StrictReactNode,
 }
 export function P(props: PProps) {
   return <p {...props}/>
