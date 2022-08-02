@@ -8,6 +8,8 @@ export const plugins: TailwindPlugin[] = [
   plugin(() => {},{
     theme: {
       colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
         br: {
           ...colourPalette
         }
