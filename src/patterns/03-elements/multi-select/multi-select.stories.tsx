@@ -6,7 +6,7 @@ import { P } from "../../01-base/typography/text";
 import {useArgs} from "@storybook/client-api";
 
 export default {
-  title: 'Elements/Multi Select',
+  title: 'Elements/Form Elements/MultiSelect',
   component: MultiSelect
 } as ComponentMeta<typeof MultiSelect>;
 

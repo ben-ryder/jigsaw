@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import {ArrowLink} from "./arrow-link";
 
 export default {
-  title: 'Elements/Arrow Link',
+  title: 'Elements/Links/ArrowLink',
   component: ArrowLink
 } as ComponentMeta<typeof ArrowLink>;
 

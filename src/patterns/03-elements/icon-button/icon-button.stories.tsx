@@ -7,7 +7,7 @@ import {iconColorClassNames, iconSizes} from "../../01-base/icons/icon-defaults"
 
 
 export default {
-  title: 'Elements/Icon Button',
+  title: 'Elements/Buttons/IconButton',
   component: IconButton
 } as ComponentMeta<typeof IconButton>;
 

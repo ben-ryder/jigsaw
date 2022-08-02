@@ -9,7 +9,7 @@ import { P } from "../../01-base/typography/text";
 
 
 export default {
-  title: 'Elements/Select',
+  title: 'Elements/Form Elements/Select',
   component: Select
 } as ComponentMeta<typeof Select>;
 
