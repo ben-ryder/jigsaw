@@ -18,6 +18,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>((props, r
     <>
       <Label htmlFor={props.id} isHidden={props.hideLabel || false}>{ props.label }</Label>
       <textarea
+        ref={ref}
         {...passThroughProps}
         className={classNames(
           "mt-1 block w-full rounded-md outline-none py-1.5 bg-br-atom-700",
