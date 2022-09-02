@@ -58,30 +58,27 @@ export const MultiSelect = forwardRef<HTMLSelectElement, MultiSelectProps>((prop
                   }
                 )}
               >
-                <div className="flex items-center flex-wrap">
-                  <div>
-                    {props.currentOptions.map(option => (
-                      <Tag
-                        key={option.name}
-                        text={option.name}
-                        rightContent={
-                            <IconButton
-                              label={`Unselect ${option.name}`}
-                              icon={
-                                <XIcon size={iconSizes.small} strokeWidth={3} />
-                              }
-                              className={iconColorClassNames.secondary}
-                              onClick={(event) => {
-                                event.stopPropagation()
-                                event.preventDefault()
-                                props.onOptionsChange(props.currentOptions.filter((filterOption) => filterOption !== option))
-                              }}
-                            />
-                        }
-                        className="mr-1.5"
-                      />
-                    ))}
-                  </div>
+                <div className="flex items-center flex-wrap gap-1.5">
+                  {props.currentOptions.map(option => (
+                    <Tag
+                      key={option.name}
+                      text={option.name}
+                      rightContent={
+                        <IconButton
+                          label={`Unselect ${option.name}`}
+                          icon={
+                            <XIcon size={iconSizes.small} strokeWidth={3} />
+                          }
+                          className={iconColorClassNames.secondary}
+                          onClick={(event) => {
+                            event.stopPropagation()
+                            event.preventDefault()
+                            props.onOptionsChange(props.currentOptions.filter((filterOption) => filterOption !== option))
+                          }}
+                        />
+                      }
+                    />
+                  ))}
                   <Combobox.Input
                     type="text"
                     onChange={(event) => {setQuery(event.target.value)}}

@@ -13,7 +13,7 @@ export interface TagsProps {
 
 export function Tag(props: TagsProps) {
   const className = classNames(
-    "inline-block rounded",
+    "inline-block rounded font-sm",
     {
       "bg-br-teal-600 text-br-whiteGrey-50" : !props.bgColor && !props.fgColor
     },
@@ -30,8 +30,8 @@ export function Tag(props: TagsProps) {
 
   return (
     <div className={className} style={style}>
-      <span className="flex justify-center items-center px-1.5 py-0.5">
-        <span className={classNames({"mx-[5px]": props.rightContent})}>
+      <span className="flex justify-center items-center px-1 py-0.5">
+        <span className={classNames("whitespace-nowrap", {"mx-[5px]": props.rightContent})}>
           {props.text}
         </span>
         {props.rightContent && props.rightContent}
