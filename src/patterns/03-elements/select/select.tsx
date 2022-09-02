@@ -15,7 +15,7 @@ export interface SelectOption {
   value: string,
 }
 
-export interface SelectProps extends ComponentProps<'select'> {
+export interface SelectProps extends ComponentProps<'div'> {
   id: string,
   label: string,
   error?: string,
@@ -26,13 +26,20 @@ export interface SelectProps extends ComponentProps<'select'> {
 }
 
 export const Select = forwardRef<HTMLSelectElement, SelectProps>((props, ref) => {
+  const {error, id, label, hideLabel, options, currentOption, onOptionChange, className, ...passThroughProps} = props;
+
+  const containerClassName = classNames(
+    "relative",
+    className
+  )
+
   return (
-    <div className="relative">
-      <Listbox value={props.currentOption} onChange={props.onOptionChange}>
+    <div className={containerClassName} {...passThroughProps}>
+      <Listbox value={currentOption} onChange={onOptionChange}>
         {({ open }) => (
           <>
             <Listbox.Label as={Fragment}>
-              <Label isHidden={props.hideLabel || false}>{ props.label }</Label>
+              <Label isHidden={hideLabel || false}>{ label }</Label>
             </Listbox.Label>
             <>
               <Listbox.Button
@@ -41,12 +48,12 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>((props, ref) =>
                   "border-2 text-br-whiteGrey-200",
                   "focus:ring-0 focus:border-br-teal-600",
                   {
-                    "border-br-red-500 hover:border-br-red-600": props.error,
-                    "border-br-blueGrey-600 hover:border-br-blueGrey-500": !props.error
+                    "border-br-red-500 hover:border-br-red-600": error,
+                    "border-br-blueGrey-600 hover:border-br-blueGrey-500": !error
                   }
                 )}
               >
-                {props.currentOption.name}
+                {currentOption.name}
                 {open
                   ? <OpenedIcon size={iconSizes.medium} strokeWidth={1} className="absolute top-0 right-0 mr-1 h-full"/>
                   : <ClosedIcon size={iconSizes.medium} strokeWidth={1} className="absolute top-0 right-0 mr-1 h-full"/>
@@ -56,7 +63,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>((props, ref) =>
                 as={Fragment}
               >
                 <DropdownContainer>
-                  {props.options.map((option) => (
+                  {options.map((option) => (
                     <Listbox.Option
                       key={option.value}
                       value={option}
@@ -73,8 +80,8 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>((props, ref) =>
           </>
         )}
       </Listbox>
-      {props.error &&
-          <ErrorText>{props.error}</ErrorText>
+      {error &&
+          <ErrorText>{error}</ErrorText>
       }
     </div>
   )

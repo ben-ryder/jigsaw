@@ -13,7 +13,7 @@ export const DropdownContainer = forwardRef<HTMLUListElement, DropdownContainerP
     <ul
       ref={ref}
       className={classNames(
-        "absolute mt-2 block w-full rounded-md outline-none bg-br-atom-600",
+        "z-10 absolute mt-2 block w-full rounded-md outline-none bg-br-atom-600",
         "border-2 text-br-whiteGrey-200",
         "border-br-blueGrey-600"
       )}
