@@ -8,6 +8,7 @@ export * from "./patterns/01-base/typography/code";
 // Partials
 export * from "./patterns/02-partials/label/label";
 export * from "./patterns/02-partials/error-text/error-text";
+export * from "./patterns/02-partials/select/option-helpers";
 
 // Elements
 export * from "./patterns/03-elements/button/button";
