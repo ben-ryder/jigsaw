@@ -8,9 +8,9 @@ import { Label } from "../../02-partials/label/label";
 import {iconColorClassNames, iconSizes} from "../../01-base/icons/icon-defaults";
 import {Tag} from "../tag/tag";
 import {IconButton} from "../icon-button/icon-button";
-import {SelectOption} from "../../02-partials/select/select-option";
 import {SelectContainer} from "../../02-partials/select/select-container";
 import {getOptionLookup, Option} from "../../02-partials/select/option-helpers";
+import {colourPalette} from "../../01-base/colour-palette/colour-palette";
 
 
 export interface MultiSelectProps extends ComponentProps<'select'> {
@@ -54,7 +54,7 @@ export const MultiSelect = forwardRef<HTMLSelectElement, MultiSelectProps>((prop
             <>
               <div
                 className={classNames(
-                  "relative mt-1 block w-full rounded-md outline-none p-1.5 bg-br-atom-700",
+                  "relative mt-1 block w-full rounded-md outline-none bg-br-atom-700",
                   "border-2 text-br-whiteGrey-200",
                   "focus-within:ring-0 focus-within:border-br-teal-600",
                   {
@@ -63,59 +63,84 @@ export const MultiSelect = forwardRef<HTMLSelectElement, MultiSelectProps>((prop
                   }
                 )}
               >
-                <div className="flex items-center flex-wrap gap-1.5">
-                  {props.currentOptions.map(option => (
-                    <Tag
-                      key={option}
-                      text={optionLookup[option].name}
-                      rightContent={
-                        <IconButton
-                          label={`Unselect ${optionLookup[option]}`}
-                          icon={
-                            <XIcon size={iconSizes.small} strokeWidth={3} />
-                          }
-                          className={iconColorClassNames.secondary}
-                          onClick={(event) => {
-                            event.stopPropagation()
-                            event.preventDefault()
-                            props.onOptionsChange(props.currentOptions.filter((filterOption) => filterOption !== option))
-                          }}
-                        />
-                      }
+                <div className="flex">
+                  <div className="grow flex items-center flex-wrap p-1.5 gap-1.5">
+                    {props.currentOptions.map(option => (
+                      <Tag
+                        key={option}
+                        text={optionLookup[option].name}
+                        backgroundColour={optionLookup[option].backgroundColour}
+                        textColour={optionLookup[option].textColour}
+                        rightContent={
+                          <IconButton
+                            label={`Unselect ${optionLookup[option]}`}
+                            icon={
+                              <XIcon
+                                size={iconSizes.small}
+                                style={{
+                                  stroke: optionLookup[option].textColour || colourPalette.whiteGrey["50"],
+                                  fill: optionLookup[option].textColour || colourPalette.whiteGrey["50"]
+                              }}
+                              />
+                            }
+                            className={iconColorClassNames.secondary}
+                            onClick={(event) => {
+                              event.stopPropagation()
+                              event.preventDefault()
+                              props.onOptionsChange(props.currentOptions.filter((filterOption) => filterOption !== option))
+                            }}
+                          />
+                        }
+                      />
+                    ))}
+                    <Combobox.Input
+                      type="text"
+                      onChange={(event) => {setQuery(event.target.value)}}
+                      placeholder={props.placeholder}
+                      className="py-0.5 px-1.5 bg-transparent border-none outline-none focus:ring-0"
                     />
-                  ))}
-                  <Combobox.Input
-                    type="text"
-                    onChange={(event) => {setQuery(event.target.value)}}
-                    placeholder={props.placeholder}
-                    className="p-0 bg-transparent border-none outline-none focus:ring-0"
-                  />
+                  </div>
+                  <Combobox.Button>
+                    {open
+                      ? <OpenedIcon size={iconSizes.medium} strokeWidth={1} />
+                      : <ClosedIcon size={iconSizes.medium} strokeWidth={1} />
+                    }
+                  </Combobox.Button>
                 </div>
-                <Combobox.Button className="absolute top-0 right-0 mr-1 h-full">
-                  {open
-                    ? <OpenedIcon size={iconSizes.medium} strokeWidth={1} />
-                    : <ClosedIcon size={iconSizes.medium} strokeWidth={1} />
-                  }
-                </Combobox.Button>
               </div>
               <Combobox.Options
                 as={Fragment}
               >
                 <SelectContainer>
-                  {filteredOptions.map((option) => (
-                    <Combobox.Option
-                      key={option.value}
-                      value={option.value}
-                      as={Fragment}
-                    >
-                      {({ active, selected }) => (
-                        <SelectOption active={active} selected={selected}>{option.name}</SelectOption>
-                      )}
-                    </Combobox.Option>
-                  ))}
-                  {filteredOptions.length === 0 &&
-                      <SelectOption active={false} selected={false}>No Options Found</SelectOption>
-                  }
+                  <div className="flex flex-wrap gap-2 p-2">
+                    {filteredOptions.map((option) => (
+                      <Combobox.Option
+                        key={option.value}
+                        value={option.value}
+                        as={Fragment}
+                      >
+                        {({active}) =>
+                          <button
+                            className={classNames(
+                              "py-0.5 px-1 rounded font-sm", // styles copied from Tag element
+                              {
+                                "underline": active
+                              }
+                            )}
+                            style={{
+                              backgroundColor: option.backgroundColour || colourPalette.teal["600"],
+                              color: option.textColour || colourPalette.whiteGrey["50"]
+                            }}
+                          >
+                            {option.name}
+                          </button>
+                        }
+                      </Combobox.Option>
+                    ))}
+                    {filteredOptions.length === 0 &&
+                        <p className="text-br-whiteGrey-100">No Options Found</p>
+                    }
+                  </div>
                 </SelectContainer>
               </Combobox.Options>
             </>

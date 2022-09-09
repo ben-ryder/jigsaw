@@ -43,7 +43,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>((props, ref) =>
             <>
               <Listbox.Button
                 className={classNames(
-                  "relative mt-1 block w-full rounded-md outline-none p-1.5 bg-br-atom-700",
+                  "relative mt-1 block w-full rounded-md outline-none bg-br-atom-700",
                   "border-2 text-br-whiteGrey-200",
                   "focus:ring-0 focus:border-br-teal-600",
                   {
@@ -52,11 +52,15 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>((props, ref) =>
                   }
                 )}
               >
-                {currentOptionName}
-                {open
-                  ? <OpenedIcon size={iconSizes.medium} strokeWidth={1} className="absolute top-0 right-0 mr-1 h-full"/>
-                  : <ClosedIcon size={iconSizes.medium} strokeWidth={1} className="absolute top-0 right-0 mr-1 h-full"/>
-                }
+                <span className="flex items-center">
+                  <span className="grow">
+                     {currentOptionName}
+                  </span>
+                  {open
+                    ? <OpenedIcon size={iconSizes.medium} strokeWidth={1} className="text-br-whiteGrey-200"/>
+                    : <ClosedIcon size={iconSizes.medium} strokeWidth={1} className="text-br-whiteGrey-200"/>
+                  }
+                </span>
               </Listbox.Button>
               <Listbox.Options
                 as={Fragment}

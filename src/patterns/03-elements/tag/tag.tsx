@@ -1,41 +1,33 @@
-import React from 'react';
+import React, {forwardRef} from 'react';
 import classNames from "classnames";
 
 import {StrictReactNode} from "../../../extras/strict-react-children";
+import {colourPalette} from "../../01-base/colour-palette/colour-palette";
 
 export interface TagsProps {
   text: string,
-  bgColor?: string,
-  fgColor?: string,
+  backgroundColour?: string | null,
+  textColour?: string | null,
   rightContent?: StrictReactNode,
   className?: string
 }
 
 export function Tag(props: TagsProps) {
-  const className = classNames(
-    "inline-block rounded font-sm",
-    {
-      "bg-br-teal-600 text-br-whiteGrey-50" : !props.bgColor && !props.fgColor
-    },
-    props.className
-  )
-
-  let style = {};
-  if (props.bgColor && props.fgColor) {
-    style = {
-      backgroundColor: props.bgColor,
-      color: props.fgColor
-    }
-  }
-
   return (
-    <div className={className} style={style}>
-      <span className="flex justify-center items-center px-1 py-0.5">
-        <span className={classNames("whitespace-nowrap", {"mx-[5px]": props.rightContent})}>
-          {props.text}
-        </span>
-        {props.rightContent && props.rightContent}
+    <div
+      className={classNames(
+        "inline-flex justify-center items-center px-1.5 py-0.5 rounded font-sm",
+        props.className
+      )}
+      style={{
+        backgroundColor: props.backgroundColour || colourPalette.teal["600"],
+        color: props.textColour || colourPalette.whiteGrey["50"]
+      }}
+    >
+      <span className={classNames("whitespace-nowrap", {"mr-[5px]": props.rightContent})}>
+        {props.text}
       </span>
+      {props.rightContent && props.rightContent}
     </div>
   )
 }

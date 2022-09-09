@@ -21,8 +21,8 @@ Default.args = {
 export const CustomColors = Template.bind({});
 CustomColors.args = {
   text: "custom color",
-  bgColor: "#ff7700",
-  fgColor: "#000"
+  backgroundColour: "#ff7700",
+  textColour: "#000"
 };
 
 export const RightContent = Template.bind({});
@@ -31,7 +31,7 @@ RightContent.args = {
   rightContent: <IconButton
     className="hover:text-br-whiteGrey-200"
     label="Remove Tag"
-    icon={<XIcon size={iconSizes.small} strokeWidth={3} />}
+    icon={<XIcon size={iconSizes.extraSmall} strokeWidth={2} />}
     onClick={() => {}}
   />
 };

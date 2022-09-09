@@ -1,6 +1,8 @@
 export interface Option {
   name: string,
   value: string,
+  backgroundColour?: string | null,
+  textColour?: string | null,
 }
 
 export function getOption(options: Option[], currentOption: string) {

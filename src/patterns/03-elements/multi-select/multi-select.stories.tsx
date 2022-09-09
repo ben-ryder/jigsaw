@@ -4,6 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { MultiSelect } from './multi-select';
 import { P } from "../../01-base/typography/text";
 import {useArgs} from "@storybook/client-api";
+import {Option} from "../../02-partials/select/option-helpers";
 
 export default {
   title: 'Elements/Form Elements/MultiSelect',
@@ -28,11 +29,11 @@ const Template: ComponentStory<typeof MultiSelect> = (args) => {
   )
 };
 
-const options = [
+const options: Option[] = [
   {name: "Option 1", value: "1"},
-  {name: "Option 2", value: "2"},
+  {name: "Option 2", value: "2", backgroundColour: "#f00"},
   {name: "Option 3", value: "3"},
-  {name: "Option 4", value: "4"},
+  {name: "Option 4", value: "4", backgroundColour: "#0f0", textColour: "#000"},
   {name: "Option 5", value: "5"},
   {name: "Option 6", value: "6"},
 ]
