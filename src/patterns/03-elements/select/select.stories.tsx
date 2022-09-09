@@ -46,7 +46,7 @@ Default.args = {
   id: "default",
   label: "Select Option",
   options: options,
-  currentOption: options[0]
+  currentOption: options[0].value
 };
 
 Default.play = async ({ canvasElement }) => {
@@ -68,5 +68,5 @@ HiddenLabel.args = {
   hideLabel: true,
   label: "Select Option",
   options: options,
-  currentOption: options[0]
+  currentOption: options[0].value
 };

@@ -10,7 +10,7 @@ export interface DropdownOptionProps {
 }
 
 
-export const DropdownOption = forwardRef<HTMLLIElement, DropdownOptionProps>((props, ref) => {
+export const SelectOption = forwardRef<HTMLLIElement, DropdownOptionProps>((props, ref) => {
   const {active, selected, ...passThroughProps} = props;
 
   return (

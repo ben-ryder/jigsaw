@@ -7,26 +7,25 @@ import { ChevronDown as ClosedIcon, ChevronUp as OpenedIcon } from "lucide-react
 import { ErrorText } from "../../02-partials/error-text/error-text";
 import { Label } from "../../02-partials/label/label";
 import { iconSizes } from "../../01-base/icons/icon-defaults";
-import {DropdownOption} from "../../02-partials/dropdown/dropdown-option";
-import {DropdownContainer} from "../../02-partials/dropdown/dropdown-container";
+import {getOption, Option} from "../../02-partials/select/option-helpers";
+import {SelectContainer} from "../../02-partials/select/select-container";
+import {SelectOption} from "../../02-partials/select/select-option";
 
-export interface SelectOption {
-  name: string,
-  value: string,
-}
 
 export interface SelectProps extends ComponentProps<'div'> {
   id: string,
   label: string,
   error?: string,
   hideLabel?: boolean,
-  options: SelectOption[],
-  currentOption: SelectOption,
-  onOptionChange: (option: SelectOption) => void,
+  options: Option[],
+  currentOption: string,
+  onOptionChange: (option: string) => void,
 }
 
 export const Select = forwardRef<HTMLSelectElement, SelectProps>((props, ref) => {
   const {error, id, label, hideLabel, options, currentOption, onOptionChange, className, ...passThroughProps} = props;
+
+  const currentOptionName = getOption(options, currentOption).name;
 
   const containerClassName = classNames(
     "relative",
@@ -53,7 +52,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>((props, ref) =>
                   }
                 )}
               >
-                {currentOption.name}
+                {currentOptionName}
                 {open
                   ? <OpenedIcon size={iconSizes.medium} strokeWidth={1} className="absolute top-0 right-0 mr-1 h-full"/>
                   : <ClosedIcon size={iconSizes.medium} strokeWidth={1} className="absolute top-0 right-0 mr-1 h-full"/>
@@ -62,19 +61,19 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>((props, ref) =>
               <Listbox.Options
                 as={Fragment}
               >
-                <DropdownContainer>
+                <SelectContainer>
                   {options.map((option) => (
                     <Listbox.Option
                       key={option.value}
-                      value={option}
+                      value={option.value}
                       as={Fragment}
                     >
                       {({ active, selected }) => (
-                        <DropdownOption active={active} selected={selected}>{option.name}</DropdownOption>
+                        <SelectOption active={active} selected={selected}>{option.name}</SelectOption>
                       )}
                     </Listbox.Option>
                   ))}
-                </DropdownContainer>
+                </SelectContainer>
               </Listbox.Options>
             </>
           </>

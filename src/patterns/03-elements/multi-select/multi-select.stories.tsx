@@ -43,7 +43,7 @@ Default.args = {
   label: "Select Options",
   placeholder: "search option...",
   options: options,
-  currentOptions: [options[0], options[3]]
+  currentOptions: [options[0].value, options[3].value]
 };
 
 export const HiddenLabel = Template.bind({});
@@ -53,5 +53,5 @@ HiddenLabel.args = {
   label: "Select Options",
   placeholder: "search option...",
   options: options,
-  currentOptions: [options[0], options[3]]
+  currentOptions: [options[0].value, options[3].value]
 };

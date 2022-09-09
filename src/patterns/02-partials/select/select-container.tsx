@@ -8,7 +8,7 @@ export interface DropdownContainerProps {
 }
 
 
-export const DropdownContainer = forwardRef<HTMLUListElement, DropdownContainerProps>((props, ref) => {
+export const SelectContainer = forwardRef<HTMLUListElement, DropdownContainerProps>((props, ref) => {
   return (
     <ul
       ref={ref}

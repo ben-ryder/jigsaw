@@ -1,7 +1,6 @@
 import React, {ComponentProps, forwardRef, Fragment, useState} from 'react';
 import classNames from "classnames";
 import { Combobox } from '@headlessui/react';
-
 import {ChevronDown as ClosedIcon, ChevronUp as OpenedIcon, X as XIcon} from "lucide-react";
 
 import { ErrorText } from "../../02-partials/error-text/error-text";
@@ -9,13 +8,10 @@ import { Label } from "../../02-partials/label/label";
 import {iconColorClassNames, iconSizes} from "../../01-base/icons/icon-defaults";
 import {Tag} from "../tag/tag";
 import {IconButton} from "../icon-button/icon-button";
-import {DropdownOption} from "../../02-partials/dropdown/dropdown-option";
-import {DropdownContainer} from "../../02-partials/dropdown/dropdown-container";
+import {SelectOption} from "../../02-partials/select/select-option";
+import {SelectContainer} from "../../02-partials/select/select-container";
+import {getOptionLookup, Option} from "../../02-partials/select/option-helpers";
 
-export interface MultiSelectOption {
-  name: string,
-  value: string,
-}
 
 export interface MultiSelectProps extends ComponentProps<'select'> {
   id: string,
@@ -23,20 +19,29 @@ export interface MultiSelectProps extends ComponentProps<'select'> {
   error?: string,
   hideLabel?: boolean,
   placeholder: string,
-  options: MultiSelectOption[],
-  currentOptions: MultiSelectOption[],
-  onOptionsChange: (options: MultiSelectOption[]) => void,
+  options: Option[],
+  currentOptions: string[],
+  onOptionsChange: (options: string[]) => void,
 }
 
 export const MultiSelect = forwardRef<HTMLSelectElement, MultiSelectProps>((props, ref) => {
   const [query, setQuery] = useState<string>("");
+  const optionLookup = getOptionLookup(props.options, props.currentOptions);
 
-  const filteredOptions =
-    query === ''
-      ? props.options
-      : props.options.filter((option) => {
-        return option.name.toLowerCase().includes(query.toLowerCase())
-      })
+  const filteredOptions = props.options
+    .filter((option) => {
+       if (!option.name.toLowerCase().includes(query.toLowerCase())) {
+         return false;
+       }
+
+       for (const currentOption of props.currentOptions) {
+         if (currentOption === option.value) {
+           return false;
+         }
+       }
+
+       return true;
+    })
 
   return (
     <div className="relative">
@@ -61,11 +66,11 @@ export const MultiSelect = forwardRef<HTMLSelectElement, MultiSelectProps>((prop
                 <div className="flex items-center flex-wrap gap-1.5">
                   {props.currentOptions.map(option => (
                     <Tag
-                      key={option.name}
-                      text={option.name}
+                      key={option}
+                      text={optionLookup[option].name}
                       rightContent={
                         <IconButton
-                          label={`Unselect ${option.name}`}
+                          label={`Unselect ${optionLookup[option]}`}
                           icon={
                             <XIcon size={iconSizes.small} strokeWidth={3} />
                           }
@@ -96,22 +101,22 @@ export const MultiSelect = forwardRef<HTMLSelectElement, MultiSelectProps>((prop
               <Combobox.Options
                 as={Fragment}
               >
-                <DropdownContainer>
+                <SelectContainer>
                   {filteredOptions.map((option) => (
                     <Combobox.Option
                       key={option.value}
-                      value={option}
+                      value={option.value}
                       as={Fragment}
                     >
                       {({ active, selected }) => (
-                        <DropdownOption active={active} selected={selected}>{option.name}</DropdownOption>
+                        <SelectOption active={active} selected={selected}>{option.name}</SelectOption>
                       )}
                     </Combobox.Option>
                   ))}
                   {filteredOptions.length === 0 &&
-                      <DropdownOption active={false} selected={false}>No Options Found</DropdownOption>
+                      <SelectOption active={false} selected={false}>No Options Found</SelectOption>
                   }
-                </DropdownContainer>
+                </SelectContainer>
               </Combobox.Options>
             </>
           </>
