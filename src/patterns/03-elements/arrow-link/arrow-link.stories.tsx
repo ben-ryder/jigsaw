@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import {ArrowLink} from "./arrow-link";
+import {ArrowLink, ArrowLinkProps} from "./arrow-link";
 
 export default {
   title: 'Elements/Links/ArrowLink',
@@ -24,3 +24,19 @@ Left.args = {
   href: "/"
 };
 
+function ArrowLinkAs(props: ArrowLinkProps) {
+  return (
+    <>
+      <ArrowLink {...props} />
+      <p className="text-br-whiteGrey-100">This 'as' component includes this extra text</p>
+    </>
+  )
+}
+
+const TemplateAs: ComponentStory<typeof ArrowLink> = (args) => <ArrowLinkAs {...args} />;
+export const As = TemplateAs.bind({});
+As.args = {
+  direction: "right",
+  children: "view all content",
+  href: "/"
+};

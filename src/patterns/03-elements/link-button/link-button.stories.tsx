@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import {LinkButton} from "./link-button";
+import {LinkButton, LinkButtonProps} from "./link-button";
 
 export default {
   title: 'Elements/Links/LinkButton',
@@ -27,5 +27,21 @@ export const Outline = Template.bind({});
 Outline.args = {
   children: "Outline",
   variant: "outline",
+  href: "/"
+};
+
+function LinkButtonAs(props: LinkButtonProps) {
+  return (
+    <>
+      <LinkButton {...props} />
+      <p className="text-br-whiteGrey-100">This 'as' component includes this extra text</p>
+    </>
+  )
+}
+
+const TemplateAs: ComponentStory<typeof LinkButton> = (args) => <LinkButtonAs {...args} />;
+export const As = TemplateAs.bind({});
+As.args = {
+  children: "Default",
   href: "/"
 };
