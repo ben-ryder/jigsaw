@@ -40,6 +40,8 @@ run individually like so:
 npm run build:stencil
 npm run build:storybook
 ```
+The stencil build will build the base web components library and will aso update the React library, which can be found
+in `./packages/stencil-react`.  
 
 ## License
 This project is released under the [GNU AGPLv3 license](https://github.com/Ben-Ryder/jigsaw/blob/main/LICENSE.txt).

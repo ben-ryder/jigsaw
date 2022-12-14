@@ -2,7 +2,7 @@
 A design system and component library for use in my personal projects.
 
 ## Packages
-- `stencil` - The current design system I'm working on using [Stencil](https://stenciljs.com/).
+- `stencil` - The current design system I'm working on using [Stencil](https://stenciljs.com/) and [Storybook](https://storybook.js.org/).
 - `react` - An old React component library that I started using Tailwind & HeadlessUI.
 
 ## Contributions
