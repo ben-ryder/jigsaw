@@ -10,18 +10,6 @@
   "bugs": {
     "url": "https://github.com/Ben-Ryder/jigsaw/issues"
   },
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.js",
-  "es2015": "dist/esm/index.mjs",
-  "es2017": "dist/esm/index.mjs",
-  "types": "dist/types/index.d.ts",
-  "collection": "dist/collection/collection-manifest.json",
-  "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/jigsaw/jigsaw.esm.js",
-  "files": [
-    "dist/",
-    "loader/"
-  ],
   "scripts": {
     "start": "concurrently 'npm:start:*'",
     "start:stencil": "stencil build --watch",
@@ -34,6 +22,18 @@
     "stencil:test-watch": "stencil test --spec --e2e --watchAll",
     "stencil:generate": "stencil generate"
   },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/jigsaw/jigsaw.esm.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
   "dependencies": {
     "@stencil/core": "^2.13.0",
     "@stencil/react-output-target": "^0.3.1"
