@@ -1,0 +1,57 @@
+:root {
+  --j-teal-600: #0D9488;
+  --j-teal-700: #0F766E;
+  --j-teal-800: #115E59;
+
+  --j-atom-500: #30333D;
+  --j-atom-600: #2B2F39;
+  --j-atom-700: #272B34;
+  --j-atom-800: #20242B;
+  --j-atom-900: #1A1E24;
+
+  --j-blueGrey-400: #9CA3AF;
+  --j-blueGrey-500: #6B7280;
+  --j-blueGrey-600: #4B5563;
+  --j-blueGrey-700: #374151;
+  --j-blueGrey-800: #1F2937;
+
+  --j-whiteGrey-50: #fff;
+  --j-whiteGrey-100: #eee;
+  --j-whiteGrey-200: #ccc;
+  --j-whiteGrey-700: #888;
+  --j-whiteGrey-900: #666;
+
+  --j-blackGrey-500: #444;
+  --j-blackGrey-600: #333;
+  --j-blackGrey-700: #222;
+  --j-blackGrey-800: #111;
+  --j-blackGrey-900: #000;
+
+  --j-red-500: #EF4444;
+  --j-red-600: #DC2626;
+  --j-red-700: #B91C1C;
+
+  --j-green-700: #15803D;
+  --j-green-800: #166534;
+  --j-green-900: #14532D;
+
+  --j-orange-500: #F97316;
+  --j-orange-600: #EA580C;
+  --j-orange-700: #C2410C;
+
+  --j-yellow-400: #FBBF24;
+  --j-yellow-500: #F59E0B;
+  --j-yellow-600: #D97706;
+
+  --j-blue-500: #0EA5E9;
+  --j-blue-600: #0284C7;
+  --j-blue-700: #0369A1;
+
+  --j-pink-400: #F472B6;
+  --j-pink-500: #EC4899;
+  --j-pink-600: #DB2777;
+
+  --j-purple-500: #8B5CF6;
+  --j-purple-600: #7C3AED;
+  --j-purple-700: #6D28D9;
+}

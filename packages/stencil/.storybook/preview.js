@@ -1,4 +1,5 @@
 import {defineCustomElements} from '../loader';
+import "../www/build/jigsaw.css";
 
 defineCustomElements();
 

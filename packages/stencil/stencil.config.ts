@@ -1,8 +1,15 @@
 import { Config } from '@stencil/core';
 import { reactOutputTarget as react } from '@stencil/react-output-target';
+import {sass} from "@stencil/sass";
 
 export const config: Config = {
-  namespace: 'jigsaw',
+  namespace: 'Jigsaw',
+  globalStyle: 'src/styles/variables.css',
+  plugins: [
+    sass({
+      injectGlobalPaths: ['src/styles/global.scss']
+    })
+  ],
   outputTargets: [
     react({
       componentCorePackage: '@ben-ryder/jigsaw',
