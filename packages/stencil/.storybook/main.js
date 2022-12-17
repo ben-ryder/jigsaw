@@ -8,7 +8,8 @@ module.exports = {
   "core": {
     disableTelemetry: true
   },
-  docs: {
-    docsPage: "automatic"
-  }
+  staticDirs: ['../www'],
+  // docs: {
+  //   docsPage: "automatic"
+  // }
 };

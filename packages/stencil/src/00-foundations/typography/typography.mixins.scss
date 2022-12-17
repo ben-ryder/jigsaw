@@ -1,0 +1,12 @@
+
+@mixin text-xs {
+  font-size: var(--j-text-size-xs);
+}
+
+@mixin text-sm {
+  font-size: var(--j-text-size-sm);
+}
+
+@mixin text-rg {
+  font-size: var(--j-text-size-rg);
+}

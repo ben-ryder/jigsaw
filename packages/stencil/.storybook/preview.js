@@ -1,6 +1,4 @@
 import {defineCustomElements} from '../loader';
-import "../www/build/jigsaw.css";
-
 defineCustomElements();
 
 export const parameters = {
@@ -11,4 +9,16 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  options: {
+    showPanel: true,
+  },
+  backgrounds: {
+    default: "jigsaw",
+    values: [
+      {
+        name: "jigsaw",
+        value: "#272B34"
+      }
+    ]
+  }
 }

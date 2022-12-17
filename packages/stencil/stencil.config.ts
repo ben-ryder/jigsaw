@@ -4,10 +4,10 @@ import {sass} from "@stencil/sass";
 
 export const config: Config = {
   namespace: 'Jigsaw',
-  globalStyle: 'src/styles/variables.css',
+  globalStyle: 'src/styles/global.css',
   plugins: [
     sass({
-      injectGlobalPaths: ['src/styles/global.scss']
+      injectGlobalPaths: []
     })
   ],
   outputTargets: [
@@ -19,6 +19,12 @@ export const config: Config = {
     {
       type: 'dist',
       esmLoaderPath: '../loader',
+      copy: [
+        {
+          src: "**/*.ttf",
+          dest: "assets/fonts"
+        }
+      ]
     },
     {
       type: 'dist-custom-elements',
@@ -29,6 +35,25 @@ export const config: Config = {
     {
       type: 'www',
       serviceWorker: null, // disable service workers
+      copy: [
+        {
+          src: "**/*.ttf",
+          dest: "assets/fonts"
+        }
+      ]
     },
   ],
+  // rollupPlugins: {
+  //   after: [
+  //     copy({
+  //       targets: [
+  //         // Fonts
+  //         {
+  //           src: 'src/**/*.ttf',
+  //           dest: 'www/assets/fonts',
+  //         },
+  //       ],
+  //     }),
+  //   ]
+  // }
 };

@@ -13,10 +13,10 @@
   "scripts": {
     "start": "concurrently 'npm:start:*'",
     "start:stencil": "stencil build --watch",
-    "start:storybook": "storybook dev -p 6006",
+    "start:storybook": "storybook dev -p 6006 --quiet --no-open",
     "build": "concurrently 'npm:build:*'",
     "build:stencil": "stencil build --docs",
-    "build:storybook": "storybook build",
+    "build:storybook": "storybook build --quiet",
     "test": "concurrently 'npm:test:*'",
     "test:stencil": "stencil test --spec --e2e",
     "stencil:test-watch": "stencil test --spec --e2e --watchAll",

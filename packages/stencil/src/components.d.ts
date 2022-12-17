@@ -6,6 +6,8 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface JProse {
+    }
     interface MyComponent {
         /**
           * The name
@@ -14,6 +16,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLJProseElement extends Components.JProse, HTMLStencilElement {
+    }
+    var HTMLJProseElement: {
+        prototype: HTMLJProseElement;
+        new (): HTMLJProseElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -21,10 +29,13 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "j-prose": HTMLJProseElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface JProse {
+    }
     interface MyComponent {
         /**
           * The name
@@ -32,6 +43,7 @@ declare namespace LocalJSX {
         "name"?: string;
     }
     interface IntrinsicElements {
+        "j-prose": JProse;
         "my-component": MyComponent;
     }
 }
@@ -39,6 +51,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "j-prose": LocalJSX.JProse & JSXBase.HTMLAttributes<HTMLJProseElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }

@@ -1,0 +1,6 @@
+@import "./_text-fonts.css";
+@import "./_text-sizes.css";
+
+* {
+  font-family: var(--j-text-font-primary);
+}
