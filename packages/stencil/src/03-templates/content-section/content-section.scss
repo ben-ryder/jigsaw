@@ -1,6 +1,8 @@
 
 j-content-section {
   display: block;
-  max-width: var(--j-spacing-48);
+  max-width: var(--j-size-48);
   margin: auto;
+  padding-left: var(--j-size-1);
+  padding-right: var(--j-size-1);
 }

@@ -2,7 +2,7 @@
 j-prose {
   p {
     font-size: var(--j-text-size-rg);
-    margin-bottom: var(--j-spacing-1);
+    margin-bottom: var(--j-size-1);
     color: var(--j-whiteGrey-200);
     line-height: 2;
   }
@@ -23,8 +23,8 @@ j-prose {
     font-size: var(--j-text-size-4xl);
     color: var(--j-whiteGrey-100);
     font-weight: bold;
-    margin-top: var(--j-spacing-2);
-    margin-bottom: var(--j-spacing-0-5);
+    margin-top: var(--j-size-2);
+    margin-bottom: var(--j-size-1);
     line-height: 1.25;
   }
 
@@ -32,8 +32,8 @@ j-prose {
     font-size: var(--j-text-size-3xl);
     color: var(--j-whiteGrey-100);
     font-weight: bold;
-    margin-top: var(--j-spacing-2);
-    margin-bottom: var(--j-spacing-0-5);
+    margin-top: var(--j-size-2);
+    margin-bottom: var(--j-size-0-5);
     line-height: 1.38;
   }
 
@@ -42,8 +42,8 @@ j-prose {
     color: var(--j-whiteGrey-100);
     font-weight: bold;
     line-height: 1.5;
-    margin-top: var(--j-spacing-1-5);
-    margin-bottom: var(--j-spacing-0-5);
+    margin-top: var(--j-size-1-5);
+    margin-bottom: var(--j-size-0-5);
   }
 
   h4 {
@@ -51,8 +51,8 @@ j-prose {
     color: var(--j-whiteGrey-100);
     font-weight: bold;
     line-height: 1.75;
-    margin-top: var(--j-spacing-0-75);
-    margin-bottom: var(--j-spacing-0-25);
+    margin-top: var(--j-size-0-75);
+    margin-bottom: var(--j-size-0-25);
   }
 
   img {
@@ -62,13 +62,13 @@ j-prose {
   }
 
   blockquote {
-    border-left: var(--j-spacing-0-5) solid var(--j-teal-600);
+    border-left: var(--j-border-width-xl) solid var(--j-teal-600);
     display: block;
-    padding: var(--j-spacing-0-75);
-    padding-left: var(--j-spacing-1);
+    padding: var(--j-size-0-75);
+    padding-left: var(--j-size-1);
     background-color: var(--j-atom-500);
     font-style: italic;
-    margin-bottom: var(--j-spacing-1);
+    margin-bottom: var(--j-size-1);
     border-top-right-radius: var(--j-border-radius-sm);
     border-bottom-right-radius: var(--j-border-radius-sm);
 
@@ -78,14 +78,14 @@ j-prose {
   }
 
   figcaption {
-    border-top: var(--j-spacing-0-25) solid var(--j-teal-600);
+    border-top: var(--j-border-width-lg) solid var(--j-teal-600);
     background-color: var(--j-atom-500);
     font-size: var(--j-text-size-sm);
     font-style: italic;
     color: var(--j-whiteGrey-200);
-    padding: var(--j-spacing-0-75);
+    padding: var(--j-size-0-75);
     line-height: 1.5;
-    margin-bottom: var(--j-spacing-1);
+    margin-bottom: var(--j-size-1);
     border-bottom-left-radius: var(--j-border-radius-sm);
     border-bottom-right-radius: var(--j-border-radius-sm);
   }
@@ -93,16 +93,17 @@ j-prose {
   code {
     font-family: monospace;
     background-color: var(--j-atom-800);
-    padding: var(--j-spacing-0-25) var(--j-spacing-0-5);
+    padding: var(--j-size-0-25) var(--j-size-0-5);
     border-radius: var(--j-border-radius-sm);
+    color: var(--j-whiteGrey-200);
   }
 
   pre {
-    margin-bottom: var(--j-spacing-1);
+    margin-bottom: var(--j-size-1);
 
     code {
       font-size: var(--j-text-size-sm);
-      padding: var(--j-spacing-1);
+      padding: var(--j-size-1);
       display: block;
       overflow: scroll;
       color: var(--j-whiteGrey-200);
@@ -119,12 +120,16 @@ j-prose {
     &:hover,
     &:focus {
       color: var(--j-teal-600);
+
+      // Ensure the hover styles still applies when a <code> tag is within the link
+      code {
+        color: var(--j-teal-600);
+      }
     }
   }
 
   li {
     color: var(--j-whiteGrey-200);
-    margin-bottom: var(--j-spacing-0-5);
 
     &::marker {
       color: var(--j-teal-600);
@@ -132,9 +137,9 @@ j-prose {
   }
 
   ul {
-    margin-left: 16px;
+    margin-left: 20px;
     list-style-type: disc;
-    margin-bottom: var(--j-spacing-1);
+    margin-bottom: var(--j-size-1);
     line-height: 1.5;
 
     li {
@@ -147,10 +152,12 @@ j-prose {
   ol {
     margin-left: 20px;
     list-style: decimal;
-    margin-bottom: var(--j-spacing-1);
+    margin-bottom: var(--j-size-1);
     line-height: 1.5;
 
     li {
+      margin-bottom: var(--j-size-0-5);
+
       &::marker {
         font-weight: bold;
       }
@@ -158,32 +165,33 @@ j-prose {
   }
 
   hr {
-   border: 3px solid var(--j-atom-500);
-    margin-top: var(--j-spacing-2);
-    margin-bottom: var(--j-spacing-2);
+    border: var(--j-border-width-lg) solid var(--j-atom-500);
+    border-radius: var(--j-border-radius-sm);
+    margin-top: var(--j-size-2);
+    margin-bottom: var(--j-size-2);
   }
 
   table {
     background-color: var(--j-atom-500);
     color: var(--j-whiteGrey-200);
     width: 100%;
-    margin-bottom: var(--j-spacing-1);
+    margin-bottom: var(--j-size-1);
     border-radius: var(--j-border-radius-sm);
 
     thead {
       tr {
-        border-bottom: var(--j-spacing-0-25) solid var(--j-teal-600);
+        border-bottom: var(--j-border-width-lg) solid var(--j-teal-600);
       }
     }
 
     th {
       font-weight: bold;
       text-align: left;
-      padding: var(--j-spacing-0-75);
+      padding: var(--j-size-0-75);
     }
 
     td {
-      padding: var(--j-spacing-0-75);
+      padding: var(--j-size-0-75);
     }
 
     tbody {
