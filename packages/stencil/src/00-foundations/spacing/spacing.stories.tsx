@@ -44,21 +44,5 @@ const Template = () => `
   </div>
 `;
 
-const TemplateTwo = () => `
-  <div>
-    <h1>Spacing</h1>
-    <p>In order to prevent lots of variations of padding & margins all components and layouts in Jigsaw are built
-    using a spacing scale:</p>
-  </div>
-  <div>
-    ${spacingSteps.map(step => `
-      <div style="display: flex; align-items: center">
-        <span style="display: block; height: 16px; background-color: var(--j-teal-600); width: var(--j-spacing-${step.toString().replace(".", "-")})"></span>
-        <p style="margin-left: var(--j-spacing-0-5); color: var(--j-whiteGrey-50)"><b>--j-spacing-${step.toString().replace(".", "-")}</b> (16 x ${step})</p>
-      </div>
-    `)}
-  </div>
-`;
-
-export const Example = Template.bind({});
-Example.args = {};
+export const Spacing = Template.bind({});
+Spacing.args = {};

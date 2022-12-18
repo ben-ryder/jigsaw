@@ -6,6 +6,8 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface JContentSection {
+    }
     interface JProse {
     }
     interface MyComponent {
@@ -16,6 +18,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLJContentSectionElement extends Components.JContentSection, HTMLStencilElement {
+    }
+    var HTMLJContentSectionElement: {
+        prototype: HTMLJContentSectionElement;
+        new (): HTMLJContentSectionElement;
+    };
     interface HTMLJProseElement extends Components.JProse, HTMLStencilElement {
     }
     var HTMLJProseElement: {
@@ -29,11 +37,14 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "j-content-section": HTMLJContentSectionElement;
         "j-prose": HTMLJProseElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface JContentSection {
+    }
     interface JProse {
     }
     interface MyComponent {
@@ -43,6 +54,7 @@ declare namespace LocalJSX {
         "name"?: string;
     }
     interface IntrinsicElements {
+        "j-content-section": JContentSection;
         "j-prose": JProse;
         "my-component": MyComponent;
     }
@@ -51,6 +63,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "j-content-section": LocalJSX.JContentSection & JSXBase.HTMLAttributes<HTMLJContentSectionElement>;
             "j-prose": LocalJSX.JProse & JSXBase.HTMLAttributes<HTMLJProseElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
