@@ -1,0 +1,16 @@
+:root {
+  --j-c-brand: var(--j-c-teal-500);
+  --j-c-brand-interaction: var(--j-c-teal-600);
+
+  --j-c-bg-layer-b2: var(--j-c-atom-800);
+  --j-c-bg-layer-b1: var(--j-c-atom-700);
+  --j-c-bg-layer-b0: var(--j-c-atom-600);
+  --j-c-bg-layer-0: var(--j-c-atom-500);
+  --j-c-bg-layer-f0: var(--j-c-atom-400);
+  --j-c-bg-layer-f1: var(--j-c-atom-300);
+  --j-c-bg-layer-f2: var(--j-c-atom-100);
+
+  --j-c-text: var(--j-c-mono-200);
+  --j-c-text-empasis: var(--j-c-mono-100);
+  --j-c-text-heading: var(--j-c-mono-100);
+}

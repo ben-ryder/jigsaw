@@ -7,7 +7,7 @@ const Template = () => `
 <j-content-section>
   <j-prose>
     <h1>Design Tokens</h1>
-    <p>Jigsaw has been built mainly using CSS variables such as <code>--j-size-32</code> and <code>--j-atom-500</code>.
+    <p>Jigsaw has been built mainly using CSS variables such as <code>--j-size-32</code> and <code>--j-c-brand</code>.
     While in theory this could allow for easy customisation, in practice I have chosen this approach
     because it lets consuming applications easily use these variables in their own styling.
     </p>

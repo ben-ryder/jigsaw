@@ -14,8 +14,30 @@ export const parameters = {
     values: [
       {
         name: "jigsaw",
-        value: "#272B34"
+        value: "#242830"
       }
     ]
+  },
+  options: {
+    storySort: {
+      order: [
+        "Home",
+        "Design Tokens",
+        "Foundations",
+        [
+          "Identity",
+          "Colours",
+          "Typography",
+          "Spacing and Size",
+          "Borders",
+          "Elevation",
+          "Motion",
+          "Layout"
+        ],
+        "Components",
+        "Templates",
+        "Credits"
+      ]
+    }
   }
 }

@@ -9,7 +9,7 @@ const Template = () => `
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--j-atom-500);
+        background-color: var(--j-c-bg-layer-f1);
         margin: auto;
         margin-bottom: var(--j-size-1);
         width: 70%;
@@ -27,16 +27,16 @@ const Template = () => `
     }
 
     .border-item--width-sm {
-        border: var(--j-border-width-sm) solid var(--j-teal-600);
+        border: var(--j-border-width-sm) solid var(--j-c-brand);
     }
     .border-item--width-md {
-        border: var(--j-border-width-md) solid var(--j-teal-600);
+        border: var(--j-border-width-md) solid var(--j-c-brand);
     }
     .border-item--width-lg {
-        border-top: var(--j-border-width-lg) solid var(--j-teal-600);
+        border-top: var(--j-border-width-lg) solid var(--j-c-brand);
     }
     .border-item--width-xl {
-        border-left: var(--j-border-width-xl) solid var(--j-teal-600);
+        border-left: var(--j-border-width-xl) solid var(--j-c-brand);
     }
   </style>
   <j-content-section>
