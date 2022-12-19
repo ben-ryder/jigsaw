@@ -1,32 +1,39 @@
 :root {
   /* Colours */
-  --j-teal-600: #0D9488;
-  --j-teal-700: #0F766E;
-  --j-teal-800: #115E59;
+  --j-c-teal-300: #3da9a0;
+  --j-c-teal-400: #259f94;
+  --j-c-teal-500: #0d9488;
+  --j-c-teal-600: #0c857a;
+  --j-c-teal-700: #0a766d;
+  --j-c-teal-800: #09685f;
 
-  --j-atom-500: #30333D;
-  --j-atom-600: #2B2F39;
-  --j-atom-700: #272B34;
-  --j-atom-800: #20242B;
-  --j-atom-900: #1A1E24;
+  --j-c-atom-100: #353f4e;
+  --j-c-atom-200: #323a47;
+  --j-c-atom-300: #2e3541;
+  --j-c-atom-400: #2b303b;
+  --j-c-atom-500: #272B34;
+  --j-c-atom-600: #242830;
+  --j-c-atom-700: #21252d;
+  --j-c-atom-800: #1e2229;
+  --j-c-atom-900: #1b1f26;
 
-  --j-blueGrey-400: #9CA3AF;
-  --j-blueGrey-500: #6B7280;
-  --j-blueGrey-600: #4B5563;
-  --j-blueGrey-700: #374151;
-  --j-blueGrey-800: #1F2937;
+  --j-c-blueGrey-300: #A9B4C5;
+  --j-c-blueGrey-400: #929dae;
+  --j-c-blueGrey-500: #7c8697;
+  --j-c-blueGrey-600: #657080;
+  --j-c-blueGrey-700: #4f5969;
+  --j-c-blueGrey-800: #374151;
 
-  --j-whiteGrey-50: #fff;
-  --j-whiteGrey-100: #eee;
-  --j-whiteGrey-200: #ccc;
-  --j-whiteGrey-700: #888;
-  --j-whiteGrey-900: #666;
-
-  --j-blackGrey-500: #444;
-  --j-blackGrey-600: #333;
-  --j-blackGrey-700: #222;
-  --j-blackGrey-800: #111;
-  --j-blackGrey-900: #000;
+  --j-mono-50: #fff;
+  --j-mono-100: #eee;
+  --j-mono-200: #ccc;
+  --j-mono-300: #888;
+  --j-mono-400: #666;
+  --j-mono-500: #444;
+  --j-mono-600: #333;
+  --j-mono-700: #222;
+  --j-mono-800: #111;
+  --j-mono-900: #000;
 
   --j-red-500: #EF4444;
   --j-red-600: #DC2626;

@@ -142,6 +142,11 @@ j-prose {
     margin-bottom: var(--j-size-1);
     line-height: 1.5;
 
+    // Remove bottom margin for nested lists
+    ul {
+      margin-bottom: 0;
+    }
+
     li {
       &::marker {
         font-size: var(--j-text-size-xl);
@@ -192,6 +197,7 @@ j-prose {
 
     td {
       padding: var(--j-size-0-75);
+      vertical-align: middle;
     }
 
     tbody {
