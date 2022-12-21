@@ -7,7 +7,9 @@ export const config: Config = {
   globalStyle: 'src/styles/global.css',
   plugins: [
     sass({
-      injectGlobalPaths: []
+      injectGlobalPaths: [
+        'src/styles/mixins.scss'
+      ]
     })
   ],
   outputTargets: [

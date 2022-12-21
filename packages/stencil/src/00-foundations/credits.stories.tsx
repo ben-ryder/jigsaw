@@ -27,7 +27,11 @@ const Template = () => `
         </ul>
         <li><a href="https://seeds.sproutsocial.com/visual/motion/">seeds.sproutsocial.com</a></li>
         <ul>
-          <li>My motion and animation system is taken from this design system.</li>
+          <li>My current motion and animation system is taken from this design system.</li>
+        </ul>
+        <li><a href="https://ionicframework.com/docs/layout/css-utilities#ionic-breakpoints">ionicframework.com</a></li>
+        <ul>
+          <li>My current breakpoints are taken from this design system.</li>
         </ul>
     </ul>
   </j-prose>

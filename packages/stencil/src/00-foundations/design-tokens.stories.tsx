@@ -1,5 +1,5 @@
 export default {
-  title: 'Design Tokens'
+  title: 'Foundations/Design Tokens'
 };
 
 
