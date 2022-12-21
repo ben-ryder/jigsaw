@@ -9,7 +9,7 @@ const Template = () => `
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--j-c-bg-layer-f1);
+        background-color: var(--j-c-background-f1);
         margin: auto;
         margin-bottom: var(--j-size-1);
         width: 70%;
@@ -27,25 +27,28 @@ const Template = () => `
     }
 
     .border-item--width-sm {
-        border: var(--j-border-width-sm) solid var(--j-c-brand);
+        border: var(--j-border-width-sm) solid var(--j-c-primary);
     }
     .border-item--width-md {
-        border: var(--j-border-width-md) solid var(--j-c-brand);
+        border: var(--j-border-width-md) solid var(--j-c-primary);
     }
     .border-item--width-lg {
-        border-top: var(--j-border-width-lg) solid var(--j-c-brand);
+        border-top: var(--j-border-width-lg) solid var(--j-c-primary);
     }
     .border-item--width-xl {
-        border-left: var(--j-border-width-xl) solid var(--j-c-brand);
+        border-left: var(--j-border-width-xl) solid var(--j-c-primary);
     }
   </style>
   <j-content-section>
     <j-prose>
       <h1>Borders</h1>
-      <p>This is the border system, including width and radius.</p>
+      <p>Borders can be used to separate content and make the interface clearer, but they can also be used decoratively.
+       Jigsaw provides a number of predefined width and radius values.</p>
 
       <h2>Border Radius</h2>
-      <p>The small radius should be used the most and the large radius used the least.</p>
+      <p>Giving something a border radius is a great way to soften up hard edges and make the interface more "friendly".<br>
+      In Jigsaw, the small radius can be used on UI elements like panels to soften up the edges, and the
+      medium radius can be used when a rounded effect is specifically desired such as on form elements or buttons.</p>
       <div class="border-item border-item--radius-sm">
         <p>Small (4px)</p>
         <code>--j-border-radius-sm</code>
@@ -60,8 +63,8 @@ const Template = () => `
       </div>
 
       <h2>Border Width</h2>
-      <p>The small width should be used for most UI elements that need it. The medium is most notably used for form elements
-      and the large and extra large widths are used decoratively and will most often be used on only one side such as the top or left.</p>
+      <p>The small width can be used in most situations. The medium is most notably used for form elements
+      and the large and extra large widths are used decoratively and will most often be used on only one side of the element such as the top or left.</p>
       <div class="border-item border-item--width-sm">
         <p>Small (1px)</p>
         <code>--j-border-width-sm</code>

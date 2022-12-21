@@ -14,7 +14,7 @@ export const parameters = {
     values: [
       {
         name: "jigsaw",
-        value: "#242830"
+        value: "var(--j-c-background);"
       }
     ]
   },
@@ -34,6 +34,7 @@ export const parameters = {
           "Motion",
           "Layout"
         ],
+        "Elements",
         "Components",
         "Templates",
         "Credits"

@@ -7,7 +7,7 @@ const Template = () => `
 <j-content-section>
   <j-prose>
   <h1>Identity</h1>
-<p>I'm not some big corporation that needs to write proper guidelines on copy tone and branding, but I think informally setting out some
+<p>I'm not some big corporation that needs to write guidelines on copy tone and branding, but I think informally setting out some
 high level design and "brand identity" goals might help guide me when thinking about the look and feel of the system and components in general... so I'm gonna go for it.</p>
 
 <p>I want my design system, websites and applications to be:</p>

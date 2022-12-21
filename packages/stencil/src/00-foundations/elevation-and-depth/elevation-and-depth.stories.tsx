@@ -9,7 +9,7 @@ const Template = () => `
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--j-c-bg-layer-f1);
+        background-color: var(--j-c-background-f1);
         margin: auto;
         margin-bottom: var(--j-size-3);
         width: 70%;
@@ -36,18 +36,18 @@ const Template = () => `
       Different shades can be used to mimic how light would work in the real world, so elements
       that appear over the top or "nearer" to the user would use a lighter shade.</p>
 
-      <p>A layer system of <strong>5</strong> shades is provided through the <code>--j-c-layer</code> CSS variables:</p>
+      <p>A layer system of <strong>5</strong> shades is provided through the <code>--j-c-background</code> CSS variables:</p>
       <ul>
-        <li><code>--j-c-layer-b2</code> - The second layer behind the main content.</li>
-        <li><code>--j-c-layer-b1</code> - The first layer below the main content, can be used for a background when the main content layer isn't appropriate.</li>
-        <li><code>--j-c-layer-0</code> - The main content layer, can be used as the background of a page.</li>
-        <li><code>--j-c-layer-f1</code>- The first layer above the main content, can be used for menus, side panels etc.</li>
-        <li><code>--j-c-layer-f2</code> - The second layer above the main content, can be used for popups, modals etc.</li>
+        <li><code>--j-c-background-b2</code> - The second layer behind the main content.</li>
+        <li><code>--j-c-background-b1</code> - The first layer below the main content, can be used for a background when the main content layer isn't appropriate.</li>
+        <li><code>--j-c-background</code> - The main content layer, can be used as the background of a page.</li>
+        <li><code>--j-c-background-f1</code>- The first layer above the main content, can be used for menus, side panels etc.</li>
+        <li><code>--j-c-background-f2</code> - The second layer above the main content, can be used for popups, modals etc.</li>
       </ul>
 
-      <p>There are also two mid-layer colours <code>--j-c-layer-b0</code> and <code>--j-c-layer-f0</code> which can be used when required.<br>
-      For example, tables in the <code>j-prose</code> component have a background of <code>--j-c-layer-f1</code> but every other
-      row has a background of <code>--j-c-layer-f0</code> as this makes the table easier to read.</p>
+      <p>There are also two mid-layer shades <code>--j-c-background-b0</code> and <code>--j-c-background-f0</code> which can be used when required.<br>
+      For example, tables in the <code>j-prose</code> component have a background of <code>--j-c-background-f1</code> but every other
+      row has a background of <code>--j-c-background-f0</code> as this makes the table easier to read.</p>
 
       <h2>Shadows</h2>
       <p>Although shades can be used to coney depth, shadows can also be used as well to enhance this effect.</p>

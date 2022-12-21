@@ -13,16 +13,22 @@ const Template = () => `
     <ul>
         <li><a href="https://www.refactoringui.com/">Refactoring UI</a></li>
         <ul>
-          <li>Some really useful design tips.</li>
-          <li>Predefined spacing and text size systems which I've used.</li>
+          <li>I've used their suggested spacing, text size and shadow systems.</li>
+          <li>Some really useful design tips in general too!</li>
         </ul>
         <li><a href="https://tailwindcss.com/">Tailwind CSS</a></li>
         <ul>
           <li>Used to cross-reference spacing and text size systems.</li>
-          <li>Some colour palettes started with Tailwind colours, but most have been edited.</li>
+          <li>Some of Jigsaw's colour palettes started with Tailwind colours, although all have been modified.</li>
         </ul>
-        <li><a href="https://blog.superhuman.com/how-to-design-delightful-dark-themes/">blog.superhuman.com</a>
-        - Some great tips on how to design a dark mode, especially around achieving elevation and depth.</li>
+        <li><a href="https://blog.superhuman.com/how-to-design-delightful-dark-themes/">blog.superhuman.com</a></li>
+        <ul>
+          <li>Some great tips on how to design a dark mode, especially around achieving elevation and depth with colour.</li>
+        </ul>
+        <li><a href="https://seeds.sproutsocial.com/visual/motion/">seeds.sproutsocial.com</a></li>
+        <ul>
+          <li>My motion and animation system is taken from this design system.</li>
+        </ul>
     </ul>
   </j-prose>
 </j-content-section>

@@ -34,7 +34,7 @@ const Template = () => `
     .size-item span {
         display: block;
         height: var(--j-size-1);
-        background-color: var(--j-c-brand);
+        background-color: var(--j-c-primary);
         margin-right: var(--j-size-0-5);
     }
     .size-items {

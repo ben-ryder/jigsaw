@@ -40,14 +40,15 @@ const Template = () => `
    <j-prose>
     <h1>Typography</h1>
     <p>Jigsaw uses a <a href="https://meyerweb.com/eric/tools/css/reset/">CSS reset</a> in order to remove all the
-    default browser styling, which includes things like heading styles, bold, italics etc. This means that there is
-    no need to fight against default browser styles all the time.
+    default browser styling, which includes things like heading styles, bold, italics etc. This is done to avoid
+    having to fight against default browser styles all the time.
     </p>
 
-    <p>We still need those styles though, and we do! There is <b>bold text here</b> and
-    some <i>italics text here as well</i>. In order to get this styling the <code>j-prose</code> component can be used.</p>
+    <h2>Text Styling</h2>
+    <p>Text styles for content including header sizes, bold, italics etc are provided by the <code><a href="/?path=/story/components-prose--prose">j-prose</a></code> component (inspired by <code><a href="https://tailwindcss.com/docs/typography-plugin">@tailwind/typography</a></code>)
+    which lets you easily apply text styles to things like WYSIWYG outputs, converted markdown content or even just harcoded content that needs it.</p>
 
-    <h2>Font</h2>
+    <h2>Fonts</h2>
     <p>The primary font is <b>Source Sans Pro</b> which is used throughout the design system.</p>
 
     <h2>Text Sizes</h2>

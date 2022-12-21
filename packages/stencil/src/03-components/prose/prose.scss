@@ -10,18 +10,18 @@ j-prose {
   strong,
   b {
     font-weight: bold;
-    color: var(--j-c-text-empasis);
+    color: var(--j-c-text-emphasis);
   }
 
   em,
   i {
     font-style: italic;
-    color: var(--j-c-text-empasis);
+    color: var(--j-c-text-emphasis);
   }
 
   h1 {
     font-size: var(--j-text-size-4xl);
-    color: var(--j-c-text-empasis);
+    color: var(--j-c-text-heading);
     font-weight: bold;
     margin-top: var(--j-size-2);
     margin-bottom: var(--j-size-1);
@@ -30,7 +30,7 @@ j-prose {
 
   h2 {
     font-size: var(--j-text-size-3xl);
-    color: var(--j-c-text-empasis);
+    color: var(--j-c-text-heading);
     font-weight: bold;
     margin-top: var(--j-size-2);
     margin-bottom: var(--j-size-0-5);
@@ -39,7 +39,7 @@ j-prose {
 
   h3 {
     font-size: var(--j-text-size-xl);
-    color: var(--j-c-text-empasis);
+    color: var(--j-c-text-heading);
     font-weight: bold;
     line-height: 1.5;
     margin-top: var(--j-size-1-5);
@@ -48,7 +48,7 @@ j-prose {
 
   h4 {
     font-size: var(--j-text-size-lg);
-    color: var(--j-c-text-empasis);
+    color: var(--j-c-text-heading);
     font-weight: bold;
     line-height: 1.75;
     margin-top: var(--j-size-0-75);
@@ -62,11 +62,11 @@ j-prose {
   }
 
   blockquote {
-    border-left: var(--j-border-width-xl) solid var(--j-c-brand);
+    border-left: var(--j-border-width-xl) solid var(--j-c-primary);
     display: block;
     padding: var(--j-size-0-75);
     padding-left: var(--j-size-1);
-    background-color: var(--j-c-bg-layer-f1);
+    background-color: var(--j-c-background-f1);
     font-style: italic;
     margin-bottom: var(--j-size-1);
     border-top-right-radius: var(--j-border-radius-sm);
@@ -78,8 +78,8 @@ j-prose {
   }
 
   figcaption {
-    border-top: var(--j-border-width-lg) solid var(--j-c-brand);
-    background-color: var(--j-c-bg-layer-f1);
+    border-top: var(--j-border-width-lg) solid var(--j-c-primary);
+    background-color: var(--j-c-background-f1);
     font-size: var(--j-text-size-sm);
     font-style: italic;
     color: var(--j-c-text);
@@ -92,7 +92,7 @@ j-prose {
 
   code {
     font-family: monospace;
-    background-color: var(--j-c-bg-layer-b1);
+    background-color: var(--j-c-background-b1);
     padding: var(--j-size-0-25) var(--j-size-0-5);
     border-radius: var(--j-border-radius-sm);
     color: var(--j-c-text);
@@ -112,18 +112,18 @@ j-prose {
 
   a {
     color: var(--j-c-text);
-    text-decoration-color: var(--j-c-brand);
+    text-decoration-color: var(--j-c-primary);
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
     font-weight: bold;
 
     &:hover,
     &:focus {
-      color: var(--j-c-brand);
+      color: var(--j-c-primary);
 
       // Ensure the hover styles still applies when a <code> tag is within the link
       code {
-        color: var(--j-c-brand);
+        color: var(--j-c-primary);
       }
     }
   }
@@ -132,7 +132,7 @@ j-prose {
     color: var(--j-c-text);
 
     &::marker {
-      color: var(--j-c-brand);
+      color: var(--j-c-primary);
     }
   }
 
@@ -170,22 +170,23 @@ j-prose {
   }
 
   hr {
-    border: var(--j-border-width-lg) solid var(--j-c-bg-layer-f1);
+    border: var(--j-border-width-lg) solid var(--j-c-background-f1);
     border-radius: var(--j-border-radius-sm);
     margin-top: var(--j-size-2);
     margin-bottom: var(--j-size-2);
   }
 
   table {
-    background-color: var(--j-c-bg-layer-f1);
+    background-color: var(--j-c-background-f1);
     color: var(--j-c-text);
     width: 100%;
     margin-bottom: var(--j-size-1);
     border-radius: var(--j-border-radius-sm);
+    line-height: 1.5;
 
     thead {
       tr {
-        border-bottom: var(--j-border-width-lg) solid var(--j-c-brand);
+        border-bottom: var(--j-border-width-lg) solid var(--j-c-primary);
       }
     }
 
@@ -202,7 +203,7 @@ j-prose {
 
     tbody {
       tr:nth-child(2n) {
-        background-color: var(--j-c-bg-layer-f0);
+        background-color: var(--j-c-background-f0);
       }
     }
   }

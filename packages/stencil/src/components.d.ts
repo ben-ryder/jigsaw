@@ -6,18 +6,21 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface JButton {
+        "styling"?: ButtonStyling;
+    }
     interface JContentSection {
     }
     interface JProse {
     }
-    interface MyComponent {
-        /**
-          * The name
-         */
-        "name": string;
-    }
 }
 declare global {
+    interface HTMLJButtonElement extends Components.JButton, HTMLStencilElement {
+    }
+    var HTMLJButtonElement: {
+        prototype: HTMLJButtonElement;
+        new (): HTMLJButtonElement;
+    };
     interface HTMLJContentSectionElement extends Components.JContentSection, HTMLStencilElement {
     }
     var HTMLJContentSectionElement: {
@@ -30,42 +33,33 @@ declare global {
         prototype: HTMLJProseElement;
         new (): HTMLJProseElement;
     };
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
-    }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
-    };
     interface HTMLElementTagNameMap {
+        "j-button": HTMLJButtonElement;
         "j-content-section": HTMLJContentSectionElement;
         "j-prose": HTMLJProseElement;
-        "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface JButton {
+        "styling"?: ButtonStyling;
+    }
     interface JContentSection {
     }
     interface JProse {
     }
-    interface MyComponent {
-        /**
-          * The name
-         */
-        "name"?: string;
-    }
     interface IntrinsicElements {
+        "j-button": JButton;
         "j-content-section": JContentSection;
         "j-prose": JProse;
-        "my-component": MyComponent;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "j-button": LocalJSX.JButton & JSXBase.HTMLAttributes<HTMLJButtonElement>;
             "j-content-section": LocalJSX.JContentSection & JSXBase.HTMLAttributes<HTMLJContentSectionElement>;
             "j-prose": LocalJSX.JProse & JSXBase.HTMLAttributes<HTMLJProseElement>;
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
 }
