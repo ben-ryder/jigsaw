@@ -11,7 +11,7 @@ const Template = () => `
     While in theory this could allow for easy customisation, in practice I have chosen this approach
     right now because it lets consuming applications easily use these variables in their own styling without having
     to worry about tooling.
-    In the future I may switch to primarily using SASS variables for the base foundations and only exposing some aspects
+    In the future I may switch to primarily using Sass variables for the base foundations and only exposing some aspects
     of the library via CSS variables.
     </p>
 

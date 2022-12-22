@@ -14,5 +14,12 @@
     "build": "npm run build:sass && npm run build:fractal",
     "build:fractal": "fractal build",
     "build:sass": "sass patterns/main.scss dist/css/jigsaw.css"
-  }
+  },
+  "files": [
+    "patterns/**/*.toolkit.scss",
+    "patterns/toolkit.scss",
+    "dist",
+    "README.md",
+    "LICENSE.txt"
+  ]
 }

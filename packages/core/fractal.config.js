@@ -23,7 +23,7 @@ const statuses = {
 }
 
 // Basic Configuration
-fractal.set('project.title', '@ben-ryder/jigsaw');
+fractal.set('project.title', 'Jigsaw');
 
 // Component Config
 fractal.components.set('path', path.join(__dirname, 'patterns'));
