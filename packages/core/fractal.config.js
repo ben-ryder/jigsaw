@@ -2,23 +2,23 @@
 
 const path = require('path');
 const fractal = module.exports = require('@frctl/fractal').create();
-
+const mandelbrot = require('@frctl/mandelbrot');
 
 const statuses = {
     development: {
         label: "In Development",
         description: "In development and not ready for use.",
-        color: "#FF3333"
+        color: "#df3333"
     },
     unstable: {
         label: "Unstable",
         description: "Is ready for use but is unstable and subject to change.",
-        color: "#FF9233"
+        color: "#e1762b"
     },
     stable: {
         label: "Stable",
         description: "Stable and ready to use.",
-        color: "#29CC29"
+        color: "#3d854d"
     }
 }
 
@@ -38,6 +38,31 @@ fractal.docs.set('statuses', statuses);
 fractal.docs.set('default.status', 'development');
 
 
-// Web UI configuration
+// Web UI Configuration
 fractal.web.set('static.path', path.join(__dirname, 'dist'));
 fractal.web.set('builder.dest', path.join(__dirname, 'build'));
+
+// Theme Configuration
+const jigsawTheme = mandelbrot({
+    nav: ['search', 'docs', 'components', 'information'],
+    panels: ['notes', 'html', 'view', 'context'],
+    information: [
+        {
+            label: 'Version',
+            value: require('./package.json').version
+        },
+        {
+            label: 'Published',
+            value: new Date(),
+            type: 'time', // Outputs a <time /> HTML tag
+            format: (value) => {
+                return value.toLocaleDateString('en');
+            }
+        }
+    ],
+    styles: [
+        'default',
+        '/css/development.css'
+    ]
+});
+fractal.web.theme(jigsawTheme);
