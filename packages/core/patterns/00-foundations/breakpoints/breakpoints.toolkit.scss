@@ -1,0 +1,25 @@
+
+$j-breakpoint-sm: 576px;
+$j-breakpoint-md: 768px;
+$j-breakpoint-lg: 992px;
+$j-breakpoint-xl: 1200px;
+
+
+$breakpoints: (
+  'sm': $j-breakpoint-sm,
+  'md': $j-breakpoint-md,
+  'lg': $j-breakpoint-lg,
+  'xl': $j-breakpoint-xl
+) !default;
+
+
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+  @else {
+    @warn "`#{$breakpoint}` is not a valid breakpoint identifier. ";
+  }
+}

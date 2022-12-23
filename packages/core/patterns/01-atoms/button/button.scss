@@ -1,0 +1,65 @@
+@use "../../00-foundations/colours/theme.toolkit" as *;
+@use "../../00-foundations/borders/borders.toolkit" as *;
+@use "../../00-foundations/elevation-and-depth/elevation-and-depth.toolkit" as *;
+@use "../../00-foundations/typography/typography.toolkit" as *;
+@use "../../00-foundations/size-and-spacing/size-and-spacing.toolkit" as *;
+
+
+.j-button {
+  padding: $j-size-0-5 $j-size-0-75;
+  font-weight: bold;
+  font-size: $j-text-size-rg;
+  background: $j-c-primary;
+  color: $j-c-primary-text;
+  border-radius: $j-border-radius-md;
+  border: $j-border-width-md solid $j-c-primary;
+  box-shadow: $j-shadow-md;
+
+  &:hover {
+    cursor: pointer;
+    background: $j-c-primary-interaction;
+    color: $j-c-primary-interaction-text;
+    border-color: $j-c-primary-interaction;
+    box-shadow: none;
+  }
+
+  &--secondary {
+    background: $j-c-secondary;
+    color: $j-c-secondary-text;
+    border-color: $j-c-secondary;
+
+    &:hover {
+      background: $j-c-secondary-interaction;
+      color: $j-c-secondary-interaction-text;
+      border-color: $j-c-secondary-interaction;
+    }
+  }
+
+  &--destructive {
+    background: $j-c-destructive;
+    color: $j-c-destructive-text;
+    border-color: $j-c-destructive;
+
+    &:hover {
+      background: $j-c-destructive-interaction;
+      color: $j-c-destructive-interaction-text;
+      border-color: $j-c-destructive-interaction;
+    }
+  }
+
+  &--tertiary {
+    background: transparent;
+    color: $j-c-tertiary;
+    border-color: transparent;
+    box-shadow: none;
+
+    &:hover {
+      background: transparent;
+      color: $j-c-tertiary;
+      border-color: transparent;
+      text-decoration: underline;
+      text-decoration-thickness: $j-border-width-md;
+      text-underline-offset: $j-border-width-md;
+    }
+  }
+}

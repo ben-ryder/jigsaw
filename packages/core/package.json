@@ -2,17 +2,19 @@
   "name": "@ben-ryder/jigsaw",
   "version": "0.1.0",
   "scripts": {
-    "start": "concurrently 'npm:start:*'",
+    "start": "npm run build:assets && concurrently 'npm:start:*'",
     "start:fractal": "fractal start --sync --watch",
     "start:sass": "sass patterns/main.scss:dist/css/jigsaw.css patterns/development.scss:dist/css/development.css --watch",
-    "build": "npm run build:sass && npm run build:fractal && npm run build:toolkit",
+    "build": "npm run build:sass && npm run build:fractal",
     "build:fractal": "fractal build",
     "build:sass": "sass patterns/main.scss dist/css/jigsaw.css",
-    "build:toolkit": "mkdir -p dist/scss && cat `find . -name '*.toolkit.scss'` > dist/scss/toolkit.scss"
+    "build:assets": "gulp assets"
   },
   "files": [
     "dist/scss",
     "dist/css/jigsaw.*",
+    "patterns/toolkit.scss",
+    "patterns/**/*.toolkit.scss",
     "README.md",
     "LICENSE.txt"
   ],
@@ -20,6 +22,8 @@
     "@frctl/fractal": "^1.5.14",
     "@frctl/mandelbrot": "^1.10.2",
     "concurrently": "^7.6.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
     "rimraf": "^3.0.2",
     "sass": "^1.57.1"
   }
