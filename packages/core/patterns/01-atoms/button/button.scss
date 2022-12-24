@@ -77,15 +77,15 @@
 
   &:not(.j-button--tertiary)[disabled],
   &:not(.j-button--tertiary).j-button--loading {
-    background-color: $j-c-mono-300;
-    color: $j-c-mono-600;
-    border-color: $j-c-mono-300;
+    background-color: $j-c-disabled;
+    color: $j-c-disabled-text;
+    border-color: $j-c-disabled;
 
     &:hover,
     &.j-button:hover {
-      background-color: $j-c-mono-300;
-      color: $j-c-mono-600;
-      border-color: $j-c-mono-300;
+      background-color: $j-c-disabled;
+      color: $j-c-disabled-text;
+      border-color: $j-c-disabled;
       cursor: initial;
       box-shadow: $j-shadow-md;
       text-decoration: none;

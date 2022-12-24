@@ -15,10 +15,9 @@ This is the core Jigsaw package that provides a CSS file and SCSS toolkit.
 The quickest way to get started with Jigsaw is simply by loading the `jigsaw.css` file into your application/website
 which will then give you access to all the component styling.
 
-### Sass Toolkit 
-It's possible that the consuming application will need to access the pattern library design tokens for
-custom components and styling. This can be done by including the `toolkit.scss` file in the Sass files
-of that project.
+### Sass Files 
+It's possible that the consuming application will need to access the Sass design tokens for
+custom components and styling. This can be done by including the relevant `.scss` file from the package.
 
 ## @ben-ryder/jigsaw-react
 - This library implements React-specific versions of the Jigsaw components for easy use in React applications.

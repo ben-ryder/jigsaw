@@ -31,6 +31,11 @@
                 <ul>
                     <li><code>$j-c-tertiary</code> - The colour of any tertiary things like the "tertiary" button type. There are no other colour states as tertiary actions have more basic styling.</li>
                 </ul>
+                <li><strong>Disabled</strong>:</li>
+                <ul>
+                    <li><code>$j-c-disabled</code> - The colour of disabled UI elements.</li>
+                    <li><code>$j-c-disabled-text</code> - The text colour of disabled UI elements.</li>
+                </ul>
             </ul>
             <li><strong>Background & UI</strong>:</li>
             <ul>
@@ -75,13 +80,15 @@
             </tr>
             </thead>
             <tbody>
-            ${colours.map(colour => `
-            <tr>
-                <td><span style="background-color: var(${colour.token});"></span></td>
-                <td><code>${colour.token}</code></td>
-                <td><code>${colour.hexCode}</td>
-            </tr>
-            `).join("")}
+            {{#each colours}}
+                {{#each shades}}
+                    <tr>
+                        <td><span style="background-color: {{value}};"></span></td>
+                        <td><code>{{identifier}}</code></td>
+                        <td><code>{{value}}</td>
+                    </tr>
+                {{/each}}
+            {{/each}}
             </tbody>
         </table>
 
