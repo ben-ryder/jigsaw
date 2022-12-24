@@ -1,33 +1,33 @@
 @use "typography.toolkit" as *;
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro-Regular.ttf") format("truetype");
+  font-family: "Open Sans";
+  src: url("/fonts/open-sans.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro-Bold.ttf") format("truetype");
+  font-family: "Open Sans";
+  src: url("/fonts/open-sans-bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro-Italic.ttf") format("truetype");
+  font-family: "Open Sans";
+  src: url("/fonts/open-sans-italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Source Sans Pro";
-  src: url("/fonts/SourceSansPro-BoldItalic.ttf") format("truetype");
+  font-family: "Open Sans";
+  src: url("/fonts/open-sans-bold-italic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
 
-* {
+body {
   font-family: $j-text-font-primary;
 }

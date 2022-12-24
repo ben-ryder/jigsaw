@@ -1,0 +1,124 @@
+
+.Header {
+  background-color: #2b303b;
+  color: #fff;
+  box-shadow: none;
+  border-bottom: 2px solid #0c857a;
+}
+
+.Frame-panel--sidebar {
+  background-color: #2b303b;
+  color: #fff;
+}
+
+.Frame-panel--main, .Pen {
+  background-color: #242830;
+  color: #fff;
+}
+
+.Pen-previewLink {
+  color: #fff !important;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  svg {
+    fill: #0c857a;
+    opacity: 1;
+  }
+}
+
+.Pen-info {
+  background-color: #2b303b;
+
+  .Browser-tab {
+    a {
+      color: #fff !important;
+      border-bottom-width: 4px;
+
+      &:hover {
+        text-decoration: underline;
+        border-bottom-color: transparent;
+      }
+    }
+
+    &.is-active {
+      a {
+        border-bottom-color: #0d9488;
+      }
+    }
+
+  }
+}
+
+.Preview {
+  border-color: #374151;
+}
+.Preview-iframe {
+  background-color: #242830;
+  padding: 10px;
+}
+
+.Search-input {
+  background-color: #242830;
+  color: #fff;
+  border-color: #374151;
+}
+
+.Tree-item {
+  a {
+    color: #fff;
+  }
+
+  &.is-current {
+    background-color: #0d9488;
+  }
+}
+
+.Tree-title {
+  color: #fff;
+}
+
+.Status-dot {
+  border-width: 4px;
+}
+
+.Prose {
+  a {
+    color: #fff;
+    text-decoration-color: #0d9488;
+    font-weight: bold;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: #0d9488;
+    }
+  }
+
+  code {
+    background-color: #1e2229;
+    padding: 2px 4px;
+  }
+
+  h1, h2, h3, h4 {
+    color: #fff;
+  }
+}
+.Pen-panel {
+  border-color: #374151;
+}
+
+.Browser-notes {
+  background-color: #242830;
+  color: #fff;
+}
+
+.Document-title {
+  color: #fff;
+}
+
+.Tree-collectionLabel {
+  color: #fff;
+}

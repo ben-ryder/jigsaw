@@ -1,0 +1,38 @@
+@use "borders.toolkit" as *;
+@use "../typography/typography.toolkit" as *;
+@use "../size-and-spacing/size-and-spacing.toolkit" as *;
+@use "../colours/theme.toolkit" as *;
+
+.border-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $j-c-background-f1;
+  margin: auto auto $j-size-1;
+  width: 70%;
+  height: $j-size-6;
+}
+
+.border-item--radius-sm {
+  border-radius: $j-border-radius-sm;
+}
+.border-item--radius-md {
+  border-radius: $j-border-radius-md;
+}
+.border-item--radius-lg {
+  border-radius: $j-border-radius-lg;
+}
+
+.border-item--width-sm {
+  border: $j-border-width-sm solid $j-c-primary;
+}
+.border-item--width-md {
+  border: $j-border-width-md solid $j-c-primary;
+}
+.border-item--width-lg {
+  border-top: $j-border-width-lg solid $j-c-primary;
+}
+.border-item--width-xl {
+  border-left: $j-border-width-xl solid $j-c-primary;
+}

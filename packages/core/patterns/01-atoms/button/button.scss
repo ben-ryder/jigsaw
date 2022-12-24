@@ -3,12 +3,14 @@
 @use "../../00-foundations/elevation-and-depth/elevation-and-depth.toolkit" as *;
 @use "../../00-foundations/typography/typography.toolkit" as *;
 @use "../../00-foundations/size-and-spacing/size-and-spacing.toolkit" as *;
-
+@use "../../00-foundations/colours/colours.toolkit" as *;
+@use "../../00-foundations/motion/motion.toolkit" as *;
 
 .j-button {
   padding: $j-size-0-5 $j-size-0-75;
+  font-family: $j-text-font-primary;
   font-weight: bold;
-  font-size: $j-text-size-rg;
+  font-size: $j-text-size-sm;
   background: $j-c-primary;
   color: $j-c-primary-text;
   border-radius: $j-border-radius-md;
@@ -60,6 +62,48 @@
       text-decoration: underline;
       text-decoration-thickness: $j-border-width-md;
       text-underline-offset: $j-border-width-md;
+    }
+
+    &.j-button--loading,
+    &[disabled] {
+      color: $j-c-mono-300;
+
+      &:hover {
+        text-decoration: none;
+        cursor: initial;
+      }
+    }
+  }
+
+  &:not(.j-button--tertiary)[disabled],
+  &:not(.j-button--tertiary).j-button--loading {
+    background-color: $j-c-mono-300;
+    color: $j-c-mono-600;
+    border-color: $j-c-mono-300;
+
+    &:hover,
+    &.j-button:hover {
+      background-color: $j-c-mono-300;
+      color: $j-c-mono-600;
+      border-color: $j-c-mono-300;
+      cursor: initial;
+      box-shadow: $j-shadow-md;
+      text-decoration: none;
+    }
+  }
+
+  &--loading {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    .j-icon {
+      width: $j-text-size-rg;
+      height: $j-text-size-rg;
+      margin-left: $j-size-0-5;
+      stroke-width: 3px;
+
+      @include j-animation-spin();
     }
   }
 }

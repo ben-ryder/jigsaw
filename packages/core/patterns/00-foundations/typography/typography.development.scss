@@ -1,0 +1,32 @@
+@use "typography.toolkit" as *;
+
+.text-xs {
+  font-size: $j-text-size-xs !important;
+}
+.text-sm {
+  font-size: $j-text-size-sm !important;
+}
+.text-rg {
+  font-size: $j-text-size-rg !important;
+}
+.text-md {
+  font-size: $j-text-size-md !important;
+}
+.text-lg {
+  font-size: $j-text-size-lg !important;
+}
+.text-xl {
+  font-size: $j-text-size-xl !important;
+}
+.text-2xl {
+  font-size: $j-text-size-2xl !important;
+  line-height: 1.5;
+}
+.text-3xl {
+  font-size: $j-text-size-3xl !important;
+  line-height: 1.5;
+}
+.text-4xl {
+  font-size: $j-text-size-4xl !important;
+  line-height: 1.5;
+}

@@ -1,6 +1,9 @@
+@use "reset.css";
 
 @use "00-foundations/typography/typography";
 
 @use "01-atoms/button/button";
 
-@use "02-components/example/example.component";
+@use "02-components/prose/prose";
+
+@use "03-templates/content-section/content-section";
