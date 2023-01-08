@@ -1,0 +1,51 @@
+@use "../../00-foundations/colours/theme.toolkit" as *;
+@use "../../00-foundations/colours/colours.toolkit" as *;
+@use "../../00-foundations/size-and-spacing/size-and-spacing.toolkit" as *;
+@use "../../00-foundations/borders/borders.toolkit" as *;
+
+.j-badge {
+  display: inline-block;
+  background-color: $j-c-primary;
+  color: $j-c-primary-text;
+  padding: $j-size-0-5 $j-size-0-5;
+  border-radius: $j-border-radius-md;
+
+  &--blueGrey {
+    background-color: $j-c-blueGrey-700;
+  }
+
+  &--white {
+    background-color: $j-c-mono-50;
+    color: $j-c-mono-900;
+  }
+
+  &--red {
+    background-color: $j-c-red-500;
+  }
+
+  &--green {
+    background-color: $j-c-green-500;
+  }
+
+  &--orange {
+    background-color: $j-c-orange-500;
+  }
+
+  &--yellow {
+    background-color: $j-c-yellow-500;
+    color: $j-c-mono-900;
+  }
+
+  &--blue {
+    background-color: $j-c-blue-500;
+  }
+
+  &--purple {
+    background-color: $j-c-purple-500;
+  }
+
+  &--pink {
+    background-color: $j-c-pink-500;
+  }
+
+}
