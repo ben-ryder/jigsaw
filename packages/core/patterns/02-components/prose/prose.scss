@@ -68,6 +68,8 @@
     display: block;
     width: 100%;
     height: auto;
+    border-top-right-radius: $j-border-radius-sm;
+    border-top-left-radius: $j-border-radius-sm;
   }
 
   blockquote {

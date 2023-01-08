@@ -1,0 +1,56 @@
+@use "../../00-foundations/colours/theme.toolkit" as *;
+@use "../../00-foundations/colours/colours.toolkit" as *;
+@use "../../00-foundations/size-and-spacing/size-and-spacing.toolkit" as *;
+@use "../../00-foundations/borders/borders.toolkit" as *;
+
+.j-accordion {
+  color: $j-c-primary-text;
+  border-bottom: $j-border-width-sm solid $j-c-blueGrey-700;
+
+  &__item {
+    &[open] {
+      .j-accordion__item-title {
+        border-bottom: $j-border-width-sm solid $j-c-blueGrey-700;
+      }
+
+      .j-accordion__open-icon {
+        display: none;
+      }
+
+      .j-accordion__close-icon {
+        display: block;
+      }
+    }
+  }
+
+  &__item-title {
+    padding: $j-size-0-75 $j-size-0-5;
+    border-top: $j-border-width-sm solid $j-c-blueGrey-700;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::marker {
+      content: "";
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: $j-c-background-f1;
+    }
+
+    &:focus-visible {
+      outline: none;
+      background-color: $j-c-background-f1;
+    }
+  }
+
+  &__item-content {
+    margin: $j-size-1 $j-size-1-5;
+  }
+
+  &__close-icon {
+    display: none;
+  }
+}
