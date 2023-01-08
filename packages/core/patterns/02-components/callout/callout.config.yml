@@ -1,1 +1,10 @@
 status: unstable
+context:
+  modifier: null
+variants:
+  - name: Danger
+    context:
+      modifier: danger
+  - name: Warning
+    context:
+      modifier: warning

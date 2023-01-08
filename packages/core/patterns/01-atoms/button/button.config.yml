@@ -2,3 +2,14 @@ title: Button
 status: unstable
 context:
     text: Example
+    modifier: null
+variants:
+    - name: Secondary
+      context:
+        modifier: secondary
+    - name: Tertiary
+      context:
+        modifier: tertiary
+    - name: Destructive
+      context:
+        modifier: destructive
