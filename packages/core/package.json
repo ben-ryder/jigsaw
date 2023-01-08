@@ -7,7 +7,7 @@
     "start:sass": "sass patterns/main.scss:dist/css/jigsaw.css patterns/development.scss:dist/css/development.css --watch",
     "build": "npm run build:sass && npm run build:fractal",
     "build:fractal": "fractal build",
-    "build:sass": "sass patterns/main.scss dist/css/jigsaw.css",
+    "build:sass": "sass patterns/main.scss:dist/css/jigsaw.css patterns/development.scss:dist/css/development.css",
     "build:assets": "gulp assets"
   },
   "files": [
