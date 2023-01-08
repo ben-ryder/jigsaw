@@ -1,0 +1,5 @@
+@use "../form-element.toolkit" as *;
+
+.j-textarea {
+  @include form-element();
+}
