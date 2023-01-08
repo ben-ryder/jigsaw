@@ -27,6 +27,8 @@ fractal.set('project.title', 'Jigsaw');
 
 // Component Config
 fractal.components.set('path', path.join(__dirname, 'patterns'));
+fractal.components.engine("@frctl/nunjucks");
+fractal.components.set("ext", ".njk");
 fractal.components.set('label', 'Patterns');
 fractal.components.set('title', 'Patterns');
 fractal.components.set('statuses', statuses);

@@ -17,12 +17,12 @@
         </p>
 
         <div class="size-items">
-            {{#each sizes}}
+            {% for size in sizes %}
                 <div class="size-item">
-                    <span style="min-width: calc(16px * {{value}})"></span>
-                    <code>{{identifier}}</code>
+                    <span style="min-width: calc(16px * {{size.value}})"></span>
+                    <code>{{size.identifier}}</code>
                 </div>
-            {{/each}}
+            {% endfor %}
         </div>
     </div>
 </div>

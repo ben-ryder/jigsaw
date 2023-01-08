@@ -80,15 +80,15 @@
             </tr>
             </thead>
             <tbody>
-            {{#each colours}}
-                {{#each shades}}
+            {% for colour in colours %}
+                {% for shade in colour.shades %}
                     <tr>
-                        <td><span style="background-color: {{value}};"></span></td>
-                        <td><code>{{identifier}}</code></td>
-                        <td><code>{{value}}</td>
+                        <td><span style="background-color: {{shade.value}};"></span></td>
+                        <td><code>{{shade.identifier}}</code></td>
+                        <td><code>{{shade.value}}</td>
                     </tr>
-                {{/each}}
-            {{/each}}
+                {% endfor %}
+            {% endfor %}
             </tbody>
         </table>
 
