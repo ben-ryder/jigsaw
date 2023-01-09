@@ -18,3 +18,8 @@
 @use "02-components/prose/prose";
 
 @use "03-templates/content-section/content-section";
+
+@use "00-foundations/colours/theme.toolkit" as *;
+html {
+  background-color: $j-c-background;
+}
