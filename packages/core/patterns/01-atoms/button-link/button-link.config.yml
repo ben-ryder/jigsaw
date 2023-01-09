@@ -2,6 +2,7 @@ title: Button Link
 status: unstable
 context:
     text: Example
+    link: "#"
     modifier: null
 variants:
     - name: Secondary
