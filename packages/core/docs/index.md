@@ -10,12 +10,24 @@ It aims to provide a universal design system and component library that I can us
 You can explore the design system and all the component styling using this website.  
 To learn more and have a peek at the code, check out the [GitHub Repository](https://github.com/Ben-Ryder/jigsaw).
 
+## Component Statuses
+<div class="j-prose">
+    <table>
+        <thead><tr><th>Badge</th><th>Meaning</th></tr></thead>
+        <tbody>
+        <tr><td><div class="j-badge j-badge--red">in development</div></td><td>The component is in active development and is not complete.</td></tr>
+        <tr><td><div class="j-badge j-badge--orange">unstable</div></td><td>The component is done for now but is considered unstable and subject to change. Use with caution.</td></tr>
+        <tr><td><div class="j-badge j-badge--stable">stable</div></td><td>The component is in a stable form and is fine for use.</td></tr>
+        </tbody>
+    </table>
+</div>
+
 ## Project Structure
 The main idea behind the structure of Jigsaw is that I want to build a design system and component library
 which is not tied to any one framework or technology because I like to try out different frameworks
 and tools and I don't want to have to re-implement Jigsaw from scratch every time.
 
-To build a cross-framework design system and component library I need to use framework-agnostic tools, so I use pure HTML and CSS (well Handlebars and Sass for development, but close enough).  
+To build a cross-framework design system and component library I need to use framework-agnostic tools, so I use pure HTML and CSS (well Nunjucks and Sass for development, but close enough).  
 The core package `@ben-ryder/jigsaw` is developed using [Fractal](https://fractal.build/) and
 the package published to NPM contains:
 - `dist/jigsaw.css` - A single CSS file containing all the library styles.

@@ -1,9 +1,11 @@
 # Jigsaw
 A design system and component library for use in my personal projects.
 
+[Explore Design System & Components](https://jigsaw.benryder.dev/)
+
 ## Packages
-- `@ben-ryder/jigsaw` (`packages/stencil`) - The main Stencil project, published to npm it is the standard web components package.
-- `@ben-ryder/jigsaw-react` (`packages/stencil-react`) - A React version of the component library.
+- `@ben-ryder/jigsaw` (`packages/core`) - The core package of Jigsaw which is pure HTML & CSS, built using [Fractal](https://fractal.build).
+- `@ben-ryder/jigsaw-react` (`packages/react`) - A React component library which wraps the pure HTML/CSS component in React specific interfaces.
 
 ## Contributions
 This project is currently open source, not open contribution.  
