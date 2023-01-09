@@ -5,7 +5,7 @@
     "start": "npm run build:assets && concurrently 'npm:start:*'",
     "start:fractal": "fractal start --sync --watch",
     "start:sass": "sass patterns/main.scss:dist/css/jigsaw.css patterns/development.scss:dist/css/development.css --watch",
-    "build": "npm run build:sass && npm run build:fractal",
+    "build": "npm run build:sass && npm run build:fractal && npm run build:assets",
     "build:fractal": "fractal build",
     "build:sass": "sass patterns/main.scss:dist/css/jigsaw.css patterns/development.scss:dist/css/development.css",
     "build:assets": "gulp assets"
