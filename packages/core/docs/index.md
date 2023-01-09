@@ -17,7 +17,7 @@ To learn more and have a peek at the code, check out the [GitHub Repository](htt
         <tbody>
         <tr><td><div class="j-badge j-badge--red">in development</div></td><td>The component is in active development and is not complete.</td></tr>
         <tr><td><div class="j-badge j-badge--orange">unstable</div></td><td>The component is done for now but is considered unstable and subject to change. Use with caution.</td></tr>
-        <tr><td><div class="j-badge j-badge--stable">stable</div></td><td>The component is in a stable form and is fine for use.</td></tr>
+        <tr><td><div class="j-badge j-badge--green">stable</div></td><td>The component is in a stable form and is fine for use.</td></tr>
         </tbody>
     </table>
 </div>
