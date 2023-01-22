@@ -1,4 +1,9 @@
+# Node
 node_modules
 
+# Build
 /dist
 /build
+
+# NPM Packages
+/*.tgz

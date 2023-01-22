@@ -1,6 +1,17 @@
 {
   "name": "@ben-ryder/jigsaw",
-  "version": "0.5.0",
+  "version": "0.9.0",
+  "description": "A design system and component library for use in my personal projects.",
+  "author": "Ben-Ryder",
+  "license": "AGPL-3.0-only",
+  "homepage": "https://github.com/Ben-Ryder/jigsaw#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ben-Ryder/jigsaw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ben-Ryder/jigsaw/issues"
+  },
   "scripts": {
     "start": "npm run build:assets && concurrently 'npm:start:*'",
     "start:fractal": "fractal start --sync --watch",
@@ -13,6 +24,7 @@
   "files": [
     "dist/scss",
     "dist/css/jigsaw.*",
+    "dist/fonts",
     "patterns/toolkit.scss",
     "patterns/**/*.toolkit.scss",
     "README.md",
