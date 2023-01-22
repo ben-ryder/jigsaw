@@ -1,8 +1,0 @@
-@import "./reset.css";
-
-@import "../00-foundations/colours/colours.css";
-@import "../00-foundations/spacing-and-size/size.css";
-@import "../00-foundations/typography/typography.css";
-@import "../00-foundations/borders/borders.css";
-@import "../00-foundations/elevation-and-depth/shadows.css";
-@import "../00-foundations/motion/motion.css";
