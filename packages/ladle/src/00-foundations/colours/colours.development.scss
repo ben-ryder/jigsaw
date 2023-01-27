@@ -1,0 +1,17 @@
+@use "colours.toolkit" as *;
+@use "../size-and-spacing/size-and-spacing.toolkit" as *;
+
+.j-prose {
+  .colour-table td {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+  .colour-table thead tr {
+    border-bottom-color: $j-c-mono-50;
+  }
+  .colour-table span {
+    display: block;
+    height: $j-size-3;
+  }
+}

@@ -1,8 +1,7 @@
 export default {
+  port: 6060,
+  defaultStory: "docs--home",
   addons: {
-    ladle: {
-      enabled: false
-    },
     source: {
       enabled: false
     },

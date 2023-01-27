@@ -1,0 +1,9 @@
+<label for="demo-input" class="j-label">{{ label }}</label>
+<input
+        id="demo-input"
+        class="j-input{% if modifier %} j-input--{{ modifier }}{% endif %}"
+        placeholder="{{ placeholder }}"
+/>
+{% if error %}
+    <p class="j-error-text">{{ error }}</p>
+{% endif %}

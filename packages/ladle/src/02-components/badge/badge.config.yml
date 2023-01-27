@@ -1,0 +1,32 @@
+status: unstable
+context:
+  text: a badge
+  modifier: null
+variants:
+  - name: Blue Grey
+    context:
+      modifier: blueGrey
+  - name: White
+    context:
+      modifier: white
+  - name: Red
+    context:
+      modifier: red
+  - name: Green
+    context:
+      modifier: green
+  - name: Orange
+    context:
+      modifier: orange
+  - name: Yellow
+    context:
+      modifier: yellow
+  - name: Blue
+    context:
+      modifier: blue
+  - name: Purple
+    context:
+      modifier: purple
+  - name: Pink
+    context:
+      modifier: pink

@@ -1,0 +1,5 @@
+@use "button.toolkit" as *;
+
+.j-button {
+ @include button-styles();
+}

@@ -15,24 +15,24 @@
 }
 
 .border-item--radius-sm {
-  border-radius: $j-border-radius-sm;
+  border-radius: var(--j-border-radius-sm);
 }
 .border-item--radius-md {
-  border-radius: $j-border-radius-md;
+  border-radius: var(--j-border-radius-md);
 }
 .border-item--radius-lg {
-  border-radius: $j-border-radius-lg;
+  border-radius: var(--j-border-radius-lg);
 }
 
 .border-item--width-sm {
-  border: $j-border-width-sm solid $j-c-primary;
+  border: var(--j-border-width-sm) solid $j-c-primary;
 }
 .border-item--width-md {
-  border: $j-border-width-md solid $j-c-primary;
+  border: var(--j-border-width-md) solid $j-c-primary;
 }
 .border-item--width-lg {
-  border-top: $j-border-width-lg solid $j-c-primary;
+  border-top: var(--j-border-width-lg) solid $j-c-primary;
 }
 .border-item--width-xl {
-  border-left: $j-border-width-xl solid $j-c-primary;
+  border-left: var(--j-border-width-xl) solid $j-c-primary;
 }

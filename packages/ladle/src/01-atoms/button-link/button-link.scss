@@ -1,0 +1,9 @@
+@use "../button/button.toolkit" as *;
+
+.j-button-link {
+  @include button-styles();
+
+  display: inline-block;
+  line-height: normal;
+  text-decoration: none;
+}

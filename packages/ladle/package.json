@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "start": "ladle serve",
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "npm run build:ladle",
+    "build:ladle": "ladle build",
+    "build:sass": "sass src/main.scss dist/css/jigsaw.css",
+    "preview": "ladle preview"
   },
   "dependencies": {
     "@ladle/react": "^2.5.1",

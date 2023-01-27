@@ -1,0 +1,22 @@
+status: unstable
+context:
+  label: This is an input
+  modifier: null
+  options:
+    - name: -- Select Option --
+      value: ""
+    - name: Option One
+      value: 1
+    - name: Option Two
+      value: 2
+    - name: Option Three
+      value: 3
+    - name: Option Four
+      value: 4
+    - name: Option Five
+      value: 5
+variants:
+  - name: "Error"
+    context:
+      modifier: error
+      error: There is a problem with this value.

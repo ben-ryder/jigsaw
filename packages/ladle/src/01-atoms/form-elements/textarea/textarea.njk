@@ -1,0 +1,10 @@
+<label for="demo-textarea" class="j-label">{{ label }}</label>
+<textarea
+        id="demo-textarea"
+        class="j-textarea{% if modifier %} j-textarea--{{ modifier }}{% endif %}"
+        placeholder="{{ placeholder }}"
+        rows="5"
+></textarea>
+{% if error %}
+    <p class="j-error-text">{{ error }}</p>
+{% endif %}
