@@ -1,0 +1,20 @@
+
+.ladle-wrapper {
+    flex-direction: row-reverse;
+}
+
+.ladle-addons {
+    bottom: 16px;
+}
+
+div[data-reach-dialog-content] {
+    left: unset;
+    right: 20px;
+    bottom: 70px;
+}
+
+.ladle-addon-tooltip {
+    margin-top: -110px;
+    right: 0;
+    inset-inline-start: auto;
+}
