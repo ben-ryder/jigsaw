@@ -1,20 +1,48 @@
 
+/** Custom Theme Colours **/
+:root {
+    --ladle-bg-color-primary: #242830;
+    --ladle-bg-color-secondary: #2b303b;
+    --ladle-color-primary: #ccc;
+    --ladle-color-secondary: #fff;
+    --ladle-color-hover: #0c857a;
+    --ladle-color-accent: #0c857a;
+    --ladle-blueprint: #515b6c;
+}
+
+/** Make the sidebar appear on the left **/
 .ladle-wrapper {
     flex-direction: row-reverse;
 }
 
+/** Ensure there's some space between the addon buttons and the bottom of the page **/
 .ladle-addons {
     bottom: 16px;
 }
 
+/** Fix the positioning of the addon dialogs & tooltips now the sidebar & addons have been flipped **/
 div[data-reach-dialog-content] {
     left: unset;
     right: 20px;
     bottom: 70px;
 }
-
 .ladle-addon-tooltip {
     margin-top: -110px;
     right: 0;
     inset-inline-start: auto;
+}
+
+/**  Give the items in the story tree a bit more room **/
+.ladle-aside li {
+    margin-top: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+}
+
+
+.ladle-aside input {
+    border-bottom: 2px solid #9ca7b8;
+    color: #ccc;
+}
+.ladle-aside input:focus {
+    color: #ccc;
 }
