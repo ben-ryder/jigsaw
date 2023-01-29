@@ -14,18 +14,18 @@
 
   thead {
     tr {
-      border-bottom: var(--j-border-width-lg) solid $j-c-primary;
+      border-bottom: var(--j-border-width-lg) solid var(--j-c-primary);
     }
   }
 
   th {
     font-weight: bold;
     text-align: left;
-    padding: $j-size-0-75;
+    padding: var(--j-size-0-75);
   }
 
   td {
-    padding: $j-size-0-75;
+    padding: var(--j-size-0-75);
     vertical-align: middle;
   }
 

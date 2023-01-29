@@ -4,7 +4,7 @@
 @use "../../00-foundations/borders/borders.toolkit" as *;
 
 .j-accordion {
-  color: $j-c-primary-text;
+  color: var(--j-c-primary-text);
   border-bottom: var(--j-border-width-sm) solid $j-c-blueGrey-700;
 
   &__item {
@@ -24,7 +24,7 @@
   }
 
   &__item-title {
-    padding: $j-size-0-75 $j-size-0-5;
+    padding: var(--j-size-0-75) var(--j-size-0-5);
     border-top: var(--j-border-width-sm) solid $j-c-blueGrey-700;
     font-weight: bold;
     display: flex;

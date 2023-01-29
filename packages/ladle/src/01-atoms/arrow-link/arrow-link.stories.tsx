@@ -1,13 +1,13 @@
-import {ArrowLink} from "./arrow-link";
+import {JArrowLink} from "./arrow-link";
 
 export default {
     title: "Components/Arrow Link",
 };
 
 export function RightArrow() {
-    return <ArrowLink link="#">Read More</ArrowLink>
+    return <JArrowLink link="#">Read More</JArrowLink>
 }
 
 export function LeftArrow() {
-    return <ArrowLink link="#" direction="left">Back</ArrowLink>
+    return <JArrowLink link="#" direction="left">Back</JArrowLink>
 }

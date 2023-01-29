@@ -1,12 +1,12 @@
 import {ReactNode} from "react";
 
-export interface ArrowLinkProps {
+export interface JArrowLinkProps {
     direction?: "left" | "right",
     children: ReactNode,
     link: string
 }
 
-export function ArrowLink(props: ArrowLinkProps) {
+export function JArrowLink(props: JArrowLinkProps) {
     const classNames = ["j-arrow-link"];
     if (props.direction === "left") {
         classNames.push("j-arrow-link--left")

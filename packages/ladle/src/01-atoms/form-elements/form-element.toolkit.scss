@@ -7,29 +7,30 @@
 
 @mixin form-element() {
     display: block;
-    margin-top: $j-size-0-5;
+    margin-top: var(--j-size-0-5);
     background: transparent;
-    border: var(--j-border-width-md) solid $j-c-blueGrey-300;
+    border: var(--j-border-width-md) solid var(--j-c-blueGrey-300);
     border-radius: var(--j-border-radius-md);
-    padding: $j-size-0-5;
+    padding: var(--j-size-0-5);
     outline: none;
-    color: $j-c-primary-text;
+    color: var(--j-c-primary-text);
     width: 100%;
-    font-size: $j-text-size-sm;
+    font-size: var(--j-text-size-sm);
 
     &:hover {
-      border-color: $j-c-blueGrey-600;
+      border-color: var(--j-c-blueGrey-600);
     }
 
     &:focus {
-      border-color: $j-c-primary;
+      border-color: var(--j-c-primary);
     }
 
-    &--error {
-        border-color: $j-c-red-500;
+    &--error,
+    &:invalid {
+        border-color: var(--j-c-red-500);
 
         &:hover {
-            border-color: $j-c-red-700;
+            border-color: var(--j-c-red-700);
         }
     }
 }

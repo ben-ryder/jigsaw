@@ -1,18 +1,27 @@
 import {ComponentProps} from "react";
+import classNames from "classnames";
 
-export type ButtonVariant = "primary" | "secondary" | "tertiary" | "destructive";
+export type JButtonVariant = "primary" | "secondary" | "tertiary" | "destructive";
 
-export interface ButtonProps extends ComponentProps<'button'>{
-  variant?: ButtonVariant
+export interface JButtonProps extends ComponentProps<'button'> {
+  variant?: JButtonVariant,
+  loading?: boolean
 }
 
-export function Button(props: ButtonProps) {
-  const classNames = ["j-button"];
-  if (props.variant) {
-    
-  }
+export function JButton(props: JButtonProps) {
+  const {className, variant, loading, children, ...htmlProps} = props;
+
+  const processedClassName = classNames(
+    "j-button",
+    {
+      "j-button--secondary": variant === "secondary",
+      "j-button--tertiary": variant === "tertiary",
+      "j-button--destructive": variant === "destructive",
+      "j-button--loading": loading === true,
+    }
+  );
 
   return (
-    <button >{props.children}</button>
+    <button className={processedClassName} {...htmlProps}>{children}</button>
   )
 }

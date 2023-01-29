@@ -5,9 +5,9 @@
 
 .j-badge {
   display: inline-block;
-  background-color: $j-c-primary;
-  color: $j-c-primary-text;
-  padding: $j-size-0-5 $j-size-0-5;
+  background-color: var(--j-c-primary);
+  color: var(--j-c-primary-text);
+  padding: var(--j-size-0-5) var(--j-size-0-5);
   border-radius: var(--j-border-radius-md);
 
   &--blueGrey {
@@ -20,7 +20,7 @@
   }
 
   &--red {
-    background-color: $j-c-red-500;
+    background-color: var(--j-c-red-500);
   }
 
   &--green {

@@ -26,7 +26,7 @@ export function Motion() {
         <p>A base value of <strong>16</strong> is used and all other values are calculated from that.
           For example:</p>
         <ul>
-          <li><code>$j-size-0-75</code> is <strong>16 x 0.75 = 12px</strong></li>
+          <li><code>var(--j-size-0-75)</code> is <strong>16 x 0.75 = 12px</strong></li>
           <li><code>$j-size-32</code> is <strong>16 x 32 = 512px</strong></li>
         </ul>
 

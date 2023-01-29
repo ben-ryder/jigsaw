@@ -43,25 +43,25 @@ export function Colours() {
           <ul>
             <li><strong>Primary</strong>:</li>
             <ul>
-              <li><code>$j-c-primary</code>/<code>$j-c-primary-text</code> - The main brand colour and
+              <li><code>var(--j-c-primary)</code>/<code>var(--j-c-primary-text)</code> - The main brand colour and
                 text colour which can be used with it.
               </li>
-              <li><code>$j-c-primary-interaction</code>/<code>$j-c-primary-interaction-text</code> - A
+              <li><code>var(--j-c-primary)-interaction</code>/<code>var(--j-c-primary)-interaction-text</code> - A
                 version of the main brand colours that can be used on interactions like hover.
               </li>
             </ul>
             <li><strong>Secondary</strong>:</li>
             <ul>
-              <li><code>$j-c-secondary</code>/<code>$j-c-secondary-text</code> - The secondary brand
+              <li><code>var(--j-c-secondary)</code>/<code>var(--j-c-secondary-text)</code> - The secondary brand
                 colour and text colour which can be used with it.
               </li>
-              <li><code>$j-c-secondary-interaction</code>/<code>$j-c-secondary-interaction-text</code> -
+              <li><code>var(--j-c-secondary-interaction)</code>/<code>var(--j-c-secondary-interaction-text)</code> -
                 A version of the secondary brand colours that can be used on interactions like hover.
               </li>
             </ul>
             <li><strong>Tertiary</strong>:</li>
             <ul>
-              <li><code>$j-c-tertiary</code> - The colour of any tertiary things like the "tertiary"
+              <li><code>var(--j-c-tertiary)</code> - The colour of any tertiary things like the "tertiary"
                 button type. There are no other colour states as tertiary actions have more basic
                 styling.
               </li>
@@ -69,7 +69,7 @@ export function Colours() {
             <li><strong>Disabled</strong>:</li>
             <ul>
               <li><code>$j-c-disabled</code> - The colour of disabled UI elements.</li>
-              <li><code>$j-c-disabled-text</code> - The text colour of disabled UI elements.</li>
+              <li><code>var(--j-c-disabled-text)</code> - The text colour of disabled UI elements.</li>
             </ul>
           </ul>
           <li><strong>Background & UI</strong>:</li>
@@ -95,11 +95,11 @@ export function Colours() {
           <ul>
             <li><strong>Destructive</strong>:</li>
             <ul>
-              <li><code>$j-c-destructive</code>/<code>$j-c-destructive-text</code> - Used when an action
+              <li><code>var(--j-c-destructive)</code>/<code>var(--j-c-destructive-text)</code> - Used when an action
                 will be destructive such as deleting or canceling something.
               </li>
               <li>
-                <code>$j-c-destructive-interaction</code>/<code>$j-c-destructive-interaction-text</code> -
+                <code>var(--j-c-destructive-interaction)</code>/<code>var(--j-c-destructive-interaction-text)</code> -
                 Used for interactions such as hover.
               </li>
             </ul>

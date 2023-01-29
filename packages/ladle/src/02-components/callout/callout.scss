@@ -15,7 +15,7 @@
 
   &__icon {
     background-color: $j-c-info;
-    padding: $j-size-0-5;
+    padding: var(--j-size-0-5);
     display: flex;
     justify-items: center;
     align-items: center;
@@ -23,7 +23,7 @@
   }
 
   &__content {
-    padding: $j-size-0-75;
+    padding: var(--j-size-0-75);
 
     @extend .j-prose;
 

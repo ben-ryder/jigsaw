@@ -4,6 +4,6 @@
 .j-label {
   display: block;
   font-weight: bold;
-  color: $j-c-primary-text;
-  font-size: $j-text-size-sm;
+  color: var(--j-c-primary-text);
+  font-size: var(--j-text-size-sm);
 }
