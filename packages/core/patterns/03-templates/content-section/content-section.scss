@@ -1,9 +1,0 @@
-@use "../../00-foundations/size-and-spacing/size-and-spacing.toolkit" as *;
-
-.j-content-section {
-  display: block;
-  max-width: $j-size-48;
-  margin: auto;
-  padding-left: $j-size-1;
-  padding-right: $j-size-1;
-}

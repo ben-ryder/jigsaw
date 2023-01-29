@@ -1,9 +1,0 @@
-@use "../form-element.toolkit" as *;
-
-.j-select {
-  @include form-element();
-
-  &:hover {
-    cursor: pointer;
-  }
-}

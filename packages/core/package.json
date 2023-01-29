@@ -1,6 +1,6 @@
 {
   "name": "@ben-ryder/jigsaw",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "A design system and component library for use in my personal projects.",
   "author": "Ben-Ryder",
   "license": "AGPL-3.0-only",
@@ -13,33 +13,22 @@
     "url": "https://github.com/Ben-Ryder/jigsaw/issues"
   },
   "scripts": {
-    "start": "npm run build:assets && concurrently 'npm:start:*'",
-    "start:fractal": "fractal start --sync --watch",
-    "start:sass": "sass patterns/main.scss:dist/css/jigsaw.css patterns/development.scss:dist/css/development.css --watch",
-    "build": "npm run build:sass && npm run build:fractal && npm run build:assets",
-    "build:fractal": "fractal build",
-    "build:sass": "sass patterns/main.scss:dist/css/jigsaw.css patterns/development.scss:dist/css/development.css",
-    "build:assets": "gulp assets"
+    "build": "npm run build:clean && npm run build:prepare && npm run build:styles",
+    "build:clean": "rimraf ./fonts ./scss ./css",
+    "build:prepare": "gulp && rm scss/development.scss",
+    "build:styles": "sass ./scss/main.scss ./css/jigsaw.css"
   },
   "files": [
-    "dist/scss",
-    "dist/css/jigsaw.*",
-    "dist/fonts",
-    "patterns/toolkit.scss",
-    "patterns/**/*.toolkit.scss",
+    "scss",
+    "css",
+    "fonts",
     "README.md",
     "LICENSE.txt"
   ],
   "devDependencies": {
-    "@frctl/fractal": "^1.5.14",
-    "@frctl/mandelbrot": "^1.10.2",
-    "concurrently": "^7.6.0",
     "gulp": "^4.0.2",
     "gulp-rename": "^2.0.0",
-    "rimraf": "^3.0.2",
+    "rimraf": "^4.1.2",
     "sass": "^1.57.1"
-  },
-  "dependencies": {
-    "@frctl/nunjucks": "^2.0.15"
   }
 }

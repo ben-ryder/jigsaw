@@ -1,11 +1,23 @@
 const { src, dest, parallel } = require('gulp');
 const rename = require('gulp-rename');
 
-function buildFonts() {
-    return src('./patterns/**/*.ttf')
-        .pipe(rename({dirname: ''}))
-        .pipe(dest('./dist/fonts'))
-        .pipe(dest('./build/fonts'));
+function processStyles() {
+    return src([
+        '../ladle/src/**/!(*.development).scss'
+    ])
+        .pipe(rename((path) => {
+            return {
+                basename: path.basename,
+                extname: path.extname,
+                dirname: path.dirname.replace("src/", "").replace("src", "")
+            };
+        }))
+        .pipe(dest('./scss'))
 }
 
-exports.assets = parallel(buildFonts);
+function processFonts() {
+    return src('../ladle/dist/fonts/**/*.*')
+        .pipe(dest('./fonts'))
+}
+
+exports.default = parallel(processStyles, processFonts);

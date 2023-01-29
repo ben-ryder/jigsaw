@@ -1,9 +1,0 @@
-@use "../../../../00-foundations/colours/theme.toolkit" as *;
-@use "../../../../00-foundations/typography/typography.toolkit" as *;
-
-.j-label {
-  display: block;
-  font-weight: bold;
-  color: $j-c-primary-text;
-  font-size: $j-text-size-sm;
-}
