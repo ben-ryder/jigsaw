@@ -7,10 +7,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $j-c-background-f1;
-  margin: auto auto $j-size-1;
+  background-color: var(--j-c-background-f1);
+  margin: auto auto var(--j-size-1);
   width: 70%;
-  height: $j-size-6;
+  height: var(--j-size-6);
 }
 
 .border-item--radius-sm {
@@ -24,14 +24,14 @@
 }
 
 .border-item--width-sm {
-  border: var(--j-border-width-sm) solid $j-c-primary;
+  border: var(--j-border-width-sm) solid var(--j-c-primary);
 }
 .border-item--width-md {
-  border: var(--j-border-width-md) solid $j-c-primary;
+  border: var(--j-border-width-md) solid var(--j-c-primary);
 }
 .border-item--width-lg {
-  border-top: var(--j-border-width-lg) solid $j-c-primary;
+  border-top: var(--j-border-width-lg) solid var(--j-c-primary);
 }
 .border-item--width-xl {
-  border-left: var(--j-border-width-xl) solid $j-c-primary;
+  border-left: var(--j-border-width-xl) solid var(--j-c-primary);
 }

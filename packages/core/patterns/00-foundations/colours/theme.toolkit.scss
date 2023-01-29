@@ -20,7 +20,7 @@ $j-c-background-b1: $j-c-atom-700;
 $j-c-background-b0: $j-c-atom-600;
 $j-c-background: $j-c-atom-500;
 $j-c-background-f0: $j-c-atom-400;
-$j-c-background-f1: $j-c-atom-300;
+var(--j-c-background-f1): $j-c-atom-300;
 $j-c-background-f2: $j-c-atom-100;
 
 $j-c-text: $j-c-mono-200;

@@ -8,10 +8,10 @@
     padding-left: 0;
   }
   .colour-table thead tr {
-    border-bottom-color: $j-c-mono-50;
+    border-bottom-color: var(--j-c-mono-50);
   }
   .colour-table span {
     display: block;
-    height: $j-size-3;
+    height: var(--j-size-3);
   }
 }

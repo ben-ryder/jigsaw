@@ -1,15 +1,15 @@
-
-$j-breakpoint-sm: 576px;
-$j-breakpoint-md: 768px;
-$j-breakpoint-lg: 992px;
-$j-breakpoint-xl: 1200px;
-
+:root {
+  --j-breakpoint-sm: 576px;
+  --j-breakpoint-md: 768px;
+  --j-breakpoint-lg: 992px;
+  --j-breakpoint-xl: 1200px;
+}
 
 $breakpoints: (
-  'sm': $j-breakpoint-sm,
-  'md': $j-breakpoint-md,
-  'lg': $j-breakpoint-lg,
-  'xl': $j-breakpoint-xl
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px
 ) !default;
 
 
@@ -20,6 +20,6 @@ $breakpoints: (
     }
   }
   @else {
-    @warn "`#{$breakpoint}` is not a valid breakpoint identifier. ";
+    @warn "`#{$breakpoint}` is not a valid breakpoint identifier.";
   }
 }

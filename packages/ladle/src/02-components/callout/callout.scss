@@ -7,8 +7,8 @@
 
 .j-callout {
   display: flex;
-  background-color: $j-c-background-f1;
-  box-shadow: $j-shadow-sm;
+  background-color: var(--j-c-background-f1);
+  box-shadow: var(--j-shadow-sm);
   border: var(--j-border-width-md) solid $j-c-info;
   color: $j-c-text;
   margin: $j-size-1 0;

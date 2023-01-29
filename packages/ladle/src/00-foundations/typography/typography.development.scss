@@ -2,33 +2,33 @@
 
 .j-prose {
   .text-xs {
-    font-size: $j-text-size-xs;
+    font-size: var(--j-text-size-xs);
   }
   .text-sm {
-    font-size: $j-text-size-sm;
+    font-size: var(--j-text-size-sm);
   }
   .text-rg {
-    font-size: $j-text-size-rg;
+    font-size: var(--j-text-size-rg);
   }
   .text-md {
-    font-size: $j-text-size-md;
+    font-size: var(--j-text-size-md);
   }
   .text-lg {
-    font-size: $j-text-size-lg;
+    font-size: var(--j-text-size-lg);
   }
   .text-xl {
-    font-size: $j-text-size-xl;
+    font-size: var(--j-text-size-xl);
   }
   .text-2xl {
-    font-size: $j-text-size-2xl;
+    font-size: var(--j-text-size-2xl);
     line-height: 1.5;
   }
   .text-3xl {
-    font-size: $j-text-size-3xl;
+    font-size: var(--j-text-size-3xl);
     line-height: 1.5;
   }
   .text-4xl {
-    font-size: $j-text-size-4xl;
+    font-size: var(--j-text-size-4xl);
     line-height: 1.5;
   }
 }

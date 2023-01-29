@@ -1,8 +1,27 @@
 {
-  "name": "@ben-ryder/ladle",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@ben-ryder/jigsaw",
+  "version": "0.10.0",
+  "description": "A design system and component library for use in my personal projects.",
+  "author": "Ben-Ryder",
+  "license": "AGPL-3.0-only",
   "type": "module",
+  "homepage": "https://github.com/Ben-Ryder/jigsaw#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ben-Ryder/jigsaw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ben-Ryder/jigsaw/issues"
+  },
+  "files": [
+    "dist/fonts",
+    "dist/css",
+    "**/*.scss",
+    "!**/*.development.scss",
+    "!src/development.scss",
+    "README.md",
+    "LICENSE.txt"
+  ],
   "scripts": {
     "start": "ladle serve",
     "build": "npm run build:ladle",
@@ -11,11 +30,11 @@
     "preview": "ladle preview"
   },
   "dependencies": {
-    "@ladle/react": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@ladle/react": "^2.5.1",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",

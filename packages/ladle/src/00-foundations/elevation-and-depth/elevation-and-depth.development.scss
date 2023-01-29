@@ -7,21 +7,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $j-c-background-f1;
-  margin: auto auto $j-size-3;
+  background-color: var(--j-c-background-f1);
+  margin: auto auto var(--j-size-3);
   width: 70%;
-  height: $j-size-6;
+  height: var(--j-size-6);
 }
 
 .panel-item--shadow-sm {
-  box-shadow: $j-shadow-sm;
+  box-shadow: var(--j-shadow-sm);
 }
 .panel-item--shadow-md {
-  box-shadow: $j-shadow-md;
+  box-shadow: var(--j-shadow-md);
 }
 .panel-item--shadow-lg {
-  box-shadow: $j-shadow-lg;
+  box-shadow: var(--j-shadow-lg);
 }
 .panel-item--shadow-xl {
-  box-shadow: $j-shadow-xl;
+  box-shadow: var(--j-shadow-xl);
 }

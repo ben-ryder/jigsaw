@@ -37,12 +37,12 @@
 
     &:hover {
       cursor: pointer;
-      background-color: $j-c-background-f1;
+      background-color: var(--j-c-background-f1);
     }
 
     &:focus-visible {
       outline: none;
-      background-color: $j-c-background-f1;
+      background-color: var(--j-c-background-f1);
     }
   }
 

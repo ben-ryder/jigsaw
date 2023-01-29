@@ -15,7 +15,7 @@
   color: $j-c-primary-text;
   border-radius: var(--j-border-radius-md);
   border: var(--j-border-width-md) solid $j-c-primary;
-  box-shadow: $j-shadow-md;
+  box-shadow: var(--j-shadow-md);
 
   &:hover {
     cursor: pointer;
@@ -87,7 +87,7 @@
       color: $j-c-disabled-text;
       border-color: $j-c-disabled;
       cursor: initial;
-      box-shadow: $j-shadow-md;
+      box-shadow: var(--j-shadow-md);
       text-decoration: none;
     }
   }

@@ -1,12 +1,13 @@
+:root {
+  --j-motion-ease-in: cubic-bezier(.4, 0, .7, .2);
+  --j-motion-ease-out: cubic-bezier(0, 0, .2, 1);
+  --j-motion-ease-in-out: cubic-bezier(.4, 0, .2, 1);
+  --j-motion-linear: linear;
 
-$j-motion-ease-in: cubic-bezier(.4, 0, .7, .2);
-$j-motion-ease-out: cubic-bezier(0, 0, .2, 1);
-$j-motion-ease-in-out: cubic-bezier(.4, 0, .2, 1);
-$j-motion-linear: linear;
-
-$j-motion-duration-fast: 0.15s;
-$j-motion-duration-medium: 0.3s;
-$j-motion-duration-slow: 0.6s;
+  --j-motion-duration-fast: 0.15s;
+  --j-motion-duration-medium: 0.3s;
+  --j-motion-duration-slow: 0.6s;
+}
 
 @keyframes j-animation-spin {
   from {
@@ -18,8 +19,8 @@ $j-motion-duration-slow: 0.6s;
 }
 
 @mixin j-animation-spin {
-  animation-duration: $j-motion-duration-slow;
+  animation-duration: var(--j-motion-duration-slow);
   animation-name: j-animation-spin;
   animation-iteration-count: infinite;
-  animation-timing-function: $j-motion-linear;
+  animation-timing-function: var(--j-motion-linear);
 }
