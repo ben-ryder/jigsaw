@@ -1,0 +1,27 @@
+@use "../spacing/spacing.toolkit" as *;
+@use "../colours/theme.toolkit" as *;
+@use "../elevation-and-depth/elevation-and-depth.toolkit" as *;
+
+.panel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--j-c-background-f1);
+  margin: auto auto var(--j-spacing-3);
+  width: 70%;
+  height: var(--j-spacing-6);
+}
+
+.panel-item--shadow-sm {
+  box-shadow: var(--j-shadow-sm);
+}
+.panel-item--shadow-md {
+  box-shadow: var(--j-shadow-md);
+}
+.panel-item--shadow-lg {
+  box-shadow: var(--j-shadow-lg);
+}
+.panel-item--shadow-xl {
+  box-shadow: var(--j-shadow-xl);
+}

@@ -1,0 +1,37 @@
+@use "../typography/typography.toolkit" as *;
+@use "../spacing/spacing.toolkit" as *;
+@use "../colours/theme.toolkit" as *;
+
+.border-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--j-c-background-f1);
+  margin: auto auto var(--j-spacing-1);
+  width: 70%;
+  height: var(--j-spacing-6);
+}
+
+.border-item--radius-sm {
+  border-radius: var(--j-border-radius-sm);
+}
+.border-item--radius-md {
+  border-radius: var(--j-border-radius-md);
+}
+.border-item--radius-lg {
+  border-radius: var(--j-border-radius-lg);
+}
+
+.border-item--width-sm {
+  border: var(--j-border-width-sm) solid var(--j-c-primary);
+}
+.border-item--width-md {
+  border: var(--j-border-width-md) solid var(--j-c-primary);
+}
+.border-item--width-lg {
+  border-top: var(--j-border-width-lg) solid var(--j-c-primary);
+}
+.border-item--width-xl {
+  border-left: var(--j-border-width-xl) solid var(--j-c-primary);
+}

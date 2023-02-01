@@ -1,0 +1,47 @@
+@use "../../02-components/prose/prose";
+
+.j-callout {
+  display: flex;
+  background-color: var(--j-c-background-f1);
+  box-shadow: var(--j-shadow-sm);
+  border: var(--j-border-width-md) solid var(--j-c-info);
+  color: var(--j-c-text);
+  margin: var(--j-spacing-1) 0;
+
+  &__icon {
+    background-color: var(--j-c-info);
+    padding: var(--j-spacing-0-5);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    color: var(--j-c-mono-50);
+  }
+
+  &__content {
+    padding: var(--j-spacing-0-75);
+
+    @extend .j-prose;
+
+    // Remove the last child's bottom margin to ensure there's not a big gap at the bottom
+    // and the callouts vertical padding is consistent.
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &--warning {
+    border-color: var(--j-c-warning);
+
+    .j-callout__icon {
+      background-color: var(--j-c-warning);
+    }
+  }
+
+  &--danger {
+    border-color: var(--j-c-danger);
+
+    .j-callout__icon {
+      background-color: var(--j-c-danger);
+    }
+  }
+}

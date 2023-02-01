@@ -1,0 +1,17 @@
+@use "spacing.toolkit" as *;
+
+.size-item {
+  margin-bottom: var(--j-spacing-0-5);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.size-item span {
+  display: block;
+  height: var(--j-spacing-1);
+  background-color: var(--j-c-primary);
+  margin-right: var(--j-spacing-0-5);
+}
+.size-items {
+  overflow: scroll;
+}

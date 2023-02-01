@@ -1,0 +1,32 @@
+
+.j-table {
+  background-color: var(--j-c-background-f1);
+  color: var(--j-c-text);
+  width: 100%;
+  margin-bottom: var(--j-spacing-1);
+  border-radius: var(--j-border-radius-sm);
+  line-height: 1.5;
+
+  thead {
+    tr {
+      border-bottom: var(--j-border-width-lg) solid var(--j-c-primary);
+    }
+  }
+
+  th {
+    font-weight: bold;
+    text-align: left;
+    padding: var(--j-spacing-0-75);
+  }
+
+  td {
+    padding: var(--j-spacing-0-75);
+    vertical-align: middle;
+  }
+
+  tbody {
+    tr:nth-child(2n) {
+      background-color: var(--j-c-background-f0);
+    }
+  }
+}
