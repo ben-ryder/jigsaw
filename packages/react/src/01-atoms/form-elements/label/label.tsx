@@ -1,3 +1,5 @@
+import "./label.scss";
+
 import {ComponentProps, ReactNode} from "react";
 import classNames from "classnames";
 

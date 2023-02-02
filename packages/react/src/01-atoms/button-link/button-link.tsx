@@ -1,3 +1,5 @@
+import "./button-link.scss";
+
 import {ComponentProps} from "react";
 import classNames from "classnames";
 import {JButtonVariant} from "../button/button";

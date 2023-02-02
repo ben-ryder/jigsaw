@@ -1,3 +1,5 @@
+import "./error-text.scss";
+
 import {ComponentProps, ReactNode} from "react";
 import classNames from "classnames";
 

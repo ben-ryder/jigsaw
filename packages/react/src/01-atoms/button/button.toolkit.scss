@@ -1,10 +1,5 @@
-@use "../../00-foundations/colours/theme.toolkit" as *;
-@use "../../00-foundations/borders/borders.toolkit" as *;
-@use "../../00-foundations/elevation-and-depth/elevation-and-depth.toolkit" as *;
-@use "../../00-foundations/typography/typography.toolkit" as *;
-@use "../../00-foundations/spacing/spacing.toolkit" as *;
-@use "../../00-foundations/colours/colours.toolkit" as *;
 @use "../../00-foundations/motion/motion.toolkit" as *;
+
 
 @mixin button-styles() {
   padding: var(--j-spacing-0-5) var(--j-spacing-0-75);

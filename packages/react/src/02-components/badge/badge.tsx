@@ -1,3 +1,5 @@
+import "./badge.scss";
+
 import {ReactNode} from "react";
 import classNames from "classnames";
 

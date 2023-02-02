@@ -1,10 +1,4 @@
-:root {
-  --j-breakpoint-sm: 576px;
-  --j-breakpoint-md: 768px;
-  --j-breakpoint-lg: 992px;
-  --j-breakpoint-xl: 1200px;
-}
-
+// todo: use css vars here?
 $breakpoints: (
   'sm': 576px,
   'md': 768px,

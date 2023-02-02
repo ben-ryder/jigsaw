@@ -1,3 +1,5 @@
+import "./textarea.scss";
+
 import {ComponentProps} from "react";
 import classNames from "classnames";
 

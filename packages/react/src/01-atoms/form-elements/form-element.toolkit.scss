@@ -1,9 +1,3 @@
-@use "../../00-foundations/colours/theme.toolkit" as *;
-@use "../../00-foundations/spacing/spacing.toolkit" as *;
-@use "../../00-foundations/borders/borders.toolkit" as *;
-@use "../../00-foundations/colours/colours.toolkit" as *;
-@use "../../00-foundations/typography/typography.toolkit" as *;
-
 
 @mixin form-element() {
   display: block;

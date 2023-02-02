@@ -1,3 +1,5 @@
+import "./arrow-link.scss";
+
 import {ReactNode} from "react";
 import classNames from "classnames";
 import {

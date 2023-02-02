@@ -1,3 +1,5 @@
+import "./select.scss";
+
 import {JSelect, JSelectOption} from "./select";
 
 export default {

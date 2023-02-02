@@ -1,3 +1,5 @@
+import "./prose.scss";
+
 import {ReactNode} from "react";
 
 export interface JProseProps {

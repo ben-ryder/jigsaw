@@ -1,3 +1,5 @@
+import "./table.scss";
+
 import {ComponentProps} from "react";
 import classNames from "classnames";
 

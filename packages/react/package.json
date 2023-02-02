@@ -13,6 +13,9 @@
   "bugs": {
     "url": "https://github.com/Ben-Ryder/jigsaw/issues"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "files": [
     "dist/fonts",
     "dist/css",
@@ -26,7 +29,7 @@
     "start": "ladle serve",
     "build": "npm run build:ladle",
     "build:ladle": "ladle build",
-    "build:sass": "sass src/main.scss dist/css/jigsaw.css",
+    "build:sass": "sass src/jigsaw.scss dist/css/jigsaw.css",
     "preview": "ladle preview"
   },
   "dependencies": {
