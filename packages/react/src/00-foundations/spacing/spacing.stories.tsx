@@ -1,7 +1,7 @@
 import {SIZES} from "./spacing";
 
 export default {
-  title: "Foundations",
+  title: "Foundations/Spacing",
 };
 
 type MotionData = {identifier: string, value: string}[];

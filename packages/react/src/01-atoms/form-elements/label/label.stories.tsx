@@ -1,7 +1,7 @@
 import {JLabel} from "./label";
 
 export default {
-  title: "Atoms",
+  title: "Atoms/Label",
 };
 
 export function Label() {

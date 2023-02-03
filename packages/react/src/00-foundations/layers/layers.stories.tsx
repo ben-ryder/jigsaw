@@ -1,14 +1,14 @@
 export default {
-  title: "Foundations",
+  title: "Foundations/Layers",
 };
 
 
-export function ElevationAndDepth() {
+export function Layers() {
   return (
     <div className="j-content-section">
       <div className="j-prose">
-        <h1>Elevation and Depth</h1>
-        <p>Jigsaw generally has quite a flat design, however elevation/depth can still be conveyed through the use
+        <h1>Layers</h1>
+        <p>Jigsaw generally has quite a flat design, however elevation & depth can still be conveyed through the use
           of different colour shades.
           Different shades can be used to mimic how light would work in the real world, so elements
           that appear over the top or "nearer" to the user would use a lighter shade.</p>

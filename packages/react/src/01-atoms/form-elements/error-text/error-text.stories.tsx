@@ -1,7 +1,7 @@
 import {JErrorText} from "./error-text";
 
 export default {
-  title: "Atoms",
+  title: "Atoms/ErrorText",
 };
 
 export function ErrorText() {

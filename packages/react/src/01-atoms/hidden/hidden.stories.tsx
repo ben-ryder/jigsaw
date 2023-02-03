@@ -1,6 +1,6 @@
 
 export default {
-    title: "Atoms",
+    title: "Atoms/Hidden",
 };
 
 export function Hidden() {

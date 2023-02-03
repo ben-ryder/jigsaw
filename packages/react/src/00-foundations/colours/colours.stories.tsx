@@ -1,7 +1,7 @@
 import {COLOURS} from "./colours";
 
 export default {
-  title: "Foundations",
+  title: "Foundations/Colours",
 };
 
 type ColourData = {identifier: string, value: string}[];
