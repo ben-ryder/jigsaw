@@ -1,15 +1,21 @@
 
 .j-prose {
-  .colour-table td {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-  }
-  .colour-table thead tr {
-    border-bottom-color: var(--j-c-mono-50);
-  }
   .colour-table span {
     display: block;
-    height: var(--j-spacing-3);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    margin: auto;
+    height: 100%;
+    left: 0;
+  }
+
+  .colour-table td {
+    position: relative;
+  }
+
+  .colour-table code {
+    white-space: nowrap;
   }
 }
