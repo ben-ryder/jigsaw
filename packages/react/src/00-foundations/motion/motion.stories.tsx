@@ -23,22 +23,22 @@ export function Motion() {
           </thead>
           <tbody>
           <tr>
-            <td><code>$j-motion-ease-in</code></td>
+            <td><code>j-motion-ease-in</code></td>
             <td><code>cubic-bezier(.4, 0, .7, .2)</code></td>
             <td>Can be used when removing items from the screen.</td>
           </tr>
           <tr>
-            <td><code>$j-motion-ease-out</code></td>
+            <td><code>j-motion-ease-out</code></td>
             <td><code>cubic-bezier(0, 0, .2, 1)</code></td>
             <td>Can be used when introducing items to the screen.</td>
           </tr>
           <tr>
-            <td><code>$j-motion-ease-in-out</code></td>
+            <td><code>j-motion-ease-in-out</code></td>
             <td><code>cubic-bezier(.4, 0, .2, 1)</code></td>
             <td>Can be used when moving items that are already on the screen.</td>
           </tr>
           <tr>
-            <td><code>$j-motion-linear</code></td>
+            <td><code>j-motion-linear</code></td>
             <td><code>linear</code></td>
             <td>Can be used for items that need linear motion.</td>
           </tr>
@@ -56,19 +56,19 @@ export function Motion() {
           </thead>
           <tbody>
           <tr>
-            <td><code>$j-motion-duration-fast</code></td>
+            <td><code>j-motion-duration-fast</code></td>
             <td><code>0.15s</code></td>
             <td>Can be used for small movements or things that require quick feedback like hover states and
               other UI interaction.
             </td>
           </tr>
           <tr>
-            <td><code>$j-motion-duration-medium</code></td>
+            <td><code>j-motion-duration-medium</code></td>
             <td><code>0.3s</code></td>
             <td>Can be used for medium movements or in UI interactions that are not too important.</td>
           </tr>
           <tr>
-            <td><code>$j-motion-duration-slow</code></td>
+            <td><code>j-motion-duration-slow</code></td>
             <td><code>0.6s</code></td>
             <td>Can be used for long movements or big UI events like revealing something.</td>
           </tr>

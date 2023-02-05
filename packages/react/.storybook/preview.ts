@@ -11,6 +11,9 @@ export const parameters = {
   },
   options: {
     showPanel: false,
+    storySort: {
+      order: ['Home', 'Credits', 'Foundations', 'Atoms', 'Components', 'Templates']
+    }
   },
   backgrounds: {
     default: "jigsaw",

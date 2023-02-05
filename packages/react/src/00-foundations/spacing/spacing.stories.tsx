@@ -26,14 +26,11 @@ export function Spacing() {
         <p>A base value of <strong>16</strong> is used and all other values are calculated from that.
           For example:</p>
         <ul>
-          <li><code>var(--j-spacing-0-75)</code> is <strong>16 x 0.75 = 12px</strong></li>
-          <li><code>$j-spacing-32</code> is <strong>16 x 32 = 512px</strong></li>
+          <li><code>j-spacing-0-75</code> is <strong>16 x 0.75 = 12px</strong></li>
+          <li><code>j-spacing-16</code> is <strong>16 x 16 = 256px</strong></li>
         </ul>
 
-        <p>This system is mainly used when adding space between elements and components, but it has been made
-          generic as <code>var(--j-spacing-)</code>
-          because it could also be used when picking the size of UI elements.
-        </p>
+        <p>Here is a full list of the available spacing options:</p>
 
         <div className="size-items">
           {sizes.map(size =>

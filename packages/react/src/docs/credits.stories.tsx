@@ -7,15 +7,14 @@ export function Credits() {
     <div className="j-content-section">
       <div className="j-prose">
         <h1>Credits</h1>
-        <p>I'm a developer not a designer, and as such I couldn't build a design system like this without
+        <p>I couldn't have built a design system like this without
           using various articles, resources and other design systems for help and inspiration.</p>
 
         <ul>
           <li>
             <a href="https://www.refactoringui.com/">Refactoring UI</a>
             <ul>
-              <li>I've used their suggested spacing, text size and shadow systems.</li>
-              <li>Some really useful design tips in general too!</li>
+              <li>Some really useful design tips and starting points for spacing, text size and shadow systems.</li>
             </ul>
           </li>
           <li>

@@ -1,24 +1,25 @@
 import { StorybookConfig } from '@storybook/react-vite';
 
 const config: StorybookConfig = {
-  "stories": [
+  stories: [
     "../src/**/*.mdx",
     "../src/**/*.stories.@(js|jsx|ts|tsx)"
   ],
-  "addons": [
+  addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions"
   ],
-  "framework": {
+  framework: {
     "name": "@storybook/react-vite",
     "options": {}
   },
-  "core": {
+  core: {
     "disableTelemetry": true
   },
-  "docs": {
+  docs: {
     "autodocs": "tag"
-  }
+  },
+  staticDirs: ['../assets']
 };
 export default config;

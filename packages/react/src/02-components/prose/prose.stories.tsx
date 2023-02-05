@@ -86,14 +86,17 @@ export function Default() {
           something if they want to style their code blocks but it wouldn't hurt to make them look <em>okay</em> out of
           the box, even with no syntax highlighting.</p><p>Here's what a default <code>tailwind.config.js</code> file
           looks like at the time of writing:</p>
-        <pre><code className="language-js">{`module.exports = {
-          purge: [],
-          theme: {
-          extend: {},
-        },
-          variants: {},
-          plugins: [],
-        }`}</code></pre>
+        <pre><code className="language-js">
+{
+`module.exports = {
+  purge: [],
+  theme: {
+  extend: {},
+},
+  variants: {},
+  plugins: [],
+}`}
+        </code></pre>
         <p>Hopefully that looks good enough to you.</p><h3>What about nested lists?</h3><p>Nested lists basically always
           look bad which is why editors like Medium don't even let you do it, but I guess since some of you goofballs
           are going to do it we have to carry the burden of at least making it work.</p>
