@@ -1,11 +1,11 @@
 
 @mixin form-element() {
   display: block;
-  margin-top: var(--j-spacing-0-5);
+  margin-top: var(--j-space-4);
   background: transparent;
   border: var(--j-border-width-md) solid var(--j-c-blueGrey-300);
   border-radius: var(--j-border-radius-md);
-  padding: var(--j-spacing-0-625);
+  padding: var(--j-space-5);
   outline: none;
   color: var(--j-c-primary-text);
   width: 100%;

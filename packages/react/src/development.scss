@@ -10,7 +10,7 @@
 
 
 .j-dev-story-section {
-  margin-bottom: var(--j-spacing-1);
+  margin-bottom: var(--j-space-8);
 
   &__label {
     color: var(--j-c-blueGrey-700);
@@ -18,15 +18,15 @@
   }
 
   &__content {
-    margin-top: var(--j-spacing-0-25);
+    margin-top: var(--j-space-2);
     border: var(--j-border-width-md) dashed var(--j-c-blueGrey-700);
     border-radius: var(--j-border-radius-md);
-    padding: var(--j-spacing-1);
+    padding: var(--j-space-8);
   }
 
   &__info {
     font-style: italic;
-    margin-top: var(--j-spacing-0-25);
+    margin-top: var(--j-space-2);
     color: var(--j-c-blueGrey-700);
     font-size: var(--j-text-size-sm);
   }

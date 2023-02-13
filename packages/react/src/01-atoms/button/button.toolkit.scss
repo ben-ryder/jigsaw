@@ -2,7 +2,7 @@
 
 
 @mixin button-styles() {
-  padding: var(--j-spacing-0-5) var(--j-spacing-0-75);
+  padding: var(--j-space-4) var(--j-space-6);
   font-family: var(--j-text-font-primary);
   font-weight: bold;
   font-size: var(--j-text-size-sm);
@@ -95,7 +95,7 @@
     .j-icon {
       width: var(--j-text-size-rg);
       height: var(--j-text-size-rg);
-      margin-left: var(--j-spacing-0-5);
+      margin-left: var(--j-space-4);
       stroke-width: 3px;
 
       @include j-animation-spin();

@@ -3,7 +3,7 @@
   background-color: var(--j-c-background-f1);
   color: var(--j-c-text);
   width: 100%;
-  margin-bottom: var(--j-spacing-1);
+  margin-bottom: var(--j-space-8);
   border-radius: var(--j-border-radius-sm);
   line-height: 1.5;
 
@@ -16,11 +16,11 @@
   th {
     font-weight: bold;
     text-align: left;
-    padding: var(--j-spacing-0-75);
+    padding: var(--j-space-6);
   }
 
   td {
-    padding: var(--j-spacing-0-75);
+    padding: var(--j-space-6);
     vertical-align: middle;
   }
 
