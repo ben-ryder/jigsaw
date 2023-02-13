@@ -15,12 +15,19 @@
     "node": "^18.x"
   },
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "version": "lerna version --no-private",
+    "publish": "lerna publish --no-private"
   },
-  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
-    "husky": "^7.0.4"
-  }
+    "husky": "^7.0.4",
+    "lerna": "^6.4.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

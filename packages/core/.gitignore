@@ -5,6 +5,7 @@ node_modules
 /css
 /scss
 /fonts
+/dist
 
 # NPM Packages
 /*.tgz
