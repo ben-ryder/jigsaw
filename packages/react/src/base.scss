@@ -8,9 +8,11 @@
 @use "00-foundations/motion/motion.vars";
 @use "00-foundations/spacing/spacing.vars";
 @use "00-foundations/typography/typography.vars" as *;
-
 @use "00-foundations/typography/typography" as *;
+
 @use "01-atoms/hidden/hidden";
+@use "01-atoms/icons/icons.vars" as *;
+@use "01-atoms/icons/icons" as *;
 
 html {
   background-color: var(--j-c-background);

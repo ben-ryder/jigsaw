@@ -1,4 +1,4 @@
-import {JButton, JButtonVariant} from "./button";
+import {JButton} from "./button";
 import {StorySection} from "../../story-section";
 
 export default {
@@ -15,7 +15,7 @@ export function Default() {
         <JButton disabled={true}>Default Disabled</JButton>
       </StorySection>
       <StorySection>
-        <JButton loading={true}>Default Loading</JButton>
+        <JButton disabled={true} loading={true}>Default Loading</JButton>
       </StorySection>
     </>
   )
@@ -31,7 +31,7 @@ export function Secondary() {
         <JButton variant="secondary" disabled={true}>Secondary Disabled</JButton>
       </StorySection>
       <StorySection>
-        <JButton variant="secondary" loading={true}>Secondary Loading</JButton>
+        <JButton variant="secondary" disabled={true} loading={true}>Secondary Loading</JButton>
       </StorySection>
     </>
   )
@@ -47,7 +47,7 @@ export function Tertiary() {
         <JButton variant="tertiary" disabled={true}>Tertiary Disabled</JButton>
       </StorySection>
       <StorySection>
-        <JButton variant="tertiary" loading={true}>Tertiary Loading</JButton>
+        <JButton variant="tertiary" disabled={true} loading={true}>Tertiary Loading</JButton>
       </StorySection>
     </>
   )
@@ -63,7 +63,7 @@ export function Destructive() {
         <JButton variant="destructive" disabled={true}>Destructive Disabled</JButton>
       </StorySection>
       <StorySection>
-        <JButton variant="destructive" loading={true}>Destructive Loading</JButton>
+        <JButton variant="destructive" disabled={true} loading={true}>Destructive Loading</JButton>
       </StorySection>
     </>
   )

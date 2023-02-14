@@ -27,24 +27,15 @@ export function Typography() {
 
               <h2>Text Sizes</h2>
               <div>
-                  <p className="text-xs"><code>j-text-size-xs</code> - Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit.</p>
-                  <p className="text-sm"><code>j-text-size-sm</code> - Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit.</p>
-                  <p className="text-rg"><code>j-text-size-rg</code> - Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit.</p>
-                  <p className="text-md"><code>j-text-size-md</code> - Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit.</p>
-                  <p className="text-lg"><code>j-text-size-lg</code> - Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit.</p>
-                  <p className="text-xl"><code>j-text-size-xl</code> - Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit.</p>
-                  <p className="text-2xl"><code>j-text-size-2xl</code> - Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit.</p>
-                  <p className="text-3xl"><code>j-text-size-3xl</code> - Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit.</p>
-                  <p className="text-4xl"><code>j-text-size-4xl</code> - Lorem ipsum dolor sit amet, consectetur
-                      adipiscing elit.</p>
+                  <p className="text-xs"><code>j-text-size-xs | 12px</code> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p className="text-sm"><code>j-text-size-sm | 14px</code> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p className="text-rg"><code>j-text-size-rg | 16px</code> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p className="text-md"><code>j-text-size-md | 18px</code> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p className="text-lg"><code>j-text-size-lg | 20px</code> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p className="text-xl"><code>j-text-size-xl | 24px</code> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p className="text-2xl"><code>j-text-size-2xl | 30px</code> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p className="text-3xl"><code>j-text-size-3xl | 36px</code> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p className="text-4xl"><code>j-text-size-4xl | 48px</code> - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
           </div>
       </div>
