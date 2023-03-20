@@ -1,5 +1,29 @@
-@use "base";
+/**
+=============================
+  Foundations and Variables
+=============================
+ */
+@use "00-foundations/reset";
 
+@use "00-foundations/borders/borders.vars";
+@use "00-foundations/breakpoints/breakpoints.vars";
+@use "00-foundations/colours/colours.vars";
+@use "00-foundations/colours/theme.vars";
+@use "00-foundations/layers/layers.vars";
+@use "00-foundations/motion/motion.vars";
+@use "00-foundations/spacing/spacing.vars";
+@use "00-foundations/typography/typography.vars" as *;
+@use "00-foundations/typography/typography" as *;
+
+@use "01-atoms/hidden/hidden";
+@use "01-atoms/icons/icons.vars" as *;
+@use "01-atoms/icons/icons" as *;
+
+/**
+===================================
+  Atoms, Components and Templates
+===================================
+ */
 @use "01-atoms/arrow-link/arrow-link";
 @use "01-atoms/button/button";
 @use "01-atoms/button-link/button-link";
@@ -17,3 +41,16 @@
 @use "02-components/table/table";
 
 @use "03-templates/content-section/content-section";
+
+/**
+=================
+  Global Styles
+=================
+ */
+html {
+  background-color: var(--j-c-background);
+}
+
+* {
+  box-sizing: border-box;
+}

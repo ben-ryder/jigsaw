@@ -17,21 +17,19 @@
     "node": "18.x"
   },
   "files": [
-    "dist/fonts",
-    "dist/css",
-    "**/*.scss",
-    "!**/*.development.scss",
-    "!src/development.scss",
+    "dist",
+    "public",
     "README.md",
     "LICENSE.txt"
   ],
+  "main": "./dist/jigsaw-react.js",
   "scripts": {
     "start": "storybook dev -p 6006 --no-open",
-    "build": "npm run build:storybook && npm run build:sass",
-    "build:storybook": "storybook build -o build",
-    "build:sass": "sass src/jigsaw.scss dist/css/jigsaw.css"
+    "build": "npm run build:package && npm run build:storybook",
+    "build:package": "rimraf ./dist && tsc",
+    "build:storybook": "storybook build -o build"
   },
-  "dependencies": {
+  "peerDependencies": {
     "classnames": "^2.3.2",
     "lucide-react": "^0.108.0",
     "react": "^18.2.0",
@@ -52,6 +50,7 @@
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",
     "prop-types": "^15.8.1",
+    "rimraf": "^4.4.0",
     "sass": "^1.57.1",
     "storybook": "^7.0.0-beta.40",
     "typescript": "^4.9.3",

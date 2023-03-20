@@ -1,5 +1,5 @@
 import {JBadge} from "./badge";
-import {StorySection} from "../../story-section";
+import {StorySection} from "../../development/story-section";
 
 export default {
   title: "Components/Badge",

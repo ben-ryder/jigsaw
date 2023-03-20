@@ -2,10 +2,8 @@
 node_modules
 
 # Build
-/css
-/scss
 /fonts
-/dist
+/css
 
 # NPM Packages
 /*.tgz

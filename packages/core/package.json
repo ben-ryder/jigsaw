@@ -14,12 +14,13 @@
   },
   "scripts": {
     "build": "npm run build:clean && npm run build:styles && npm run build:assets",
-    "build:clean": "rimraf ./dist",
-    "build:styles": "mkdir -p ./dist && cp -r ../react/dist/css ./dist",
-    "build:assets": "mkdir -p ./dist && cp -r ../react/assets ./dist"
+    "build:clean": "rimraf ./public",
+    "build:styles": "sass ../react/src/jigsaw.scss jigsaw.css",
+    "build:assets": "cp -r ../react/public ./"
   },
   "files": [
-    "dist",
+    "public",
+    "jigsaw.css",
     "README.md",
     "LICENSE.txt"
   ],

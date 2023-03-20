@@ -1,5 +1,5 @@
 import {JButton} from "./button";
-import {StorySection} from "../../story-section";
+import {StorySection} from "../../development/story-section";
 
 export default {
   title: "Atoms/Button",

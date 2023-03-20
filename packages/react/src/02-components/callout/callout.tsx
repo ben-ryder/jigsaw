@@ -1,5 +1,3 @@
-import "./callout.scss";
-
 import {ReactNode} from "react";
 import classNames from "classnames";
 import {

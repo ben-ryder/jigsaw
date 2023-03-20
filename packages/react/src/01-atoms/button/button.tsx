@@ -1,5 +1,3 @@
-import "./button.scss";
-
 import {ComponentProps} from "react";
 import classNames from "classnames";
 import {Loader2 as LoadingIcon} from "lucide-react";

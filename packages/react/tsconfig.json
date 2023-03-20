@@ -13,9 +13,19 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "outDir": "./dist",
+    "declaration": true
   },
-  "include": ["src"],
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts",
+    "**/*.tests.ts",
+    "src/development/story-section.tsx",
+    "**/*.stories.tsx"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

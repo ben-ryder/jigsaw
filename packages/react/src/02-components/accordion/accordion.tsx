@@ -1,5 +1,3 @@
-import "./accordion.scss";
-
 import {ReactNode} from "react";
 import {
   ChevronDown as OpenIcon,
