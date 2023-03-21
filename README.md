@@ -5,8 +5,8 @@ A design system and component library for use in my personal projects.
 
 ## Documentation
 - [Usage Docs](https://github.com/Ben-Ryder/jigsaw/tree/main/docs/usage.md)
-- [Architecture Docs](https://github.com/Ben-Ryder/jigsaw/tree/main/docs/usage.md)
-- [Examples](https://github.com/Ben-Ryder/jigsaw/tree/main/docs/usage.md)
+- [Architecture Docs](https://github.com/Ben-Ryder/jigsaw/blob/main/docs/architecture.md)
+- [Examples](https://github.com/Ben-Ryder/jigsaw/blob/main/docs/examples.md)
 
 ## Contributions
 This project is currently open source, not open contribution.  
