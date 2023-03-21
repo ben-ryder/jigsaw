@@ -13,19 +13,15 @@
     "url": "https://github.com/Ben-Ryder/jigsaw/issues"
   },
   "scripts": {
-    "build": "npm run build:clean && npm run build:styles && npm run build:assets",
-    "build:clean": "rimraf ./public",
-    "build:styles": "sass ../react/src/jigsaw.scss jigsaw.css",
-    "build:assets": "cp -r ../react/public ./"
+    "clean": "rimraf ./public/css",
+    "build": "npm run clean && cp -r ../react/public ."
   },
   "files": [
     "public",
-    "jigsaw.css",
     "README.md",
     "LICENSE.txt"
   ],
   "devDependencies": {
-    "rimraf": "^4.1.2",
-    "sass": "^1.57.1"
+    "rimraf": "^4.1.2"
   }
 }

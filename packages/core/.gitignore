@@ -2,8 +2,7 @@
 node_modules
 
 # Build
-/fonts
-/css
+/public
 
 # NPM Packages
 /*.tgz

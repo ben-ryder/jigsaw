@@ -18,16 +18,20 @@
   },
   "files": [
     "dist",
-    "public",
     "README.md",
     "LICENSE.txt"
   ],
   "main": "./dist/jigsaw-react.js",
+  "types": "./dist/jigsaw-react.d.ts",
   "scripts": {
     "start": "storybook dev -p 6006 --no-open",
-    "build": "npm run build:package && npm run build:storybook",
-    "build:package": "rimraf ./dist && tsc",
-    "build:storybook": "storybook build -o build"
+    "build": "npm-run-all package:* sass:*",
+    "package:clean": "rimraf ./dist",
+    "package:build": "tsc",
+    "sass:clean": "rimraf ./public/css",
+    "sass:build": "sass ./src/jigsaw.scss ./public/css/jigsaw.css",
+    "sass:minify": "node-minify --compressor cssnano --input public/css/jigsaw.css --output public/css/jigsaw.css",
+    "build-storybook": "storybook build -o build"
   },
   "peerDependencies": {
     "classnames": "^2.3.2",
@@ -36,6 +40,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@node-minify/cli": "^8.0.5",
+    "@node-minify/cssnano": "^8.0.5",
     "@storybook/addon-docs": "^7.0.0-beta.40",
     "@storybook/addon-essentials": "^7.0.0-beta.40",
     "@storybook/addon-interactions": "^7.0.0-beta.40",
@@ -49,6 +55,7 @@
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",
+    "npm-run-all": "^4.1.5",
     "prop-types": "^15.8.1",
     "rimraf": "^4.4.0",
     "sass": "^1.57.1",
