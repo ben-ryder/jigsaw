@@ -1,7 +1,7 @@
 import {JArrowLink} from "./arrow-link";
 
 export default {
-    title: "Atoms/Arrow Link",
+    title: "Atoms/Links/Arrow Link",
 };
 
 export function RightArrow() {

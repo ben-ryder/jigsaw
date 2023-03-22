@@ -25,7 +25,8 @@
     "**/*.test.ts",
     "**/*.tests.ts",
     "src/development/story-section.tsx",
-    "**/*.stories.tsx"
+    "**/*.stories.tsx",
+    "build"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

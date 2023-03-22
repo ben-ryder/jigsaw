@@ -23,7 +23,7 @@ export function JSelect(props: JSelectProps) {
 
 export interface JSelectOptionProps extends ComponentProps<'option'> {}
 
-export function JSelectOption(props: JSelectOptionProps) {
+export function JOption(props: JSelectOptionProps) {
     const {className: suppliedClassName, children, ...htmlProps} = props;
 
     const className = classNames(
@@ -35,4 +35,3 @@ export function JSelectOption(props: JSelectOptionProps) {
       <option className={className} {...htmlProps}>{children}</option>
     )
 }
-

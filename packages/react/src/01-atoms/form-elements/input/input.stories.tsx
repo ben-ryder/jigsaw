@@ -1,7 +1,7 @@
 import {JInput} from "./input";
 
 export default {
-    title: "Atoms/Input",
+    title: "Atoms/Form Elements/Input",
 };
 
 export function Default() {

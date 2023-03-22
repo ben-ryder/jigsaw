@@ -1,19 +1,19 @@
 import "./select.scss";
 
-import {JSelect, JSelectOption} from "./select";
+import {JSelect, JOption} from "./select";
 
 export default {
-    title: "Atoms/Select",
+    title: "Atoms/Form Elements/Select",
 };
 
 export function Default() {
     return (
       <JSelect>
-          <JSelectOption value="">-- Select Option --</JSelectOption>
-          <JSelectOption value="1">Option One</JSelectOption>
-          <JSelectOption value="2">Option Two</JSelectOption>
-          <JSelectOption value="3">Option Three</JSelectOption>
-          <JSelectOption value="4">Option Four</JSelectOption>
+          <JOption value="">-- Select Option --</JOption>
+          <JOption value="1">Option One</JOption>
+          <JOption value="2">Option Two</JOption>
+          <JOption value="3">Option Three</JOption>
+          <JOption value="4">Option Four</JOption>
       </JSelect>
     )
 }
@@ -21,11 +21,11 @@ export function Default() {
 export function WithError() {
     return (
       <JSelect error={true}>
-          <JSelectOption value="">-- Select Option --</JSelectOption>
-          <JSelectOption value="1">Option One</JSelectOption>
-          <JSelectOption value="2">Option Two</JSelectOption>
-          <JSelectOption value="3">Option Three</JSelectOption>
-          <JSelectOption value="4">Option Four</JSelectOption>
+          <JOption value="">-- Select Option --</JOption>
+          <JOption value="1">Option One</JOption>
+          <JOption value="2">Option Two</JOption>
+          <JOption value="3">Option Three</JOption>
+          <JOption value="4">Option Four</JOption>
       </JSelect>
     )
 }

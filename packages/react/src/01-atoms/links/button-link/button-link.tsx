@@ -1,6 +1,6 @@
 import {ComponentProps} from "react";
 import classNames from "classnames";
-import {JButtonVariant} from "../button/button";
+import {JButtonVariant} from "../../button/button";
 
 export interface JButtonLinkProps extends ComponentProps<'a'> {
   variant?: JButtonVariant,

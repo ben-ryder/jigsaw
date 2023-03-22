@@ -1,4 +1,4 @@
-@use "../button/button.toolkit" as *;
+@use "../../button/button.toolkit" as *;
 
 .j-button-link {
   @include button-styles();

@@ -24,9 +24,9 @@
   Atoms, Components and Templates
 ===================================
  */
-@use "01-atoms/arrow-link/arrow-link";
 @use "01-atoms/button/button";
-@use "01-atoms/button-link/button-link";
+@use "01-atoms/links/arrow-link/arrow-link";
+@use "01-atoms/links/button-link/button-link";
 
 @use "01-atoms/form-elements/error-text/error-text";
 @use "01-atoms/form-elements/input/input";

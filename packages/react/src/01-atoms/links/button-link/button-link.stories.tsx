@@ -1,7 +1,7 @@
 import {JButtonLink} from "./button-link";
 
 export default {
-  title: "Atoms/Button Link",
+  title: "Atoms/Links/Button Link",
 };
 
 export function Default() {

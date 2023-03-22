@@ -1,7 +1,7 @@
 import {JTextArea} from "./textarea";
 
 export default {
-    title: "Atoms/Textarea",
+    title: "Atoms/Form Elements/Textarea",
 };
 
 export function Default() {
