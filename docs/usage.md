@@ -22,6 +22,9 @@ Just install `@ben-ryder/jigsaw-react` then you will have access to all the comp
 
 ```bash
 npm i @ben-ryder/jigsaw-react
+
+# You must also install the peerDependencies yourself too
+npm i classnames lucide-react
 ```
 
 ```tsx
