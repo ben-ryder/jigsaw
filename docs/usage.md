@@ -4,9 +4,20 @@
 Install `@ben-ryder/jigsaw` and make sure the `public` directory of the package is included in the 
 public directory of your application/website.  
 
-The simplest way to achieve this is via a symlink, for example assuming a `./public` directory (relative to the project root), navigate to that folder then run:
-- `ln -s ../node_modules/@ben-ryder/jigsaw/public/css ./css`
-- `ln -s ../node_modules/@ben-ryder/jigsaw/public/fonts ./fonts`
+The simplest way to achieve this is via a symlink, for example assuming a `./public` directory (relative to the project root), navigate to that folder then you could do something like this:
+
+```bash
+mkdir css
+cd css
+ln -s ../../node_modules/@ben-ryder/jigsaw/public/css/jigsaw.css jigsaw.css
+ln -s ../../node_modules/@ben-ryder/jigsaw/public/css/jigsaw.css.map jigsaw.css.map 
+cd ..
+
+mkdir fonts
+cd fonts
+ln -s ../../node_modules/@ben-ryder/jigsaw/public/fonts/open-sans ./open-sans
+cd ..
+```
 
 Then just ensure the assets are loaded somewhere:
 ```html
