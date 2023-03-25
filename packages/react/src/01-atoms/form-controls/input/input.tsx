@@ -1,8 +1,8 @@
 import {ComponentProps, HTMLInputTypeAttribute} from "react";
 import classNames from "classnames";
-import {JLabel} from "../../form-elements/label/label";
-import {JInput} from "../../form-elements/input/input";
-import {JErrorText} from "../../form-elements/error-text/error-text";
+import {JLabel} from "../../form-elements/label/label.js";
+import {JInput} from "../../form-elements/input/input.js";
+import {JErrorText} from "../../form-elements/error-text/error-text.js";
 
 export interface JInputControlProps {
 	id: string;

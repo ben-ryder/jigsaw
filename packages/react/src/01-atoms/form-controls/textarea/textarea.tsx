@@ -1,7 +1,7 @@
 import classNames from "classnames";
-import {JLabel} from "../../form-elements/label/label";
-import {JTextArea} from "../../form-elements/textarea/textarea";
-import {JErrorText} from "../../form-elements/error-text/error-text";
+import {JLabel} from "../../form-elements/label/label.js";
+import {JTextArea} from "../../form-elements/textarea/textarea.js";
+import {JErrorText} from "../../form-elements/error-text/error-text.js";
 
 export interface JTextAreaControlProps {
 	id: string;

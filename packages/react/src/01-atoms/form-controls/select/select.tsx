@@ -1,7 +1,7 @@
 import classNames from "classnames";
-import {JLabel} from "../../form-elements/label/label";
-import {JErrorText} from "../../form-elements/error-text/error-text";
-import {JSelect, JOption} from "../../form-elements/select/select";
+import {JLabel} from "../../form-elements/label/label.js";
+import {JErrorText} from "../../form-elements/error-text/error-text.js";
+import {JSelect, JOption} from "../../form-elements/select/select.js";
 
 export interface JSelectControlOption {
 	value: string,
