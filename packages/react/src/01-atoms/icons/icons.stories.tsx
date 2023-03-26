@@ -26,13 +26,11 @@ export function Icons() {
         <table>
           <thead><tr><th>Token</th><th>Value</th><th>Example</th></tr></thead>
           <tbody>
-            <tr><td><code>j-icon-size-rg</code></td><td><code>16px</code></td><td><JIcon size="rg"><SmileIcon/></JIcon></td></tr>
-            <tr><td><code>j-icon-size-md</code></td><td><code>18px</code></td><td><JIcon size="md"><SmileIcon/></JIcon></td></tr>
-            <tr><td><code>j-icon-size-lg</code></td><td><code>20px</code></td><td><JIcon size="lg"><SmileIcon/></JIcon></td></tr>
-            <tr><td><code>j-icon-size-xl</code></td><td><code>24px</code></td><td><JIcon size="xl"><SmileIcon/></JIcon></td></tr>
-            <tr><td><code>j-icon-size-2xl</code></td><td><code>30px</code></td><td><JIcon size="2xl"><SmileIcon/></JIcon></td></tr>
-            <tr><td><code>j-icon-size-3xl</code></td><td><code>36px</code></td><td><JIcon size="3xl"><SmileIcon/></JIcon></td></tr>
-            <tr><td><code>j-icon-size-4xl</code></td><td><code>48px</code></td><td><JIcon size="4xl"><SmileIcon/></JIcon></td></tr>
+            <tr><td><code>j-icon-size-sm</code></td><td><code>16px</code></td><td><JIcon size="sm"><SmileIcon/></JIcon></td></tr>
+            <tr><td><code>j-icon-size-rg</code></td><td><code>20px</code></td><td><JIcon size="rg"><SmileIcon/></JIcon></td></tr>
+            <tr><td><code>j-icon-size-md</code></td><td><code>24px</code></td><td><JIcon size="md"><SmileIcon/></JIcon></td></tr>
+            <tr><td><code>j-icon-size-lg</code></td><td><code>30px</code></td><td><JIcon size="lg"><SmileIcon/></JIcon></td></tr>
+            <tr><td><code>j-icon-size-xl</code></td><td><code>36px</code></td><td><JIcon size="xl"><SmileIcon/></JIcon></td></tr>
           </tbody>
         </table>
 

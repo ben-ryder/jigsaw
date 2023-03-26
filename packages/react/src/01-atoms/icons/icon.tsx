@@ -1,7 +1,7 @@
 import {ReactNode} from "react";
 import classNames from "classnames";
 
-export type JIconSize = "xs" | "sm" | "rg" | "md" | "lg" | "xl" | "2xl" | "3xl" | "4xl";
+export type JIconSize =  "sm" | "rg" | "md" | "lg" | "xl";
 
 export type JIconVariant =
   "blueGrey" |

@@ -1,5 +1,4 @@
 .j-icon {
-  color: var(--j-c-mono-50);
   width: var(--j-icon-size-rg);
   height: var(--j-icon-size-rg);
 
@@ -8,10 +7,6 @@
     height: 100%;
   }
 
-  &--xs {
-    width: var(--j-icon-size-xs);
-    height: var(--j-icon-size-xs);
-  }
   &--sm {
     width: var(--j-icon-size-sm);
     height: var(--j-icon-size-sm);
@@ -28,20 +23,10 @@
     width: var(--j-icon-size-xl);
     height: var(--j-icon-size-xl);
   }
-  &--2xl {
-    width: var(--j-icon-size-2xl);
-    height: var(--j-icon-size-2xl);
-  }
-  &--3xl {
-    width: var(--j-icon-size-3xl);
-    height: var(--j-icon-size-3xl);
-  }
-  &--4xl {
-    width: var(--j-icon-size-4xl);
-    height: var(--j-icon-size-4xl);
-  }
 
-
+  &--white {
+    color: var(--j-c-mono-50);
+  }
   &--blueGrey {
     color: var(--j-c-blueGrey-700);
   }
