@@ -2,4 +2,6 @@
 
 .j-textarea {
   @include form-element();
+
+  resize: vertical;
 }

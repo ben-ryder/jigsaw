@@ -12,6 +12,6 @@ export function Default() {
 
 export function WithError() {
     return (
-      <JInput placeholder="This Input has an issue" error={true} />
+      <JInput placeholder="This input has an issue..." error={true} />
     )
 }
