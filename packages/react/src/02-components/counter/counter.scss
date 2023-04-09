@@ -1,0 +1,37 @@
+
+.j-counter {
+  border: var(--j-border-width-md) solid var(--j-c-blueGrey-900);
+  border-radius: var(--j-border-radius-md);
+  padding: var(--j-space-8);
+  background: var(--j-c-background-f1);
+
+  &__title {
+    font-weight: bold;
+    font-size: var(--j-text-size-2xl);
+  }
+
+  &__description {
+    padding-top: var(--j-space-6);
+  }
+
+  &__counter {
+    padding-top: var(--j-space-12);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    &-label {
+      font-weight: bold;
+      margin-right: var(--j-space-4);
+    }
+  }
+
+  &__controls {
+    padding-top: var(--j-space-12);
+    padding-bottom: var(--j-space-4);
+
+    button {
+      margin-right: var(--j-space-4);
+    }
+  }
+}

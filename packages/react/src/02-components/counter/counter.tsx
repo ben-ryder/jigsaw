@@ -21,8 +21,8 @@ export function JCounter(props: CounterProps) {
 				<p className="j-counter__counter-number">{count}</p>
 			</div>
 			<div className="j-counter__controls">
-				<JButton className="j-counter__increment" onClick={() => {setCount(count + 1);}}>Increment</JButton>
 				<JButton className="j-counter__reset" onClick={() => {setCount(0)}} variant="destructive">Reset</JButton>
+				<JButton className="j-counter__increment" onClick={() => {setCount(count + 1);}}>Increment</JButton>
 			</div>
 		</div>
 	)
