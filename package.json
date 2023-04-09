@@ -16,7 +16,7 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "build": "lerna run build",
+    "build": "(cd packages/react && npm run build) && (cd packages/core && npm run build)",
     "test": "lerna run test",
     "version": "lerna version --no-private",
     "publish": "lerna publish --no-private"
