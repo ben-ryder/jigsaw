@@ -5,9 +5,9 @@ export default {
 };
 
 export function RightArrow() {
-    return <JArrowLink link="#">Read More</JArrowLink>
+    return <JArrowLink href="#">Read More</JArrowLink>
 }
 
 export function LeftArrow() {
-    return <JArrowLink link="#" direction="left">Back</JArrowLink>
+    return <JArrowLink href="#" direction="left">Back</JArrowLink>
 }
