@@ -1,10 +1,14 @@
-import {ComponentProps, ReactNode} from "react";
+import {ComponentProps, ElementType} from "react";
 import classNames from "classnames";
 
-export interface JTextLinkProps extends ComponentProps<'a'> {}
+export interface JTextLinkProps extends ComponentProps<'a'> {
+	as?: ElementType<JTextLinkProps>
+}
 
 export function JTextLink(props: JTextLinkProps) {
-	const {className: suppliedClassName, children, ...htmlProps} = props;
+	const {className: suppliedClassName, children, as, ...htmlProps} = props;
+
+	const Component = as || "a";
 
 	const className = classNames(
 		"j-text-link",
@@ -12,6 +16,6 @@ export function JTextLink(props: JTextLinkProps) {
 	);
 
 	return (
-		<a className={className} {...htmlProps}>{children}</a>
+		<Component className={className} {...htmlProps}>{children}</Component>
 	)
 }
