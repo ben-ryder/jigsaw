@@ -14,9 +14,7 @@ export function JCounter(props: CounterProps) {
 	return (
 		<div className="j-counter">
 			<h3 className="j-counter__title">{props.title}</h3>
-			<div className="j-counter__description">
-				<JProse>{props.body}</JProse>
-			</div>
+			<p className="j-counter__description">{props.body}</p>
 			<div className="j-counter__counter">
 				<p className="j-counter__counter-label">Current Count:</p>
 				<p className="j-counter__counter-number">{count}</p>
