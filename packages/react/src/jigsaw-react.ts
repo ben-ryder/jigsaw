@@ -2,6 +2,7 @@
 export * from "./01-atoms/button/button.js";
 export * from "./01-atoms/links/arrow-link/arrow-link.js";
 export * from "./01-atoms/links/button-link/button-link.js";
+export * from "./01-atoms/links/text-link/text-link.js";
 export * from "./01-atoms/form-elements/error-text/error-text.js";
 export * from "./01-atoms/form-elements/input/input.js";
 export * from "./01-atoms/form-elements/label/label.js";
@@ -19,4 +20,5 @@ export * from "./02-components/prose/prose.js";
 export * from "./02-components/table/table.js";
 export * from "./02-components/counter/counter.js";
 
+export * from "./03-layouts/button-group/button-group.js";
 export * from "./03-layouts/content-section/content-section.js";
