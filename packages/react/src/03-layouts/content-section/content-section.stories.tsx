@@ -2,7 +2,7 @@ import {JContentSection} from "./content-section";
 import {JProse} from "../../02-components/prose/prose";
 
 export default {
-  title: "Templates/Content Section",
+  title: "Layouts/Content Section",
 };
 
 export function Default() {

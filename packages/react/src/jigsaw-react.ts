@@ -19,4 +19,4 @@ export * from "./02-components/prose/prose.js";
 export * from "./02-components/table/table.js";
 export * from "./02-components/counter/counter.js";
 
-export * from "./03-templates/content-section/content-section.js";
+export * from "./03-layouts/content-section/content-section.js";

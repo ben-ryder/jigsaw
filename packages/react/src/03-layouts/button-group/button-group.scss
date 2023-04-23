@@ -1,0 +1,35 @@
+
+.j-button-group {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .j-button,
+  .j-button-link {
+    margin-left: var(--j-space-4);
+  }
+
+  &--separate-end {
+    :first-child {
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+
+  &--left {
+    justify-content: flex-start;
+
+    .j-button,
+    .j-button-link {
+      margin-right: var(--j-space-4);
+      margin-left: 0;
+    }
+
+    &.j-button-group--separate-end {
+      :last-child {
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+  }
+}

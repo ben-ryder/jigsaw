@@ -6,7 +6,7 @@
 @use "../00-foundations/typography/typography.development";
 
 @use "../02-components/prose/prose";
-@use "../03-templates/content-section/content-section";
+@use "../03-layouts/content-section/content-section";
 
 
 .j-dev-story-section {
@@ -15,6 +15,7 @@
   &__label {
     color: var(--j-c-blueGrey-700);
     font-weight: bold;
+    font-size: var(--j-text-size-sm);
   }
 
   &__content {
