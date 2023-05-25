@@ -2,18 +2,17 @@ import classNames from "classnames";
 import {JLabel} from "../../form-elements/label/label.js";
 import {JTextArea} from "../../form-elements/textarea/textarea.js";
 import {JErrorText} from "../../form-elements/error-text/error-text.js";
+import {ComponentProps} from "react";
 
-export interface JTextAreaControlProps {
-	id: string;
+export interface JTextAreaControlProps extends ComponentProps<'textarea'>{
 	label: string;
-	className?: string;
 	error?: string;
 	hideLabel?: boolean;
-	placeholder?: string;
-	rows?: number;
 }
 
 export function JTextAreaControl(props: JTextAreaControlProps) {
+	const {label, error, hideLabel, ...htmlProps} = props;
+
 	const className = classNames(
 		"j-text-area-control",
 		props.className
@@ -23,10 +22,8 @@ export function JTextAreaControl(props: JTextAreaControlProps) {
 		<div className={className}>
 			<JLabel htmlFor={props.id} hidden={props.hideLabel}>{props.label}</JLabel>
 			<JTextArea
-				id={props.id}
 				error={!!props.error}
-				placeholder={props.placeholder}
-				rows={props.rows || 3}
+				{...htmlProps}
 			/>
 			{props.error &&
 				<JErrorText>{props.error}</JErrorText>

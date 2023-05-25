@@ -1,20 +1,18 @@
-import {ComponentProps, HTMLInputTypeAttribute} from "react";
+import {ComponentProps} from "react";
 import classNames from "classnames";
 import {JLabel} from "../../form-elements/label/label.js";
-import {JInput} from "../../form-elements/input/input.js";
+import {JInput, JInputProps} from "../../form-elements/input/input.js";
 import {JErrorText} from "../../form-elements/error-text/error-text.js";
 
-export interface JInputControlProps {
-	id: string;
-	className?: string;
+export interface JInputControlProps extends ComponentProps<'input'> {
 	label: string;
 	error?: string;
-	type: HTMLInputTypeAttribute
 	hideLabel?: boolean;
-	placeholder?: string;
 }
 
 export function JInputControl(props: JInputControlProps) {
+	const {label, hideLabel, error, ...htmlProps} = props;
+
 	const className = classNames(
 		"j-input-control",
 		props.className
@@ -22,8 +20,11 @@ export function JInputControl(props: JInputControlProps) {
 
 	return (
 		<div className={className}>
-			<JLabel htmlFor={props.id} hidden={props.hideLabel}>{props.label}</JLabel>
-			<JInput id={props.id} type={props.type} error={!!props.error} placeholder={props.placeholder}></JInput>
+			<JLabel htmlFor={props.id} hidden={hideLabel}>{label}</JLabel>
+			<JInput
+				error={!!props.error}
+				{...htmlProps}
+			/>
 			{props.error &&
 				<JErrorText>{props.error}</JErrorText>
 			}
