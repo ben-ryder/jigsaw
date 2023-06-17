@@ -40,6 +40,8 @@ export function Icons() {
         <table>
           <thead><tr><th>Variant</th><th>Example</th></tr></thead>
           <tbody>
+            <tr><td><code>teal</code></td><td><JIcon size="lg" variant="teal"><SmileIcon/></JIcon></td></tr>
+            <tr><td><code>white</code></td><td><JIcon size="lg" variant="white"><SmileIcon/></JIcon></td></tr>
             <tr><td><code>blueGrey</code></td><td><JIcon size="lg" variant="blueGrey"><SmileIcon/></JIcon></td></tr>
             <tr><td><code>red</code></td><td><JIcon size="lg" variant="red"><SmileIcon/></JIcon></td></tr>
             <tr><td><code>green</code></td><td><JIcon size="lg" variant="green"><SmileIcon/></JIcon></td></tr>

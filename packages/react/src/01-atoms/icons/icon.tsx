@@ -4,6 +4,7 @@ import classNames from "classnames";
 export type JIconSize =  "sm" | "rg" | "md" | "lg" | "xl";
 
 export type JIconVariant =
+  "teal" |
   "blueGrey" |
   "white" |
   "red" |
