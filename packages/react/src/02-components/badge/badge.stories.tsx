@@ -12,18 +12,15 @@ export default {
 
 export function Default() {
   return (
-    <JBadge>This is a badge</JBadge>
-  )
-}
-
-export function Colours() {
-  return (
     <>
       <StorySection>
-        <JBadge variant="blueGrey">This is a badge</JBadge>
+        <JBadge>This is a badge</JBadge>
       </StorySection>
       <StorySection>
         <JBadge variant="white">This is a badge</JBadge>
+      </StorySection>
+      <StorySection>
+        <JBadge variant="blueGrey">This is a badge</JBadge>
       </StorySection>
       <StorySection>
         <JBadge variant="red">This is a badge</JBadge>
@@ -46,6 +43,18 @@ export function Colours() {
       <StorySection>
         <JBadge variant="pink">This is a badge</JBadge>
       </StorySection>
+    </>
+  )
+}
+
+export function CustomStyle() {
+  return (
+    <>
+      <JBadge style={{
+        backgroundColor: "#f00",
+        color: "#fff"
+      }}>This is a badge</JBadge>
+      <p>This badge has custom CSS properties defining its colour</p>
     </>
   )
 }
