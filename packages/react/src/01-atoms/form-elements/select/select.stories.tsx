@@ -3,7 +3,12 @@ import "./select.scss";
 import {JSelect, JOption} from "./select";
 
 export default {
-    title: "Atoms/Form Elements/Select",
+  title: "Atoms/Form Elements/Select",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 export function Default() {

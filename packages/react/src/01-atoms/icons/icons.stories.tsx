@@ -3,6 +3,11 @@ import {JIcon} from "./icon";
 
 export default {
   title: "Atoms/Icons",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 export function Icons() {

@@ -2,6 +2,11 @@ import {JTextArea} from "./textarea";
 
 export default {
     title: "Atoms/Form Elements/Textarea",
+    parameters: {
+        status: {
+            type: "unstable"
+        }
+    }
 };
 
 export function Default() {

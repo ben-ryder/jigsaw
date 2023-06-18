@@ -1,7 +1,13 @@
 import {JProse} from "./prose";
+import {JCallout} from "../callout/callout";
 
 export default {
   title: "Components/Prose",
+  parameters: {
+    status: {
+      type: "stable"
+    }
+  }
 };
 
 
@@ -60,7 +66,17 @@ export function Default() {
           <li>In this example we're keeping the items short.</li>
           <li>Later, we'll use longer, more complex list items.</li>
         </ul>
-        <p>And that's the end of this section.</p><h2>What if we stack headings?</h2><h3>We should make sure that looks
+        <p>And that's the end of this section.</p>
+
+      <JCallout variant="warning">
+        <p><b>Top Tip:</b> Callouts are not just limited to basic markup, but can also contain some <b>bold text</b> and even some <i>italics like this</i>.
+          Here's even more special things like <code>some code</code> and <a href="#">even a link</a>. This works because the
+          callout content section extends the styling of the <code>Prose</code> component.
+        </p>
+      </JCallout>
+
+      <h2>What if we stack headings?</h2>
+      <h3>We should make sure that looks
           good, too.</h3><p>Sometimes you have headings directly underneath each other. In those cases you often have to
           undo the top margin on the second heading because it usually looks better for the headings to be closer
           together than a paragraph followed by a heading should be.</p><h3>When a heading comes after a paragraph

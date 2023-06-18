@@ -1,5 +1,10 @@
 export default {
   title: "Foundations/Breakpoints",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 export function Breakpoints() {

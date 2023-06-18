@@ -25,7 +25,7 @@ export function JAccordionItem(props: JAccordionItemProps) {
   return (
     <details className="j-accordion__item">
       <summary className="j-accordion__item-title">
-        This is item 1
+        {props.title}
         <OpenIcon className="j-icon j-accordion__open-icon" />
         <CloseIcon className="j-icon j-accordion__close-icon" />
       </summary>

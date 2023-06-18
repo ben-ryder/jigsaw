@@ -9,6 +9,11 @@ import {JContentSection} from "../content-section/content-section";
 
 export default {
   title: "Layouts/Form",
+  parameters: {
+    status: {
+      type: "experimental"
+    }
+  }
 };
 
 export function Default() {

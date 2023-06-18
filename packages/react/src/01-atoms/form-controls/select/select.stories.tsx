@@ -2,6 +2,11 @@ import {JSelectControl} from "./select";
 
 export default {
   title: "Atoms/Form Controls/Select",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 export function Default() {

@@ -4,6 +4,11 @@ import {JCallout} from "../callout/callout";
 
 export default {
   title: "Components/Accordion",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 

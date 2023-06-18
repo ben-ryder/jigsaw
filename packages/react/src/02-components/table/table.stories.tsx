@@ -2,6 +2,11 @@ import {JTable} from "./table";
 
 export default {
   title: "Components/Table",
+  parameters: {
+    status: {
+      type: "stable"
+    }
+  }
 };
 
 export function Default() {

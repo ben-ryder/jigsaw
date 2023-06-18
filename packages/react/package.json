@@ -40,6 +40,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@etchteam/storybook-addon-status": "^4.2.4",
     "@node-minify/cli": "^8.0.5",
     "@node-minify/cssnano": "^8.0.5",
     "@storybook/addon-docs": "^7.0.22",

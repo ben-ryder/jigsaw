@@ -2,6 +2,11 @@ import {COLOURS} from "./colours";
 
 export default {
   title: "Foundations/Colours",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 type ColourData = {identifier: string, value: string}[];

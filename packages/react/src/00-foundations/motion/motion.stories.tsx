@@ -1,5 +1,10 @@
 export default {
   title: "Foundations/Motion",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 

@@ -2,6 +2,11 @@ import {JInput} from "./input";
 
 export default {
     title: "Atoms/Form Elements/Input",
+    parameters: {
+        status: {
+            type: "unstable"
+        }
+    }
 };
 
 export function Default() {

@@ -2,6 +2,11 @@ import {JCallout} from "./callout";
 
 export default {
   title: "Components/Callout",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 export function Default() {
@@ -23,12 +28,16 @@ export function WithContent() {
 
 export function Warning() {
   return (
-    <JCallout variant="warning">This variant can highlight a warning or draw the users attention to something they should know about</JCallout>
+    <JCallout variant="warning">
+      <p>This variant can highlight a warning or draw the users attention to something they should know about</p>
+    </JCallout>
   )
 }
 
 export function Danger() {
   return (
-    <JCallout variant="danger">This variant can highlight a danger, this is more severe than a warning.</JCallout>
+    <JCallout variant="danger">
+      <p>This variant can highlight a danger, this is more severe than a warning.</p>
+      </JCallout>
   )
 }

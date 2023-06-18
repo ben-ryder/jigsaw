@@ -2,6 +2,11 @@ import {JCounter} from "./counter";
 
 export default {
   title: "Components/Counter",
+  parameters: {
+    status: {
+      type: "experimental"
+    }
+  }
 };
 
 export function Default() {

@@ -1,6 +1,11 @@
 
 export default {
     title: "Atoms/Hidden",
+  parameters: {
+    status: {
+      type: "stable"
+    }
+  }
 };
 
 export function Hidden() {

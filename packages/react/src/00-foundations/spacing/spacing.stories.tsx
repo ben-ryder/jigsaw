@@ -2,6 +2,11 @@ import {SIZES} from "./spacing";
 
 export default {
   title: "Foundations/Spacing",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 type MotionData = {identifier: string, value: string}[];

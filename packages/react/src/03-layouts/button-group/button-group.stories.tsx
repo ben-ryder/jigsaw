@@ -4,6 +4,11 @@ import {StorySection} from "../../development/story-section";
 
 export default {
   title: "Layouts/Button Group",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 export function Default() {

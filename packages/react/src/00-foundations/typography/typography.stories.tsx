@@ -1,5 +1,10 @@
 export default {
     title: "Foundations/Typography",
+    parameters: {
+        status: {
+            type: "unstable"
+        }
+    }
 };
 
 

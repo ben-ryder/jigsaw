@@ -3,6 +3,11 @@ import {JProse} from "../../02-components/prose/prose";
 
 export default {
   title: "Layouts/Content Section",
+  parameters: {
+    status: {
+      type: "experimental"
+    }
+  }
 };
 
 export function Default() {

@@ -5,6 +5,7 @@
   background-color: var(--j-c-background-f1);
   box-shadow: var(--j-shadow-sm);
   border: var(--j-border-width-md) solid var(--j-c-info);
+  border-radius: var(--j-border-radius-sm);
   color: var(--j-c-text);
   margin: var(--j-space-8) 0;
 
@@ -15,10 +16,12 @@
     justify-items: center;
     align-items: center;
     color: var(--j-c-mono-50);
+    border-right: var(--j-border-width-md) solid var(--j-c-info);
   }
 
   &__content {
     padding: var(--j-space-6);
+    width: 100%;
 
     @extend .j-prose;
 
@@ -34,6 +37,7 @@
 
     .j-callout__icon {
       background-color: var(--j-c-warning);
+      border-right-color: var(--j-c-warning);
     }
   }
 
@@ -42,6 +46,7 @@
 
     .j-callout__icon {
       background-color: var(--j-c-danger);
+      border-right-color: var(--j-c-danger);
     }
   }
 }

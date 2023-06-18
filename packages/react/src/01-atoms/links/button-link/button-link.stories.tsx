@@ -3,6 +3,11 @@ import {LinkHelper} from "../link-handler";
 
 export default {
   title: "Atoms/Links/Button Link",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 export function Default() {

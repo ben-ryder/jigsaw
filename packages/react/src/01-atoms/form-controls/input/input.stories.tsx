@@ -1,7 +1,12 @@
 import {JInputControl} from "./input";
 
 export default {
-    title: "Atoms/Form Controls/Input",
+  title: "Atoms/Form Controls/Input",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 export function Default() {

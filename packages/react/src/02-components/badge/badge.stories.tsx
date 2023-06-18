@@ -3,6 +3,11 @@ import {StorySection} from "../../development/story-section";
 
 export default {
   title: "Components/Badge",
+  parameters: {
+    status: {
+      type: "experimental"
+    }
+  }
 };
 
 export function Default() {

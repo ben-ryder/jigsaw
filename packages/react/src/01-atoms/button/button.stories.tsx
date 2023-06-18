@@ -3,6 +3,11 @@ import {StorySection} from "../../development/story-section";
 
 export default {
   title: "Atoms/Button",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 export function Default() {

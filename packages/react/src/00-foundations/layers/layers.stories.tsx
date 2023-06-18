@@ -1,5 +1,10 @@
 export default {
   title: "Foundations/Layers",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 

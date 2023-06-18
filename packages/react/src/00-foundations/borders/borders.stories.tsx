@@ -1,5 +1,10 @@
 export default {
   title: "Foundations/Borders",
+  parameters: {
+    status: {
+      type: "unstable"
+    }
+  }
 };
 
 export function Borders() {

@@ -1,5 +1,10 @@
 export default {
   title: "Foundations/Accessibility",
+  parameters: {
+    status: {
+      type: "experimental"
+    }
+  }
 };
 
 export function Accessibility() {

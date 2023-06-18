@@ -3,6 +3,11 @@ import {LinkHelper} from "../link-handler";
 
 export default {
     title: "Atoms/Links/Text Link",
+    parameters: {
+        status: {
+            type: "stable"
+        }
+    }
 };
 
 export function Default() {

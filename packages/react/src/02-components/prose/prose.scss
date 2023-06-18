@@ -76,8 +76,7 @@
     background-color: var(--j-c-background-f1);
     font-style: italic;
     margin-bottom: var(--j-space-8);
-    border-top-right-radius: var(--j-border-radius-sm);
-    border-bottom-right-radius: var(--j-border-radius-sm);
+    border-radius: var(--j-border-radius-sm);
 
     p {
       margin-bottom: 0;
