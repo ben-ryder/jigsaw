@@ -12,12 +12,21 @@
   border: var(--j-border-width-md) solid var(--j-c-primary);
   box-shadow: var(--j-shadow-md);
 
-  &:hover {
-    cursor: pointer;
+  &:hover,
+  &:focus-visible {
     background: var(--j-c-primary-interaction);
     color: var(--j-c-primary-interaction-text);
-    border-color: var(--j-c-primary-interaction);
+    cursor: pointer;
     box-shadow: none;
+    outline: none;
+  }
+
+  &:hover {
+    border-color: var(--j-c-primary-interaction);
+  }
+
+  &:focus-visible {
+    border-color: var(--j-c-primary-interaction-text);
   }
 
   &--secondary {
@@ -25,10 +34,18 @@
     color: var(--j-c-secondary-text);
     border-color: var(--j-c-secondary);
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       background: var(--j-c-secondary-interaction);
       color: var(--j-c-secondary-interaction-text);
+    }
+
+    &:hover {
       border-color: var(--j-c-secondary-interaction);
+    }
+
+    &:focus-visible {
+      border-color: var(--j-c-secondary-interaction-text);
     }
   }
 
@@ -37,10 +54,18 @@
     color: var(--j-c-destructive-text);
     border-color: var(--j-c-destructive);
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       background: var(--j-c-destructive-interaction);
       color: var(--j-c-destructive-interaction-text);
+    }
+
+    &:hover {
       border-color: var(--j-c-destructive-interaction);
+    }
+
+    &:focus-visible {
+      border-color: var(--j-c-destructive-interaction-text);
     }
   }
 
@@ -57,6 +82,11 @@
       text-decoration: underline;
       text-decoration-thickness: var(--j-border-width-md);
       text-underline-offset: var(--j-border-width-md);
+    }
+
+    &:focus-visible {
+      background: transparent;
+      border-color: var(--j-c-tertiary);
     }
 
     &.j-button--loading,
