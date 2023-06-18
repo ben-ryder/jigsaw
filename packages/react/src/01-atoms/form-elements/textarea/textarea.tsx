@@ -1,7 +1,7 @@
-import {ComponentProps} from "react";
+import {ComponentPropsWithoutRef} from "react";
 import classNames from "classnames";
 
-export interface JTextAreaProps extends ComponentProps<'textarea'> {
+export interface JTextAreaProps extends ComponentPropsWithoutRef<'textarea'> {
     error?: boolean
 }
 

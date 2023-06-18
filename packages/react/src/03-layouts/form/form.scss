@@ -1,0 +1,12 @@
+@use "../../02-components/prose/prose" as *;
+
+.j-form {
+  &__header {
+    @extend .j-prose;
+    margin-bottom: var(--j-space-12);
+  }
+
+  &__row {
+    margin-bottom: var(--j-space-8);
+  }
+}

@@ -10,6 +10,7 @@ export function Default() {
       id="test"
       label="Test Text Area"
       placeholder="enter some text here..."
+      rows={5}
     />
   )
 }
@@ -21,6 +22,7 @@ export function WithError() {
       label="With Error"
       placeholder="enter some text here..."
       error="There is a problem here!"
+      rows={5}
     />
   )
 }
@@ -32,6 +34,7 @@ export function WithHiddenLabel() {
       label="With Hidden Label"
       placeholder="There is actually a label..."
       hideLabel={true}
+      rows={5}
     />
   )
 }

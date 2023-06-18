@@ -7,9 +7,10 @@
   border-radius: var(--j-border-radius-md);
   padding: var(--j-space-5);
   outline: none;
-  color: var(--j-c-primary-text);
+  color: var(--j-c-text);
   width: 100%;
-  font-size: var(--j-text-size-sm);
+  font-size: var(--j-text-size-rg);
+  font-family: var(--j-text-font-primary);
 
   &:hover {
     border-color: var(--j-c-blueGrey-600);
@@ -19,8 +20,7 @@
     border-color: var(--j-c-primary);
   }
 
-  &--error,
-  &:invalid {
+  &--error {
     border-color: var(--j-c-red-500);
 
     &:hover {
@@ -28,8 +28,7 @@
     }
   }
 
-  &--error:focus,
-  &:invalid:focus {
+  &--error:focus {
     border-color: var(--j-c-red-700);
   }
 }
