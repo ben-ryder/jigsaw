@@ -1,0 +1,5 @@
+@use "../../form-elements/form-element.toolkit" as *;
+
+.j-multiselect {
+  @include form-element();
+}
