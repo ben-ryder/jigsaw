@@ -10,41 +10,161 @@ export default {
   }
 };
 
-export function Default() {
-  return (
-    <JBadge>This is a badge</JBadge>
-  )
-}
 
-export function Colours() {
+export function Default() {
   return (
     <>
       <StorySection>
-        <JBadge variant="blueGrey">This is a badge</JBadge>
+        <JBadge
+          text="This is a badge"
+        />
       </StorySection>
       <StorySection>
-        <JBadge variant="white">This is a badge</JBadge>
+        <JBadge
+          variant="white"
+          text="This is a badge"
+        />
       </StorySection>
       <StorySection>
-        <JBadge variant="red">This is a badge</JBadge>
+        <JBadge
+          variant="blueGrey"
+          text="This is a badge"
+        />
       </StorySection>
       <StorySection>
-        <JBadge variant="green">This is a badge</JBadge>
+        <JBadge
+          variant="red"
+          text="This is a badge"
+        />
       </StorySection>
       <StorySection>
-        <JBadge variant="orange">This is a badge</JBadge>
+        <JBadge
+          variant="green"
+          text="This is a badge"
+        />
       </StorySection>
       <StorySection>
-        <JBadge variant="yellow">This is a badge</JBadge>
+        <JBadge
+          variant="orange"
+          text="This is a badge"
+        />
       </StorySection>
       <StorySection>
-        <JBadge variant="blue">This is a badge</JBadge>
+        <JBadge
+          variant="yellow"
+          text="This is a badge"
+        />
       </StorySection>
       <StorySection>
-        <JBadge variant="purple">This is a badge</JBadge>
+        <JBadge
+          variant="blue"
+          text="This is a badge"
+        />
       </StorySection>
       <StorySection>
-        <JBadge variant="pink">This is a badge</JBadge>
+        <JBadge
+          variant="purple"
+          text="This is a badge"
+        />
+      </StorySection>
+      <StorySection>
+        <JBadge
+          variant="pink"
+          text="This is a badge"
+        />
+      </StorySection>
+    </>
+  )
+}
+
+export function WithLink() {
+  return (
+    <>
+      <StorySection>
+        <JBadge
+          text="This is a badge"
+          href="#"
+        />
+      </StorySection>
+      <StorySection>
+        <JBadge
+          variant="white"
+          text="This is a badge"
+          href="#"
+        />
+      </StorySection>
+      <StorySection>
+        <JBadge
+          variant="blueGrey"
+          text="This is a badge"
+          href="#"
+        />
+      </StorySection>
+      <StorySection>
+        <JBadge
+          variant="red"
+          text="This is a badge"
+          href="#"
+        />
+      </StorySection>
+      <StorySection>
+        <JBadge
+          variant="green"
+          text="This is a badge"
+          href="#"
+        />
+      </StorySection>
+      <StorySection>
+        <JBadge
+          variant="orange"
+          text="This is a badge"
+          href="#"
+        />
+      </StorySection>
+      <StorySection>
+        <JBadge
+          variant="yellow"
+          text="This is a badge"
+          href="#"
+        />
+      </StorySection>
+      <StorySection>
+        <JBadge
+          variant="blue"
+          text="This is a badge"
+          href="#"
+        />
+      </StorySection>
+      <StorySection>
+        <JBadge
+          variant="purple"
+          text="This is a badge"
+          href="#"
+        />
+      </StorySection>
+      <StorySection>
+        <JBadge
+          variant="pink"
+          text="This is a badge"
+          href="#"
+        />
+      </StorySection>
+    </>
+  )
+}
+
+export function CustomStyles() {
+  return (
+    <>
+      <StorySection>
+        <JBadge
+          text="This uses custom styles!"
+          style={{
+            backgroundColor: "#00f",
+            color: "#fff",
+            textTransform:  "uppercase"
+          }}
+        />
       </StorySection>
     </>
   )

@@ -16,17 +16,14 @@
   &:focus-visible {
     background: var(--j-c-primary-interaction);
     color: var(--j-c-primary-interaction-text);
+    border-color: var(--j-c-primary-interaction);
     cursor: pointer;
     box-shadow: none;
     outline: none;
   }
 
-  &:hover {
-    border-color: var(--j-c-primary-interaction);
-  }
-
   &:focus-visible {
-    border-color: var(--j-c-primary-interaction-text);
+    outline: 2px solid var(--j-c-mono-50);
   }
 
   &--secondary {
@@ -38,14 +35,7 @@
     &:focus-visible {
       background: var(--j-c-secondary-interaction);
       color: var(--j-c-secondary-interaction-text);
-    }
-
-    &:hover {
       border-color: var(--j-c-secondary-interaction);
-    }
-
-    &:focus-visible {
-      border-color: var(--j-c-secondary-interaction-text);
     }
   }
 
@@ -58,14 +48,7 @@
     &:focus-visible {
       background: var(--j-c-destructive-interaction);
       color: var(--j-c-destructive-interaction-text);
-    }
-
-    &:hover {
       border-color: var(--j-c-destructive-interaction);
-    }
-
-    &:focus-visible {
-      border-color: var(--j-c-destructive-interaction-text);
     }
   }
 
@@ -86,7 +69,7 @@
 
     &:focus-visible {
       background: transparent;
-      border-color: var(--j-c-tertiary);
+      border-color: transparent;
     }
 
     &.j-button--loading,

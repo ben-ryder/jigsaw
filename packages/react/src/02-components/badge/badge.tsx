@@ -1,4 +1,4 @@
-import {ReactNode} from "react";
+import {CSSProperties, ElementType, ReactNode} from "react";
 import classNames from "classnames";
 
 export type JBadgeVariant =
@@ -13,19 +13,33 @@ export type JBadgeVariant =
   "pink";
 
 export interface JBadgeProps {
-  children: ReactNode,
-  variant?: JBadgeVariant
+  text: string
+  variant?: JBadgeVariant,
+  style?: CSSProperties,
+  href?: string,
+  linkAs?: ElementType<'a'>
 }
 
 export function JBadge(props: JBadgeProps) {
-  const {children, variant, ...htmlProps} = props;
-
   const className = classNames(
     "j-badge",
-    variant ? `j-badge--${variant}` : ""
+    props.variant ? `j-badge--${props.variant}` : "",
   )
 
+  if (props.href) {
+    const Component = props.linkAs || "a";
+
+    return (
+      <Component className={className} style={props.style} href={props.href}>
+        {props.text}
+      </Component>
+    )
+  }
+
   return (
-    <label className={className} {...htmlProps}>{children}</label>
+    <div
+      className={className}
+      style={props.style}
+    >{props.text}</div>
   )
 }

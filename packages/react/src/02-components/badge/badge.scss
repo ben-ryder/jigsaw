@@ -10,11 +10,6 @@
     background-color: var(--j-c-blueGrey-700);
   }
 
-  &--white {
-    background-color: var(--j-c-mono-50);
-    color: var(--j-c-mono-900);
-  }
-
   &--red {
     background-color: var(--j-c-red-500);
   }
@@ -25,12 +20,6 @@
 
   &--orange {
     background-color: var(--j-c-orange-500);
-
-  }
-
-  &--yellow {
-    background-color: var(--j-c-yellow-500);
-    color: var(--j-c-mono-900);
   }
 
   &--blue {
@@ -43,5 +32,91 @@
 
   &--pink {
     background-color: var(--j-c-pink-500);
+  }
+
+  &--white {
+    background-color: var(--j-c-mono-50);
+    color: var(--j-c-mono-900);
+  }
+
+  &--yellow {
+    background-color: var(--j-c-yellow-500);
+    color: var(--j-c-mono-900);
+  }
+
+  &[href] {
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+      background-color: var(--j-c-primary-interaction);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--j-c-mono-50);
+    }
+
+    &.j-badge--white {
+      &:hover,
+      &:focus-visible {
+        background-color: var(--j-c-mono-300);
+      }
+    }
+
+    &.j-badge--blueGrey {
+      &:hover,
+      &:focus-visible {
+        background-color: var(--j-c-blueGrey-500);
+      }
+    }
+
+    &.j-badge--red {
+      &:hover,
+      &:focus-visible {
+        background-color: var(--j-c-red-700);
+      }
+    }
+
+    &.j-badge--green {
+      &:hover,
+      &:focus-visible {
+        background-color: var(--j-c-green-700);
+      }
+    }
+
+    &.j-badge--orange {
+      &:hover,
+      &:focus-visible {
+        background-color: var(--j-c-orange-700);
+      }
+    }
+
+    &.j-badge--blue {
+      &:hover,
+      &:focus-visible {
+        background-color: var(--j-c-blue-700);
+      }
+    }
+
+    &.j-badge--purple {
+      &:hover,
+      &:focus-visible {
+        background-color: var(--j-c-purple-700);
+      }
+    }
+
+    &.j-badge--pink {
+      &:hover,
+      &:focus-visible {
+        background-color: var(--j-c-pink-700);
+      }
+    }
+
+    &.j-badge--yellow {
+      &:hover,
+      &:focus-visible {
+        background-color: var(--j-c-yellow-700);
+      }
+    }
   }
 }

@@ -1,0 +1,86 @@
+
+.j-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background-color: var(--j-c-primary);
+  color: var(--j-c-mono-50);
+  padding: var(--j-space-1) var(--j-space-4);
+  border-radius: var(--j-border-radius-md);
+
+  &__remove-button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+
+    // This spacing makes room for the remove button while making sure
+    // the tag height matches the badge component height
+    padding: 0;
+    margin: var(--j-space-2) 0 var(--j-space-2) 6px;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--j-c-mono-300);
+      cursor: pointer;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--j-c-mono-50);
+      border-radius: var(--j-border-radius-sm);
+    }
+  }
+
+  &--blueGrey {
+    background-color: var(--j-c-blueGrey-700);
+  }
+
+  &--red {
+    background-color: var(--j-c-red-500);
+  }
+
+  &--green {
+    background-color: var(--j-c-green-500);
+  }
+
+  &--orange {
+    background-color: var(--j-c-orange-500);
+
+  }
+
+  &--blue {
+    background-color: var(--j-c-blue-500);
+  }
+
+  &--purple {
+    background-color: var(--j-c-purple-500);
+  }
+
+  &--pink {
+    background-color: var(--j-c-pink-500);
+  }
+
+  &--white {
+    background-color: var(--j-c-mono-50);
+  }
+
+  &--yellow {
+    background-color: var(--j-c-yellow-500);
+  }
+
+  &--white,
+  &--yellow {
+    color: var(--j-c-mono-900);
+
+    .j-tag__remove-button {
+      &:hover,
+      &:focus-visible {
+        color: var(--j-c-mono-400);
+      }
+
+      &:focus-visible {
+        outline-color: var(--j-c-mono-900);
+      }
+    }
+  }
+}
