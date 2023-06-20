@@ -15,80 +15,100 @@ export function Default() {
     <>
       <StorySection>
         <JTag
-          text="This is a badge"
-          value="one"
+          data={{
+            text: "This is a tag",
+            value: "value"
+          }}
           onRemove={(value) => {}}
         />
       </StorySection>
       <StorySection>
         <JTag
           variant="white"
-          text="This is a badge"
-          value="one"
+          data={{
+            text: "This is a tag",
+            value: "value"
+          }}
           onRemove={(value) => {}}
         />
       </StorySection>
       <StorySection>
         <JTag
           variant="blueGrey"
-          text="This is a badge"
-          value="one"
+          data={{
+            text: "This is a tag",
+            value: "value"
+          }}
           onRemove={(value) => {}}
         />
       </StorySection>
       <StorySection>
         <JTag
           variant="red"
-          text="This is a badge"
-          value="one"
+          data={{
+            text: "This is a tag",
+            value: "value"
+          }}
           onRemove={(value) => {}}
         />
       </StorySection>
       <StorySection>
         <JTag
           variant="green"
-          text="This is a badge"
-          value="one"
+          data={{
+            text: "This is a tag",
+            value: "value"
+          }}
           onRemove={(value) => {}}
         />
       </StorySection>
       <StorySection>
         <JTag
           variant="orange"
-          text="This is a badge"
-          value="one"
+          data={{
+            text: "This is a tag",
+            value: "value"
+          }}
           onRemove={(value) => {}}
         />
       </StorySection>
       <StorySection>
         <JTag
           variant="yellow"
-          text="This is a badge"
-          value="one"
+          data={{
+            text: "This is a tag",
+            value: "value"
+          }}
           onRemove={(value) => {}}
         />
       </StorySection>
       <StorySection>
         <JTag
           variant="blue"
-          text="This is a badge"
-          value="one"
+          data={{
+            text: "This is a tag",
+            value: "value"
+          }}
           onRemove={(value) => {}}
         />
       </StorySection>
       <StorySection>
         <JTag
           variant="purple"
-          text="This is a badge"
-          value="one"
+          data={{
+            text: "This is a tag",
+            value: "value"
+          }}
           onRemove={(value) => {}}
         />
       </StorySection>
       <StorySection>
         <JTag
           variant="pink"
-          text="This is a badge"
-          value="one"
+          data={{
+            text: "This is a tag",
+            value: "value"
+          }}
           onRemove={(value) => {}}
         />
       </StorySection>

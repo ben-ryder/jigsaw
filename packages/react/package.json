@@ -66,5 +66,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "downshift": "^7.6.0"
   }
 }

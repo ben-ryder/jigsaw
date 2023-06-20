@@ -1,0 +1,66 @@
+@use "../../form-elements/form-element.toolkit" as *;
+
+.j-multiselect {
+  @include form-element();
+
+  display: flex;
+  position: relative;
+  padding: 5px;
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--j-space-2);
+  }
+
+  &__input {
+    flex-grow: 1;
+    background: transparent;
+    border: none;
+    font-family: var(--j-text-font-primary);
+    font-size: var(--j-text-size-rg);
+    color: var(--j-c-text);
+    padding: var(--j-space-2);
+    margin-top: 2px;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__toggle {
+    background: transparent;
+    border: none;
+    color: inherit;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: var(--j-space-4);
+    background-color: var(--j-c-background-f1);
+    border-radius: var(--j-border-radius-md);
+    border: 2px solid var(--j-c-blueGrey-500);
+  }
+
+  &__menu-item,
+  &__menu-empty-item {
+    padding: var(--j-space-6);
+    text-align: center;
+  }
+
+  &__menu-item {
+    &:hover,
+    &--highlighted {
+      background: var(--j-c-background-f0);
+      cursor: pointer;
+    }
+  }
+}

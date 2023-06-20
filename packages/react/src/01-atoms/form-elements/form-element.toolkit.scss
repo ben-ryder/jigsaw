@@ -16,7 +16,8 @@
     border-color: var(--j-c-blueGrey-600);
   }
 
-  &:focus {
+  &:focus,
+  &:focus-within {
     border-color: var(--j-c-primary);
   }
 
@@ -28,7 +29,10 @@
     }
   }
 
-  &--error:focus {
-    border-color: var(--j-c-red-700);
+  &--error{
+    &:focus,
+    &:focus-within {
+      border-color: var(--j-c-red-700);
+    }
   }
 }

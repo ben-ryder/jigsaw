@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import {JLabel} from "../../form-elements/label/label.js";
 import {JErrorText} from "../../form-elements/error-text/error-text.js";
-import {JSelect, JOption} from "../../form-elements/select/select.js";
+import {JSelect} from "../../form-elements/select/select.js";
 import {ComponentProps} from "react";
 
 export interface JSelectControlOption {
@@ -29,12 +29,9 @@ export function JSelectControl(props: JSelectControlProps) {
 			<JLabel htmlFor={props.id} hidden={props.hideLabel}>{props.label}</JLabel>
 			<JSelect
 				error={!!props.error}
+				options={options}
 				{...htmlProps}
-			>
-				{options.map(option =>
-					<JOption value={option.value}>{option.text}</JOption>
-				)}
-			</JSelect>
+			/>
 			{props.error &&
 				<JErrorText>{props.error}</JErrorText>
 			}

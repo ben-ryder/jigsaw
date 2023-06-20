@@ -14,10 +14,14 @@ export type JTagVariant =
   "purple" |
   "pink";
 
-export interface JTagProps {
+export interface JTagData {
   text: string,
-  value: string,
-  onRemove: (value: string) => void,
+  value: string
+}
+
+export interface JTagProps {
+  data: JTagData,
+  onRemove: (data: JTagData) => void,
   variant?: JTagVariant,
   getA11yRemoveText?: (text: string) => string,
   style?: CSSProperties
@@ -34,12 +38,14 @@ export function JTag(props: JTagProps) {
       className={className}
       style={props.style}
     >
-      {props.text}
+      {props.data.text}
       <button
-        aria-label={props.getA11yRemoveText ? props.getA11yRemoveText(props.text) : `remove ${props.text} tag`}
+        aria-label={props.getA11yRemoveText ? props.getA11yRemoveText(props.data.text) : `remove ${props.data.text} tag`}
         className="j-tag__remove-button"
-        onClick={() => {
-          props.onRemove(props.value);
+        onClick={(e) => {
+          // @todo: required for use with Multiselect & Downshift, can revisit later if causing issues
+          e.stopPropagation();
+          props.onRemove(props.data);
         }}
       >
         <JIcon size="sm"><RemoveIcon/></JIcon>
