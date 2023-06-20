@@ -10,12 +10,14 @@
   width: fit-content;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: var(--j-c-primary);
   }
 
-  &:focus {
-    outline: none;
+  &:focus-visible {
+    outline: 2px solid var(--j-c-mono-50);
+    outline-offset: 2px;
+    border-radius: var(--j-border-radius-sm);
   }
 
   &__icon-left {

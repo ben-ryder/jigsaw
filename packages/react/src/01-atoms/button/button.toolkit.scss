@@ -12,12 +12,18 @@
   border: var(--j-border-width-md) solid var(--j-c-primary);
   box-shadow: var(--j-shadow-md);
 
-  &:hover {
-    cursor: pointer;
+  &:hover,
+  &:focus-visible {
     background: var(--j-c-primary-interaction);
     color: var(--j-c-primary-interaction-text);
     border-color: var(--j-c-primary-interaction);
+    cursor: pointer;
     box-shadow: none;
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--j-c-mono-50);
   }
 
   &--secondary {
@@ -25,7 +31,8 @@
     color: var(--j-c-secondary-text);
     border-color: var(--j-c-secondary);
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       background: var(--j-c-secondary-interaction);
       color: var(--j-c-secondary-interaction-text);
       border-color: var(--j-c-secondary-interaction);
@@ -37,7 +44,8 @@
     color: var(--j-c-destructive-text);
     border-color: var(--j-c-destructive);
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       background: var(--j-c-destructive-interaction);
       color: var(--j-c-destructive-interaction-text);
       border-color: var(--j-c-destructive-interaction);
@@ -57,6 +65,11 @@
       text-decoration: underline;
       text-decoration-thickness: var(--j-border-width-md);
       text-underline-offset: var(--j-border-width-md);
+    }
+
+    &:focus-visible {
+      background: transparent;
+      border-color: transparent;
     }
 
     &.j-button--loading,

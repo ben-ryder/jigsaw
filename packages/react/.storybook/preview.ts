@@ -12,7 +12,7 @@ export const parameters = {
   options: {
     showPanel: false,
     storySort: {
-      order: ['Home', 'Credits', 'Foundations', 'Atoms', 'Components', 'Layouts']
+      order: ['Home', 'Statuses', 'Credits', 'Foundations', 'Atoms', 'Components', 'Layouts']
     }
   },
   backgrounds: {

@@ -7,12 +7,18 @@
   font-weight: bold;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: var(--j-c-primary);
 
     // Ensure the hover styles still applies when a <code> tag is within the link
     code {
       color: var(--j-c-primary);
     }
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--j-c-mono-50);
+    outline-offset: 2px;
+    border-radius: var(--j-border-radius-sm);
   }
 }
