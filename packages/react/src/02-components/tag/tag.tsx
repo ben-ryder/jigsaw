@@ -40,7 +40,7 @@ export function JTag(props: JTagProps) {
     >
       {props.data.text}
       <button
-        aria-label={props.getA11yRemoveText ? props.getA11yRemoveText(props.text) : `remove ${props.text} tag`}
+        aria-label={props.getA11yRemoveText ? props.getA11yRemoveText(props.data.text) : `remove ${props.data.text} tag`}
         className="j-tag__remove-button"
         onClick={(e) => {
           // @todo: required for use with Multiselect & Downshift, can revisit later if causing issues

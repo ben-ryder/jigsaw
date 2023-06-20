@@ -30,6 +30,7 @@ export function JBadge(props: JBadgeProps) {
     const Component = props.linkAs || "a";
 
     return (
+      // @ts-ignore
       <Component className={className} style={props.style} href={props.href}>
         {props.text}
       </Component>
