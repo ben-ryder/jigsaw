@@ -9,8 +9,9 @@ import {
 import {JOptionData} from "../../form-elements/select/select.js";
 import {JLabel} from "../../form-elements/label/label.js";
 import {JIcon} from "../../icons/icon.js";
-import {XIcon as RemoveTagIcon, ChevronsDown as MultiSelectOpenIcon} from "lucide-react";
+import {ChevronsDown as MultiSelectOpenIcon} from "lucide-react";
 import classNames from "classnames";
+import {JTag} from "../../../02-components/tag/tag.js";
 
 export interface JMultiSelectProps {
 	// Control Props
@@ -134,52 +135,52 @@ export function JMultiSelect(props: JMultiSelectProps) {
 		<div className="j-multiselect-control">
 			<JLabel hidden={props.hideLabel} {...getLabelProps()}>{props.label}</JLabel>
 			<div className={elementClassName}>
-				{props.selectedOptions.map((selectedItem, index) => (
-					<span
-						{...getSelectedItemProps({selectedItem, index})}
-						className="j-multiselect__tag"
-						key={`selected-item-${index}`}
-					>
-            {selectedItem.text}
-						<button
-							className="j-multiselect__tag-remove"
-							onClick={(e) => {
-								e.stopPropagation()
+				<div className="j-multiselect__inner">
+					{props.selectedOptions.map((selectedItem, index) => (
+						<JTag
+							data={selectedItem}
+							key={`selected-item-${index}`}
+							onRemove={(item) => {
 								removeSelectedItem(selectedItem)
 							}}
-						>
-							<JIcon size="sm"><RemoveTagIcon /></JIcon>
-            </button>
-          </span>
-				))}
-				<div className="j-multiselect__input-area">
+						/>
+					))}
 					<input
 						{...getInputProps(getDropdownProps({preventKeyAction: isOpen}))}
 						className="j-multiselect__input"
+						placeholder="Search options..."
 					/>
-					<button
-						{...getToggleButtonProps()}
-						aria-label={'toggle menu'}
-						className="j-multiselect__toggle"
-					>
-						<JIcon><MultiSelectOpenIcon /></JIcon>
-					</button>
 				</div>
-			</div>
-			<ul {...getMenuProps()}>
+				<button
+					{...getToggleButtonProps()}
+					aria-label={'toggle menu'}
+					className="j-multiselect__toggle"
+				>
+					<JIcon><MultiSelectOpenIcon /></JIcon>
+				</button>
+
 				{isOpen &&
-					options.map((item, index) => (
-						<li
-							style={
-								highlightedIndex === index ? {backgroundColor: '#bde4ff'} : {}
-							}
-							key={`${item}${index}`}
-							{...getItemProps({item, index})}
-						>
-							{item.text}
-						</li>
-					))}
-			</ul>
+					<ul className="j-multiselect__menu" {...getMenuProps()}>
+						{options.map((item, index) => (
+							<li
+								className={classNames(
+									"j-multiselect__menu-item",
+									{
+										"j-multiselect__menu-item--highlighted": highlightedIndex === index
+									}
+								)}
+								{...getItemProps({item, index})}
+								key={`${item}${index}`}
+							>
+								{item.text}
+							</li>
+						))}
+						{options.length === 0 &&
+							<li className="j-multiselect__menu-empty-item">No items available</li>
+						}
+					</ul>
+				}
+			</div>
 		</div>
 	)
 }
