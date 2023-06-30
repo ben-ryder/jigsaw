@@ -1,11 +1,11 @@
 import "./multiselect";
 
-import {JMultiSelectControl} from "./multiselect";
+import {JMultiSelect} from "./multiselect";
 import {useState} from "react";
-import {JOptionData} from "../../form-elements/select/select";
+import {JOptionData} from "../select/select";
 
 export default {
-	title: "Atoms/Form Controls/MultiSelect",
+	title: "Atoms/Form Elements/MultiSelect",
 	parameters: {
 		status: {
 			type: "experimental"
@@ -38,8 +38,7 @@ export function Default() {
 	const [selectedOptions, setSelectedOptions] = useState<JOptionData[]>([options[0], options[4]]);
 
 	return (
-		<JMultiSelectControl
-			label="Example MultiSelect"
+		<JMultiSelect
 			id="test"
 			options={options}
 			selectedOptions={selectedOptions}
@@ -52,25 +51,9 @@ export function WithError() {
 	const [selectedOptions, setSelectedOptions] = useState<JOptionData[]>([options[0], options[4]]);
 
 	return (
-		<JMultiSelectControl
-			label="Example MultiSelect"
+		<JMultiSelect
 			id="test"
-			error="There's something wrong with this!"
-			options={options}
-			selectedOptions={selectedOptions}
-			setSelectedOptions={setSelectedOptions}
-		/>
-	)
-}
-
-export function WithHiddenLabel() {
-	const [selectedOptions, setSelectedOptions] = useState<JOptionData[]>([options[0], options[4]]);
-
-	return (
-		<JMultiSelectControl
-			label="Example MultiSelect"
-			id="test"
-			hideLabel={true}
+			error={true}
 			options={options}
 			selectedOptions={selectedOptions}
 			setSelectedOptions={setSelectedOptions}
