@@ -11,18 +11,15 @@ export interface JMultiSelectControlProps extends JMultiSelectOptionProps {
 }
 
 export function JMultiSelectControl(props: JMultiSelectControlProps) {
-	const {label, hideLabel, error, options, selectedOptions, setSelectedOptions, ...multiSelectHtmlProps} = props;
-
 	return (
 		<div className="j-multiselect-control">
 			<JLabel htmlFor={props.id} hidden={props.hideLabel}>{props.label}</JLabel>
 			<JMultiSelect
 				id={props.id}
 				error={!!props.error}
-				options={options}
-				selectedOptions={selectedOptions}
-				setSelectedOptions={setSelectedOptions}
-				{...multiSelectHtmlProps}
+				options={props.options}
+				selectedOptions={props.selectedOptions}
+				setSelectedOptions={props.setSelectedOptions}
 			/>
 			{props.error &&
           <JErrorText>{props.error}</JErrorText>
