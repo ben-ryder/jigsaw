@@ -1,4 +1,3 @@
-import {ComponentProps} from "react";
 import classNames from "classnames";
 
 export interface JOptionData {
@@ -6,26 +5,32 @@ export interface JOptionData {
 	value: string
 }
 
-export interface JSelectProps extends ComponentProps<'select'> {
+export interface JSelectProps {
+	id: string,
 	options: JOptionData[]
-	error?: boolean
+	error?: boolean,
+	value?: string,
+	onChange?: (value: string) => void
 }
 
 export function JSelect(props: JSelectProps) {
-	const {options, className: suppliedClassName, children, error, ...htmlProps} = props;
-
 	const className = classNames(
 		"j-select",
 		{
-			"j-select--error": error
-		},
-		suppliedClassName
+			"j-select--error": props.error
+		}
 	);
 
 	return (
 		<select
+			id={props.id}
 			className={className}
-			{...htmlProps}
+			value={props.value}
+			onChange={(e) => {
+				if (props.onChange) {
+					props.onChange(e.target.value);
+				}
+ 			}}
 		>
 			{props.options.map(option =>
 				<option className="j-select__option" value={option.value}>{option.text}</option>
