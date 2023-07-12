@@ -1,21 +1,10 @@
-import {CSSProperties, ElementType, ReactNode} from "react";
+import {ElementType} from "react";
 import classNames from "classnames";
-
-export type JBadgeVariant =
-  "blueGrey" |
-  "white" |
-  "red" |
-  "green" |
-  "orange" |
-  "yellow" |
-  "blue" |
-  "purple" |
-  "pink";
+import {ColourVariants} from "../../00-foundations/colours/variants/colour-variants.js";
 
 export interface JBadgeProps {
   text: string
-  variant?: JBadgeVariant,
-  style?: CSSProperties,
+  variant?: ColourVariants,
   href?: string,
   linkAs?: ElementType<'a'>
 }
@@ -40,7 +29,6 @@ export function JBadge(props: JBadgeProps) {
   return (
     <div
       className={className}
-      style={props.style}
     >{props.text}</div>
   )
 }

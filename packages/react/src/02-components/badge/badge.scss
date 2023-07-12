@@ -1,3 +1,5 @@
+@use "../../00-foundations/colours/variants/variants.toolkit" as *;
+
 
 .j-badge {
   display: inline-block;
@@ -6,43 +8,7 @@
   padding: var(--j-space-4) var(--j-space-4);
   border-radius: var(--j-border-radius-md);
 
-  &--blueGrey {
-    background-color: var(--j-c-blueGrey-700);
-  }
-
-  &--red {
-    background-color: var(--j-c-red-500);
-  }
-
-  &--green {
-    background-color: var(--j-c-green-500);
-  }
-
-  &--orange {
-    background-color: var(--j-c-orange-500);
-  }
-
-  &--blue {
-    background-color: var(--j-c-blue-500);
-  }
-
-  &--purple {
-    background-color: var(--j-c-purple-500);
-  }
-
-  &--pink {
-    background-color: var(--j-c-pink-500);
-  }
-
-  &--white {
-    background-color: var(--j-c-mono-50);
-    color: var(--j-c-mono-900);
-  }
-
-  &--yellow {
-    background-color: var(--j-c-yellow-500);
-    color: var(--j-c-mono-900);
-  }
+  @include colour-variants();
 
   &[href] {
     text-decoration: none;
@@ -56,6 +22,9 @@
       outline: 2px solid var(--j-c-mono-50);
     }
 
+    /**
+    @todo: extract common variant hover colours as well?
+     */
     &.j-badge--white {
       &:hover,
       &:focus-visible {

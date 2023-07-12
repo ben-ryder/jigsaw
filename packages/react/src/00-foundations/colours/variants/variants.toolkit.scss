@@ -1,0 +1,52 @@
+
+@mixin colour-variants() {
+  &--teal {
+    background-color: var(--j-c-variant-teal);
+    color: var(--j-c-variant-teal-text);
+  }
+
+  &--white {
+    background-color: var(--j-c-variant-white);
+    color: var(--j-c-variant-white-text);
+  }
+
+  &--blueGrey {
+    background-color: var(--j-c-variant-blueGrey);
+    color: var(--j-c-variant-blueGrey-text);
+  }
+
+  &--red {
+    background-color: var(--j-c-variant-red);
+    color: var(--j-c-variant-red-text);
+  }
+
+  &--green {
+    background-color: var(--j-c-variant-green);
+    color: var(--j-c-variant-green-text);
+  }
+
+  &--orange {
+    background-color: var(--j-c-variant-orange);
+    color: var(--j-c-variant-orange-text);
+  }
+
+  &--blue {
+    background-color: var(--j-c-variant-blue);
+    color: var(--j-c-variant-blue-text);
+  }
+
+  &--purple {
+    background-color: var(--j-c-variant-purple);
+    color: var(--j-c-variant-purple-text);
+  }
+
+  &--pink {
+    background-color: var(--j-c-variant-pink);
+    color: var(--j-c-variant-pink-text);
+  }
+
+  &--yellow {
+    background-color: var(--j-c-variant-yellow);
+    color: var(--j-c-variant-yellow-text);
+  }
+}

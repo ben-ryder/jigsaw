@@ -1,5 +1,6 @@
 import {JBadge} from "./badge";
 import {StorySection} from "../../development/story-section";
+import {ColourVariants} from "../../00-foundations/colours/variants/colour-variants";
 
 export default {
   title: "Components/Badge",
@@ -21,55 +22,55 @@ export function Default() {
       </StorySection>
       <StorySection>
         <JBadge
-          variant="white"
+          variant={ColourVariants.white}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="blueGrey"
+          variant={ColourVariants.blueGrey}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="red"
+          variant={ColourVariants.red}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="green"
+          variant={ColourVariants.orange}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="orange"
+          variant={ColourVariants.yellow}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="yellow"
+          variant={ColourVariants.green}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="blue"
+          variant={ColourVariants.blue}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="purple"
+          variant={ColourVariants.purple}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="pink"
+          variant={ColourVariants.pink}
           text="This is a badge"
         />
       </StorySection>
@@ -88,82 +89,65 @@ export function WithLink() {
       </StorySection>
       <StorySection>
         <JBadge
-          variant="white"
+          variant={ColourVariants.white}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="blueGrey"
+          variant={ColourVariants.blueGrey}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="red"
+          variant={ColourVariants.red}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="green"
+          variant={ColourVariants.orange}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="orange"
+          variant={ColourVariants.yellow}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="yellow"
+          variant={ColourVariants.green}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="blue"
+          variant={ColourVariants.blue}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="purple"
+          variant={ColourVariants.purple}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant="pink"
+          variant={ColourVariants.pink}
           text="This is a badge"
           href="#"
-        />
-      </StorySection>
-    </>
-  )
-}
-
-export function CustomStyles() {
-  return (
-    <>
-      <StorySection>
-        <JBadge
-          text="This uses custom styles!"
-          style={{
-            backgroundColor: "#00f",
-            color: "#fff",
-            textTransform:  "uppercase"
-          }}
         />
       </StorySection>
     </>

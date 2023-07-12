@@ -1,18 +1,7 @@
 import classNames from "classnames";
 import {XIcon as RemoveIcon} from "lucide-react";
 import {JIcon} from "../../01-atoms/icons/icon.js";
-import {CSSProperties, StyleHTMLAttributes} from "react";
-
-export type JTagVariant =
-  "blueGrey" |
-  "white" |
-  "red" |
-  "green" |
-  "orange" |
-  "yellow" |
-  "blue" |
-  "purple" |
-  "pink";
+import {ColourVariants} from "../../00-foundations/colours/variants/colour-variants.js";
 
 export interface JTagData {
   text: string,
@@ -22,9 +11,8 @@ export interface JTagData {
 export interface JTagProps {
   data: JTagData,
   onRemove: (data: JTagData) => void,
-  variant?: JTagVariant,
-  getA11yRemoveText?: (text: string) => string,
-  style?: CSSProperties
+  variant?: ColourVariants,
+  getA11yRemoveText?: (text: string) => string
 }
 
 export function JTag(props: JTagProps) {
@@ -36,7 +24,6 @@ export function JTag(props: JTagProps) {
   return (
     <div
       className={className}
-      style={props.style}
     >
       {props.data.text}
       <button
