@@ -10,7 +10,7 @@
 
   @include colour-variants();
 
-  &[href] {
+  &--link {
     text-decoration: none;
 
     &:hover,
@@ -22,70 +22,6 @@
       outline: 2px solid var(--j-c-mono-50);
     }
 
-    /**
-    @todo: extract common variant hover colours as well?
-     */
-    &.j-badge--white {
-      &:hover,
-      &:focus-visible {
-        background-color: var(--j-c-mono-300);
-      }
-    }
-
-    &.j-badge--blueGrey {
-      &:hover,
-      &:focus-visible {
-        background-color: var(--j-c-blueGrey-500);
-      }
-    }
-
-    &.j-badge--red {
-      &:hover,
-      &:focus-visible {
-        background-color: var(--j-c-red-700);
-      }
-    }
-
-    &.j-badge--green {
-      &:hover,
-      &:focus-visible {
-        background-color: var(--j-c-green-700);
-      }
-    }
-
-    &.j-badge--orange {
-      &:hover,
-      &:focus-visible {
-        background-color: var(--j-c-orange-700);
-      }
-    }
-
-    &.j-badge--blue {
-      &:hover,
-      &:focus-visible {
-        background-color: var(--j-c-blue-700);
-      }
-    }
-
-    &.j-badge--purple {
-      &:hover,
-      &:focus-visible {
-        background-color: var(--j-c-purple-700);
-      }
-    }
-
-    &.j-badge--pink {
-      &:hover,
-      &:focus-visible {
-        background-color: var(--j-c-pink-700);
-      }
-    }
-
-    &.j-badge--yellow {
-      &:hover,
-      &:focus-visible {
-        background-color: var(--j-c-yellow-700);
-      }
-    }
+    @include colour-variants-interaction('&.j-badge');
   }
 }

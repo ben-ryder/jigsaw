@@ -1,6 +1,6 @@
 import {JBadge} from "./badge";
 import {StorySection} from "../../development/story-section";
-import {ColourVariants} from "../../00-foundations/colours/variants/colour-variants";
+import {JColourVariants} from "../../00-foundations/colours/variants/colour-variants";
 
 export default {
   title: "Components/Badge",
@@ -22,55 +22,55 @@ export function Default() {
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.white}
+          variant={JColourVariants.white}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.blueGrey}
+          variant={JColourVariants.blueGrey}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.red}
+          variant={JColourVariants.red}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.orange}
+          variant={JColourVariants.orange}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.yellow}
+          variant={JColourVariants.yellow}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.green}
+          variant={JColourVariants.green}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.blue}
+          variant={JColourVariants.blue}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.purple}
+          variant={JColourVariants.purple}
           text="This is a badge"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.pink}
+          variant={JColourVariants.pink}
           text="This is a badge"
         />
       </StorySection>
@@ -89,63 +89,63 @@ export function WithLink() {
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.white}
+          variant={JColourVariants.white}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.blueGrey}
+          variant={JColourVariants.blueGrey}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.red}
+          variant={JColourVariants.red}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.orange}
+          variant={JColourVariants.orange}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.yellow}
+          variant={JColourVariants.yellow}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.green}
+          variant={JColourVariants.green}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.blue}
+          variant={JColourVariants.blue}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.purple}
+          variant={JColourVariants.purple}
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={ColourVariants.pink}
+          variant={JColourVariants.pink}
           text="This is a badge"
           href="#"
         />

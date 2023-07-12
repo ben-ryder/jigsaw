@@ -1,10 +1,8 @@
 import classNames from "classnames";
-import {JBadgeVariant} from "../../../02-components/badge/badge.js";
 
 export interface JOptionData {
 	text: string,
-	value: string,
-	styleVariant: JBadgeVariant
+	value: string
 }
 
 export interface JSelectProps {

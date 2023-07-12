@@ -1,5 +1,5 @@
 
-export enum ColourVariants {
+export enum JColourVariants {
 	teal = "teal",
 	blueGrey = "blueGrey",
 	white = "white",

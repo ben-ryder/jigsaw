@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import {XIcon as RemoveIcon} from "lucide-react";
 import {JIcon} from "../../01-atoms/icons/icon.js";
-import {ColourVariants} from "../../00-foundations/colours/variants/colour-variants.js";
+import {JColourVariants} from "../../00-foundations/colours/variants/colour-variants.js";
 
 export interface JTagData {
   text: string,
@@ -11,7 +11,7 @@ export interface JTagData {
 export interface JTagProps {
   data: JTagData,
   onRemove: (data: JTagData) => void,
-  variant?: ColourVariants,
+  variant?: JColourVariants,
   getA11yRemoveText?: (text: string) => string
 }
 

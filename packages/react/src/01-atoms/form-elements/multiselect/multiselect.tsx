@@ -11,11 +11,16 @@ import {JIcon} from "../../icons/icon.js";
 import {ChevronsDown as MultiSelectOpenIcon} from "lucide-react";
 import classNames from "classnames";
 import {JTag} from "../../../02-components/tag/tag.js";
+import {JColourVariants} from "../../../00-foundations/colours/variants/colour-variants.js";
+
+export interface JMultiSelectOptionData extends JOptionData {
+	variant?: JColourVariants
+}
 
 export interface JMultiSelectOptionProps {
-	options: JOptionData[],
-	selectedOptions: JOptionData[],
-	setSelectedOptions: (options: JOptionData[]) => void
+	options: JMultiSelectOptionData[],
+	selectedOptions: JMultiSelectOptionData[],
+	setSelectedOptions: (options: JMultiSelectOptionData[]) => void
 }
 
 export interface JMultiSelectProps extends JMultiSelectOptionProps {
@@ -31,8 +36,8 @@ export interface JMultiSelectProps extends JMultiSelectOptionProps {
  * @param search
  */
 export function getFilteredOptions(
-	options: JOptionData[],
-	selectedOptions: JOptionData[],
+	options: JMultiSelectOptionData[],
+	selectedOptions: JMultiSelectOptionData[],
 	search: string
 ) {
 	const searchValue = search.toLowerCase();
@@ -66,7 +71,7 @@ export function JMultiSelect(props: JMultiSelectProps) {
 		getSelectedItemProps,
 		getDropdownProps,
 		removeSelectedItem,
-	} = useMultipleSelection<JOptionData>({
+	} = useMultipleSelection<JMultiSelectOptionData>({
 		selectedItems: props.selectedOptions,
 		onStateChange({selectedItems: newSelectedItems, type}) {
 			switch (type) {
@@ -91,13 +96,13 @@ export function JMultiSelect(props: JMultiSelectProps) {
 		getInputProps,
 		highlightedIndex,
 		getItemProps,
-	} = useCombobox<JOptionData>({
+	} = useCombobox<JMultiSelectOptionData>({
 		inputId: props.id,
 		itemToString(item): string {
 			return item ? item.text : "";
 		},
 		items: options,
-		stateReducer(state: UseComboboxState<JOptionData>, actionAndChanges: UseComboboxStateChangeOptions<JOptionData>): Partial<UseComboboxState<JOptionData>> {
+		stateReducer(state: UseComboboxState<JMultiSelectOptionData>, actionAndChanges: UseComboboxStateChangeOptions<JMultiSelectOptionData>): Partial<UseComboboxState<JMultiSelectOptionData>> {
 			const {changes, type} = actionAndChanges;
 
 			switch (type) {
@@ -117,7 +122,7 @@ export function JMultiSelect(props: JMultiSelectProps) {
 					return changes
 			}
 		},
-		onStateChange(changes: UseComboboxStateChange<JOptionData>): void {
+		onStateChange(changes: UseComboboxStateChange<JMultiSelectOptionData>): void {
 			switch (changes.type) {
 				case useCombobox.stateChangeTypes.InputKeyDownEnter:
 				case useCombobox.stateChangeTypes.ItemClick:
@@ -146,6 +151,7 @@ export function JMultiSelect(props: JMultiSelectProps) {
 						onRemove={(item) => {
 							removeSelectedItem(selectedItem)
 						}}
+						variant={selectedItem.variant}
 					/>
 				))}
 				<input
@@ -168,8 +174,9 @@ export function JMultiSelect(props: JMultiSelectProps) {
 						<li
 							className={classNames(
 								"j-multiselect__menu-item",
+								item.variant ? `j-multiselect__menu-item--${item.variant}` : "",
 								{
-									"j-multiselect__menu-item--highlighted": highlightedIndex === index
+									"j-multiselect__menu-item--highlighted": highlightedIndex === index,
 								}
 							)}
 							{...getItemProps({item, index})}

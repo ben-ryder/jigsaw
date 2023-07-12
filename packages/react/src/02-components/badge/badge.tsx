@@ -1,10 +1,10 @@
 import {ElementType} from "react";
 import classNames from "classnames";
-import {ColourVariants} from "../../00-foundations/colours/variants/colour-variants.js";
+import {JColourVariants} from "../../00-foundations/colours/variants/colour-variants.js";
 
 export interface JBadgeProps {
   text: string
-  variant?: ColourVariants,
+  variant?: JColourVariants,
   href?: string,
   linkAs?: ElementType<'a'>
 }
@@ -13,6 +13,9 @@ export function JBadge(props: JBadgeProps) {
   const className = classNames(
     "j-badge",
     props.variant ? `j-badge--${props.variant}` : "",
+    {
+      "j-badge--link": props.href
+    }
   )
 
   if (props.href) {

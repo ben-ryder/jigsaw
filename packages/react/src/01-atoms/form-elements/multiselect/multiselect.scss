@@ -1,4 +1,6 @@
 @use "../form-element.toolkit" as *;
+@use "../../../00-foundations/colours/variants/variants.toolkit" as *;
+
 
 .j-multiselect {
   @include form-element();
@@ -62,5 +64,8 @@
       background: var(--j-c-background-f0);
       cursor: pointer;
     }
+
+    @include colour-variants();
+    @include colour-variants-interaction();
   }
 }

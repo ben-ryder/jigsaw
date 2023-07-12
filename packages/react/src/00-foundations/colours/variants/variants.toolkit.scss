@@ -1,52 +1,134 @@
 
-@mixin colour-variants() {
-  &--teal {
+@mixin colour-variants($target: '&') {
+  #{$target}--teal {
     background-color: var(--j-c-variant-teal);
     color: var(--j-c-variant-teal-text);
   }
 
-  &--white {
+  #{$target}--white {
     background-color: var(--j-c-variant-white);
     color: var(--j-c-variant-white-text);
   }
 
-  &--blueGrey {
+  #{$target}--blueGrey {
     background-color: var(--j-c-variant-blueGrey);
     color: var(--j-c-variant-blueGrey-text);
   }
 
-  &--red {
+  #{$target}--red {
     background-color: var(--j-c-variant-red);
     color: var(--j-c-variant-red-text);
   }
 
-  &--green {
+  #{$target}--green {
     background-color: var(--j-c-variant-green);
     color: var(--j-c-variant-green-text);
   }
 
-  &--orange {
+  #{$target}--orange {
     background-color: var(--j-c-variant-orange);
     color: var(--j-c-variant-orange-text);
   }
 
-  &--blue {
+  #{$target}--blue {
     background-color: var(--j-c-variant-blue);
     color: var(--j-c-variant-blue-text);
   }
 
-  &--purple {
+  #{$target}--purple {
     background-color: var(--j-c-variant-purple);
     color: var(--j-c-variant-purple-text);
   }
 
-  &--pink {
+  #{$target}--pink {
     background-color: var(--j-c-variant-pink);
     color: var(--j-c-variant-pink-text);
   }
 
-  &--yellow {
+  #{$target}--yellow {
     background-color: var(--j-c-variant-yellow);
     color: var(--j-c-variant-yellow-text);
+  }
+}
+
+@mixin colour-variants-interaction($target: '&') {
+  #{$target}--teal {
+    &:hover,
+    &:focus-visible {
+      background-color: var(--j-c-variant-teal-interaction);
+      color: var(--j-c-variant-teal-interaction-text);
+    }
+  }
+
+  #{$target}--white {
+    &:hover,
+    &:focus-visible {
+      background-color: var(--j-c-variant-white-interaction);
+      color: var(--j-c-variant-white-interaction-text);
+    }
+  }
+
+  #{$target}--blueGrey {
+    &:hover,
+    &:focus-visible {
+      background-color: var(--j-c-variant-blueGrey-interaction);
+      color: var(--j-c-variant-blueGrey-interaction-text);
+    }
+  }
+
+  #{$target}--red {
+    &:hover,
+    &:focus-visible {
+      background-color: var(--j-c-variant-red-interaction);
+      color: var(--j-c-variant-red-interaction-text);
+    }
+  }
+
+  #{$target}--green {
+    &:hover,
+    &:focus-visible {
+      background-color: var(--j-c-variant-green-interaction);
+      color: var(--j-c-variant-green-interaction-text);
+    }
+  }
+
+  #{$target}--orange {
+    &:hover,
+    &:focus-visible {
+      background-color: var(--j-c-variant-orange-interaction);
+      color: var(--j-c-variant-orange-interaction-text);
+    }
+  }
+
+  #{$target}--blue {
+    &:hover,
+    &:focus-visible {
+      background-color: var(--j-c-variant-blue-interaction);
+      color: var(--j-c-variant-blue-interaction-text);
+    }
+  }
+
+  #{$target}--purple {
+    &:hover,
+    &:focus-visible {
+      background-color: var(--j-c-variant-purple-interaction);
+      color: var(--j-c-variant-purple-interaction-text);
+    }
+  }
+
+  #{$target}--pink {
+    &:hover,
+    &:focus-visible {
+      background-color: var(--j-c-variant-pink-interaction);
+      color: var(--j-c-variant-pink-interaction-text);
+    }
+  }
+
+  #{$target}--yellow {
+    &:hover,
+    &:focus-visible {
+      background-color: var(--j-c-variant-yellow-interaction);
+      color: var(--j-c-variant-yellow-interaction-text);
+    }
   }
 }

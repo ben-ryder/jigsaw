@@ -1,5 +1,5 @@
 
-export const Colours = {
+export const JColours = {
   "j-c-teal-300": "#3da9a0",
   "j-c-teal-400": "#259f94",
   "j-c-teal-500": "#0d9488",

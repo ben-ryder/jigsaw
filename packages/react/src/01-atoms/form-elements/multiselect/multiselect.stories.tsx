@@ -1,8 +1,9 @@
 import "./multiselect";
 
-import {JMultiSelect} from "./multiselect";
+import {JMultiSelect, JMultiSelectOptionData} from "./multiselect";
 import {useState} from "react";
 import {JOptionData} from "../select/select";
+import {JColourVariants} from "../../../00-foundations/colours/variants/colour-variants";
 
 export default {
 	title: "Atoms/Form Elements/MultiSelect",
@@ -13,9 +14,9 @@ export default {
 	}
 };
 
-const options: JOptionData[] = [
+const options: JMultiSelectOptionData[] = [
 	{
-		text: "Option One", value: "one"
+		text: "Option One", value: "one", variant: JColourVariants.green
 	},
 	{
 		text: "Option Two", value: "two"
@@ -24,13 +25,13 @@ const options: JOptionData[] = [
 		text: "Option Three", value: "three"
 	},
 	{
-		text: "Option Four", value: "Four"
+		text: "Option Four", value: "Four", variant: JColourVariants.red
 	},
 	{
 		text: "Option Five", value: "Five"
 	},
 	{
-		text: "Option Six", value: "six"
+		text: "Option Six", value: "six", variant: JColourVariants.yellow
 	}
 ]
 

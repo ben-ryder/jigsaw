@@ -1,6 +1,6 @@
-import {Colours} from "./colours";
+import {JColours} from "./colours";
 import {JBadge} from "../../02-components/badge/badge";
-import {ColourVariants} from "./variants/colour-variants";
+import {JColourVariants} from "./variants/colour-variants";
 
 export default {
   title: "Foundations/Colours",
@@ -12,11 +12,11 @@ export default {
 };
 
 type ColourData = {identifier: string, value: string}[];
-const colours = Object.keys(Colours).map(key => {
+const colours = Object.keys(JColours).map(key => {
   return {
     identifier: key,
     // @ts-ignore
-    value: Colours[key]
+    value: JColours[key]
   }
 }) as ColourData;
 
@@ -342,47 +342,47 @@ export function Variants() {
           <tr>
             <td><span style={{backgroundColor: 'var(--j-c-variant-white)'}}></span></td>
             <td><code>j-c-variant-white</code></td>
-            <td><JBadge text="Example" variant={ColourVariants.white} /></td>
+            <td><JBadge text="Example" variant={JColourVariants.white} /></td>
           </tr>
           <tr>
             <td><span style={{backgroundColor: 'var(--j-c-variant-blueGrey)'}}></span></td>
             <td><code>j-c-variant-blueGrey</code></td>
-            <td><JBadge text="Example" variant={ColourVariants.blueGrey} /></td>
+            <td><JBadge text="Example" variant={JColourVariants.blueGrey} /></td>
           </tr>
           <tr>
             <td><span style={{backgroundColor: 'var(--j-c-variant-red)'}}></span></td>
             <td><code>j-c-variant-red</code></td>
-            <td><JBadge text="Example" variant={ColourVariants.red} /></td>
+            <td><JBadge text="Example" variant={JColourVariants.red} /></td>
           </tr>
           <tr>
             <td><span style={{backgroundColor: 'var(--j-c-variant-orange)'}}></span></td>
             <td><code>j-c-variant-orange</code></td>
-            <td><JBadge text="Example" variant={ColourVariants.orange} /></td>
+            <td><JBadge text="Example" variant={JColourVariants.orange} /></td>
           </tr>
           <tr>
             <td><span style={{backgroundColor: 'var(--j-c-variant-yellow)'}}></span></td>
             <td><code>j-c-variant-yellow</code></td>
-            <td><JBadge text="Example" variant={ColourVariants.yellow} /></td>
+            <td><JBadge text="Example" variant={JColourVariants.yellow} /></td>
           </tr>
           <tr>
             <td><span style={{backgroundColor: 'var(--j-c-variant-green)'}}></span></td>
             <td><code>j-c-variant-green</code></td>
-            <td><JBadge text="Example" variant={ColourVariants.green} /></td>
+            <td><JBadge text="Example" variant={JColourVariants.green} /></td>
           </tr>
           <tr>
             <td><span style={{backgroundColor: 'var(--j-c-variant-blue)'}}></span></td>
             <td><code>j-c-variant-blue</code></td>
-            <td><JBadge text="Example" variant={ColourVariants.blue} /></td>
+            <td><JBadge text="Example" variant={JColourVariants.blue} /></td>
           </tr>
           <tr>
             <td><span style={{backgroundColor: 'var(--j-c-variant-purple)'}}></span></td>
             <td><code>j-c-variant-purple</code></td>
-            <td><JBadge text="Example" variant={ColourVariants.purple} /></td>
+            <td><JBadge text="Example" variant={JColourVariants.purple} /></td>
           </tr>
           <tr>
             <td><span style={{backgroundColor: 'var(--j-c-variant-pink)'}}></span></td>
             <td><code>j-c-variant-pink</code></td>
-            <td><JBadge text="Example" variant={ColourVariants.pink} /></td>
+            <td><JBadge text="Example" variant={JColourVariants.pink} /></td>
           </tr>
           </tbody>
         </table>
