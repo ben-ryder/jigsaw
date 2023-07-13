@@ -1,4 +1,7 @@
-
+/**
+A mixin which will add colour variant modifiers to the given target, changing the background and text colour
+to match the variants.
+ */
 @mixin colour-variants($target: '&') {
   #{$target}--teal {
     background-color: var(--j-c-variant-teal);
@@ -51,6 +54,10 @@
   }
 }
 
+/**
+A mixin which will add colour variant modifiers to the given target, changing the background and text colour
+to match the variant interaction colours on hover and focus.
+ */
 @mixin colour-variants-interaction($target: '&') {
   #{$target}--teal {
     &:hover,
@@ -130,5 +137,63 @@
       background-color: var(--j-c-variant-yellow-interaction);
       color: var(--j-c-variant-yellow-interaction-text);
     }
+  }
+}
+
+
+/**
+A mixin which will add colour variant modifiers to the given target, changing the background and text colour
+to match the variant interaction colours WITHOUT hover or focus selectors.
+This is useful where interactivity styling is handled via adding CSS classes rather than just using hover/focus.
+ */
+@mixin colour-variants-manual-interaction($target: '&') {
+  #{$target}--teal {
+    background-color: var(--j-c-variant-teal-interaction);
+    color: var(--j-c-variant-teal-interaction-text);
+  }
+
+  #{$target}--white {
+    background-color: var(--j-c-variant-white-interaction);
+    color: var(--j-c-variant-white-interaction-text);
+  }
+
+  #{$target}--blueGrey {
+    background-color: var(--j-c-variant-blueGrey-interaction);
+    color: var(--j-c-variant-blueGrey-interaction-text);
+  }
+
+  #{$target}--red {
+    background-color: var(--j-c-variant-red-interaction);
+    color: var(--j-c-variant-red-interaction-text);
+  }
+
+  #{$target}--green {
+    background-color: var(--j-c-variant-green-interaction);
+    color: var(--j-c-variant-green-interaction-text);
+  }
+
+  #{$target}--orange {
+    background-color: var(--j-c-variant-orange-interaction);
+    color: var(--j-c-variant-orange-interaction-text);
+  }
+
+  #{$target}--blue {
+    background-color: var(--j-c-variant-blue-interaction);
+    color: var(--j-c-variant-blue-interaction-text);
+  }
+
+  #{$target}--purple {
+    background-color: var(--j-c-variant-purple-interaction);
+    color: var(--j-c-variant-purple-interaction-text);
+  }
+
+  #{$target}--pink {
+    background-color: var(--j-c-variant-pink-interaction);
+    color: var(--j-c-variant-pink-interaction-text);
+  }
+
+  #{$target}--yellow {
+    background-color: var(--j-c-variant-yellow-interaction);
+    color: var(--j-c-variant-yellow-interaction-text);
   }
 }

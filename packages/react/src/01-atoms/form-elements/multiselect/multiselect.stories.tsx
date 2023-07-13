@@ -22,7 +22,7 @@ const options: JMultiSelectOptionData[] = [
 		text: "Option Two", value: "two"
 	},
 	{
-		text: "Option Three", value: "three"
+		text: "Option Three", value: "three", variant: JColourVariants.purple
 	},
 	{
 		text: "Option Four", value: "Four", variant: JColourVariants.red

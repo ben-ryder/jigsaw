@@ -1,5 +1,6 @@
 @use "../form-element.toolkit" as *;
 @use "../../../00-foundations/colours/variants/variants.toolkit" as *;
+@use "../../../02-components/badge/badge" as *;
 
 
 .j-multiselect {
@@ -50,22 +51,33 @@
     background-color: var(--j-c-background-f1);
     border-radius: var(--j-border-radius-md);
     border: 2px solid var(--j-c-blueGrey-500);
-  }
-
-  &__menu-item,
-  &__menu-empty-item {
-    padding: var(--j-space-6);
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--j-space-2);
+    padding: 5px;
   }
 
   &__menu-item {
-    &:hover,
-    &--highlighted {
-      background: var(--j-c-background-f0);
-      cursor: pointer;
-    }
+    display: inline-block;
+    background-color: var(--j-c-primary);
+    color: var(--j-c-primary-text);
+    padding: var(--j-space-4) var(--j-space-4);
+    border-radius: var(--j-border-radius-md);
 
     @include colour-variants();
-    @include colour-variants-interaction();
+
+    &--highlighted {
+      background-color: var(--j-c-primary-interaction);
+
+      @include colour-variants-manual-interaction('&.j-multiselect__menu-item');
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__menu-empty-item {
+    padding: var(--j-space-4);
   }
 }
