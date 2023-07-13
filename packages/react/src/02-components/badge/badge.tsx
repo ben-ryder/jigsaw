@@ -6,7 +6,7 @@ export interface JBadgeProps {
   text: string
   variant?: JColourVariants,
   href?: string,
-  linkAs?: ElementType<'a'>
+  linkAs?: ElementType<JBadgeProps>
 }
 
 export function JBadge(props: JBadgeProps) {
