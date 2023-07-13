@@ -17,7 +17,10 @@ export function Layers() {
           of different colour shades.
           Different shades can be used to mimic how light would work in the real world, so elements
           that appear over the top or "nearer" to the user would use a lighter shade.</p>
+        <p>Shadows can also be used to improve this effect and z0index can be used to actually order things correctly.</p>
 
+
+        <h2>Background Colours</h2>
         <p>A layer system of <strong>5</strong> shades is provided through the <code>j-c-background-</code> CSS variables:</p>
 
         <table className="colour-table">
@@ -113,6 +116,40 @@ export function Layers() {
           <p>Extra Large</p>
           <code>j-shadow-xl</code>
         </div>
+
+        <h2>z-index</h2>
+        <p>These z-index values can be used to layer/order content.</p>
+
+        <table className="colour-table">
+          <thead>
+          <tr>
+            <th>Token</th>
+            <th>Value</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><code>j-z-layer-1</code></td>
+            <td><code>20</code></td>
+          </tr>
+          <tr>
+            <td><code>j-z-layer-2</code></td>
+            <td><code>40</code></td>
+          </tr>
+          <tr>
+            <td><code>j-z-layer-3</code></td>
+            <td><code>60</code></td>
+          </tr>
+          <tr>
+            <td><code>j-z-layer-4</code></td>
+            <td><code>80</code></td>
+          </tr>
+          <tr>
+            <td><code>j-z-layer-5</code></td>
+            <td><code>100</code></td>
+          </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   )
