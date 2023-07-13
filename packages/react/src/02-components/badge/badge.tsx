@@ -23,7 +23,7 @@ export function JBadge(props: JBadgeProps) {
 
     return (
       // @ts-ignore
-      <Component className={className} style={props.style} href={props.href}>
+      <Component className={className} href={props.href}>
         {props.text}
       </Component>
     )
