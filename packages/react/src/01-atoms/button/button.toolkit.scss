@@ -1,6 +1,5 @@
 @use "../../00-foundations/motion/motion.toolkit" as *;
 
-
 @mixin button-styles() {
   padding: var(--j-space-4) var(--j-space-6);
   font-family: var(--j-text-font-primary);

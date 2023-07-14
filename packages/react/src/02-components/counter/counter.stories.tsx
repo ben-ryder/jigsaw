@@ -1,12 +1,12 @@
-import {JCounter} from "./counter";
+import { JCounter } from "./counter";
 
 export default {
   title: "Components/Counter",
   parameters: {
     status: {
-      type: "experimental"
-    }
-  }
+      type: "experimental",
+    },
+  },
 };
 
 export function Default() {
@@ -15,5 +15,5 @@ export function Default() {
       title="Example Counter"
       body="This is an example counter with interactive, client side JS which can be used for testing the library in other frameworks etc."
     />
-  )
+  );
 }

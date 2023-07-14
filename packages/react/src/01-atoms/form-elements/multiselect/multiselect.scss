@@ -2,7 +2,6 @@
 @use "../../../00-foundations/colours/variants/variants.toolkit" as *;
 @use "../../../02-components/badge/badge" as *;
 
-
 .j-multiselect {
   @include form-element();
 
@@ -70,7 +69,7 @@
     &--highlighted {
       background-color: var(--j-c-primary-interaction);
 
-      @include colour-variants-manual-interaction('&.j-multiselect__menu-item');
+      @include colour-variants-manual-interaction("&.j-multiselect__menu-item");
     }
 
     &:hover {

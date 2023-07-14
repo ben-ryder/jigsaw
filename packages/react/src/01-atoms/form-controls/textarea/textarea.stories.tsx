@@ -1,12 +1,12 @@
-import {JTextAreaControl} from "./textarea";
+import { JTextAreaControl } from "./textarea";
 
 export default {
   title: "Atoms/Form Controls/TextArea",
   parameters: {
     status: {
-      type: "unstable"
-    }
-  }
+      type: "unstable",
+    },
+  },
 };
 
 export function Default() {
@@ -17,7 +17,7 @@ export function Default() {
       placeholder="enter some text here..."
       rows={5}
     />
-  )
+  );
 }
 
 export function WithError() {
@@ -29,7 +29,7 @@ export function WithError() {
       error="There is a problem here!"
       rows={5}
     />
-  )
+  );
 }
 
 export function WithHiddenLabel() {
@@ -41,5 +41,5 @@ export function WithHiddenLabel() {
       hideLabel={true}
       rows={5}
     />
-  )
+  );
 }

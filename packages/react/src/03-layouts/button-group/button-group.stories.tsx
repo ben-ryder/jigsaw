@@ -1,14 +1,14 @@
-import {JButtonGroup} from "./button-group";
-import {JButton} from "../../01-atoms/button/button";
-import {StorySection} from "../../development/story-section";
+import { JButtonGroup } from "./button-group";
+import { JButton } from "../../01-atoms/button/button";
+import { StorySection } from "../../development/story-section";
 
 export default {
   title: "Layouts/Button Group",
   parameters: {
     status: {
-      type: "unstable"
-    }
-  }
+      type: "unstable",
+    },
+  },
 };
 
 export function Default() {
@@ -30,7 +30,7 @@ export function Default() {
         </JButtonGroup>
       </StorySection>
     </>
-  )
+  );
 }
 
 export function LeftAlign() {
@@ -52,6 +52,5 @@ export function LeftAlign() {
         </JButtonGroup>
       </StorySection>
     </>
-  )
+  );
 }
-

@@ -1,4 +1,3 @@
-
 @use "../00-foundations/borders/borders.development";
 @use "../00-foundations/colours/colours.development";
 @use "../00-foundations/layers/layers.development";
@@ -7,7 +6,6 @@
 
 @use "../02-components/prose/prose";
 @use "../03-layouts/content-section/content-section";
-
 
 .j-dev-story-section {
   margin-bottom: var(--j-space-8);

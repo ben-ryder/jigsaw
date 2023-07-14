@@ -1,34 +1,34 @@
-import {JInputControl} from "./input";
+import { JInputControl } from "./input";
 
 export default {
   title: "Atoms/Form Controls/Input",
   parameters: {
     status: {
-      type: "unstable"
-    }
-  }
+      type: "unstable",
+    },
+  },
 };
 
 export function Default() {
-    return (
-      <JInputControl
-        id="test"
-        label="Test Input"
-        placeholder="enter some text.."
-        type="text"
-      />
-    )
+  return (
+    <JInputControl
+      id="test"
+      label="Test Input"
+      placeholder="enter some text.."
+      type="text"
+    />
+  );
 }
 
 export function WithError() {
-    return (
-      <JInputControl
-        type="email"
-        id="test"
-        label="With Error"
-        error="You must enter an email address here."
-      />
-    )
+  return (
+    <JInputControl
+      type="email"
+      id="test"
+      label="With Error"
+      error="You must enter an email address here."
+    />
+  );
 }
 
 export function WithHiddenLabel() {
@@ -40,5 +40,5 @@ export function WithHiddenLabel() {
       type="text"
       hideLabel={true}
     />
-  )
+  );
 }

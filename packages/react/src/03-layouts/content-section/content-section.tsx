@@ -1,16 +1,12 @@
-import {ReactNode} from "react";
+import { ReactNode } from "react";
 import classNames from "classnames";
 
 export interface JContentSectionProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
 export function JContentSection(props: JContentSectionProps) {
-  const className = classNames(
-    "j-content-section"
-  );
+  const className = classNames("j-content-section");
 
-  return (
-    <div className={className}>{props.children}</div>
-  )
+  return <div className={className}>{props.children}</div>;
 }

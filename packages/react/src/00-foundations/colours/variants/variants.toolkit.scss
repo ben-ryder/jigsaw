@@ -2,7 +2,7 @@
 A mixin which will add colour variant modifiers to the given target, changing the background and text colour
 to match the variants.
  */
-@mixin colour-variants($target: '&') {
+@mixin colour-variants($target: "&") {
   #{$target}--teal {
     background-color: var(--j-c-variant-teal);
     color: var(--j-c-variant-teal-text);
@@ -58,7 +58,7 @@ to match the variants.
 A mixin which will add colour variant modifiers to the given target, changing the background and text colour
 to match the variant interaction colours on hover and focus.
  */
-@mixin colour-variants-interaction($target: '&') {
+@mixin colour-variants-interaction($target: "&") {
   #{$target}--teal {
     &:hover,
     &:focus-visible {
@@ -140,13 +140,12 @@ to match the variant interaction colours on hover and focus.
   }
 }
 
-
 /**
 A mixin which will add colour variant modifiers to the given target, changing the background and text colour
 to match the variant interaction colours WITHOUT hover or focus selectors.
 This is useful where interactivity styling is handled via adding CSS classes rather than just using hover/focus.
  */
-@mixin colour-variants-manual-interaction($target: '&') {
+@mixin colour-variants-manual-interaction($target: "&") {
   #{$target}--teal {
     background-color: var(--j-c-variant-teal-interaction);
     color: var(--j-c-variant-teal-interaction-text);

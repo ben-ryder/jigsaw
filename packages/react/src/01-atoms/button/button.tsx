@@ -1,16 +1,26 @@
-import {ComponentProps} from "react";
+import { ComponentProps } from "react";
 import classNames from "classnames";
-import {Loader2 as LoadingIcon} from "lucide-react";
+import { Loader2 as LoadingIcon } from "lucide-react";
 
-export type JButtonVariant = "primary" | "secondary" | "tertiary" | "destructive";
+export type JButtonVariant =
+  | "primary"
+  | "secondary"
+  | "tertiary"
+  | "destructive";
 
-export interface JButtonProps extends ComponentProps<'button'> {
-  variant?: JButtonVariant,
-  loading?: boolean
+export interface JButtonProps extends ComponentProps<"button"> {
+  variant?: JButtonVariant;
+  loading?: boolean;
 }
 
 export function JButton(props: JButtonProps) {
-  const {className: suppliedClassName, variant, loading, children, ...htmlProps} = props;
+  const {
+    className: suppliedClassName,
+    variant,
+    loading,
+    children,
+    ...htmlProps
+  } = props;
 
   const className = classNames(
     "j-button",
@@ -28,5 +38,5 @@ export function JButton(props: JButtonProps) {
       {children}
       {props.loading && <LoadingIcon className="j-icon" />}
     </button>
-  )
+  );
 }

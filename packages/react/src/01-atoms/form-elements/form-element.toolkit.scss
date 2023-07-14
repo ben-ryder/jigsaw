@@ -1,4 +1,3 @@
-
 @mixin form-element() {
   display: block;
   margin-top: var(--j-space-4);
@@ -25,11 +24,11 @@
     border-color: var(--j-c-red-500);
 
     &:hover {
-        border-color: var(--j-c-red-700);
+      border-color: var(--j-c-red-700);
     }
   }
 
-  &--error{
+  &--error {
     &:focus,
     &:focus-within {
       border-color: var(--j-c-red-700);

@@ -1,32 +1,26 @@
-import {JSelectControl} from "./select";
-import {useState} from "react";
+import { JSelectControl } from "./select";
+import { useState } from "react";
 
 export default {
   title: "Atoms/Form Controls/Select",
   parameters: {
     status: {
-      type: "unstable"
-    }
-  }
+      type: "unstable",
+    },
+  },
 };
 
 const testOptions = [
-  {value: "", text: "-- Select Option --"},
-  {value: "1", text: "Option One"},
-  {value: "2", text: "Option Two"},
-  {value: "3", text: "Option Three"},
-  {value: "4", text: "Option Four"},
-  {value: "5", text: "Option Five"},
+  { value: "", text: "-- Select Option --" },
+  { value: "1", text: "Option One" },
+  { value: "2", text: "Option Two" },
+  { value: "3", text: "Option Three" },
+  { value: "4", text: "Option Four" },
+  { value: "5", text: "Option Five" },
 ];
 
 export function Default() {
-  return (
-    <JSelectControl
-      id="test"
-      label="Test Select"
-      options={testOptions}
-    />
-  )
+  return <JSelectControl id="test" label="Test Select" options={testOptions} />;
 }
 
 export function WithError() {
@@ -37,7 +31,7 @@ export function WithError() {
       options={testOptions}
       error="There is an error here!"
     />
-  )
+  );
 }
 
 export function WithHiddenLabel() {
@@ -48,7 +42,7 @@ export function WithHiddenLabel() {
       hideLabel={true}
       options={testOptions}
     />
-  )
+  );
 }
 
 export function Controlled() {
@@ -64,7 +58,10 @@ export function Controlled() {
         value={selectedOption}
         onChange={setSelectedOption}
       />
-      <p>This elements value is being controlled via React state rather than via the browser</p>
+      <p>
+        This elements value is being controlled via React state rather than via
+        the browser
+      </p>
     </>
-  )
+  );
 }

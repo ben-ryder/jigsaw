@@ -1,19 +1,18 @@
-import {JInputControl} from "../../01-atoms/form-controls/input/input";
-import {JSelectControl} from "../../01-atoms/form-controls/select/select";
-import {JTextAreaControl} from "../../01-atoms/form-controls/textarea/textarea";
-import {JButton} from "../../01-atoms/button/button";
-import {JButtonGroup} from "../button-group/button-group";
-import {JForm, JFormRow, JFormContent, JFormHeader} from "./form";
-import {JContentSection} from "../content-section/content-section";
-
+import { JInputControl } from "../../01-atoms/form-controls/input/input";
+import { JSelectControl } from "../../01-atoms/form-controls/select/select";
+import { JTextAreaControl } from "../../01-atoms/form-controls/textarea/textarea";
+import { JButton } from "../../01-atoms/button/button";
+import { JButtonGroup } from "../button-group/button-group";
+import { JForm, JFormRow, JFormContent, JFormHeader } from "./form";
+import { JContentSection } from "../content-section/content-section";
 
 export default {
   title: "Layouts/Form",
   parameters: {
     status: {
-      type: "experimental"
-    }
-  }
+      type: "experimental",
+    },
+  },
 };
 
 export function Default() {
@@ -23,7 +22,9 @@ export function Default() {
         <JFormHeader className="j-form__header">
           <h2>Contact Me</h2>
           <p>
-            You can use this form to contact me. I will never share your details with anyone, for more info see my <a href="#">privacy policy</a>.<br/>
+            You can use this form to contact me. I will never share your details
+            with anyone, for more info see my <a href="#">privacy policy</a>.
+            <br />
           </p>
         </JFormHeader>
         <JFormContent>
@@ -48,42 +49,45 @@ export function Default() {
               options={[
                 {
                   text: "-- Select an Option --",
-                  value: ""
+                  value: "",
                 },
                 {
                   text: "Project Feedback",
-                  value: "feedback"
+                  value: "feedback",
                 },
                 {
                   text: "Reporting a Security Vulnerability",
-                  value: "security"
+                  value: "security",
                 },
                 {
                   text: "Other",
-                  value: "other"
-                }
+                  value: "other",
+                },
               ]}
             />
           </JFormRow>
           <JFormRow>
-            <JSelectControl label="Releted Project (if applicable)"  options={[
-              {
-                text: "-- Select an Option --",
-                value: ""
-              },
-              {
-                text: "Athena",
-                value: "athena"
-              },
-              {
-                text: "Local-First Server",
-                value: "local-first-server"
-              },
-              {
-                text: "benryder.me",
-                value: "benryder.me"
-              }
-            ]}/>
+            <JSelectControl
+              label="Releted Project (if applicable)"
+              options={[
+                {
+                  text: "-- Select an Option --",
+                  value: "",
+                },
+                {
+                  text: "Athena",
+                  value: "athena",
+                },
+                {
+                  text: "Local-First Server",
+                  value: "local-first-server",
+                },
+                {
+                  text: "benryder.me",
+                  value: "benryder.me",
+                },
+              ]}
+            />
           </JFormRow>
           <JFormRow>
             <JTextAreaControl
@@ -101,5 +105,5 @@ export function Default() {
         </JFormContent>
       </JForm>
     </JContentSection>
-  )
+  );
 }

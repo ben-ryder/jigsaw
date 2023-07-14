@@ -1,6 +1,5 @@
 @use "../../00-foundations/colours/variants/variants.toolkit" as *;
 
-
 .j-badge {
   display: inline-block;
   background-color: var(--j-c-primary);
@@ -22,6 +21,6 @@
       outline: 2px solid var(--j-c-mono-50);
     }
 
-    @include colour-variants-interaction('&.j-badge');
+    @include colour-variants-interaction("&.j-badge");
   }
 }

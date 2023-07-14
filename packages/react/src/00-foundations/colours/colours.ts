@@ -1,4 +1,3 @@
-
 export const JColours = {
   "j-c-teal-300": "#3da9a0",
   "j-c-teal-400": "#259f94",
@@ -87,5 +86,5 @@ export const JColours = {
   "j-c-pink-400": "#d3428a",
   "j-c-pink-500": "#CE2D7D",
   "j-c-pink-600": "#b92971",
-  "j-c-pink-700": "#a52464"
-}
+  "j-c-pink-700": "#a52464",
+};

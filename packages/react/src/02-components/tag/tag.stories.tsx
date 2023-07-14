@@ -1,14 +1,14 @@
-import {JTag} from "./tag";
-import {StorySection} from "../../development/story-section";
-import {JColourVariants} from "../../00-foundations/colours/variants/colour-variants";
+import { JTag } from "./tag";
+import { StorySection } from "../../development/story-section";
+import { JColourVariants } from "../../00-foundations/colours/variants/colour-variants";
 
 export default {
   title: "Components/Tag",
   parameters: {
     status: {
-      type: "experimental"
-    }
-  }
+      type: "experimental",
+    },
+  },
 };
 
 export function Default() {
@@ -18,7 +18,7 @@ export function Default() {
         <JTag
           data={{
             text: "This is a tag",
-            value: "value"
+            value: "value",
           }}
           onRemove={(value) => {}}
         />
@@ -28,7 +28,7 @@ export function Default() {
           variant={JColourVariants.white}
           data={{
             text: "This is a tag",
-            value: "value"
+            value: "value",
           }}
           onRemove={(value) => {}}
         />
@@ -38,7 +38,7 @@ export function Default() {
           variant={JColourVariants.blueGrey}
           data={{
             text: "This is a tag",
-            value: "value"
+            value: "value",
           }}
           onRemove={(value) => {}}
         />
@@ -48,7 +48,7 @@ export function Default() {
           variant={JColourVariants.red}
           data={{
             text: "This is a tag",
-            value: "value"
+            value: "value",
           }}
           onRemove={(value) => {}}
         />
@@ -58,7 +58,7 @@ export function Default() {
           variant={JColourVariants.orange}
           data={{
             text: "This is a tag",
-            value: "value"
+            value: "value",
           }}
           onRemove={(value) => {}}
         />
@@ -68,7 +68,7 @@ export function Default() {
           variant={JColourVariants.yellow}
           data={{
             text: "This is a tag",
-            value: "value"
+            value: "value",
           }}
           onRemove={(value) => {}}
         />
@@ -78,7 +78,7 @@ export function Default() {
           variant={JColourVariants.green}
           data={{
             text: "This is a tag",
-            value: "value"
+            value: "value",
           }}
           onRemove={(value) => {}}
         />
@@ -88,7 +88,7 @@ export function Default() {
           variant={JColourVariants.blue}
           data={{
             text: "This is a tag",
-            value: "value"
+            value: "value",
           }}
           onRemove={(value) => {}}
         />
@@ -98,7 +98,7 @@ export function Default() {
           variant={JColourVariants.purple}
           data={{
             text: "This is a tag",
-            value: "value"
+            value: "value",
           }}
           onRemove={(value) => {}}
         />
@@ -108,11 +108,11 @@ export function Default() {
           variant={JColourVariants.pink}
           data={{
             text: "This is a tag",
-            value: "value"
+            value: "value",
           }}
           onRemove={(value) => {}}
         />
       </StorySection>
     </>
-  )
+  );
 }
