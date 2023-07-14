@@ -10,6 +10,8 @@ export interface JMultiSelectControlProps extends JMultiSelectOptionProps {
   label: string;
   error?: string;
   hideLabel?: boolean;
+  searchText?: string;
+  noOptionsText?: string;
 }
 
 export function JMultiSelectControl(props: JMultiSelectControlProps) {
@@ -24,6 +26,8 @@ export function JMultiSelectControl(props: JMultiSelectControlProps) {
         options={props.options}
         selectedOptions={props.selectedOptions}
         setSelectedOptions={props.setSelectedOptions}
+        searchText={props.searchText}
+        noOptionsText={props.noOptionsText}
       />
       {props.error && <JErrorText>{props.error}</JErrorText>}
     </div>

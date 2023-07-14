@@ -26,6 +26,8 @@ export interface JMultiSelectOptionProps {
 export interface JMultiSelectProps extends JMultiSelectOptionProps {
   error?: boolean;
   id: string;
+  searchText?: string
+  noOptionsText?: string
 }
 
 /**
@@ -65,7 +67,7 @@ export function JMultiSelect(props: JMultiSelectProps) {
     "j-multiselect--error": props.error,
   });
 
-  const { getSelectedItemProps, getDropdownProps, removeSelectedItem } =
+  const { getDropdownProps, removeSelectedItem } =
     useMultipleSelection<JMultiSelectOptionData>({
       selectedItems: props.selectedOptions,
       onStateChange({ selectedItems: newSelectedItems, type }) {
@@ -87,7 +89,6 @@ export function JMultiSelect(props: JMultiSelectProps) {
   const {
     isOpen,
     getToggleButtonProps,
-    getLabelProps,
     getMenuProps,
     getInputProps,
     highlightedIndex,
@@ -113,10 +114,6 @@ export function JMultiSelect(props: JMultiSelectProps) {
             highlightedIndex: 0,
             inputValue: "", // with the first option highlighted.
           };
-        // return {
-        // 	...changes,
-        // 	...(changes.selectedItem && {isOpen: true, highlightedIndex: 0}),
-        // }
         default:
           return changes;
       }
@@ -161,7 +158,7 @@ export function JMultiSelect(props: JMultiSelectProps) {
         <input
           {...getInputProps(getDropdownProps({ preventKeyAction: isOpen }))}
           className="j-multiselect__input"
-          placeholder="Search options..."
+          placeholder={props.searchText || "Search options..."}
         />
       </div>
       <button
@@ -194,7 +191,7 @@ export function JMultiSelect(props: JMultiSelectProps) {
           ))}
           {options.length === 0 && (
             <li className="j-multiselect__menu-empty-item">
-              No items available
+              {props.noOptionsText || "No options available"}
             </li>
           )}
         </ul>

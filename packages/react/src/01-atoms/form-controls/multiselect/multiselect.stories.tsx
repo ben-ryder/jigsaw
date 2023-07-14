@@ -59,6 +59,8 @@ export function Default() {
       options={options}
       selectedOptions={selectedOptions}
       setSelectedOptions={setSelectedOptions}
+      searchText="Search options custom..."
+      noOptionsText="No options custom"
     />
   );
 }
