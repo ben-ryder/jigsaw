@@ -1,4 +1,5 @@
 import { JBadge } from "../02-components/badge/badge";
+import { JColourVariants } from "../00-foundations/colours/variants/colour-variants";
 
 export default {
   title: "Statuses",
@@ -27,7 +28,7 @@ export function Statuses() {
           <tbody>
             <tr>
               <td>
-                <JBadge variant="red" text="Experimental" />
+                <JBadge variant={JColourVariants.red} text="Experimental" />
               </td>
               <td>
                 <code>experimental</code>
@@ -39,7 +40,7 @@ export function Statuses() {
             </tr>
             <tr>
               <td>
-                <JBadge variant="orange" text="Unstable" />
+                <JBadge variant={JColourVariants.orange} text="Unstable" />
               </td>
               <td>
                 <code>unstable</code>
@@ -51,7 +52,7 @@ export function Statuses() {
             </tr>
             <tr>
               <td>
-                <JBadge variant="green" text="Stable" />
+                <JBadge variant={JColourVariants.green} text="Stable" />
               </td>
               <td>
                 <code>stable</code>
@@ -62,7 +63,7 @@ export function Statuses() {
             </tr>
             <tr>
               <td>
-                <JBadge variant="red" text="Deprecated" />
+                <JBadge variant={JColourVariants.red} text="Deprecated" />
               </td>
               <td>
                 <code>deprecated</code>
