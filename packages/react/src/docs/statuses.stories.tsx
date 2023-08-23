@@ -27,7 +27,7 @@ export function Statuses() {
           <tbody>
             <tr>
               <td>
-                <JBadge variant="red">EXPERIMENTAL</JBadge>
+                <JBadge variant="red" text="Experimental" />
               </td>
               <td>
                 <code>experimental</code>
@@ -39,7 +39,7 @@ export function Statuses() {
             </tr>
             <tr>
               <td>
-                <JBadge variant="orange">UNSTABLE</JBadge>
+                <JBadge variant="orange" text="Unstable" />
               </td>
               <td>
                 <code>unstable</code>
@@ -51,7 +51,7 @@ export function Statuses() {
             </tr>
             <tr>
               <td>
-                <JBadge variant="green">STABLE</JBadge>
+                <JBadge variant="green" text="Stable" />
               </td>
               <td>
                 <code>stable</code>
@@ -62,7 +62,7 @@ export function Statuses() {
             </tr>
             <tr>
               <td>
-                <JBadge variant="red">DEPRECATED</JBadge>
+                <JBadge variant="red" text="Deprecated" />
               </td>
               <td>
                 <code>deprecated</code>
