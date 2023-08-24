@@ -1,6 +1,5 @@
 import { JBadge } from "./badge";
 import { StorySection } from "../../development/story-section";
-import { JColourVariants } from "../../00-foundations/colours/variants/colour-variants";
 
 export default {
   title: "Components/Badge",
@@ -18,31 +17,31 @@ export function Default() {
         <JBadge text="This is a badge" />
       </StorySection>
       <StorySection>
-        <JBadge variant={JColourVariants.white} text="This is a badge" />
+        <JBadge variant="white" text="This is a badge" />
       </StorySection>
       <StorySection>
-        <JBadge variant={JColourVariants.blueGrey} text="This is a badge" />
+        <JBadge variant="blueGrey" text="This is a badge" />
       </StorySection>
       <StorySection>
-        <JBadge variant={JColourVariants.red} text="This is a badge" />
+        <JBadge variant="red" text="This is a badge" />
       </StorySection>
       <StorySection>
-        <JBadge variant={JColourVariants.orange} text="This is a badge" />
+        <JBadge variant="orange" text="This is a badge" />
       </StorySection>
       <StorySection>
-        <JBadge variant={JColourVariants.yellow} text="This is a badge" />
+        <JBadge variant="yellow" text="This is a badge" />
       </StorySection>
       <StorySection>
-        <JBadge variant={JColourVariants.green} text="This is a badge" />
+        <JBadge variant="green" text="This is a badge" />
       </StorySection>
       <StorySection>
-        <JBadge variant={JColourVariants.blue} text="This is a badge" />
+        <JBadge variant="blue" text="This is a badge" />
       </StorySection>
       <StorySection>
-        <JBadge variant={JColourVariants.purple} text="This is a badge" />
+        <JBadge variant="purple" text="This is a badge" />
       </StorySection>
       <StorySection>
-        <JBadge variant={JColourVariants.pink} text="This is a badge" />
+        <JBadge variant="pink" text="This is a badge" />
       </StorySection>
     </>
   );
@@ -56,59 +55,59 @@ export function WithLink() {
       </StorySection>
       <StorySection>
         <JBadge
-          variant={JColourVariants.white}
+          variant="white"
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={JColourVariants.blueGrey}
+          variant="blueGrey"
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
-        <JBadge variant={JColourVariants.red} text="This is a badge" href="#" />
+        <JBadge variant="red" text="This is a badge" href="#" />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={JColourVariants.orange}
-          text="This is a badge"
-          href="#"
-        />
-      </StorySection>
-      <StorySection>
-        <JBadge
-          variant={JColourVariants.yellow}
+          variant="orange"
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={JColourVariants.green}
+          variant="yellow"
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={JColourVariants.blue}
+          variant="green"
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={JColourVariants.purple}
+          variant="blue"
           text="This is a badge"
           href="#"
         />
       </StorySection>
       <StorySection>
         <JBadge
-          variant={JColourVariants.pink}
+          variant="purple"
+          text="This is a badge"
+          href="#"
+        />
+      </StorySection>
+      <StorySection>
+        <JBadge
+          variant="pink"
           text="This is a badge"
           href="#"
         />

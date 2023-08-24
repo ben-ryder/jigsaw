@@ -1,6 +1,5 @@
 import { JTag } from "./tag";
 import { StorySection } from "../../development/story-section";
-import { JColourVariants } from "../../00-foundations/colours/variants/colour-variants";
 
 export default {
   title: "Components/Tag",
@@ -25,7 +24,7 @@ export function Default() {
       </StorySection>
       <StorySection>
         <JTag
-          variant={JColourVariants.white}
+          variant="white"
           data={{
             text: "This is a tag",
             value: "value",
@@ -35,7 +34,7 @@ export function Default() {
       </StorySection>
       <StorySection>
         <JTag
-          variant={JColourVariants.blueGrey}
+          variant="blueGrey"
           data={{
             text: "This is a tag",
             value: "value",
@@ -45,7 +44,7 @@ export function Default() {
       </StorySection>
       <StorySection>
         <JTag
-          variant={JColourVariants.red}
+          variant="red"
           data={{
             text: "This is a tag",
             value: "value",
@@ -55,7 +54,7 @@ export function Default() {
       </StorySection>
       <StorySection>
         <JTag
-          variant={JColourVariants.orange}
+          variant="orange"
           data={{
             text: "This is a tag",
             value: "value",
@@ -65,7 +64,7 @@ export function Default() {
       </StorySection>
       <StorySection>
         <JTag
-          variant={JColourVariants.yellow}
+          variant="yellow"
           data={{
             text: "This is a tag",
             value: "value",
@@ -75,7 +74,7 @@ export function Default() {
       </StorySection>
       <StorySection>
         <JTag
-          variant={JColourVariants.green}
+          variant="green"
           data={{
             text: "This is a tag",
             value: "value",
@@ -85,7 +84,7 @@ export function Default() {
       </StorySection>
       <StorySection>
         <JTag
-          variant={JColourVariants.blue}
+          variant="blue"
           data={{
             text: "This is a tag",
             value: "value",
@@ -95,7 +94,7 @@ export function Default() {
       </StorySection>
       <StorySection>
         <JTag
-          variant={JColourVariants.purple}
+          variant="purple"
           data={{
             text: "This is a tag",
             value: "value",
@@ -105,7 +104,7 @@ export function Default() {
       </StorySection>
       <StorySection>
         <JTag
-          variant={JColourVariants.pink}
+          variant="pink"
           data={{
             text: "This is a tag",
             value: "value",

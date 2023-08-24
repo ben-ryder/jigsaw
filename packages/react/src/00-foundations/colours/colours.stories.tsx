@@ -1,6 +1,5 @@
 import { JColours } from "./colours";
 import { JBadge } from "../../02-components/badge/badge";
-import { JColourVariants } from "./variants/colour-variants";
 
 export default {
   title: "Foundations/Colours",
@@ -557,7 +556,7 @@ export function Variants() {
         <p>
           Some components such as <code>JBadge</code> and <code>JTag</code>{" "}
           allow for colour customisation. In order to ensure accessibility only
-          a limit number of colours are supported for these use cases.
+          a limited number of colours are supported for these use cases.
         </p>
 
         <table className="colour-table">
@@ -592,7 +591,7 @@ export function Variants() {
                 <code>j-c-variant-white</code>
               </td>
               <td>
-                <JBadge text="Example" variant={JColourVariants.white} />
+                <JBadge text="Example" variant="white" />
               </td>
             </tr>
             <tr>
@@ -605,7 +604,7 @@ export function Variants() {
                 <code>j-c-variant-blueGrey</code>
               </td>
               <td>
-                <JBadge text="Example" variant={JColourVariants.blueGrey} />
+                <JBadge text="Example" variant="blueGrey"/>
               </td>
             </tr>
             <tr>
@@ -618,7 +617,7 @@ export function Variants() {
                 <code>j-c-variant-red</code>
               </td>
               <td>
-                <JBadge text="Example" variant={JColourVariants.red} />
+                <JBadge text="Example" variant="red" />
               </td>
             </tr>
             <tr>
@@ -631,7 +630,7 @@ export function Variants() {
                 <code>j-c-variant-orange</code>
               </td>
               <td>
-                <JBadge text="Example" variant={JColourVariants.orange} />
+                <JBadge text="Example" variant="orange" />
               </td>
             </tr>
             <tr>
@@ -644,7 +643,7 @@ export function Variants() {
                 <code>j-c-variant-yellow</code>
               </td>
               <td>
-                <JBadge text="Example" variant={JColourVariants.yellow} />
+                <JBadge text="Example" variant="yellow" />
               </td>
             </tr>
             <tr>
@@ -657,7 +656,7 @@ export function Variants() {
                 <code>j-c-variant-green</code>
               </td>
               <td>
-                <JBadge text="Example" variant={JColourVariants.green} />
+                <JBadge text="Example" variant="green" />
               </td>
             </tr>
             <tr>
@@ -670,7 +669,7 @@ export function Variants() {
                 <code>j-c-variant-blue</code>
               </td>
               <td>
-                <JBadge text="Example" variant={JColourVariants.blue} />
+                <JBadge text="Example" variant="blue" />
               </td>
             </tr>
             <tr>
@@ -683,7 +682,7 @@ export function Variants() {
                 <code>j-c-variant-purple</code>
               </td>
               <td>
-                <JBadge text="Example" variant={JColourVariants.purple} />
+                <JBadge text="Example" variant="purple" />
               </td>
             </tr>
             <tr>
@@ -696,7 +695,7 @@ export function Variants() {
                 <code>j-c-variant-pink</code>
               </td>
               <td>
-                <JBadge text="Example" variant={JColourVariants.pink} />
+                <JBadge text="Example" variant="pink" />
               </td>
             </tr>
           </tbody>
