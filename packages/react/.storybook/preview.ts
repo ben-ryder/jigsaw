@@ -19,6 +19,7 @@ export const parameters = {
         "Foundations",
         "Atoms",
         "Components",
+        "Organisms",
         "Layouts",
       ],
     },

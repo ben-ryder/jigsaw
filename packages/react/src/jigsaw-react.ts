@@ -28,6 +28,6 @@ export * from "./02-components/prose/prose.js";
 export * from "./02-components/table/table.js";
 export * from "./02-components/counter/counter.js";
 
-export * from "./03-layouts/button-group/button-group.js";
-export * from "./03-layouts/content-section/content-section.js";
-export * from "./03-layouts/form/form.js";
+export * from "./04-layouts/button-group/button-group.js";
+export * from "./04-layouts/content-section/content-section.js";
+export * from "./04-layouts/form/form.js";

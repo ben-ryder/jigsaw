@@ -3,7 +3,7 @@ import { JButton } from "../../01-atoms/button/button";
 import { StorySection } from "../../development/story-section";
 
 export default {
-  title: "Layouts/Button Group",
+  title: "Organisms/ButtonGroup",
   parameters: {
     status: {
       type: "unstable",

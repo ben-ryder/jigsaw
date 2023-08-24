@@ -5,7 +5,7 @@
 @use "../00-foundations/typography/typography.development";
 
 @use "../02-components/prose/prose";
-@use "../03-layouts/content-section/content-section";
+@use "../04-layouts/content-section/content-section";
 
 .j-dev-story-section {
   margin-bottom: var(--j-space-8);

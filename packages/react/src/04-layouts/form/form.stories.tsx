@@ -2,9 +2,9 @@ import { JInputControl } from "../../01-atoms/form-controls/input/input";
 import { JSelectControl } from "../../01-atoms/form-controls/select/select";
 import { JTextAreaControl } from "../../01-atoms/form-controls/textarea/textarea";
 import { JButton } from "../../01-atoms/button/button";
-import { JButtonGroup } from "../button-group/button-group";
 import { JForm, JFormRow, JFormContent, JFormHeader } from "./form";
 import { JContentSection } from "../content-section/content-section";
+import { JButtonGroup } from "../../03-organisms/button-group/button-group";
 
 export default {
   title: "Layouts/Form",
@@ -44,8 +44,8 @@ export function Default() {
           </JFormRow>
           <JFormRow>
             <JSelectControl
+              id="reason"
               label="Contact Reason"
-              required={true}
               options={[
                 {
                   text: "-- Select an Option --",
@@ -68,6 +68,7 @@ export function Default() {
           </JFormRow>
           <JFormRow>
             <JSelectControl
+              id="related-projects"
               label="Releted Project (if applicable)"
               options={[
                 {
