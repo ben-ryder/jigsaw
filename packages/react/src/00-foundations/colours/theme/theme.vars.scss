@@ -1,13 +1,13 @@
 :root {
-  --j-c-primary: var(--j-c-teal-600);
+  --j-c-primary: var(--j-c-teal-500);
   --j-c-primary-text: var(--j-c-mono-50);
-  --j-c-primary-interaction: var(--j-c-teal-800);
-  --j-c-primary-interaction-text: var(--j-c-mono-50);
+  --j-c-primary-interaction: var(--j-c-teal-700);
+  --j-c-primary-text-interaction: var(--j-c-mono-50);
 
   --j-c-secondary: var(--j-c-mono-100);
   --j-c-secondary-text: var(--j-c-mono-800);
   --j-c-secondary-interaction: var(--j-c-mono-300);
-  --j-c-secondary-interaction-text: var(--j-c-mono-800);
+  --j-c-secondary-text-interaction: var(--j-c-mono-800);
 
   --j-c-disabled: var(--j-c-mono-300);
   --j-c-disabled-text: var(--j-c-mono-600);
@@ -29,7 +29,7 @@
   --j-c-destructive: var(--j-c-red-500);
   --j-c-destructive-text: var(--j-c-mono-50);
   --j-c-destructive-interaction: var(--j-c-red-700);
-  --j-c-destructive-interaction-text: var(--j-c-mono-50);
+  --j-c-destructive-text-interaction: var(--j-c-mono-50);
 
   --j-c-info: var(--j-c-blue-500);
   --j-c-warning: var(--j-c-orange-500);

@@ -108,7 +108,7 @@ export function Contextual() {
                 <code>j-c-primary</code>
               </td>
               <td>
-                <code>j-c-teal-600</code>
+                <code>j-c-teal-500</code>
               </td>
               <td>The main primary 'brand' colour</td>
             </tr>
@@ -122,7 +122,7 @@ export function Contextual() {
                 <code>j-c-primary-interaction</code>
               </td>
               <td>
-                <code>j-c-teal-800</code>
+                <code>j-c-teal-700</code>
               </td>
               <td>
                 The 'interaction' version of the primary colour, used for things
@@ -147,12 +147,12 @@ export function Contextual() {
               <td>
                 <span
                   style={{
-                    backgroundColor: "var(--j-c-primary-interaction-text)",
+                    backgroundColor: "var(--j-c-primary-text-interaction)",
                   }}
                 ></span>
               </td>
               <td>
-                <code>j-c-primary-interaction-text</code>
+                <code>j-c-primary-text-interaction</code>
               </td>
               <td>
                 <code>j-c-mono-50</code>
@@ -229,12 +229,12 @@ export function Contextual() {
               <td>
                 <span
                   style={{
-                    backgroundColor: "var(--j-c-secondary-interaction-text)",
+                    backgroundColor: "var(--j-c-secondary-text-interaction)",
                   }}
                 ></span>
               </td>
               <td>
-                <code>j-c-secondary-interaction-text</code>
+                <code>j-c-secondary-text-interaction</code>
               </td>
               <td>
                 <code>j-c-mono-800</code>
@@ -344,12 +344,12 @@ export function Contextual() {
               <td>
                 <span
                   style={{
-                    backgroundColor: "var(--j-c-destructive-interaction-text)",
+                    backgroundColor: "var(--j-c-destructive-text-interaction)",
                   }}
                 ></span>
               </td>
               <td>
-                <code>j-c-destructive-interaction-text</code>
+                <code>j-c-destructive-text-interaction</code>
               </td>
               <td>
                 <code>j-c-mono-50</code>

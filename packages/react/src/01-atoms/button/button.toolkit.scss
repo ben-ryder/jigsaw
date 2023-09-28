@@ -14,7 +14,7 @@
   &:hover,
   &:focus-visible {
     background: var(--j-c-primary-interaction);
-    color: var(--j-c-primary-interaction-text);
+    color: var(--j-c-primary-text-interaction);
     border-color: var(--j-c-primary-interaction);
     cursor: pointer;
     box-shadow: none;
@@ -33,7 +33,7 @@
     &:hover,
     &:focus-visible {
       background: var(--j-c-secondary-interaction);
-      color: var(--j-c-secondary-interaction-text);
+      color: var(--j-c-secondary-text-interaction);
       border-color: var(--j-c-secondary-interaction);
     }
   }
@@ -46,7 +46,7 @@
     &:hover,
     &:focus-visible {
       background: var(--j-c-destructive-interaction);
-      color: var(--j-c-destructive-interaction-text);
+      color: var(--j-c-destructive-text-interaction);
       border-color: var(--j-c-destructive-interaction);
     }
   }
