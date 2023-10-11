@@ -1,8 +1,8 @@
 import { JTag } from "./tag";
-import { StorySection } from "../../development/story-section";
+import { StorySection } from "../../../development/story-section";
 
 export default {
-  title: "Components/Tag",
+  title: "Atoms/Pills/Tag",
   parameters: {
     status: {
       type: "experimental",

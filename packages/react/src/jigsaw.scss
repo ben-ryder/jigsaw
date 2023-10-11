@@ -37,9 +37,10 @@
 @use "01-atoms/form-elements/multiselect/multiselect";
 @use "01-atoms/form-elements/textarea/textarea";
 
+@use "01-atoms/pills/pill/pill";
+@use "01-atoms/pills/tag/tag";
+
 @use "02-components/accordion/accordion";
-@use "02-components/badge/badge";
-@use "02-components/tag/tag";
 @use "02-components/callout/callout";
 @use "02-components/prose/prose";
 @use "02-components/table/table";
@@ -63,4 +64,9 @@ html {
 
 * {
   box-sizing: border-box;
+}
+
+// Ensure fonts are applied to buttons by default
+button {
+  font: inherit;
 }

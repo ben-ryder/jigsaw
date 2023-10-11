@@ -20,9 +20,12 @@ export * from "./01-atoms/form-controls/textarea/textarea.js";
 
 export * from "./01-atoms/icons/icon.js";
 
+export * from "./01-atoms/pills/pill/pill.js";
+export * from "./01-atoms/pills/pill-link/pill-link.js";
+export * from "./01-atoms/pills/pill-button/pill-button.js";
+export * from "./01-atoms/pills/tag/tag.js";
+
 export * from "./02-components/accordion/accordion.js";
-export * from "./02-components/badge/badge.js";
-export * from "./02-components/tag/tag.js";
 export * from "./02-components/callout/callout.js";
 export * from "./02-components/prose/prose.js";
 export * from "./02-components/table/table.js";

@@ -1,6 +1,6 @@
-@use "../../00-foundations/colours/variants/variants.toolkit" as *;
+@use "../../../00-foundations/colours/variants/variants.toolkit" as *;
 
-.j-badge {
+.j-pill {
   display: inline-block;
   background-color: var(--j-c-primary);
   color: var(--j-c-primary-text);
@@ -9,8 +9,9 @@
 
   @include colour-variants();
 
-  &--link {
+  &--interactive {
     text-decoration: none;
+    cursor: pointer;
 
     &:hover,
     &:focus-visible {
@@ -21,6 +22,11 @@
       outline: 2px solid var(--j-c-mono-50);
     }
 
-    @include colour-variants-interaction("&.j-badge");
+    @include colour-variants-interaction("&.j-pill");
+  }
+
+  &--sm {
+    font-size: var(--j-text-size-sm);
+    padding: var(--j-space-2) var(--j-space-2);
   }
 }

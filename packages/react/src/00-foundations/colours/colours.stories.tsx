@@ -1,5 +1,5 @@
 import { JColours } from "./colours";
-import { JBadge } from "../../02-components/badge/badge";
+import { JBadge } from "../../01-atoms/pills/pill-link/pill-link";
 
 export default {
   title: "Foundations/Colours",

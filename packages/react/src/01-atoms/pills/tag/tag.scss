@@ -1,0 +1,30 @@
+@use "../../../00-foundations/colours/variants/variants.toolkit" as *;
+
+.j-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+
+  //&__remove-button {
+  //  background-color: transparent;
+  //  border: none;
+  //  color: inherit;
+  //
+  //  // This spacing makes room for the remove button while making sure
+  //  // the tag height matches the pill-link component height
+  //  //padding: 0;
+  //  //margin: var(--j-space-2) 0 var(--j-space-2) 6px;
+  //
+  //  &:hover,
+  //  &:focus-visible {
+  //    color: var(--j-c-mono-300);
+  //    cursor: pointer;
+  //  }
+  //
+  //  &:focus-visible {
+  //    outline: 2px solid var(--j-c-mono-50);
+  //    border-radius: var(--j-border-radius-sm);
+  //  }
+  //}
+}
