@@ -10,7 +10,7 @@ import { JOptionData } from "../select/select.js";
 import { JIcon } from "../../icons/icon.js";
 import { ChevronsDown as MultiSelectOpenIcon } from "lucide-react";
 import classNames from "classnames";
-import { JTag } from "../../../02-components/tag/tag.js";
+import { JTag } from "../../pills/tag/tag.js";
 import { JColourVariants } from "../../../00-foundations/colours/variants/colour-variants.js";
 
 export interface JMultiSelectOptionData extends JOptionData {

@@ -1,24 +1,23 @@
 import classNames from "classnames";
 import { XIcon as RemoveIcon } from "lucide-react";
-import { JIcon } from "../../01-atoms/icons/icon.js";
-import { JColourVariants } from "../../00-foundations/colours/variants/colour-variants.js";
+import { JIcon } from "../../icons/icon.js";
+import {getPillClassName, JPillProps} from "../pill/pill.js";
 
 export interface JTagData {
   text: string;
   value: string;
 }
 
-export interface JTagProps {
+export interface JTagProps extends JPillProps {
   data: JTagData;
   onRemove: (data: JTagData) => void;
-  variant?: JColourVariants;
   getA11yRemoveText?: (text: string) => string;
 }
 
 export function JTag(props: JTagProps) {
   const className = classNames(
     "j-tag",
-    props.variant ? `j-tag--${props.variant}` : ""
+    getPillClassName({size: props.size, variant: props.variant, interactive: true})
   );
 
   return (
