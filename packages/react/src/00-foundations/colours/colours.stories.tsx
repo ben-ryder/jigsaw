@@ -1,5 +1,5 @@
 import { JColours } from "./colours";
-import { JBadge } from "../../01-atoms/pills/pill-link/pill-link";
+import { JPill } from "../../01-atoms/pills/pill/pill";
 
 export default {
   title: "Foundations/Colours",
@@ -101,7 +101,7 @@ export function Contextual() {
           </thead>
           <tbody>
             <tr>
-              <td>
+              <td className="grow">
                 <span style={{ backgroundColor: "var(--j-c-primary)" }}></span>
               </td>
               <td>
@@ -113,7 +113,7 @@ export function Contextual() {
               <td>The main primary 'brand' colour</td>
             </tr>
             <tr>
-              <td>
+              <td className="grow">
                 <span
                   style={{ backgroundColor: "var(--j-c-primary-interaction)" }}
                 ></span>
@@ -130,7 +130,7 @@ export function Contextual() {
               </td>
             </tr>
             <tr>
-              <td>
+              <td className="grow">
                 <span
                   style={{ backgroundColor: "var(--j-c-primary-text)" }}
                 ></span>
@@ -144,7 +144,7 @@ export function Contextual() {
               <td>The text colour that can be used with the primary colour</td>
             </tr>
             <tr>
-              <td>
+              <td className="grow">
                 <span
                   style={{
                     backgroundColor: "var(--j-c-primary-text-interaction)",
@@ -177,7 +177,7 @@ export function Contextual() {
           </thead>
           <tbody>
             <tr>
-              <td>
+              <td className="grow">
                 <span
                   style={{ backgroundColor: "var(--j-c-secondary)" }}
                 ></span>
@@ -191,7 +191,7 @@ export function Contextual() {
               <td>The secondary 'brand' colour</td>
             </tr>
             <tr>
-              <td>
+              <td className="grow">
                 <span
                   style={{
                     backgroundColor: "var(--j-c-secondary-interaction)",
@@ -210,7 +210,7 @@ export function Contextual() {
               </td>
             </tr>
             <tr>
-              <td>
+              <td className="grow">
                 <span
                   style={{ backgroundColor: "var(--j-c-secondary-text)" }}
                 ></span>
@@ -226,7 +226,7 @@ export function Contextual() {
               </td>
             </tr>
             <tr>
-              <td>
+              <td className="grow">
                 <span
                   style={{
                     backgroundColor: "var(--j-c-secondary-text-interaction)",
@@ -427,7 +427,7 @@ export function Contextual() {
           </thead>
           <tbody>
             <tr>
-              <td>
+              <td className="grow">
                 <span style={{ backgroundColor: "var(--j-c-text)" }}></span>
               </td>
               <td>
@@ -439,7 +439,7 @@ export function Contextual() {
               <td>The main colour used for text.</td>
             </tr>
             <tr>
-              <td>
+              <td className="grow">
                 <span
                   style={{ backgroundColor: "var(--j-c-text-emphasis)" }}
                 ></span>
@@ -451,11 +451,11 @@ export function Contextual() {
                 <code>j-c-mono-100</code>
               </td>
               <td>
-                he text colour used for emphasised text such as bold or italics.
+                The text colour used for emphasised text such as bold or italics.
               </td>
             </tr>
             <tr>
-              <td>
+              <td className="grow">
                 <span
                   style={{ backgroundColor: "var(--j-c-text-heading)" }}
                 ></span>
@@ -483,7 +483,7 @@ export function Contextual() {
           </thead>
           <tbody>
             <tr>
-              <td>
+              <td className="grow">
                 <span style={{ backgroundColor: "var(--j-c-info)" }}></span>
               </td>
               <td>
@@ -497,7 +497,7 @@ export function Contextual() {
               </td>
             </tr>
             <tr>
-              <td>
+              <td className="grow">
                 <span style={{ backgroundColor: "var(--j-c-warning)" }}></span>
               </td>
               <td>
@@ -512,7 +512,7 @@ export function Contextual() {
               </td>
             </tr>
             <tr>
-              <td>
+              <td className="grow">
                 <span style={{ backgroundColor: "var(--j-c-danger)" }}></span>
               </td>
               <td>
@@ -527,7 +527,7 @@ export function Contextual() {
               </td>
             </tr>
             <tr>
-              <td>
+              <td className="grow">
                 <span style={{ backgroundColor: "var(--j-c-error)" }}></span>
               </td>
               <td>
@@ -554,7 +554,7 @@ export function Variants() {
       <div className="j-prose">
         <h1>Variants</h1>
         <p>
-          Some components such as <code>JBadge</code> and <code>JTag</code>{" "}
+          Some components such as <code>JPill</code> and <code>JPillTag</code>{" "}
           allow for colour customisation. In order to ensure accessibility only
           a limited number of colours are supported for these use cases.
         </p>
@@ -578,7 +578,7 @@ export function Variants() {
                 <code>j-c-variant-teal</code>
               </td>
               <td>
-                <JBadge text="Example" />
+                <JPill variant="teal">Example</JPill>
               </td>
             </tr>
             <tr>
@@ -591,7 +591,7 @@ export function Variants() {
                 <code>j-c-variant-white</code>
               </td>
               <td>
-                <JBadge text="Example" variant="white" />
+                <JPill variant="white">Example</JPill>
               </td>
             </tr>
             <tr>
@@ -604,7 +604,7 @@ export function Variants() {
                 <code>j-c-variant-blueGrey</code>
               </td>
               <td>
-                <JBadge text="Example" variant="blueGrey"/>
+                <JPill variant="blueGrey">Example</JPill>
               </td>
             </tr>
             <tr>
@@ -617,7 +617,7 @@ export function Variants() {
                 <code>j-c-variant-red</code>
               </td>
               <td>
-                <JBadge text="Example" variant="red" />
+                <JPill variant="red">Example</JPill>
               </td>
             </tr>
             <tr>
@@ -630,7 +630,7 @@ export function Variants() {
                 <code>j-c-variant-orange</code>
               </td>
               <td>
-                <JBadge text="Example" variant="orange" />
+                <JPill variant="orange">Example</JPill>
               </td>
             </tr>
             <tr>
@@ -643,7 +643,7 @@ export function Variants() {
                 <code>j-c-variant-yellow</code>
               </td>
               <td>
-                <JBadge text="Example" variant="yellow" />
+                <JPill variant="yellow">Example</JPill>
               </td>
             </tr>
             <tr>
@@ -656,7 +656,7 @@ export function Variants() {
                 <code>j-c-variant-green</code>
               </td>
               <td>
-                <JBadge text="Example" variant="green" />
+                <JPill variant="green">Example</JPill>
               </td>
             </tr>
             <tr>
@@ -669,7 +669,7 @@ export function Variants() {
                 <code>j-c-variant-blue</code>
               </td>
               <td>
-                <JBadge text="Example" variant="blue" />
+                <JPill variant="blue">Example</JPill>
               </td>
             </tr>
             <tr>
@@ -682,7 +682,7 @@ export function Variants() {
                 <code>j-c-variant-purple</code>
               </td>
               <td>
-                <JBadge text="Example" variant="purple" />
+                <JPill variant="purple">Example</JPill>
               </td>
             </tr>
             <tr>
@@ -695,7 +695,7 @@ export function Variants() {
                 <code>j-c-variant-pink</code>
               </td>
               <td>
-                <JBadge text="Example" variant="pink" />
+                <JPill variant="pink">Example</JPill>
               </td>
             </tr>
           </tbody>

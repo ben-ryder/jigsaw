@@ -15,11 +15,11 @@ export function Default() {
   return (
     <>
       <StorySection>
-        <JPillLink href="#">This is a pill link</JPillLink>
+        <JPillLink href="#">Example Pill</JPillLink>
       </StorySection>
       {JColourVariantsList.map(variant =>
         <StorySection key={variant}>
-          <JPillLink href="#" variant={variant}>{`This is a ${variant} pill link`}</JPillLink>
+          <JPillLink href="#" variant={variant}>Example Pill</JPillLink>
         </StorySection>
       )}
     </>
@@ -30,11 +30,11 @@ export function Small() {
   return (
     <>
       <StorySection>
-        <JPillLink href="#" size="sm">This is a small pill link</JPillLink>
+        <JPillLink href="#" size="sm">Example Pill</JPillLink>
       </StorySection>
       {JColourVariantsList.map(variant =>
         <StorySection key={variant}>
-          <JPillLink href="#" size="sm" variant={variant}>{`This is a small ${variant} pill link`}</JPillLink>
+          <JPillLink href="#" size="sm" variant={variant}>Example Pill</JPillLink>
         </StorySection>
       )}
     </>

@@ -1,14 +1,14 @@
 import classNames from "classnames";
 import { XIcon as RemoveIcon } from "lucide-react";
 import { JIcon } from "../../icons/icon.js";
-import {getPillClassName, JPillProps} from "../pill/pill.js";
+import {getPillClassName, JPillBaseProps} from "../pill/pill.js";
 
 export interface JTagData {
   text: string;
   value: string;
 }
 
-export interface JTagProps extends JPillProps {
+export interface JTagProps extends JPillBaseProps {
   data: JTagData;
   onRemove: (data: JTagData) => void;
   getA11yRemoveText?: (text: string) => string;

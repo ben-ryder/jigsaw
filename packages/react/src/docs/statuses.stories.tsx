@@ -1,4 +1,4 @@
-import { JBadge } from "../01-atoms/pills/pill-link/pill-link";
+import { JPill } from "../01-atoms/pills/pill/pill";
 
 export default {
   title: "Statuses",
@@ -27,7 +27,7 @@ export function Statuses() {
           <tbody>
             <tr>
               <td>
-                <JBadge variant="red" text="Experimental" />
+                <JPill size="sm" variant="red">Experimental</JPill>
               </td>
               <td>
                 <code>experimental</code>
@@ -39,7 +39,7 @@ export function Statuses() {
             </tr>
             <tr>
               <td>
-                <JBadge variant="orange" text="Unstable" />
+                <JPill size="sm" variant="orange">Unstable</JPill>
               </td>
               <td>
                 <code>unstable</code>
@@ -51,7 +51,7 @@ export function Statuses() {
             </tr>
             <tr>
               <td>
-                <JBadge variant="green" text="Stable" />
+                <JPill size="sm" variant="green">Stable</JPill>
               </td>
               <td>
                 <code>stable</code>
@@ -62,7 +62,7 @@ export function Statuses() {
             </tr>
             <tr>
               <td>
-                <JBadge variant="red" text="Deprecated" />
+                <JPill size="sm" variant="red">Deprecated</JPill>
               </td>
               <td>
                 <code>deprecated</code>
