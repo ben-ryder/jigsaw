@@ -1,8 +1,8 @@
 import {ComponentProps, ElementType} from "react";
 import classNames from "classnames";
-import {getPillClassName, JPillProps} from "../pill/pill.js";
+import {getPillClassName, JPillBaseProps} from "../pill/pill.js";
 
-export interface JPillLinkProps extends JPillProps, ComponentProps<'a'> {
+export interface JPillLinkProps extends JPillBaseProps, ComponentProps<'a'> {
   linkAs?: ElementType<JPillLinkProps>;
 }
 

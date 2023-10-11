@@ -19,11 +19,11 @@ export function Default() {
   return (
     <>
       <StorySection>
-        <JPillButton onClick={buttonOnClick}>This is a pill button</JPillButton>
+        <JPillButton onClick={buttonOnClick}>Example Pill</JPillButton>
       </StorySection>
       {JColourVariantsList.map(variant =>
         <StorySection key={variant}>
-          <JPillButton onClick={buttonOnClick} variant={variant}>{`This is a ${variant} pill button`}</JPillButton>
+          <JPillButton onClick={buttonOnClick} variant={variant}>Example Pill</JPillButton>
         </StorySection>
       )}
     </>
@@ -34,11 +34,11 @@ export function Small() {
   return (
     <>
       <StorySection>
-        <JPillButton onClick={buttonOnClick} size="sm">This is a pill button</JPillButton>
+        <JPillButton onClick={buttonOnClick} size="sm">Example Pill</JPillButton>
       </StorySection>
       {JColourVariantsList.map(variant =>
         <StorySection key={variant}>
-          <JPillButton size="sm" onClick={buttonOnClick} variant={variant}>{`This is a ${variant} pill button`}</JPillButton>
+          <JPillButton size="sm" onClick={buttonOnClick} variant={variant}>Example Pill</JPillButton>
         </StorySection>
       )}
     </>

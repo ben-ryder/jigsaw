@@ -1,5 +1,6 @@
 import { StorySection } from "../../../development/story-section";
 import {JColourVariantsList} from "../../../00-foundations/colours/variants/colour-variants";
+import {JPill} from "./pill";
 
 export default {
   title: "Atoms/Pills/Pill",
@@ -16,11 +17,11 @@ export function Default() {
   return (
     <>
       <StorySection>
-        <div className="j-pill">This is a pill</div>
+        <JPill>Example Pill</JPill>
       </StorySection>
       {JColourVariantsList.map(variant =>
         <StorySection key={variant}>
-          <div className={`j-pill j-pill--${variant}`}>{`This is a ${variant} pill`}</div>
+          <JPill variant={variant}>Example Pill</JPill>
         </StorySection>
       )}
     </>
@@ -31,11 +32,11 @@ export function Small() {
   return (
     <>
       <StorySection>
-        <div className="j-pill j-pill--sm">This is a small pill</div>
+        <JPill size="sm">Example Pill</JPill>
       </StorySection>
       {JColourVariantsList.map(variant =>
         <StorySection key={variant}>
-          <div className={`j-pill j-pill--sm j-pill--${variant}`}>{`This is a small ${variant} pill`}</div>
+          <JPill size="sm" variant={variant}>Example Pill</JPill>
         </StorySection>
       )}
     </>
@@ -46,11 +47,11 @@ export function Interactive() {
   return (
     <>
       <StorySection>
-        <div className="j-pill j-pill--interactive">This is an interactive pill</div>
+        <JPill interactive={true}>Example Pill</JPill>
       </StorySection>
       {JColourVariantsList.map(variant =>
         <StorySection key={variant}>
-          <div className={`j-pill j-pill--interactive j-pill--${variant}`}>{`This is an interactive ${variant} pill`}</div>
+          <JPill interactive={true} variant={variant}>Example Pill</JPill>
         </StorySection>
       )}
     </>
@@ -61,11 +62,11 @@ export function SmallInteractive() {
   return (
     <>
       <StorySection>
-        <div className="j-pill j-pill--sm j-pill--interactive">This is an interactive pill</div>
+        <JPill interactive={true} size="sm">Example Pill</JPill>
       </StorySection>
       {JColourVariantsList.map(variant =>
         <StorySection key={variant}>
-          <div className={`j-pill j-pill--sm j-pill--interactive j-pill--${variant}`}>{`This is an interactive ${variant} pill`}</div>
+          <JPill interactive={true} size="sm" variant={variant}>Example Pill</JPill>
         </StorySection>
       )}
     </>

@@ -12,7 +12,10 @@
 
   .colour-table td {
     position: relative;
-    height: 100px;
+
+    &.grow {
+      height: 90px;
+    }
   }
 
   .colour-table code {
