@@ -41,12 +41,21 @@
     }
   }
 
-  &--danger {
+  &--critical {
     border-color: var(--j-c-danger);
 
     .j-callout__icon {
       background-color: var(--j-c-danger);
       border-right-color: var(--j-c-danger);
+    }
+  }
+
+  &--success {
+    border-color: var(--j-c-success);
+
+    .j-callout__icon {
+      background-color: var(--j-c-success);
+      border-right-color: var(--j-c-success);
     }
   }
 }

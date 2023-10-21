@@ -4,9 +4,10 @@ import {
   Info as InfoIcon,
   AlertTriangle as WarningIcon,
   XOctagon as DangerIcon,
+  CheckCircle as SuccessIcon
 } from "lucide-react";
 
-export type JCalloutVariant = "danger" | "warning";
+export type JCalloutVariant = "critical" | "warning" | "success";
 
 export interface JCalloutProps {
   children: ReactNode;
@@ -22,11 +23,16 @@ export function JCallout(props: JCalloutProps) {
   );
 
   let icon;
-  if (variant === "danger") {
+  if (variant === "critical") {
     icon = <DangerIcon className="j-icon" />;
-  } else if (variant === "warning") {
+  }
+  else if (variant === "warning") {
     icon = <WarningIcon className="j-icon" />;
-  } else {
+  }
+  else if (variant === "success") {
+    icon = <SuccessIcon className="j-icon" />;
+  }
+  else {
     icon = <InfoIcon className="j-icon" />;
   }
 
