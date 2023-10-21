@@ -23,7 +23,7 @@ export * from "./01-atoms/icons/icon.js";
 export * from "./01-atoms/pills/pill/pill.js";
 export * from "./01-atoms/pills/pill-link/pill-link.js";
 export * from "./01-atoms/pills/pill-button/pill-button.js";
-export * from "./01-atoms/pills/tag/tag.js";
+export * from "./01-atoms/pills/tag/pill-tag.js";
 
 export * from "./02-components/accordion/accordion.js";
 export * from "./02-components/callout/callout.js";

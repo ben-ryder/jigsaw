@@ -8,6 +8,7 @@ export const SIZES = {
   "j-space-7": "14px",
   "j-space-8": "16px",
   "j-space-12": "24px",
+  "j-space-14": "28px",
   "j-space-16": "32px",
   "j-space-24": "48px",
   "j-space-32": "64px",

@@ -10,7 +10,7 @@ import { JOptionData } from "../select/select.js";
 import { JIcon } from "../../icons/icon.js";
 import { ChevronsDown as MultiSelectOpenIcon } from "lucide-react";
 import classNames from "classnames";
-import { JTag } from "../../pills/tag/tag.js";
+import { JPillTag } from "../../pills/tag/pill-tag.js";
 import { JColourVariants } from "../../../00-foundations/colours/variants/colour-variants.js";
 
 export interface JMultiSelectOptionData extends JOptionData {
@@ -146,7 +146,7 @@ export function JMultiSelect(props: JMultiSelectProps) {
     <div className={className}>
       <div className="j-multiselect__inner">
         {props.selectedOptions.map((selectedItem, index) => (
-          <JTag
+          <JPillTag
             data={selectedItem}
             key={`selected-item-${index}`}
             onRemove={(item) => {

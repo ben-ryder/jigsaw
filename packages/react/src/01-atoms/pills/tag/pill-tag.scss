@@ -1,0 +1,37 @@
+@use "../../../00-foundations/colours/variants/variants.toolkit" as *;
+
+.j-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  position: relative;
+  padding-right: var(--j-space-14);
+
+  &__remove-button {
+    position: absolute;
+    right: var(--j-space-2);
+    margin-top: var(--j-space-1);
+
+    background-color: transparent;
+    border: none;
+    color: inherit;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--j-c-mono-300);
+      cursor: pointer;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--j-c-mono-50);
+      border-radius: var(--j-border-radius-sm);
+    }
+  }
+
+  &.j-pill--sm {
+    .j-tag__remove-button {
+      margin-top: 0
+    }
+  }
+}
