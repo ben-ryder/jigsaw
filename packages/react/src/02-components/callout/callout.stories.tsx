@@ -39,11 +39,21 @@ export function Warning() {
   );
 }
 
-export function Danger() {
+export function Critical() {
   return (
-    <JCallout variant="danger">
+    <JCallout variant="critical">
       <p>
-        This variant can highlight a danger, this is more severe than a warning.
+        This variant can highlight a danger or error and is more severe than a warning.
+      </p>
+    </JCallout>
+  );
+}
+
+export function Success() {
+  return (
+    <JCallout variant="success">
+      <p>
+        This variant can highlight a success or confirmation.
       </p>
     </JCallout>
   );
