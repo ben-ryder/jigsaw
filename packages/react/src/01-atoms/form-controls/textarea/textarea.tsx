@@ -1,27 +1,32 @@
 import classNames from "classnames";
-import { JLabel } from "../../form-elements/label/label.js";
-import { JTextArea } from "../../form-elements/textarea/textarea.js";
-import { JErrorText } from "../../form-elements/error-text/error-text.js";
-import { ComponentProps } from "react";
+import { JLabel } from "../label/label.js";
+import { JErrorText } from "../error-text/error-text.js";
+import {ComponentProps, ForwardedRef, forwardRef} from "react";
 
-export interface JTextAreaControlProps extends ComponentProps<"textarea"> {
+export interface JTextAreaProps extends ComponentProps<"textarea"> {
   label: string;
   error?: string;
   hideLabel?: boolean;
 }
 
-export function JTextAreaControl(props: JTextAreaControlProps) {
-  const { label, error, hideLabel, ...htmlProps } = props;
+export const JTextArea = forwardRef((props: JTextAreaProps, ref: ForwardedRef<HTMLTextAreaElement>) => {
+  const { label, error, hideLabel, className: propsClassName, ...htmlProps } = props;
 
-  const className = classNames("j-text-area-control", props.className);
+  const className = classNames(
+    "j-textarea",
+    {
+      "j-textarea--error": error,
+    },
+    propsClassName
+  );
 
   return (
     <div className={className}>
       <JLabel htmlFor={props.id} hidden={props.hideLabel}>
         {props.label}
       </JLabel>
-      <JTextArea error={!!props.error} {...htmlProps} />
+      <textarea ref={ref} className="j-textarea__element" {...htmlProps} />
       {props.error && <JErrorText>{props.error}</JErrorText>}
     </div>
   );
-}
+})

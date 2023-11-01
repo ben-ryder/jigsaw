@@ -3,7 +3,9 @@
 .j-select {
   @include form-element();
 
-  &:hover {
-    cursor: pointer;
+  &__element {
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

@@ -1,7 +1,7 @@
-import { JTextAreaControl } from "./textarea";
+import { JTextArea } from "./textarea";
 
 export default {
-  title: "Atoms/Form Controls/TextArea",
+  title: "Atoms/Forms/TextArea",
   parameters: {
     status: {
       type: "unstable",
@@ -11,7 +11,7 @@ export default {
 
 export function Default() {
   return (
-    <JTextAreaControl
+    <JTextArea
       id="test"
       label="Test Text Area"
       placeholder="enter some text here..."
@@ -22,7 +22,7 @@ export function Default() {
 
 export function WithError() {
   return (
-    <JTextAreaControl
+    <JTextArea
       id="test"
       label="With Error"
       placeholder="enter some text here..."
@@ -34,7 +34,7 @@ export function WithError() {
 
 export function WithHiddenLabel() {
   return (
-    <JTextAreaControl
+    <JTextArea
       id="test"
       label="With Hidden Label"
       placeholder="There is actually a label..."

@@ -4,9 +4,11 @@
 .j-multiselect {
   @include form-element();
 
-  display: flex;
-  position: relative;
-  padding: 5px;
+  &__element {
+    display: flex;
+    position: relative;
+    padding: 5px;
+  }
 
   &__inner {
     width: 100%;

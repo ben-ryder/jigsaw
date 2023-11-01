@@ -1,7 +1,7 @@
-import { JInputControl } from "./input";
+import { JInput } from "./input";
 
 export default {
-  title: "Atoms/Form Controls/Input",
+  title: "Atoms/Forms/Input",
   parameters: {
     status: {
       type: "unstable",
@@ -11,7 +11,7 @@ export default {
 
 export function Default() {
   return (
-    <JInputControl
+    <JInput
       id="test"
       label="Test Input"
       placeholder="enter some text.."
@@ -22,7 +22,7 @@ export function Default() {
 
 export function WithError() {
   return (
-    <JInputControl
+    <JInput
       type="email"
       id="test"
       label="With Error"
@@ -33,7 +33,7 @@ export function WithError() {
 
 export function WithHiddenLabel() {
   return (
-    <JInputControl
+    <JInput
       id="test"
       label="This label is hidden"
       placeholder="This input does have a label..."
