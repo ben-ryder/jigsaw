@@ -4,6 +4,8 @@
   @include form-element();
 
   &__element {
+    width: min-content;
+
     &:hover {
       cursor: pointer;
     }
