@@ -30,12 +30,12 @@
 @use "01-atoms/links/button-link/button-link";
 @use "01-atoms/links/text-link/text-link";
 
-@use "01-atoms/form-elements/error-text/error-text";
-@use "01-atoms/form-elements/input/input";
-@use "01-atoms/form-elements/label/label";
-@use "01-atoms/form-elements/select/select";
-@use "01-atoms/form-elements/multiselect/multiselect";
-@use "01-atoms/form-elements/textarea/textarea";
+@use "01-atoms/form-controls/error-text/error-text";
+@use "01-atoms/form-controls/label/label";
+@use "01-atoms/form-controls/input/input";
+@use "01-atoms/form-controls/textarea/textarea";
+@use "01-atoms/form-controls/select/select";
+@use "01-atoms/form-controls/multiselect/multiselect";
 
 @use "01-atoms/pills/pill/pill";
 @use "01-atoms/pills/tag/pill-tag";

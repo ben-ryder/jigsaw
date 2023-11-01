@@ -1,27 +1,32 @@
-import { ComponentProps } from "react";
+import {ComponentProps, ForwardedRef, forwardRef} from "react";
 import classNames from "classnames";
-import { JLabel } from "../../form-elements/label/label.js";
-import { JInput, JInputProps } from "../../form-elements/input/input.js";
-import { JErrorText } from "../../form-elements/error-text/error-text.js";
+import { JLabel } from "../label/label.js";
+import { JErrorText } from "../error-text/error-text.js";
 
-export interface JInputControlProps extends ComponentProps<"input"> {
+export interface JInputProps extends ComponentProps<"input"> {
   label: string;
   error?: string;
   hideLabel?: boolean;
 }
 
-export function JInputControl(props: JInputControlProps) {
-  const { label, hideLabel, error, ...htmlProps } = props;
+export const JInput = forwardRef((props: JInputProps, ref: ForwardedRef<HTMLInputElement>) => {
+  const { label, hideLabel, error, className: propsClassName, ...htmlProps } = props;
 
-  const className = classNames("j-input-control", props.className);
+  const className = classNames(
+    "j-input",
+    {
+      "j-input--error": error,
+    },
+    propsClassName
+  );
 
   return (
     <div className={className}>
       <JLabel htmlFor={props.id} hidden={hideLabel}>
         {label}
       </JLabel>
-      <JInput error={!!props.error} {...htmlProps} />
+      <input ref={ref} className="j-input__element" {...htmlProps} />
       {props.error && <JErrorText>{props.error}</JErrorText>}
     </div>
   );
-}
+})

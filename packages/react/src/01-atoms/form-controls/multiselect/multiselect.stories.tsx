@@ -1,12 +1,11 @@
 import "./multiselect";
 
-import { JMultiSelectControl } from "./multiselect";
+import { JMultiSelect, JMultiSelectOptionData} from "./multiselect";
 import { useState } from "react";
-import { JOptionData } from "../../form-elements/select/select";
-import { JMultiSelectOptionData } from "../../form-elements/multiselect/multiselect";
+import { JOptionData } from "../../form-controls/select/select";
 
 export default {
-  title: "Atoms/Form Controls/MultiSelect",
+  title: "Atoms/Forms/MultiSelect",
   parameters: {
     status: {
       type: "experimental",
@@ -52,7 +51,7 @@ export function Default() {
   ]);
 
   return (
-    <JMultiSelectControl
+    <JMultiSelect
       label="Example MultiSelect"
       id="test"
       options={options}
@@ -71,7 +70,7 @@ export function WithError() {
   ]);
 
   return (
-    <JMultiSelectControl
+    <JMultiSelect
       label="Example MultiSelect"
       id="test"
       error="There's something wrong with this!"
@@ -89,7 +88,7 @@ export function WithHiddenLabel() {
   ]);
 
   return (
-    <JMultiSelectControl
+    <JMultiSelect
       label="Example MultiSelect"
       id="test"
       hideLabel={true}

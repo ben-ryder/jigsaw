@@ -1,7 +1,7 @@
 import { JLabel } from "./label";
 
 export default {
-  title: "Atoms/Form Elements/Label",
+  title: "Atoms/Forms/Label",
   parameters: {
     status: {
       type: "unstable",

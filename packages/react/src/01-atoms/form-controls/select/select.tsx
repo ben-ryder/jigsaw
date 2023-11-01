@@ -1,31 +1,44 @@
-import { JLabel } from "../../form-elements/label/label.js";
-import { JErrorText } from "../../form-elements/error-text/error-text.js";
-import { JOptionData, JSelect } from "../../form-elements/select/select.js";
+import { JLabel } from "../label/label.js";
+import { JErrorText } from "../error-text/error-text.js";
+import {ComponentProps, ForwardedRef, forwardRef} from "react";
+import classNames from "classnames";
 
-export interface JSelectControlProps {
-  id: string;
-  label: string;
-  error?: string;
-  hideLabel?: boolean;
-  options: JOptionData[];
-  value?: string;
-  onChange?: (value: string) => void;
+export interface JOptionData {
+  text: string;
+  value: string;
 }
 
-export function JSelectControl(props: JSelectControlProps) {
+export interface JSelectProps extends ComponentProps<"select"> {
+  label: string;
+  hideLabel?: boolean;
+  options: JOptionData[];
+  error?: string;
+}
+
+export const JSelect = forwardRef((props: JSelectProps, ref: ForwardedRef<HTMLSelectElement>) => {
+  const {label, hideLabel, options, error, className: propsClassName ,...htmlProps} = props
+
+  const className = classNames("j-select", {
+    "j-select--error": props.error,
+  });
+
   return (
-    <div className="j-select-control">
-      <JLabel htmlFor={props.id} hidden={props.hideLabel}>
+    <div className={className}>
+      <JLabel htmlFor={htmlProps.id} hidden={props.hideLabel}>
         {props.label}
       </JLabel>
-      <JSelect
-        id={props.id}
-        error={!!props.error}
-        options={props.options}
-        value={props.value}
-        onChange={props.onChange}
-      />
+      <select
+        ref={ref}
+        className="j-select__element"
+        {...htmlProps}
+      >
+        {props.options.map((option) => (
+          <option key={option.value} className="j-select__option" value={option.value}>
+            {option.text}
+          </option>
+        ))}
+      </select>
       {props.error && <JErrorText>{props.error}</JErrorText>}
     </div>
   );
-}
+})

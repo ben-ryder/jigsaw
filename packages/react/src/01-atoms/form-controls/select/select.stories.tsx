@@ -1,8 +1,8 @@
-import { JSelectControl } from "./select";
+import { JSelect } from "./select";
 import { useState } from "react";
 
 export default {
-  title: "Atoms/Form Controls/Select",
+  title: "Atoms/Forms/Select",
   parameters: {
     status: {
       type: "unstable",
@@ -20,12 +20,12 @@ const testOptions = [
 ];
 
 export function Default() {
-  return <JSelectControl id="test" label="Test Select" options={testOptions} />;
+  return <JSelect id="test" label="Test Select" options={testOptions} />;
 }
 
 export function WithError() {
   return (
-    <JSelectControl
+    <JSelect
       id="test"
       label="With Error"
       options={testOptions}
@@ -36,7 +36,7 @@ export function WithError() {
 
 export function WithHiddenLabel() {
   return (
-    <JSelectControl
+    <JSelect
       id="test"
       label="Hidden Label"
       hideLabel={true}
@@ -50,13 +50,15 @@ export function Controlled() {
 
   return (
     <>
-      <JSelectControl
+      <JSelect
         id="test"
         label="Hidden Label"
         hideLabel={true}
         options={testOptions}
         value={selectedOption}
-        onChange={setSelectedOption}
+        onChange={(e) => {
+          setSelectedOption(e.target.value)
+        }}
       />
       <p>
         This elements value is being controlled via React state rather than via

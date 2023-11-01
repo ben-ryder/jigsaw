@@ -7,12 +7,8 @@ export * from "./01-atoms/links/arrow-link/arrow-link.js";
 export * from "./01-atoms/links/button-link/button-link.js";
 export * from "./01-atoms/links/text-link/text-link.js";
 
-export * from "./01-atoms/form-elements/error-text/error-text.js";
-export * from "./01-atoms/form-elements/input/input.js";
-export * from "./01-atoms/form-elements/label/label.js";
-export * from "./01-atoms/form-elements/multiselect/multiselect.js";
-export * from "./01-atoms/form-elements/select/select.js";
-export * from "./01-atoms/form-elements/textarea/textarea.js";
+export * from "./01-atoms/form-controls/error-text/error-text.js";
+export * from "./01-atoms/form-controls/label/label.js";
 export * from "./01-atoms/form-controls/input/input.js";
 export * from "./01-atoms/form-controls/multiselect/multiselect.js";
 export * from "./01-atoms/form-controls/select/select.js";

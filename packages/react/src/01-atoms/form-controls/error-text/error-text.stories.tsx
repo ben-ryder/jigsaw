@@ -1,7 +1,7 @@
 import { JErrorText } from "./error-text";
 
 export default {
-  title: "Atoms/Form Elements/ErrorText",
+  title: "Atoms/Forms/ErrorText",
   parameters: {
     status: {
       type: "unstable",
