@@ -2,7 +2,7 @@ import "./multiselect";
 
 import { JMultiSelect, JMultiSelectOptionData} from "./multiselect";
 import { useState } from "react";
-import { JOptionData } from "../../form-controls/select/select";
+import { JOptionData } from "../select/select";
 
 export default {
   title: "Atoms/Forms/MultiSelect",
