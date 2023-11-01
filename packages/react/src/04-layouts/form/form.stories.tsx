@@ -1,6 +1,6 @@
-import { JInput } from "../../01-atoms/form-controls/input/input";
-import { JSelectControl } from "../../01-atoms/form-controls/select/select";
-import { JTextAreaControl } from "../../01-atoms/form-controls/textarea/textarea";
+import { JInput } from "../../01-atoms/forms/input/input";
+import { JSelectControl } from "../../01-atoms/forms/select/select";
+import { JTextAreaControl } from "../../01-atoms/forms/textarea/textarea";
 import { JButton } from "../../01-atoms/button/button";
 import { JForm, JFormRow, JFormContent, JFormHeader } from "./form";
 import { JContentSection } from "../content-section/content-section";
