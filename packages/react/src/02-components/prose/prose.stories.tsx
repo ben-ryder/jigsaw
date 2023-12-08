@@ -436,3 +436,9 @@ export function Default() {
     </JProse>
   );
 }
+
+export function HtmlString() {
+  return (
+    <JProse html="<p>This is a test of a <b>raw html</b> string, which could include a <a href='#'>link</a>!</p>" />
+  );
+}
