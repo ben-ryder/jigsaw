@@ -13,8 +13,10 @@
     "url": "https://github.com/Ben-Ryder/jigsaw/issues"
   },
   "scripts": {
-    "clean": "rimraf ./public/css",
-    "build": "npm run clean && cp -r ../react/public ."
+    "clean": "rimraf ./public/css ./sass",
+    "build": "npm run clean && npm run build:public && npm run build:sass-tookit",
+    "build:public": "cp -r ../react/public .",
+    "build:sass-tookit": "mkdir -p sass && rsync -a --prune-empty-dirs --include '*/' --include '*.toolkit.scss' --exclude '*' ../react/ ./sass/ && mv ./sass/src/* ./sass && rm -rf ./sass/src"
   },
   "files": [
     "public",
