@@ -52,10 +52,14 @@
     background-color: var(--j-c-background-f1);
     border-radius: var(--j-border-radius-md);
     border: 2px solid var(--j-c-blueGrey-500);
-    display: flex;
     flex-wrap: wrap;
     gap: var(--j-space-2);
     padding: 5px;
+
+    display: none;
+    &--open {
+      display: flex;
+    }
   }
 
   &__menu-item {
