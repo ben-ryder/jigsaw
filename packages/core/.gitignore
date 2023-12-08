@@ -4,5 +4,8 @@ node_modules
 # Build
 /public
 
+# Sass
+/sass
+
 # NPM Packages
 /*.tgz
