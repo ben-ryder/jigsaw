@@ -176,31 +176,29 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
           </JIcon>
         </button>
 
-        {isOpen && (
-          <ul className="j-multiselect__menu" {...getMenuProps()}>
-            {options.map((item, index) => (
-              <li
-                className={classNames(
-                  "j-multiselect__menu-item",
-                  item.variant ? `j-multiselect__menu-item--${item.variant}` : "",
-                  {
-                    "j-multiselect__menu-item--highlighted":
-                      highlightedIndex === index,
-                  }
-                )}
-                {...getItemProps({ item, index })}
-                key={`${item}${index}`}
-              >
-                {item.text}
-              </li>
-            ))}
-            {options.length === 0 && (
-              <li className="j-multiselect__menu-empty-item">
-                {props.noOptionsText || "No options available"}
-              </li>
-            )}
-          </ul>
-        )}
+        <ul  className={classNames('j-multiselect__menu', {'j-multiselect__menu--open': isOpen })} {...getMenuProps()}>
+          {options.map((item, index) => (
+            <li
+              className={classNames(
+                "j-multiselect__menu-item",
+                item.variant ? `j-multiselect__menu-item--${item.variant}` : "",
+                {
+                  "j-multiselect__menu-item--highlighted":
+                    highlightedIndex === index,
+                }
+              )}
+              {...getItemProps({ item, index })}
+              key={`${item}${index}`}
+            >
+              {item.text}
+            </li>
+          ))}
+          {options.length === 0 && (
+            <li className="j-multiselect__menu-empty-item">
+              {props.noOptionsText || "No options available"}
+            </li>
+          )}
+        </ul>
       </div>
       {props.error && <JErrorText>{props.error}</JErrorText>}
     </div>
