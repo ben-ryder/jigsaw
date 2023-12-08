@@ -1,24 +1,14 @@
 import { ReactNode } from "react";
 import classNames from "classnames";
+import { JColourVariants } from "../../00-foundations/colours/variants/colour-variants.js";
 
 export type JIconSize = "sm" | "rg" | "md" | "lg" | "xl";
 
-export type JIconVariant =
-  | "teal"
-  | "blueGrey"
-  | "white"
-  | "red"
-  | "green"
-  | "orange"
-  | "yellow"
-  | "blue"
-  | "purple"
-  | "pink";
-
 export interface JIconProps {
   size?: JIconSize;
-  variant?: JIconVariant;
+  variant?: JColourVariants;
   children: ReactNode;
+  className?: string;
 }
 
 export function JIcon(props: JIconProps) {
@@ -27,7 +17,8 @@ export function JIcon(props: JIconProps) {
   const className = classNames(
     "j-icon",
     size ? `j-icon--${size}` : "",
-    variant ? `j-icon--${variant}` : ""
+    variant ? `j-icon--${variant}` : "",
+    props.className
   );
 
   return <div className={className}>{children}</div>;
