@@ -35,6 +35,10 @@ export function Borders() {
           <p>Large (8px)</p>
           <code>j-border-radius-lg</code>
         </div>
+        <div className="border-item border-item--radius-xl">
+          <p>Extra Large (10px)</p>
+          <code>j-border-radius-xl</code>
+        </div>
 
         <h2>Border Width</h2>
         <p>
