@@ -77,6 +77,7 @@ export function Minimal() {
       selectedOptions={selectedOptions}
       setSelectedOptions={setSelectedOptions}
       variant="minimal"
+      hideLabel={true}
     />
   );
 }
