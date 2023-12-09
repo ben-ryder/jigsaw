@@ -22,6 +22,14 @@ export function LeftArrow() {
   );
 }
 
+export function NoUnderline() {
+  return (
+    <JArrowLink href="/" variant="minimal">
+      View All
+    </JArrowLink>
+  );
+}
+
 export function AsProp() {
   return (
     <JArrowLink href="/" as={LinkHelper}>

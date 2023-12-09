@@ -76,7 +76,7 @@ export function Minimal() {
       options={options}
       selectedOptions={selectedOptions}
       setSelectedOptions={setSelectedOptions}
-      interfaceStyle="minimal"
+      variant="minimal"
     />
   );
 }

@@ -20,7 +20,7 @@ export interface JMultiSelectOptionData extends JOptionData {
   variant?: JColourVariants;
 }
 
-export type JMultiSelectInterfaceStyle = 'normal' | 'minimal';
+export type JMultiSelectVariant = 'normal' | 'minimal';
 
 export interface JMultiSelectProps {
   id: string;
@@ -32,7 +32,7 @@ export interface JMultiSelectProps {
   options: JMultiSelectOptionData[];
   selectedOptions: JMultiSelectOptionData[];
   setSelectedOptions: (options: JMultiSelectOptionData[]) => void;
-  interfaceStyle?: JMultiSelectInterfaceStyle;
+  variant?: JMultiSelectVariant;
 }
 
 /**
@@ -70,7 +70,7 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
 
   const className = classNames("j-multiselect", {
     "j-multiselect--error": props.error,
-    "j-multiselect--minimal": props.interfaceStyle === 'minimal'
+    "j-multiselect--minimal": props.variant === 'minimal'
   });
 
   const { getDropdownProps, removeSelectedItem } =
