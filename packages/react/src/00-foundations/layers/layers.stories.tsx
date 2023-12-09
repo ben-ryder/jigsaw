@@ -1,5 +1,5 @@
 export default {
-  title: "Foundations/Layers",
+  title: "Foundations/Layers and Depth",
   parameters: {
     status: {
       type: "unstable",
@@ -7,7 +7,7 @@ export default {
   },
 };
 
-export function Layers() {
+export function LayersandDepth() {
   return (
     <div className="j-content-section">
       <div className="j-prose">

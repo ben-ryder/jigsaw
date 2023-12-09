@@ -1,6 +1,6 @@
 import { JLabel } from "../label/label.js";
 import { JErrorText } from "../error-text/error-text.js";
-import {ForwardedRef, forwardRef, useMemo, useState} from "react";
+import { ForwardedRef, forwardRef, RefObject, useEffect, useMemo, useState } from "react";
 import {JColourVariants} from "../../../00-foundations/colours/variants/colour-variants.js";
 import {JOptionData} from "../select/select.js";
 import classNames from "classnames";
@@ -14,10 +14,13 @@ import {
 import {JPillTag} from "../../pills/tag/pill-tag.js";
 import {JIcon} from "../../icons/icon.js";
 import {ChevronsDown as MultiSelectOpenIcon} from "lucide-react";
+import { offset, useFloating } from "@floating-ui/react";
 
 export interface JMultiSelectOptionData extends JOptionData {
   variant?: JColourVariants;
 }
+
+export type JMultiSelectInterfaceStyle = 'normal' | 'minimal';
 
 export interface JMultiSelectProps {
   id: string;
@@ -29,6 +32,7 @@ export interface JMultiSelectProps {
   options: JMultiSelectOptionData[];
   selectedOptions: JMultiSelectOptionData[];
   setSelectedOptions: (options: JMultiSelectOptionData[]) => void;
+  interfaceStyle?: JMultiSelectInterfaceStyle;
 }
 
 /**
@@ -66,6 +70,7 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
 
   const className = classNames("j-multiselect", {
     "j-multiselect--error": props.error,
+    "j-multiselect--minimal": props.interfaceStyle === 'minimal'
   });
 
   const { getDropdownProps, removeSelectedItem } =
@@ -131,6 +136,9 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
               ...props.selectedOptions,
               changes.selectedItem,
             ]);
+            // Reset search input so the user can start searching again correctly
+            // and all options will be visible again in the dropdown menu.
+            setInputValue("")
           }
           break;
         case useCombobox.stateChangeTypes.InputChange:
@@ -142,6 +150,25 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
       }
     },
   });
+
+  const {
+    refs: floatingMenuRefs,
+    floatingStyles: floatingMenuStyles,
+    update: floatingMenuUpdate,
+  } = useFloating({
+    placement: "bottom-start",
+    middleware: [offset(12)]
+  });
+
+
+  const {ref: downshiftMenuRef, ...downshiftMenuProps } = getMenuProps({ref: floatingMenuRefs.setFloating});
+  const {ref: downshiftInputRef, ...downshiftInputProps} = getInputProps(getDropdownProps({ preventKeyAction: isOpen, ref: floatingMenuRefs.setReference }))
+
+  // Update the floating menu position when the menu opens & when the selected
+  // options change, as that will cause the input element to shift.
+  useEffect(() => {
+    floatingMenuUpdate()
+  }, [props.selectedOptions, isOpen])
 
   return (
     <div className={className}>
@@ -161,9 +188,10 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
             />
           ))}
           <input
-            {...getInputProps(getDropdownProps({ preventKeyAction: isOpen }))}
+            {...downshiftInputProps}
             className="j-multiselect__input"
             placeholder={props.searchText || "Search options..."}
+            ref={downshiftInputRef}
           />
         </div>
         <button
@@ -176,7 +204,12 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
           </JIcon>
         </button>
 
-        <ul  className={classNames('j-multiselect__menu', {'j-multiselect__menu--open': isOpen })} {...getMenuProps()}>
+        <ul
+          className={classNames('j-multiselect__menu', {'j-multiselect__menu--open': isOpen })}
+          {...downshiftMenuProps}
+          ref={downshiftMenuRef}
+          style={floatingMenuStyles}
+        >
           {options.map((item, index) => (
             <li
               className={classNames(

@@ -80,7 +80,8 @@
     "access": "public"
   },
   "dependencies": {
+    "@floating-ui/react": "^0.26.3",
     "@radix-ui/react-tooltip": "^1.0.6",
-    "downshift": "^7.6.0"
+    "downshift": "^8.2.3"
   }
 }

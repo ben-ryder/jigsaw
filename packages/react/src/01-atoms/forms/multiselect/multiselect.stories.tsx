@@ -63,6 +63,24 @@ export function Default() {
   );
 }
 
+export function Minimal() {
+  const [selectedOptions, setSelectedOptions] = useState<JOptionData[]>([
+    options[0],
+    options[4],
+  ]);
+
+  return (
+    <JMultiSelect
+      label="Example MultiSelect"
+      id="test"
+      options={options}
+      selectedOptions={selectedOptions}
+      setSelectedOptions={setSelectedOptions}
+      interfaceStyle="minimal"
+    />
+  );
+}
+
 export function WithError() {
   const [selectedOptions, setSelectedOptions] = useState<JOptionData[]>([
     options[0],
