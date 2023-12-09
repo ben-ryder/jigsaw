@@ -22,7 +22,7 @@ export function LeftArrow() {
   );
 }
 
-export function NoUnderline() {
+export function Minimal() {
   return (
     <JArrowLink href="/" variant="minimal">
       View All
