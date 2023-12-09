@@ -5,9 +5,12 @@ import {
   ArrowLeft as LeftArrowIcon,
 } from "lucide-react";
 
+export type JArrowLinkVariant = "normal" | "minimal"
+
 export interface JArrowLinkProps extends ComponentProps<"a"> {
   direction?: "left" | "right";
   as?: ElementType<JArrowLinkProps>;
+  variant?: JArrowLinkVariant;
 }
 
 export function JArrowLink(props: JArrowLinkProps) {
@@ -25,6 +28,7 @@ export function JArrowLink(props: JArrowLinkProps) {
     "j-arrow-link",
     {
       "j-arrow-link--left": props.direction === "left",
+      "j-arrow-link--minimal": props.variant === "minimal"
     },
     suppliedClassName
   );
