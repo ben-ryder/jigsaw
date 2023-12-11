@@ -1,6 +1,6 @@
 {
   "name": "@ben-ryder/jigsaw",
-  "version": "0.16.0",
+  "version": "0.17.1",
   "description": "A design system and component library for use in my personal projects.",
   "author": "Ben-Ryder",
   "license": "AGPL-3.0-only",
@@ -19,6 +19,7 @@
     "build:sass-tookit": "mkdir -p sass && rsync -a --prune-empty-dirs --include '*/' --include '*.toolkit.scss' --exclude '*' ../react/ ./sass/ && mv ./sass/src/* ./sass && rm -rf ./sass/src"
   },
   "files": [
+    "sass",
     "public",
     "README.md",
     "LICENSE.txt"
