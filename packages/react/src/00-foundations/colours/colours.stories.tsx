@@ -1,5 +1,6 @@
 import { JColours } from "./colours";
 import { JPill } from "../../01-atoms/pills/pill/pill";
+import { JColourVariants, JColourVariantsList } from "./variants/colour-variants";
 
 export default {
   title: "Foundations/Colours",
@@ -568,136 +569,22 @@ export function Variants() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <span
-                  style={{ backgroundColor: "var(--j-c-variant-teal)" }}
-                ></span>
-              </td>
-              <td>
-                <code>j-c-variant-teal</code>
-              </td>
-              <td>
-                <JPill variant="teal">Example</JPill>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span
-                  style={{ backgroundColor: "var(--j-c-variant-white)" }}
-                ></span>
-              </td>
-              <td>
-                <code>j-c-variant-white</code>
-              </td>
-              <td>
-                <JPill variant="white">Example</JPill>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span
-                  style={{ backgroundColor: "var(--j-c-variant-blueGrey)" }}
-                ></span>
-              </td>
-              <td>
-                <code>j-c-variant-blueGrey</code>
-              </td>
-              <td>
-                <JPill variant="blueGrey">Example</JPill>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span
-                  style={{ backgroundColor: "var(--j-c-variant-red)" }}
-                ></span>
-              </td>
-              <td>
-                <code>j-c-variant-red</code>
-              </td>
-              <td>
-                <JPill variant="red">Example</JPill>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span
-                  style={{ backgroundColor: "var(--j-c-variant-orange)" }}
-                ></span>
-              </td>
-              <td>
-                <code>j-c-variant-orange</code>
-              </td>
-              <td>
-                <JPill variant="orange">Example</JPill>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span
-                  style={{ backgroundColor: "var(--j-c-variant-yellow)" }}
-                ></span>
-              </td>
-              <td>
-                <code>j-c-variant-yellow</code>
-              </td>
-              <td>
-                <JPill variant="yellow">Example</JPill>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span
-                  style={{ backgroundColor: "var(--j-c-variant-green)" }}
-                ></span>
-              </td>
-              <td>
-                <code>j-c-variant-green</code>
-              </td>
-              <td>
-                <JPill variant="green">Example</JPill>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span
-                  style={{ backgroundColor: "var(--j-c-variant-blue)" }}
-                ></span>
-              </td>
-              <td>
-                <code>j-c-variant-blue</code>
-              </td>
-              <td>
-                <JPill variant="blue">Example</JPill>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span
-                  style={{ backgroundColor: "var(--j-c-variant-purple)" }}
-                ></span>
-              </td>
-              <td>
-                <code>j-c-variant-purple</code>
-              </td>
-              <td>
-                <JPill variant="purple">Example</JPill>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span
-                  style={{ backgroundColor: "var(--j-c-variant-pink)" }}
-                ></span>
-              </td>
-              <td>
-                <code>j-c-variant-pink</code>
-              </td>
-              <td>
-                <JPill variant="pink">Example</JPill>
-              </td>
-            </tr>
+            {JColourVariantsList.map(variant => (
+                <tr>
+                  <td>
+                    <span
+                      style={{ backgroundColor: `var(--j-c-variant-${variant})` }}
+                    ></span>
+                  </td>
+                  <td>
+                    <code>{`j-c-variant-${variant}`}</code>
+                  </td>
+                  <td>
+                    <JPill variant={variant as JColourVariants}>Example</JPill>
+                  </td>
+                </tr>
+              )
+            )}
           </tbody>
         </table>
       </div>
