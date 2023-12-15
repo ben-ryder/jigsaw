@@ -39,7 +39,7 @@ export const JColourVariants = {
 		label: "Pink",
 		value: "pink"
 	},
-}
+} as const;
 
 export const JColourVariantsList = [
 	JColourVariants.teal.value,
