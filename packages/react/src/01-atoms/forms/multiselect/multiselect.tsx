@@ -1,6 +1,6 @@
 import { JLabel } from "../label/label.js";
 import { JErrorText } from "../error-text/error-text.js";
-import { ForwardedRef, forwardRef, RefObject, useEffect, useMemo, useState } from "react";
+import { ForwardedRef, forwardRef, useEffect, useMemo, useState } from "react";
 import {JColourVariants} from "../../../00-foundations/colours/variants/colour-variants.js";
 import {JOptionData} from "../select/select.js";
 import classNames from "classnames";
@@ -49,12 +49,22 @@ export function getFilteredOptions(
 ) {
   const searchValue = search.toLowerCase();
 
-  return options.filter((option) => {
-    return (
-      !selectedOptions.includes(option) &&
-      option.text.toLowerCase().includes(searchValue)
-    );
-  });
+  const filteredOptions: JMultiSelectOptionData[] = []
+
+  option_search:
+  for (const potentialOption of options) {
+    for (const selectedOption of selectedOptions) {
+      if (potentialOption.value === selectedOption.value) {
+        continue option_search
+      }
+    }
+
+    if (potentialOption.text.toLowerCase().includes(searchValue)) {
+      filteredOptions.push(potentialOption)
+    }
+  }
+
+  return filteredOptions
 }
 
 /**
@@ -65,7 +75,7 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
   const [inputValue, setInputValue] = useState<string>("");
   const options = useMemo(
     () => getFilteredOptions(props.options, props.selectedOptions, inputValue),
-    [props.selectedOptions, inputValue]
+    [props.options, props.selectedOptions, inputValue]
   );
 
   const className = classNames("j-multiselect", {

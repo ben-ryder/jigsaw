@@ -2,7 +2,6 @@ import "./multiselect";
 
 import { JMultiSelect, JMultiSelectOptionData} from "./multiselect";
 import { useState } from "react";
-import { JOptionData } from "../select/select";
 
 export default {
   title: "Atoms/Forms/MultiSelect",
@@ -30,12 +29,12 @@ const options: JMultiSelectOptionData[] = [
   },
   {
     text: "Option Four",
-    value: "Four",
+    value: "four",
     variant: "red",
   },
   {
     text: "Option Five",
-    value: "Five",
+    value: "five",
   },
   {
     text: "Option Six",
@@ -45,7 +44,7 @@ const options: JMultiSelectOptionData[] = [
 ];
 
 export function Default() {
-  const [selectedOptions, setSelectedOptions] = useState<JOptionData[]>([
+  const [selectedOptions, setSelectedOptions] = useState<JMultiSelectOptionData[]>([
     options[0],
     options[4],
   ]);
@@ -63,8 +62,36 @@ export function Default() {
   );
 }
 
+// The multiselect should match options based on the value not if the object
+// reference is the exact same.
+export function MatchingValueOptions() {
+  const [selectedOptions, setSelectedOptions] = useState<JMultiSelectOptionData[]>([
+    {
+      text: "Option One",
+      value: "one",
+      variant: "green",
+    },
+    {
+      text: "Option Two",
+      value: "two",
+    },
+  ]);
+
+  return (
+    <JMultiSelect
+      label="Example MultiSelect"
+      id="test"
+      options={options}
+      selectedOptions={selectedOptions}
+      setSelectedOptions={setSelectedOptions}
+      searchText="Search options custom..."
+      noOptionsText="No options custom"
+    />
+  );
+}
+
 export function Minimal() {
-  const [selectedOptions, setSelectedOptions] = useState<JOptionData[]>([
+  const [selectedOptions, setSelectedOptions] = useState<JMultiSelectOptionData[]>([
     options[0],
     options[4],
   ]);
@@ -83,7 +110,7 @@ export function Minimal() {
 }
 
 export function WithError() {
-  const [selectedOptions, setSelectedOptions] = useState<JOptionData[]>([
+  const [selectedOptions, setSelectedOptions] = useState<JMultiSelectOptionData[]>([
     options[0],
     options[4],
   ]);
@@ -101,7 +128,7 @@ export function WithError() {
 }
 
 export function WithHiddenLabel() {
-  const [selectedOptions, setSelectedOptions] = useState<JOptionData[]>([
+  const [selectedOptions, setSelectedOptions] = useState<JMultiSelectOptionData[]>([
     options[0],
     options[4],
   ]);
