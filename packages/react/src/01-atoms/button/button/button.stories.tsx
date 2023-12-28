@@ -1,8 +1,8 @@
 import { JButton } from "./button";
-import { StorySection } from "../../development/story-section";
+import { StorySection } from "../../../development/story-section";
 
 export default {
-  title: "Atoms/Button",
+  title: "Atoms/Buttons/Button",
   parameters: {
     status: {
       type: "unstable",

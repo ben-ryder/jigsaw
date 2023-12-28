@@ -1,6 +1,13 @@
 @use "../../00-foundations/motion/motion.toolkit" as *;
 
 @mixin button-styles() {
+  // Resets so button styles work when added to elements like spans
+  display: inline-block;
+  line-height: normal;
+  letter-spacing: inherit;
+  width: fit-content;
+
+  // Button Styles
   padding: var(--j-space-4) var(--j-space-6);
   font-family: var(--j-text-font-primary);
   font-weight: bold;
@@ -72,6 +79,7 @@
     }
 
     &.j-button--loading,
+    &.j-button--disabled,
     &[disabled] {
       color: var(--j-c-mono-300);
 
@@ -82,8 +90,9 @@
     }
   }
 
+  &:not(.j-button--tertiary).j-button--loading,
   &:not(.j-button--tertiary)[disabled],
-  &:not(.j-button--tertiary).j-button--loading {
+  &:not(.j-button--tertiary).j-button--disabled{
     background-color: var(--j-c-disabled);
     color: var(--j-c-disabled-text);
     border-color: var(--j-c-disabled);

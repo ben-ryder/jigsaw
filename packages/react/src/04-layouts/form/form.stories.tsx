@@ -1,5 +1,5 @@
 import { JInput } from "../../01-atoms/forms/input/input";
-import { JButton } from "../../01-atoms/button/button";
+import { JButton } from "../../01-atoms/button/button/button";
 import { JForm, JFormRow, JFormContent, JFormHeader } from "./form";
 import { JContentSection } from "../content-section/content-section";
 import { JButtonGroup } from "../../03-organisms/button-group/button-group";

@@ -1,4 +1,4 @@
-import { JButton } from "../../01-atoms/button/button";
+import { JButton } from "../../01-atoms/button/button/button";
 import { JPanelPage } from "./panel-page";
 import { JButtonGroup } from "../../03-organisms/button-group/button-group";
 

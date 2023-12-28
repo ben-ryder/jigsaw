@@ -1,5 +1,5 @@
 import { JButtonGroup } from "./button-group";
-import { JButton } from "../../01-atoms/button/button";
+import { JButton } from "../../01-atoms/button/button/button";
 import { StorySection } from "../../development/story-section";
 
 export default {

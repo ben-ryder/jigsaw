@@ -2,7 +2,8 @@ export * from "./00-foundations/colours/colours.js";
 export * from "./00-foundations/colours/variants/colour-variants.js";
 export * from "./00-foundations/spacing/spacing.js";
 
-export * from "./01-atoms/button/button.js";
+export * from "./01-atoms/button/button/button.js";
+export * from "./01-atoms/button/span-button/span-button.js";
 export * from "./01-atoms/links/arrow-link/arrow-link.js";
 export * from "./01-atoms/links/button-link/button-link.js";
 export * from "./01-atoms/links/text-link/text-link.js";
@@ -28,6 +29,8 @@ export * from "./02-components/table/table.js";
 export * from "./02-components/counter/counter.js";
 
 export * from "./03-organisms/button-group/button-group.js";
+export * from "./03-organisms/dialogs/dialog/dialog.js";
+export * from "./03-organisms/dialogs/alert-dialog/alert-dialog.js";
 
 export * from "./04-layouts/content-section/content-section.js";
 export * from "./04-layouts/form/form.js";
