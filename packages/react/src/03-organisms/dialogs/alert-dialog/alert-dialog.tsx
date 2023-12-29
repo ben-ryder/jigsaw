@@ -3,7 +3,6 @@ import React from "react";
 
 import { X as CloseIcon } from "lucide-react";
 
-import "../dialog.scss"
 import { JDialogProps } from "../dialog/dialog.js";
 import { JIcon } from "../../../01-atoms/icons/icon.js";
 
