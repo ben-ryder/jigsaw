@@ -11,6 +11,7 @@ import {JTextArea} from "../../01-atoms/forms/textarea/textarea";
 import {JOptionData, JSelect} from "../../01-atoms/forms/select/select";
 import {JCallout} from "../../02-components/callout/callout";
 import {useState} from "react";
+import { JMultiSelect, JMultiSelectOptionData } from "../../01-atoms/forms/multiselect/multiselect";
 
 export default {
   title: "Layouts/Form",
@@ -56,6 +57,28 @@ const optionSingleOptions: JOptionData[] = [
   }
 ]
 
+const multiSelectOptionData: JMultiSelectOptionData[] = [
+  {
+    text: "Option One",
+    value: "1",
+    variant: "green"
+  },
+  {
+    text: "Option Two",
+    value: "2"
+  },
+  {
+    text: "Option Three",
+    value: "3",
+    variant: "blue"
+  },
+  {
+    text: "Option Four",
+    value: "4",
+    variant: "red"
+  }
+]
+
 export function Default() {
   const {
     control,
@@ -70,7 +93,7 @@ export function Default() {
       textLong: "",
       email: "",
       optionSingle: "",
-      optionMulti: []
+      optionMulti: [],
     },
   })
   const [success, setSuccess] = useState<boolean>(false);
@@ -165,30 +188,24 @@ export function Default() {
               }
             />
           </JFormRow>
-          {/*<JFormRow>*/}
-          {/*  <JSelectControl*/}
-          {/*    id="related-projects"*/}
-          {/*    label="Releted Project (if applicable)"*/}
-          {/*    options={[*/}
-          {/*      {*/}
-          {/*        text: "-- Select an Option --",*/}
-          {/*        value: "",*/}
-          {/*      },*/}
-          {/*      {*/}
-          {/*        text: "Athena",*/}
-          {/*        value: "athena",*/}
-          {/*      },*/}
-          {/*      {*/}
-          {/*        text: "Local-First Server",*/}
-          {/*        value: "local-first-server",*/}
-          {/*      },*/}
-          {/*      {*/}
-          {/*        text: "benryder.me",*/}
-          {/*        value: "benryder.me",*/}
-          {/*      },*/}
-          {/*    ]}*/}
-          {/*  />*/}
-          {/*</JFormRow>*/}
+          <JFormRow>
+            <Controller
+              name="optionMulti"
+              control={control}
+              render={({ field }) =>
+                <JMultiSelect
+                  id="optionMultiple"
+                  label="Select Options"
+                  options={multiSelectOptionData}
+                  selectedOptions={field.value}
+                  setSelectedOptions={field.onChange}
+                  error={errors.optionSingle?.message}
+                />
+              }
+            />
+
+
+          </JFormRow>
           <JFormRow>
             <JButtonGroup>
               <JButton type="submit" disabled={!isValid}>Submit</JButton>
