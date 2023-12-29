@@ -1,5 +1,10 @@
 @import "../../00-foundations/breakpoints/breakpoints.toolkit";
 
+:root {
+  --j-dialog-max-width: 600px;
+  --j-dialog-max-height: 85vh;
+}
+
 .j-dialog {
   &__inner {
     display: flex;
@@ -16,6 +21,10 @@
     align-items: center;
     border-bottom: var(--j-border-width-md) solid var(--j-c-blueGrey-900);
     padding-bottom: var(--j-space-4);
+    position: sticky;
+    top: 0;
+    background-color: var(--j-c-background-f1);
+    padding-top: var(--j-space-4);
   }
 
   &__overlay {
@@ -39,15 +48,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: calc(100vw - (var(--j-space-4) * 2));
-    max-width: 600px;
-    max-height: 85vh;
-    padding: var(--j-space-4);
+    max-width: var(--j-dialog-max-width);
+    max-height: var(--j-dialog-max-height);
+    padding: 0 var(--j-space-4) var(--j-space-4);
     z-index: var(--j-z-layer-4);
     border: var(--j-border-width-md) solid var(--j-c-blueGrey-900);
-
-    @include breakpoint('md') {
-      padding: var(--j-space-8);
-    }
+    overflow-y: scroll;
 
     &:focus {
       outline: none;
@@ -66,6 +72,16 @@
     &:hover {
       cursor: pointer;
       color: var(--j-c-mono-300);
+    }
+  }
+
+  @include breakpoint('md') {
+    &__popup {
+      padding: 0 var(--j-space-8) var(--j-space-6);
+    }
+
+    &__header {
+      padding-top: var(--j-space-6);
     }
   }
 }

@@ -25,6 +25,11 @@ export function JAlertDialog(props: JAlertDialogProps) {
       <AlertDialog.Portal>
         <AlertDialog.Content
           className="j-dialog__popup"
+          // Allow max values to be overwritten, but default to CSS declarations
+          style={{
+            maxWidth: props.maxWidth || undefined,
+            maxHeight: props.maxHeight || undefined
+          }}
         >
 
           <div className="j-dialog__inner">

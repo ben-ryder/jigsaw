@@ -15,6 +15,8 @@ export interface JDialogProps {
   content: ReactNode
   /** Stop outside pointer clicks/interactions closing the dialog, ESC will still work.  **/
   disableOutsideClose?: boolean
+  maxWidth?: string
+  maxHeight?: string
 }
 
 export function JDialog(props: JDialogProps) {
@@ -37,6 +39,11 @@ export function JDialog(props: JDialogProps) {
           className="j-dialog__popup"
           onPointerDownOutside={handleOutsideCloseBehaviour}
           onInteractOutside={handleOutsideCloseBehaviour}
+          // Allow max values to be overwritten, but default to CSS declarations
+          style={{
+            maxWidth: props.maxWidth || undefined,
+            maxHeight: props.maxHeight || undefined
+          }}
         >
 
           <div className="j-dialog__inner">

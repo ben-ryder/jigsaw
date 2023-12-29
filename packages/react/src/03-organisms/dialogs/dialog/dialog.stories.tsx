@@ -60,3 +60,42 @@ export function NoOutsideClose() {
     </>
   );
 }
+
+export function CustomMaxDimensions() {
+  const [open, setOpen] = useState<boolean>(false)
+
+  return (
+    <>
+      <StorySection label="Dialog with custom dimensions">
+        <JDialog
+          open={open}
+          setOpen={setOpen}
+          disableOutsideClose={true}
+          triggerContent={<JSpanButton>Open Dialog</JSpanButton>}
+          maxWidth="500px"
+          maxHeight="300px"
+          content={
+            <JProse>
+              <p>This is a test</p>
+              <p>This is a test</p>
+              <p>This is a test</p>
+              <p>This is a test</p>
+              <p>This is a test</p>
+              <p>This is a test</p>
+              <p>This is a test</p>
+              <p>This is a test</p>
+              <p>This is a test</p>
+              <p>This is a test</p>
+              <p>This is a test</p>
+              <p>This is a test</p>
+              <p>This is a test</p>
+              <p>This is a test</p>
+            </JProse>
+          }
+          heading="This is an example heading"
+          description="This is an example modal"
+        />
+      </StorySection>
+    </>
+  );
+}
