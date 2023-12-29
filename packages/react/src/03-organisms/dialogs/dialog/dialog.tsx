@@ -1,10 +1,10 @@
 import * as Dialog from '@radix-ui/react-dialog';
 import React, { ReactNode } from "react";
 
-import { JIcon } from "@ben-ryder/jigsaw-react";
 import { X as CloseIcon } from "lucide-react";
 
 import "../dialog.scss"
+import { JIcon } from "../../../01-atoms/icons/icon.js";
 
 export interface JDialogProps {
   open: boolean
@@ -33,7 +33,7 @@ export function JDialog(props: JDialogProps) {
       open={props.open}
       onOpenChange={props.setOpen}
     >
-      <Dialog.Trigger className="j-dialog__trigger">{props.triggerContent}</Dialog.Trigger>
+      <Dialog.Trigger className="j-dialog__trigger" asChild>{props.triggerContent}</Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Content
           className="j-dialog__popup"

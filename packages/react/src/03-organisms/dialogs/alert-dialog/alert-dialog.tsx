@@ -1,12 +1,11 @@
 import * as AlertDialog from '@radix-ui/react-alert-dialog';
 import React from "react";
 
-import { JIcon } from "@ben-ryder/jigsaw-react";
 import { X as CloseIcon } from "lucide-react";
 
 import "../dialog.scss"
-import * as Dialog from "@radix-ui/react-dialog";
 import { JDialogProps } from "../dialog/dialog.js";
+import { JIcon } from "../../../01-atoms/icons/icon.js";
 
 // Alert dialog will never close due to outside interaction, so omit that prop
 export interface JAlertDialogProps extends Omit<JDialogProps, "disableOutsideClose"> {

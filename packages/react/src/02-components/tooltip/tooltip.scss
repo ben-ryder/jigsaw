@@ -1,0 +1,12 @@
+
+.j-tooltip {
+  border-radius: var(--j-border-radius-sm);
+  padding: var(--j-space-4);
+  background-color: var(--j-c-background-f2);
+  font-size: var(--j-text-size-sm);
+  user-select: none;
+
+  &__arrow {
+    fill: var(--j-c-background-f2);
+  }
+}

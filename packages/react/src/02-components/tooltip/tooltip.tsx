@@ -19,11 +19,10 @@ export function JTooltip(props: JTooltipProps) {
         <Tooltip.Portal>
           <Tooltip.Content className="j-tooltip" sideOffset={5} side={props.preferredPosition}>
             {props.tooltip}
-            <Tooltip.Arrow className="j-tooptip__arrow" />
+            <Tooltip.Arrow className="j-tooltip__arrow" />
           </Tooltip.Content>
         </Tooltip.Portal>
       </Tooltip.Root>
     </Tooltip.Provider>
-
   );
 }
