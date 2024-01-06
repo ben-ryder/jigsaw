@@ -19,15 +19,11 @@ export function JAlertDialog(props: JAlertDialogProps) {
       open={props.open}
       onOpenChange={props.setOpen}
     >
-      <AlertDialog.Trigger className="j-dialog__trigger">{props.triggerContent}</AlertDialog.Trigger>
+      <AlertDialog.Trigger className="j-dialog__trigger" asChild>{props.triggerContent}</AlertDialog.Trigger>
       <AlertDialog.Portal>
         <AlertDialog.Content
           className="j-dialog__popup"
-          // Allow max values to be overwritten, but default to CSS declarations
-          style={{
-            maxWidth: props.maxWidth || undefined,
-            maxHeight: props.maxHeight || undefined
-          }}
+          style={props.style}
         >
 
           <div className="j-dialog__inner">

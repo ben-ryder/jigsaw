@@ -2,8 +2,8 @@ import { StorySection } from "../../../development/story-section";
 import { useState } from "react";
 import { JDialog } from "./dialog";
 import { JProse } from "../../../02-components/prose/prose";
-import { JSpanButton } from "../../../01-atoms/button/span-button/span-button";
 import { Default as ExampleForm } from "../../../04-layouts/form/form.stories";
+import { JButton } from "../../../01-atoms/button/button/button";
 
 
 export default {
@@ -24,7 +24,7 @@ export function Default() {
         <JDialog
           open={open}
           setOpen={setOpen}
-          triggerContent={<JSpanButton>Open Dialog</JSpanButton>}
+          triggerContent={<JButton>Open Dialog</JButton>}
           content={
             <JProse>
               <p>This is a test</p>
@@ -48,7 +48,7 @@ export function NoOutsideClose() {
           open={open}
           setOpen={setOpen}
           disableOutsideClose={true}
-          triggerContent={<JSpanButton>Open Dialog</JSpanButton>}
+          triggerContent={<JButton>Open Dialog</JButton>}
           content={
             <JProse>
               <p>This is a test</p>
@@ -62,7 +62,7 @@ export function NoOutsideClose() {
   );
 }
 
-export function CustomMaxDimensions() {
+export function CustomDimensions() {
   const [open, setOpen] = useState<boolean>(false)
 
   return (
@@ -72,9 +72,12 @@ export function CustomMaxDimensions() {
           open={open}
           setOpen={setOpen}
           disableOutsideClose={true}
-          triggerContent={<JSpanButton>Open Dialog</JSpanButton>}
-          maxWidth="500px"
-          maxHeight="300px"
+          triggerContent={<JButton>Open Dialog</JButton>}
+          style={{
+            maxWidth: "1000px",
+            height: "100%",
+            maxHeight: "80vh"
+          }}
           content={
             <JProse>
               <p>This is a test</p>
@@ -111,8 +114,10 @@ export function WithForm() {
           open={open}
           setOpen={setOpen}
           disableOutsideClose={true}
-          triggerContent={<JSpanButton>Open Dialog</JSpanButton>}
-          maxHeight="500px"
+          triggerContent={<JButton>Open Dialog</JButton>}
+          style={{
+            maxWidth: "800px"
+          }}
           content={
             <ExampleForm />
           }

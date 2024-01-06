@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ForwardedRef, forwardRef, ReactNode } from "react";
 import classNames from "classnames";
 import { Loader2 as LoadingIcon } from "lucide-react";
 import { JButtonVariant } from "../button/button.js";
@@ -11,7 +11,10 @@ export interface JSpanButtonProps {
   children: ReactNode
 }
 
-export function JSpanButton(props: JSpanButtonProps) {
+export const JSpanButton = forwardRef((
+  props: JSpanButtonProps,
+  ref: ForwardedRef<HTMLSpanElement>
+) => {
   const {
     className: suppliedClassName,
     variant,
@@ -33,9 +36,9 @@ export function JSpanButton(props: JSpanButtonProps) {
   );
 
   return (
-    <span className={className}>
+    <span ref={ref} className={className}>
       {children}
       {props.loading && <LoadingIcon className="j-icon" />}
     </span>
   );
-}
+})

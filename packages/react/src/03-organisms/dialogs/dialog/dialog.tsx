@@ -1,5 +1,5 @@
 import * as Dialog from '@radix-ui/react-dialog';
-import React, { ReactNode } from "react";
+import React, { CSSProperties, ReactNode } from "react";
 
 import { X as CloseIcon } from "lucide-react";
 
@@ -14,8 +14,9 @@ export interface JDialogProps {
   content: ReactNode
   /** Stop outside pointer clicks/interactions closing the dialog, ESC will still work.  **/
   disableOutsideClose?: boolean
-  maxWidth?: string
-  maxHeight?: string
+  // Allow custom styles to be supplied, useful for things like settings specific or maximum dimensions.
+  // todo: allow for specific dimension props instead of exposing style?
+  style?: CSSProperties
 }
 
 export function JDialog(props: JDialogProps) {
@@ -38,11 +39,7 @@ export function JDialog(props: JDialogProps) {
           className="j-dialog__popup"
           onPointerDownOutside={handleOutsideCloseBehaviour}
           onInteractOutside={handleOutsideCloseBehaviour}
-          // Allow max values to be overwritten, but default to CSS declarations
-          style={{
-            maxWidth: props.maxWidth || undefined,
-            maxHeight: props.maxHeight || undefined
-          }}
+          style={props.style}
         >
 
           <div className="j-dialog__inner">

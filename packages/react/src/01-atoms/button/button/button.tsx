@@ -1,4 +1,4 @@
-import { ComponentProps } from "react";
+import { ComponentProps, ForwardedRef, forwardRef } from "react";
 import classNames from "classnames";
 import { Loader2 as LoadingIcon } from "lucide-react";
 
@@ -13,7 +13,10 @@ export interface JButtonProps extends ComponentProps<"button"> {
   loading?: boolean;
 }
 
-export function JButton(props: JButtonProps) {
+export const JButton = forwardRef((
+  props: JButtonProps,
+  ref: ForwardedRef<HTMLButtonElement>
+) => {
   const {
     className: suppliedClassName,
     variant,
@@ -34,9 +37,9 @@ export function JButton(props: JButtonProps) {
   );
 
   return (
-    <button className={className} {...htmlProps}>
+    <button ref={ref} className={className} {...htmlProps}>
       {children}
       {props.loading && <LoadingIcon className="j-icon" />}
     </button>
   );
-}
+})
