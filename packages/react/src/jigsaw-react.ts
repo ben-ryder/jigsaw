@@ -4,7 +4,8 @@ export * from "./00-foundations/spacing/spacing.js";
 
 export * from "./01-atoms/button/button/button.js";
 export * from "./01-atoms/button/span-button/span-button.js";
-export * from "./01-atoms/links/arrow-link/arrow-link.js";
+export * from "./01-atoms/arrows/arrow-link/arrow-link.js";
+export * from "./01-atoms/arrows/arrow-button/arrow-button.js";
 export * from "./01-atoms/links/button-link/button-link.js";
 export * from "./01-atoms/links/text-link/text-link.js";
 

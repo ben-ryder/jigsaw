@@ -7,6 +7,11 @@
   padding: var(--j-space-4) var(--j-space-4);
   border-radius: var(--j-border-radius-md);
 
+  font-family: var(--j-text-font-primary);
+  font-size: var(--j-text-size-rg);
+  line-height: 1;
+  letter-spacing: var(--j-text-letter-spacing);
+
   @include colour-variants();
 
   &--interactive {

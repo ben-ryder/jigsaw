@@ -1,8 +1,8 @@
 import { JArrowLink } from "./arrow-link";
-import { LinkHelper } from "../link-handler";
+import { LinkHelper } from "../../links/link-handler";
 
 export default {
-  title: "Atoms/Links/Arrow Link",
+  title: "Atoms/Arrows/Arrow Link",
   parameters: {
     status: {
       type: "stable",

@@ -1,5 +1,5 @@
 import { JTextLinkProps } from "./text-link/text-link.js";
-import { JArrowLinkProps } from "./arrow-link/arrow-link.js";
+import { JArrowLinkProps } from "../arrows/arrow-link/arrow-link.js";
 import { JButtonLinkProps } from "./button-link/button-link.js";
 
 export function LinkHelper(

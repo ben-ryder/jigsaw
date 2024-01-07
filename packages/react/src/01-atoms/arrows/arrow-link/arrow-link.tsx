@@ -1,16 +1,17 @@
-import { ComponentProps, ElementType, ReactNode } from "react";
+import { ComponentProps, ElementType } from "react";
 import classNames from "classnames";
 import {
   ArrowRight as RightArrowIcon,
   ArrowLeft as LeftArrowIcon,
 } from "lucide-react";
 
-export type JArrowLinkVariant = "normal" | "minimal"
+export type JArrowVariant = "normal" | "minimal"
+export type JArrowDirection = "left" | "right"
 
 export interface JArrowLinkProps extends ComponentProps<"a"> {
-  direction?: "left" | "right";
+  direction?: JArrowDirection;
   as?: ElementType<JArrowLinkProps>;
-  variant?: JArrowLinkVariant;
+  variant?: JArrowVariant;
 }
 
 export function JArrowLink(props: JArrowLinkProps) {
@@ -25,19 +26,19 @@ export function JArrowLink(props: JArrowLinkProps) {
   const Component = as || "a";
 
   const className = classNames(
-    "j-arrow-link",
+    "j-arrow",
     {
-      "j-arrow-link--left": props.direction === "left",
-      "j-arrow-link--minimal": props.variant === "minimal"
+      "j-arrow--left": props.direction === "left",
+      "j-arrow--minimal": props.variant === "minimal"
     },
     suppliedClassName
   );
 
   return (
     <Component className={className} {...htmlProps}>
-      <LeftArrowIcon className="j-icon j-arrow-link__icon-left" />
+      <LeftArrowIcon className="j-icon j-arrow__icon-left" />
       {children}
-      <RightArrowIcon className="j-icon j-arrow-link__icon-right" />
+      <RightArrowIcon className="j-icon j-arrow__icon-right" />
     </Component>
   );
 }
