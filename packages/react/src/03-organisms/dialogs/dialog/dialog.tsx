@@ -1,5 +1,5 @@
 import * as Dialog from '@radix-ui/react-dialog';
-import React, { CSSProperties, ReactNode } from "react";
+import { CSSProperties, ReactNode } from "react";
 
 import { X as CloseIcon } from "lucide-react";
 

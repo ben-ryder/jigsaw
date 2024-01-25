@@ -1,4 +1,3 @@
-import { JProse } from "../prose/prose.js";
 import { useState } from "react";
 import { JButton } from "../../01-atoms/button/button/button.js";
 

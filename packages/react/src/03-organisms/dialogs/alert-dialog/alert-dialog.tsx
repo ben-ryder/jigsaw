@@ -1,5 +1,4 @@
 import * as AlertDialog from '@radix-ui/react-alert-dialog';
-import React from "react";
 
 import { X as CloseIcon } from "lucide-react";
 

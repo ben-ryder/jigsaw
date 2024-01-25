@@ -1,5 +1,4 @@
 import * as Tooltip from '@radix-ui/react-tooltip';
-import { PlusIcon } from "lucide-react";
 import { PropsWithChildren, ReactNode } from "react";
 
 export type JTooltipPosition = "top" | "right" | "bottom" | "left";

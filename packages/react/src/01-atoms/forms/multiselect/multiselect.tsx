@@ -71,6 +71,7 @@ export function getFilteredOptions(
  * This component uses Downshift and is based off the example
  * found here: https://github.com/downshift-js/downshift-examples/blob/master/src/hooks/useMultipleSelection/combobox.js
  */
+// @ts-ignore - ref not used, todo: does this component actually need to forward ref at all?
 export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: ForwardedRef<HTMLSelectElement>) => {
   const [inputValue, setInputValue] = useState<string>("");
   const options = useMemo(
@@ -116,6 +117,7 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
     },
     items: options,
     stateReducer(
+      // @ts-ignore - state not used, keeping from reference example for clarity
       state: UseComboboxState<JMultiSelectOptionData>,
       actionAndChanges: UseComboboxStateChangeOptions<JMultiSelectOptionData>
     ): Partial<UseComboboxState<JMultiSelectOptionData>> {
@@ -191,7 +193,7 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
             <JPillTag
               data={selectedItem}
               key={`selected-item-${index}`}
-              onRemove={(item) => {
+              onRemove={() => {
                 removeSelectedItem(selectedItem);
               }}
               variant={selectedItem.variant}
