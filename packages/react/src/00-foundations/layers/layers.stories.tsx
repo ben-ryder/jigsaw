@@ -125,57 +125,6 @@ export function LayersandDepth() {
           </tbody>
         </table>
 
-        <p>
-          There are also two mid-layer shades which can be used when required.
-          <br />
-          For example, tables have a background of{" "}
-          <code>j-c-background-f1</code> but every other row has a background of{" "}
-          <code>j-c-background-f0</code> as this makes the table easier to read,
-          while also making sure the table still feels separate from the
-          background.
-        </p>
-
-        <table className="colour-table">
-          <thead>
-            <tr>
-              <th>Colour</th>
-              <th>Token</th>
-              <th>Colour Token</th>
-              <th>Usage</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <span
-                  style={{ backgroundColor: "var(--j-c-background-f0)" }}
-                ></span>
-              </td>
-              <td>
-                <code>j-c-background-f0</code>
-              </td>
-              <td>
-                <code>j-c-atom-400</code>
-              </td>
-              <td>f0</td>
-            </tr>
-            <tr>
-              <td>
-                <span
-                  style={{ backgroundColor: "var(--j-c-background-b0)" }}
-                ></span>
-              </td>
-              <td>
-                <code>j-c-background-b0</code>
-              </td>
-              <td>
-                <code>j-c-atom-600</code>
-              </td>
-              <td>b0</td>
-            </tr>
-          </tbody>
-        </table>
-
         <h2>Shadows</h2>
         <p>
           Although shades can be used to coney depth, shadows can also be used

@@ -24,8 +24,12 @@
   }
 
   tbody {
-    tr:nth-child(2n) {
-      background-color: var(--j-c-background-f0);
+    tr {
+      border-bottom: var(--j-border-width-sm) solid var(--j-c-atom-50);
+
+      &:last-child {
+        border-bottom: none;
+      }
     }
   }
 }
