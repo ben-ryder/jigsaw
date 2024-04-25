@@ -1,0 +1,9 @@
+@mixin required-indicator {
+  &:after {
+    content: "*";
+    color: var(--j-c-teal-200);
+    font-weight: bold;
+    font-size: var(--j-text-size-xs);
+    margin-left: var(--j-space-1);
+  }
+}

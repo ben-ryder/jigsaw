@@ -1,5 +1,6 @@
 import { JSelect } from "./select";
 import { useState } from "react";
+import { StorySection } from "../../../development/story-section";
 
 export default {
   title: "Atoms/Forms/Select",
@@ -64,6 +65,41 @@ export function Controlled() {
         This elements value is being controlled via React state rather than via
         the browser
       </p>
+    </>
+  );
+}
+
+export function Required() {
+  return (
+    <JSelect
+      id="test"
+      label="Required Select"
+      required={true}
+      options={testOptions}
+    />
+  );
+}
+
+export function Disabled() {
+  return (
+    <>
+      <StorySection>
+        <JSelect
+          id="test"
+          label="Disabled Select"
+          disabled={true}
+          options={testOptions}
+        />
+      </StorySection>
+      <StorySection>
+        <JSelect
+          id="test"
+          label="Disabled select with value"
+          disabled={true}
+          options={testOptions}
+          value="1"
+        />
+      </StorySection>
     </>
   );
 }

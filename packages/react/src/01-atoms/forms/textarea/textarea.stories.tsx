@@ -1,4 +1,5 @@
 import { JTextArea } from "./textarea";
+import { StorySection } from "../../../development/story-section";
 
 export default {
   title: "Atoms/Forms/TextArea",
@@ -41,5 +42,43 @@ export function WithHiddenLabel() {
       hideLabel={true}
       rows={5}
     />
+  );
+}
+
+export function Required() {
+  return (
+    <JTextArea
+      id="test"
+      label="This textarea is required"
+      placeholder="Your text goes here..."
+      required={true}
+      rows={5}
+    />
+  );
+}
+
+export function Disabled() {
+  return (
+    <>
+      <StorySection>
+        <JTextArea
+          id="test"
+          label="This textarea is disabled"
+          placeholder="Your text goes here..."
+          disabled={true}
+          rows={5}
+        />
+      </StorySection>
+      <StorySection>
+        <JTextArea
+          id="test"
+          label="This textarea is disabled with a value"
+          placeholder="Your text goes here..."
+          disabled={true}
+          rows={5}
+          value="This is some text"
+        />
+      </StorySection>
+    </>
   );
 }

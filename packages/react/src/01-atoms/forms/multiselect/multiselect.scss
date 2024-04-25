@@ -1,5 +1,6 @@
 @use "../form-element.toolkit" as *;
 @use "../../../00-foundations/colours/variants/variants.toolkit" as *;
+@use "../label/label.toolkit" as *;
 
 .j-multiselect {
   @include form-element();
@@ -8,6 +9,24 @@
     display: flex;
     position: relative;
     padding: 5px;
+  }
+
+  &--required {
+    label {
+      @include required-indicator()
+    }
+  }
+
+  &--disabled {
+    .j-multiselect__element {
+      border-color: var(--j-c-blueGrey-600);
+    }
+
+    .j-multiselect__toggle {
+      &:hover {
+        cursor: initial;
+      }
+    }
   }
 
   &--minimal {

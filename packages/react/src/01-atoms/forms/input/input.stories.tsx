@@ -1,4 +1,5 @@
 import { JInput } from "./input";
+import { StorySection } from "../../../development/story-section";
 
 export default {
   title: "Atoms/Forms/Input",
@@ -40,5 +41,44 @@ export function WithHiddenLabel() {
       type="text"
       hideLabel={true}
     />
+  );
+}
+
+export function Required() {
+  return (
+    <JInput
+      id="test"
+      label="This input is required"
+      placeholder="Your text goes here..."
+      type="text"
+      required={true}
+    />
+  );
+}
+
+export function Disabled() {
+  return (
+    <>
+      <StorySection>
+        <JInput
+          id="test"
+          label="This input is disabled"
+          placeholder="Your text goes here..."
+          type="text"
+          disabled={true}
+        />
+      </StorySection>
+
+      <StorySection>
+        <JInput
+          id="test"
+          label="This input is disabled with a value"
+          placeholder="Your text goes here..."
+          type="text"
+          disabled={true}
+          value="this is some text"
+        />
+      </StorySection>
+    </>
   );
 }

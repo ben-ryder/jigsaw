@@ -34,6 +34,7 @@ const FormFields = z
       .string({ required_error: "This field is required." })
       .min(1, "This field is required.")
       .email({ message: "Must be an email format" }),
+    disabled: z.string({ required_error: "This field is required." }),
     textLong: z.string().optional(),
     // todo: can option values be typed and validated and do the select components support this?
     optionSingle: z
@@ -98,6 +99,7 @@ export function Default() {
     defaultValues: {
       text: "",
       textLong: "",
+      disabled: "a value",
       email: "",
       optionSingle: "",
       optionMulti: [],
@@ -169,6 +171,22 @@ export function Default() {
                   required={true}
                   {...field}
                   error={errors.email?.message}
+                />
+              )}
+            />
+          </JFormRow>
+          <JFormRow>
+            <Controller
+              name="disabled"
+              control={control}
+              render={({ field }) => (
+                <JInput
+                  label="Disabled"
+                  placeholder="A disabled field..."
+                  required={true}
+                  disabled={true}
+                  {...field}
+                  error={errors.disabled?.message}
                 />
               )}
             />

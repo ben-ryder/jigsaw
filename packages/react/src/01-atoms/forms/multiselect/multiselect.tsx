@@ -15,6 +15,7 @@ import {JPillTag} from "../../pills/tag/pill-tag.js";
 import {JIcon} from "../../icons/icon.js";
 import {ChevronsDown as MultiSelectOpenIcon} from "lucide-react";
 import { offset, useFloating } from "@floating-ui/react";
+import { JPill } from "../../pills/pill/pill.js";
 
 export interface JMultiSelectOptionData extends JOptionData {
   variant?: JColourVariants;
@@ -25,6 +26,8 @@ export type JMultiSelectVariant = 'normal' | 'minimal';
 export interface JMultiSelectProps {
   id: string;
   label: string;
+  disabled?: boolean;
+  required?: boolean;
   error?: string;
   hideLabel?: boolean;
   searchText?: string;
@@ -81,7 +84,9 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
 
   const className = classNames("j-multiselect", {
     "j-multiselect--error": props.error,
-    "j-multiselect--minimal": props.variant === 'minimal'
+    "j-multiselect--minimal": props.variant === 'minimal',
+    "j-multiselect--required": props.required,
+    "j-multiselect--disabled": props.disabled
   });
 
   const { getDropdownProps, removeSelectedItem } =
@@ -173,8 +178,8 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
   });
 
 
-  const {ref: downshiftMenuRef, ...downshiftMenuProps } = getMenuProps({ref: floatingMenuRefs.setFloating});
-  const {ref: downshiftInputRef, ...downshiftInputProps} = getInputProps(getDropdownProps({ preventKeyAction: isOpen, ref: floatingMenuRefs.setReference }))
+  const {ref: downshiftMenuRef, ...downshiftMenuProps } = getMenuProps({ref: floatingMenuRefs.setFloating, disabled: props.disabled});
+  const {ref: downshiftInputRef, ...downshiftInputProps} = getInputProps(getDropdownProps({ preventKeyAction: isOpen, ref: floatingMenuRefs.setReference, disabled: props.disabled }))
 
   // Update the floating menu position when the menu opens & when the selected
   // options change, as that will cause the input element to shift.
@@ -190,14 +195,26 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
       <div className="j-multiselect__element">
         <div className="j-multiselect__inner">
           {props.selectedOptions.map((selectedItem, index) => (
-            <JPillTag
-              data={selectedItem}
-              key={`selected-item-${index}`}
-              onRemove={() => {
-                removeSelectedItem(selectedItem);
-              }}
-              variant={selectedItem.variant}
-            />
+            <>
+              {!props.disabled
+                ? (
+                  <JPillTag
+                    data={selectedItem}
+                    key={`selected-item-${index}`}
+                    onRemove={() => {
+                      removeSelectedItem(selectedItem);
+                    }}
+                    variant={selectedItem.variant}
+                  />
+                )
+                : (
+                  <JPill
+                    key={`selected-item-${index}`}
+                    variant={selectedItem.variant}
+                  >{selectedItem.text}</JPill>
+                )
+              }
+            </>
           ))}
           <input
             {...downshiftInputProps}
@@ -207,7 +224,7 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
           />
         </div>
         <button
-          {...getToggleButtonProps()}
+          {...getToggleButtonProps({disabled: props.disabled})}
           aria-label={"toggle menu"}
           className="j-multiselect__toggle"
         >
@@ -232,7 +249,7 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
                     highlightedIndex === index,
                 }
               )}
-              {...getItemProps({ item, index })}
+              {...getItemProps({ item, index, disabled: props.disabled })}
               key={`${item}${index}`}
             >
               {item.text}

@@ -1,4 +1,4 @@
-@import "../../00-foundations/breakpoints/breakpoints.toolkit";
+@use "../../00-foundations/breakpoints/breakpoints.toolkit" as *;
 
 :root {
   --j-dialog-max-width: 600px;
