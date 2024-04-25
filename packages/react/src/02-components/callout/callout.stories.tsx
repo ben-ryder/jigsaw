@@ -43,7 +43,8 @@ export function Critical() {
   return (
     <JCallout variant="critical">
       <p>
-        This variant can highlight a danger or error and is more severe than a warning.
+        This variant can highlight a danger or error and is more severe than a
+        warning.
       </p>
     </JCallout>
   );
@@ -52,9 +53,7 @@ export function Critical() {
 export function Success() {
   return (
     <JCallout variant="success">
-      <p>
-        This variant can highlight a success or confirmation.
-      </p>
+      <p>This variant can highlight a success or confirmation.</p>
     </JCallout>
   );
 }

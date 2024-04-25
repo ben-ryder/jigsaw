@@ -1,6 +1,6 @@
 import "./multiselect";
 
-import { JMultiSelect, JMultiSelectOptionData} from "./multiselect";
+import { JMultiSelect, JMultiSelectOptionData } from "./multiselect";
 import { useState } from "react";
 
 export default {
@@ -44,10 +44,9 @@ const options: JMultiSelectOptionData[] = [
 ];
 
 export function Default() {
-  const [selectedOptions, setSelectedOptions] = useState<JMultiSelectOptionData[]>([
-    options[0],
-    options[4],
-  ]);
+  const [selectedOptions, setSelectedOptions] = useState<
+    JMultiSelectOptionData[]
+  >([options[0], options[4]]);
 
   return (
     <JMultiSelect
@@ -65,7 +64,9 @@ export function Default() {
 // The multiselect should match options based on the value not if the object
 // reference is the exact same.
 export function MatchingValueOptions() {
-  const [selectedOptions, setSelectedOptions] = useState<JMultiSelectOptionData[]>([
+  const [selectedOptions, setSelectedOptions] = useState<
+    JMultiSelectOptionData[]
+  >([
     {
       text: "Option One",
       value: "one",
@@ -91,10 +92,9 @@ export function MatchingValueOptions() {
 }
 
 export function Minimal() {
-  const [selectedOptions, setSelectedOptions] = useState<JMultiSelectOptionData[]>([
-    options[0],
-    options[4],
-  ]);
+  const [selectedOptions, setSelectedOptions] = useState<
+    JMultiSelectOptionData[]
+  >([options[0], options[4]]);
 
   return (
     <JMultiSelect
@@ -110,10 +110,9 @@ export function Minimal() {
 }
 
 export function WithError() {
-  const [selectedOptions, setSelectedOptions] = useState<JMultiSelectOptionData[]>([
-    options[0],
-    options[4],
-  ]);
+  const [selectedOptions, setSelectedOptions] = useState<
+    JMultiSelectOptionData[]
+  >([options[0], options[4]]);
 
   return (
     <JMultiSelect
@@ -128,10 +127,9 @@ export function WithError() {
 }
 
 export function WithHiddenLabel() {
-  const [selectedOptions, setSelectedOptions] = useState<JMultiSelectOptionData[]>([
-    options[0],
-    options[4],
-  ]);
+  const [selectedOptions, setSelectedOptions] = useState<
+    JMultiSelectOptionData[]
+  >([options[0], options[4]]);
 
   return (
     <JMultiSelect

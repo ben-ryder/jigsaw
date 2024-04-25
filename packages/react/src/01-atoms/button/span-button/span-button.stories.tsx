@@ -21,9 +21,7 @@ export function Default() {
         <JSpanButton disabled={true}>Default Disabled</JSpanButton>
       </StorySection>
       <StorySection>
-        <JSpanButton loading={true}>
-          Default Loading
-        </JSpanButton>
+        <JSpanButton loading={true}>Default Loading</JSpanButton>
       </StorySection>
     </>
   );
@@ -36,7 +34,9 @@ export function Secondary() {
         <JSpanButton variant="secondary">Secondary</JSpanButton>
       </StorySection>
       <StorySection>
-        <JSpanButton variant="secondary" disabled={true}>Secondary Disabled</JSpanButton>
+        <JSpanButton variant="secondary" disabled={true}>
+          Secondary Disabled
+        </JSpanButton>
       </StorySection>
       <StorySection>
         <JSpanButton variant="secondary" loading={true}>
@@ -54,7 +54,9 @@ export function Tertiary() {
         <JSpanButton variant="tertiary">Tertiary</JSpanButton>
       </StorySection>
       <StorySection>
-        <JSpanButton variant="tertiary" disabled={true}>Tertiary Disabled</JSpanButton>
+        <JSpanButton variant="tertiary" disabled={true}>
+          Tertiary Disabled
+        </JSpanButton>
       </StorySection>
       <StorySection>
         <JSpanButton variant="tertiary" loading={true}>
@@ -72,7 +74,9 @@ export function Destructive() {
         <JSpanButton variant="destructive">Destructive</JSpanButton>
       </StorySection>
       <StorySection>
-        <JSpanButton variant="destructive" disabled={true}>Destructive Disabled</JSpanButton>
+        <JSpanButton variant="destructive" disabled={true}>
+          Destructive Disabled
+        </JSpanButton>
       </StorySection>
       <StorySection>
         <JSpanButton variant="destructive" loading={true}>

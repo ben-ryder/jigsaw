@@ -5,7 +5,6 @@ import { JProse } from "../../../02-components/prose/prose";
 import { JButtonGroup } from "../../button-group/button-group";
 import { JButton } from "../../../01-atoms/button/button/button";
 
-
 export default {
   title: "Organisms/Dialogs/AlertDialog",
   parameters: {
@@ -16,14 +15,14 @@ export default {
 };
 
 export function Default() {
-  const [open, setOpen] = useState<boolean>(false)
+  const [open, setOpen] = useState<boolean>(false);
 
   function handleCancel() {
-    setOpen(false)
+    setOpen(false);
   }
 
   function handleSubmit() {
-    setOpen(false)
+    setOpen(false);
   }
 
   return (
@@ -38,8 +37,12 @@ export function Default() {
               <p>This is a test</p>
 
               <JButtonGroup>
-                <JButton variant="secondary" onClick={handleCancel}>Cancel</JButton>
-                <JButton variant="destructive" onClick={handleSubmit}>Delete</JButton>
+                <JButton variant="secondary" onClick={handleCancel}>
+                  Cancel
+                </JButton>
+                <JButton variant="destructive" onClick={handleSubmit}>
+                  Delete
+                </JButton>
               </JButtonGroup>
             </JProse>
           }
@@ -52,14 +55,14 @@ export function Default() {
 }
 
 export function WithCloseButton() {
-  const [open, setOpen] = useState<boolean>(false)
+  const [open, setOpen] = useState<boolean>(false);
 
   function handleCancel() {
-    setOpen(false)
+    setOpen(false);
   }
 
   function handleSubmit() {
-    setOpen(false)
+    setOpen(false);
   }
 
   return (
@@ -75,8 +78,12 @@ export function WithCloseButton() {
               <p>This is a test</p>
 
               <JButtonGroup>
-                <JButton variant="secondary" onClick={handleCancel}>Cancel</JButton>
-                <JButton variant="destructive" onClick={handleSubmit}>Delete</JButton>
+                <JButton variant="secondary" onClick={handleCancel}>
+                  Cancel
+                </JButton>
+                <JButton variant="destructive" onClick={handleSubmit}>
+                  Delete
+                </JButton>
               </JButtonGroup>
             </JProse>
           }
@@ -89,14 +96,14 @@ export function WithCloseButton() {
 }
 
 export function CustomDimensions() {
-  const [open, setOpen] = useState<boolean>(false)
+  const [open, setOpen] = useState<boolean>(false);
 
   function handleCancel() {
-    setOpen(false)
+    setOpen(false);
   }
 
   function handleSubmit() {
-    setOpen(false)
+    setOpen(false);
   }
 
   return (
@@ -109,15 +116,19 @@ export function CustomDimensions() {
           style={{
             maxWidth: "1000px",
             height: "100%",
-            maxHeight: "80vh"
+            maxHeight: "80vh",
           }}
           content={
             <JProse>
               <p>This is a test</p>
 
               <JButtonGroup>
-                <JButton variant="secondary" onClick={handleCancel}>Cancel</JButton>
-                <JButton variant="destructive" onClick={handleSubmit}>Delete</JButton>
+                <JButton variant="secondary" onClick={handleCancel}>
+                  Cancel
+                </JButton>
+                <JButton variant="destructive" onClick={handleSubmit}>
+                  Delete
+                </JButton>
               </JButtonGroup>
             </JProse>
           }

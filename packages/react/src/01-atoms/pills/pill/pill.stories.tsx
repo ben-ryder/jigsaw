@@ -1,6 +1,6 @@
 import { StorySection } from "../../../development/story-section";
-import {JColourVariantsList} from "../../../00-foundations/colours/variants/colour-variants";
-import {JPill} from "./pill";
+import { JColourVariantsList } from "../../../00-foundations/colours/variants/colour-variants";
+import { JPill } from "./pill";
 
 export default {
   title: "Atoms/Pills/Pill",
@@ -11,19 +11,17 @@ export default {
   },
 };
 
-
-
 export function Default() {
   return (
     <>
       <StorySection>
         <JPill>Example Pill</JPill>
       </StorySection>
-      {JColourVariantsList.map(variant =>
+      {JColourVariantsList.map((variant) => (
         <StorySection key={variant}>
           <JPill variant={variant}>Example Pill</JPill>
         </StorySection>
-      )}
+      ))}
     </>
   );
 }
@@ -34,11 +32,13 @@ export function Small() {
       <StorySection>
         <JPill size="sm">Example Pill</JPill>
       </StorySection>
-      {JColourVariantsList.map(variant =>
+      {JColourVariantsList.map((variant) => (
         <StorySection key={variant}>
-          <JPill size="sm" variant={variant}>Example Pill</JPill>
+          <JPill size="sm" variant={variant}>
+            Example Pill
+          </JPill>
         </StorySection>
-      )}
+      ))}
     </>
   );
 }
@@ -49,11 +49,13 @@ export function Interactive() {
       <StorySection>
         <JPill interactive={true}>Example Pill</JPill>
       </StorySection>
-      {JColourVariantsList.map(variant =>
+      {JColourVariantsList.map((variant) => (
         <StorySection key={variant}>
-          <JPill interactive={true} variant={variant}>Example Pill</JPill>
+          <JPill interactive={true} variant={variant}>
+            Example Pill
+          </JPill>
         </StorySection>
-      )}
+      ))}
     </>
   );
 }
@@ -62,13 +64,17 @@ export function SmallInteractive() {
   return (
     <>
       <StorySection>
-        <JPill interactive={true} size="sm">Example Pill</JPill>
+        <JPill interactive={true} size="sm">
+          Example Pill
+        </JPill>
       </StorySection>
-      {JColourVariantsList.map(variant =>
+      {JColourVariantsList.map((variant) => (
         <StorySection key={variant}>
-          <JPill interactive={true} size="sm" variant={variant}>Example Pill</JPill>
+          <JPill interactive={true} size="sm" variant={variant}>
+            Example Pill
+          </JPill>
         </StorySection>
-      )}
+      ))}
     </>
   );
 }

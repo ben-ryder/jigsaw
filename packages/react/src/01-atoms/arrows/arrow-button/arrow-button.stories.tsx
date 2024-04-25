@@ -10,12 +10,25 @@ export default {
 };
 
 export function RightArrow() {
-  return <JArrowButton onClick={() => {console.log("arrow button list")}}>Read More</JArrowButton>;
+  return (
+    <JArrowButton
+      onClick={() => {
+        console.log("arrow button list");
+      }}
+    >
+      Read More
+    </JArrowButton>
+  );
 }
 
 export function LeftArrow() {
   return (
-    <JArrowButton onClick={() => {console.log("arrow button list")}} direction="left">
+    <JArrowButton
+      onClick={() => {
+        console.log("arrow button list");
+      }}
+      direction="left"
+    >
       Back
     </JArrowButton>
   );
@@ -23,7 +36,12 @@ export function LeftArrow() {
 
 export function Minimal() {
   return (
-    <JArrowButton onClick={() => {console.log("arrow button list")}} variant="minimal">
+    <JArrowButton
+      onClick={() => {
+        console.log("arrow button list");
+      }}
+      variant="minimal"
+    >
       View All
     </JArrowButton>
   );

@@ -5,7 +5,6 @@ import { JProse } from "../../../02-components/prose/prose";
 import { Default as ExampleForm } from "../../../04-layouts/form/form.stories";
 import { JButton } from "../../../01-atoms/button/button/button";
 
-
 export default {
   title: "Organisms/Dialogs/Dialog",
   parameters: {
@@ -16,7 +15,7 @@ export default {
 };
 
 export function Default() {
-  const [open, setOpen] = useState<boolean>(false)
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     <>
@@ -39,7 +38,7 @@ export function Default() {
 }
 
 export function NoOutsideClose() {
-  const [open, setOpen] = useState<boolean>(false)
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     <>
@@ -63,7 +62,7 @@ export function NoOutsideClose() {
 }
 
 export function CustomDimensions() {
-  const [open, setOpen] = useState<boolean>(false)
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     <>
@@ -76,7 +75,7 @@ export function CustomDimensions() {
           style={{
             maxWidth: "1000px",
             height: "100%",
-            maxHeight: "80vh"
+            maxHeight: "80vh",
           }}
           content={
             <JProse>
@@ -105,7 +104,7 @@ export function CustomDimensions() {
 }
 
 export function WithForm() {
-  const [open, setOpen] = useState<boolean>(false)
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     <>
@@ -116,11 +115,9 @@ export function WithForm() {
           disableOutsideClose={true}
           triggerContent={<JButton>Open Dialog</JButton>}
           style={{
-            maxWidth: "800px"
+            maxWidth: "800px",
           }}
-          content={
-            <ExampleForm />
-          }
+          content={<ExampleForm />}
           heading="This is an example heading"
           description="This is an example modal"
         />

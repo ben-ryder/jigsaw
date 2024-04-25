@@ -1,6 +1,9 @@
 import { JColours } from "./colours";
 import { JPill } from "../../01-atoms/pills/pill/pill";
-import { JColourVariants, JColourVariantsList } from "./variants/colour-variants";
+import {
+  JColourVariants,
+  JColourVariantsList,
+} from "./variants/colour-variants";
 
 export default {
   title: "Foundations/Colours",
@@ -452,7 +455,8 @@ export function Contextual() {
                 <code>j-c-mono-100</code>
               </td>
               <td>
-                The text colour used for emphasised text such as bold or italics.
+                The text colour used for emphasised text such as bold or
+                italics.
               </td>
             </tr>
             <tr>
@@ -569,22 +573,21 @@ export function Variants() {
             </tr>
           </thead>
           <tbody>
-            {JColourVariantsList.map(variant => (
-                <tr>
-                  <td>
-                    <span
-                      style={{ backgroundColor: `var(--j-c-variant-${variant})` }}
-                    ></span>
-                  </td>
-                  <td>
-                    <code>{`j-c-variant-${variant}`}</code>
-                  </td>
-                  <td>
-                    <JPill variant={variant as JColourVariants}>Example</JPill>
-                  </td>
-                </tr>
-              )
-            )}
+            {JColourVariantsList.map((variant) => (
+              <tr>
+                <td>
+                  <span
+                    style={{ backgroundColor: `var(--j-c-variant-${variant})` }}
+                  ></span>
+                </td>
+                <td>
+                  <code>{`j-c-variant-${variant}`}</code>
+                </td>
+                <td>
+                  <JPill variant={variant as JColourVariants}>Example</JPill>
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

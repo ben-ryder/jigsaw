@@ -57,7 +57,7 @@ export function Controlled() {
         options={testOptions}
         value={selectedOption}
         onChange={(e) => {
-          setSelectedOption(e.target.value)
+          setSelectedOption(e.target.value);
         }}
       />
       <p>

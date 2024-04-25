@@ -14,12 +14,20 @@ export default {
 export function Default() {
   return (
     <>
-     <JTooltip tooltip="This is a basic string">
-       <button><JIcon><HelpCircleIcon/></JIcon></button>
-     </JTooltip>
+      <JTooltip tooltip="This is a basic string">
+        <button>
+          <JIcon>
+            <HelpCircleIcon />
+          </JIcon>
+        </button>
+      </JTooltip>
 
       <JTooltip tooltip="This is a basic string" preferredPosition="right">
-        <button><JIcon><HelpCircleIcon/></JIcon></button>
+        <button>
+          <JIcon>
+            <HelpCircleIcon />
+          </JIcon>
+        </button>
       </JTooltip>
     </>
   );

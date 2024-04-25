@@ -27,7 +27,9 @@ export function Statuses() {
           <tbody>
             <tr>
               <td>
-                <JPill size="sm" variant="red">Experimental</JPill>
+                <JPill size="sm" variant="red">
+                  Experimental
+                </JPill>
               </td>
               <td>
                 <code>experimental</code>
@@ -39,7 +41,9 @@ export function Statuses() {
             </tr>
             <tr>
               <td>
-                <JPill size="sm" variant="orange">Unstable</JPill>
+                <JPill size="sm" variant="orange">
+                  Unstable
+                </JPill>
               </td>
               <td>
                 <code>unstable</code>
@@ -51,7 +55,9 @@ export function Statuses() {
             </tr>
             <tr>
               <td>
-                <JPill size="sm" variant="green">Stable</JPill>
+                <JPill size="sm" variant="green">
+                  Stable
+                </JPill>
               </td>
               <td>
                 <code>stable</code>
@@ -62,7 +68,9 @@ export function Statuses() {
             </tr>
             <tr>
               <td>
-                <JPill size="sm" variant="red">Deprecated</JPill>
+                <JPill size="sm" variant="red">
+                  Deprecated
+                </JPill>
               </td>
               <td>
                 <code>deprecated</code>
