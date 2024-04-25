@@ -7,6 +7,10 @@
     height: 100%;
   }
 
+  &--xs {
+    width: var(--j-icon-size-xs);
+    height: var(--j-icon-size-xs);
+  }
   &--sm {
     width: var(--j-icon-size-sm);
     height: var(--j-icon-size-sm);

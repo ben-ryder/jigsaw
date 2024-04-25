@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import classNames from "classnames";
 import { JColourVariants } from "../../00-foundations/colours/variants/colour-variants.js";
 
-export type JIconSize = "sm" | "rg" | "md" | "lg" | "xl";
+export type JIconSize = "xs" | "sm" | "rg" | "md" | "lg" | "xl";
 
 export interface JIconProps {
   size?: JIconSize;

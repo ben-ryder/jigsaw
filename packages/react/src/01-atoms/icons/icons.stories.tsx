@@ -51,71 +51,84 @@ export function Icons() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <code>j-icon-size-sm</code>
-              </td>
-              <td>
-                <code>16px</code>
-              </td>
-              <td>
-                <JIcon size="sm">
-                  <SmileIcon />
-                </JIcon>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>j-icon-size-rg</code>
-              </td>
-              <td>
-                <code>20px</code>
-              </td>
-              <td>
-                <JIcon size="rg">
-                  <SmileIcon />
-                </JIcon>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>j-icon-size-md</code>
-              </td>
-              <td>
-                <code>24px</code>
-              </td>
-              <td>
-                <JIcon size="md">
-                  <SmileIcon />
-                </JIcon>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>j-icon-size-lg</code>
-              </td>
-              <td>
-                <code>30px</code>
-              </td>
-              <td>
-                <JIcon size="lg">
-                  <SmileIcon />
-                </JIcon>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>j-icon-size-xl</code>
-              </td>
-              <td>
-                <code>36px</code>
-              </td>
-              <td>
-                <JIcon size="xl">
-                  <SmileIcon />
-                </JIcon>
-              </td>
-            </tr>
+          <tr>
+            <td>
+              <code>j-icon-size-xs</code>
+            </td>
+            <td>
+              <code>18px</code>
+            </td>
+            <td>
+              <JIcon size="xs">
+                <SmileIcon />
+              </JIcon>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>j-icon-size-sm</code>
+            </td>
+            <td>
+              <code>20px</code>
+            </td>
+            <td>
+              <JIcon size="sm">
+                <SmileIcon />
+              </JIcon>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>j-icon-size-rg</code>
+            </td>
+            <td>
+              <code>24px</code>
+            </td>
+            <td>
+              <JIcon size="rg">
+                <SmileIcon />
+              </JIcon>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>j-icon-size-md</code>
+            </td>
+            <td>
+              <code>28px</code>
+            </td>
+            <td>
+              <JIcon size="md">
+                <SmileIcon />
+              </JIcon>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>j-icon-size-lg</code>
+            </td>
+            <td>
+              <code>32px</code>
+            </td>
+            <td>
+              <JIcon size="lg">
+                <SmileIcon />
+              </JIcon>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>j-icon-size-xl</code>
+            </td>
+            <td>
+              <code>36px</code>
+            </td>
+            <td>
+              <JIcon size="xl">
+                <SmileIcon />
+              </JIcon>
+            </td>
+          </tr>
           </tbody>
         </table>
 
