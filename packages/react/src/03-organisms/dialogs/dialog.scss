@@ -23,13 +23,16 @@
     padding-bottom: var(--j-space-4);
     position: sticky;
     top: 0;
-    background-color: var(--j-c-background-f1);
+    background-color: var(--j-c-background);
     padding-top: var(--j-space-4);
+
+    // The close button creates extra space, this ensures there is still space when no icon is present.
+    min-height: 50px;
   }
 
   &__overlay {
     background: var(--j-c-atom-900);
-    opacity: 0.7;
+    opacity: 0.8;
     position: fixed;
     top: 0;
     left: 0;
@@ -41,7 +44,7 @@
   }
 
   &__popup {
-    background-color: var(--j-c-background-f1);
+    background-color: var(--j-c-background);
     border-radius: var(--j-border-radius-md);
     position: fixed;
     top: 50%;
@@ -52,8 +55,8 @@
     max-height: var(--j-dialog-max-height);
     padding: 0 var(--j-space-4) var(--j-space-4);
     z-index: var(--j-z-layer-4);
-    border: var(--j-border-width-md) solid var(--j-c-blueGrey-900);
     overflow-y: scroll;
+    box-shadow: var(--j-shadow-sm);
 
     &:focus {
       outline: none;
