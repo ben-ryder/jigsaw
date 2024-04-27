@@ -30,8 +30,7 @@ export * from "./02-components/table/table.js";
 export * from "./02-components/counter/counter.js";
 
 export * from "./03-organisms/button-group/button-group.js";
-export * from "./03-organisms/dialogs/dialog/dialog.js";
-export * from "./03-organisms/dialogs/alert-dialog/alert-dialog.js";
+export * from "./03-organisms/dialog/dialog.js";
 
 export * from "./04-layouts/content-section/content-section.js";
 export * from "./04-layouts/form/form.js";
