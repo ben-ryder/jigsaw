@@ -34,11 +34,27 @@ export function Typography() {
           needs it.
         </p>
 
-        <h2>Fonts</h2>
+        <h2>Font Families</h2>
         <p>
           The primary font is <b>Open Sans</b> which is used throughout the
           design system.
         </p>
+
+        <h2>Font Weights</h2>
+        <div>
+          <p className="text-normal">
+            <code>j-text-weight-normal | 400</code> - Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </p>
+          <p className="text-medium">
+            <code>j-text-weight-medium | 500</code> - Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </p>
+          <p className="text-bold">
+            <code>j-text-weight-bold | 700</code> - Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </p>
+        </div>
 
         <h2>Text Sizes</h2>
         <div>

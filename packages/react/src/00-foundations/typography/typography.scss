@@ -1,28 +1,42 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/open-sans/open-sans.ttf") format("truetype");
+  src: url("/fonts/open-sans/open-sans-normal.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/open-sans/open-sans-bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("/fonts/open-sans/open-sans-italic.ttf") format("truetype");
+  src: url("/fonts/open-sans/open-sans-normal-italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Open Sans";
+  src: url("/fonts/open-sans/open-sans-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/open-sans/open-sans-medium-italic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/open-sans/open-sans-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
   src: url("/fonts/open-sans/open-sans-bold-italic.ttf") format("truetype");
-  font-weight: bold;
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -30,4 +44,5 @@ body {
   font-family: var(--j-text-font-primary);
   letter-spacing: var(--j-text-letter-spacing);
   font-size: var(--j-text-size-rg);
+  font-weight: var(--j-text-weight-normal);
 }

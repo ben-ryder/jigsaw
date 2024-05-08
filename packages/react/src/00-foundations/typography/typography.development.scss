@@ -29,4 +29,14 @@
     font-size: var(--j-text-size-4xl);
     line-height: 1.5;
   }
+
+  .text-normal {
+    font-weight: var(--j-text-weight-normal);
+  }
+  .text-medium {
+    font-weight: var(--j-text-weight-medium);
+  }
+  .text-bold {
+    font-weight: var(--j-text-weight-bold);
+  }
 }
