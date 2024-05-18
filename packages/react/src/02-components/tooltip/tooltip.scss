@@ -23,6 +23,14 @@
         margin-bottom: 0;
       }
     }
+
+    &--dark {
+      background-color: var(--j-c-background-b2);
+
+      .j-tooltip__arrow {
+        fill: var(--j-c-background-b2);
+      }
+    }
   }
 
   &__arrow {

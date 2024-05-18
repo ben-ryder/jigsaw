@@ -16,13 +16,13 @@ export default {
 export function Default() {
   return (
     <>
-      <StorySection>
+      <StorySection label="Light variant with icon">
         <JTooltip content={<p>This is a basic string</p>}>
           <JIcon variant='white'><HelpCircleIcon /></JIcon>
         </JTooltip>
       </StorySection>
-      <StorySection>
-        <JTooltip content={<p>This is a basic string</p>} renderAsChild={true}>
+      <StorySection label="Dark variant with renderAsChild using button">
+        <JTooltip content={<p>This is a basic string</p>} renderAsChild={true} variant='dark'>
           <JButton>Example button</JButton>
         </JTooltip>
       </StorySection>
