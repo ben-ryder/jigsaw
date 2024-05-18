@@ -3,7 +3,6 @@ import { PropsWithChildren, ReactNode } from "react";
 
 export type JTooltipPosition = "top" | "right" | "bottom" | "left";
 
-import "./tooltip.scss"
 import { JProse } from "../prose/prose.js";
 
 export interface JTooltipProps {
