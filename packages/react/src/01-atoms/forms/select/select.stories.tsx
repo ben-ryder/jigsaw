@@ -103,3 +103,18 @@ export function Disabled() {
     </>
   );
 }
+
+export function WithTooltip() {
+  return (
+    <JSelect
+      id="test"
+      label="Required Select"
+      required={true}
+      options={testOptions}
+      tooltip={{
+        content: <p>This is a select element.</p>,
+        preferredPosition: 'right'
+      }}
+    />
+  );
+}

@@ -25,9 +25,10 @@ export * from "./01-atoms/pills/tag/pill-tag.js";
 
 export * from "./02-components/accordion/accordion.js";
 export * from "./02-components/callout/callout.js";
+export * from "./02-components/counter/counter.js";
 export * from "./02-components/prose/prose.js";
 export * from "./02-components/table/table.js";
-export * from "./02-components/counter/counter.js";
+export * from "./02-components/tooltip/tooltip.js";
 
 export * from "./03-organisms/button-group/button-group.js";
 export * from "./03-organisms/dialog/dialog.js";

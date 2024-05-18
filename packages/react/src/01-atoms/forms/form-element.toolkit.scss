@@ -4,7 +4,6 @@
 
   &__element {
     display: block;
-    margin-top: var(--j-space-4);
     background: transparent;
     border: var(--j-border-width-md) solid var(--j-c-blueGrey-300);
     border-radius: var(--j-border-radius-md);
@@ -41,7 +40,9 @@
     }
   }
 
-  label:has(+ &__element:required) {
-    @include required-indicator()
+  .j-label:has(+ &__element:required) {
+    .j-label__label {
+      @include required-indicator()
+    }
   }
 }

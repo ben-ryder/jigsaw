@@ -82,3 +82,19 @@ export function Disabled() {
     </>
   );
 }
+
+export function WithTooltip() {
+  return (
+    <JTextArea
+      id="test"
+      label="This textarea is required"
+      placeholder="Your text goes here..."
+      required={true}
+      rows={5}
+      tooltip={{
+        content: <p>This is a text area element.</p>,
+        preferredPosition: 'right'
+      }}
+    />
+  );
+}

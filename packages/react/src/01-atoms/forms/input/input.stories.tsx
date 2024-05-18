@@ -82,3 +82,19 @@ export function Disabled() {
     </>
   );
 }
+
+export function WithTooltip() {
+  return (
+    <JInput
+      id="test"
+      label="This input is required"
+      placeholder="Your text goes here..."
+      type="text"
+      required={true}
+      tooltip={{
+        content: <p>This is an input element.</p>,
+        preferredPosition: 'right'
+      }}
+    />
+  );
+}

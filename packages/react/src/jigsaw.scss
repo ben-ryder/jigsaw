@@ -42,9 +42,10 @@
 
 @use "02-components/accordion/accordion";
 @use "02-components/callout/callout";
+@use "02-components/counter/counter";
 @use "02-components/prose/prose";
 @use "02-components/table/table";
-@use "02-components/counter/counter";
+@use "02-components/tooltip/tooltip";
 
 @use "03-organisms/button-group/button-group";
 @use "03-organisms/dialog/dialog";

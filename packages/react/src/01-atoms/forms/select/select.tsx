@@ -2,6 +2,7 @@ import { JLabel } from "../label/label.js";
 import { JErrorText } from "../error-text/error-text.js";
 import {ComponentProps, ForwardedRef, forwardRef} from "react";
 import classNames from "classnames";
+import { JTooltipProps } from "../../../02-components/tooltip/tooltip.js";
 
 export interface JOptionData {
   text: string;
@@ -13,6 +14,7 @@ export interface JSelectProps extends ComponentProps<"select"> {
   hideLabel?: boolean;
   options: JOptionData[];
   error?: string;
+  tooltip?: JTooltipProps;
 }
 
 export const JSelect = forwardRef((props: JSelectProps, ref: ForwardedRef<HTMLSelectElement>) => {
@@ -24,7 +26,7 @@ export const JSelect = forwardRef((props: JSelectProps, ref: ForwardedRef<HTMLSe
 
   return (
     <div className={className}>
-      <JLabel htmlFor={htmlProps.id} hidden={props.hideLabel}>
+      <JLabel htmlFor={htmlProps.id} hidden={props.hideLabel} tooltip={props.tooltip}>
         {props.label}
       </JLabel>
       <select

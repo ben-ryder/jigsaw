@@ -16,6 +16,7 @@ import {JIcon} from "../../icons/icon.js";
 import {ChevronsDown as MultiSelectOpenIcon} from "lucide-react";
 import { offset, useFloating } from "@floating-ui/react";
 import { JPill } from "../../pills/pill/pill.js";
+import { JTooltipProps } from "../../../02-components/tooltip/tooltip.js";
 
 export interface JMultiSelectOptionData extends JOptionData {
   variant?: JColourVariants;
@@ -36,6 +37,7 @@ export interface JMultiSelectProps {
   selectedOptions: JMultiSelectOptionData[];
   setSelectedOptions: (options: JMultiSelectOptionData[]) => void;
   variant?: JMultiSelectVariant;
+  tooltip?: JTooltipProps;
 }
 
 /**
@@ -189,7 +191,7 @@ export const JMultiSelect = forwardRef((props: JMultiSelectProps, ref: Forwarded
 
   return (
     <div className={className}>
-      <JLabel htmlFor={props.id} hidden={props.hideLabel}>
+      <JLabel htmlFor={props.id} hidden={props.hideLabel} tooltip={props.tooltip}>
         {props.label}
       </JLabel>
       <div className="j-multiselect__element">

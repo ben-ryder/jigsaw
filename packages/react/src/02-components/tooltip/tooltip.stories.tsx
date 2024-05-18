@@ -1,6 +1,8 @@
 import { JTooltip } from "./tooltip";
 import { JIcon } from "../../01-atoms/icons/icon";
 import { HelpCircleIcon } from "lucide-react";
+import { StorySection } from "../../development/story-section";
+import { JButton } from "../../01-atoms/button/button/button";
 
 export default {
   title: "Components/Tooltip",
@@ -14,21 +16,16 @@ export default {
 export function Default() {
   return (
     <>
-      <JTooltip tooltip="This is a basic string">
-        <button>
-          <JIcon>
-            <HelpCircleIcon />
-          </JIcon>
-        </button>
-      </JTooltip>
-
-      <JTooltip tooltip="This is a basic string" preferredPosition="right">
-        <button>
-          <JIcon>
-            <HelpCircleIcon />
-          </JIcon>
-        </button>
-      </JTooltip>
+      <StorySection>
+        <JTooltip content={<p>This is a basic string</p>}>
+          <JIcon variant='white'><HelpCircleIcon /></JIcon>
+        </JTooltip>
+      </StorySection>
+      <StorySection>
+        <JTooltip content={<p>This is a basic string</p>} renderAsChild={true}>
+          <JButton>Example button</JButton>
+        </JTooltip>
+      </StorySection>
     </>
   );
 }

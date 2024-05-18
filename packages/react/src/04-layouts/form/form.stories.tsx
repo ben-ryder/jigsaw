@@ -155,7 +155,7 @@ export function Default() {
                   placeholder="basic required text"
                   required={true}
                   {...field}
-                  error={errors.text?.message}
+                  error={errors.text?.message as string}
                 />
               )}
             />
@@ -170,7 +170,11 @@ export function Default() {
                   placeholder="hello@example.com"
                   required={true}
                   {...field}
-                  error={errors.email?.message}
+                  error={errors.email?.message as string}
+                  tooltip={{
+                    content: <p>This data is never shared with anyone, and this is a very long piece of content.</p>,
+                    preferredPosition: 'right'
+                  }}
                 />
               )}
             />
@@ -186,7 +190,7 @@ export function Default() {
                   required={true}
                   disabled={true}
                   {...field}
-                  error={errors.disabled?.message}
+                  error={errors.disabled?.message as string}
                 />
               )}
             />
@@ -201,7 +205,7 @@ export function Default() {
                   placeholder="Enter some text here..."
                   rows={3}
                   {...field}
-                  error={errors.textLong?.message}
+                  error={errors.textLong?.message as string}
                 />
               )}
             />
@@ -216,7 +220,7 @@ export function Default() {
                   required={true}
                   {...field}
                   options={optionSingleOptions}
-                  error={errors.optionSingle?.message}
+                  error={errors.optionSingle?.message as string}
                 />
               )}
             />
@@ -232,7 +236,7 @@ export function Default() {
                   options={multiSelectOptionData}
                   selectedOptions={field.value}
                   setSelectedOptions={field.onChange}
-                  error={errors.optionSingle?.message}
+                  error={errors.optionSingle?.message as string}
                 />
               )}
             />

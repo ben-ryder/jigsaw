@@ -191,3 +191,24 @@ export function Disabled() {
     </>
   );
 }
+
+export function WithTooltip() {
+  const [selectedOptions, setSelectedOptions] = useState<
+    JMultiSelectOptionData[]
+  >([options[0], options[4]]);
+
+  return (
+    <JMultiSelect
+      label="Required MultiSelect"
+      id="test"
+      required={true}
+      options={options}
+      selectedOptions={selectedOptions}
+      setSelectedOptions={setSelectedOptions}
+      tooltip={{
+        content: <p>This is a multiselect element.</p>,
+        preferredPosition: 'right'
+      }}
+    />
+  );
+}

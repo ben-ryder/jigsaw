@@ -1,12 +1,32 @@
 
 .j-tooltip {
-  border-radius: var(--j-border-radius-sm);
-  padding: var(--j-space-4);
-  background-color: var(--j-c-background-f2);
-  font-size: var(--j-text-size-sm);
-  user-select: none;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__popup {
+    border-radius: var(--j-border-radius-sm);
+    padding: var(--j-space-5);
+    background-color: var(--j-c-background-f2);
+    user-select: none;
+    box-shadow: var(--j-shadow-md);
+    z-index: var(--j-z-layer-5);
+    max-width: 350px;
+
+    .j-prose {
+      & > * {
+        font-size: var(--j-text-size-sm);
+        line-height: 1.5;
+      }
+
+      & > :last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 
   &__arrow {
     fill: var(--j-c-background-f2);
+    z-index: var(--j-z-layer-5);
   }
 }

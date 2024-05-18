@@ -23,7 +23,7 @@
     padding-bottom: var(--j-space-4);
     position: sticky;
     top: 0;
-    background-color: var(--j-c-background);
+    background-color: var(--j-c-background-f1);
     padding-top: var(--j-space-4);
 
     // The close button creates extra space, this ensures there is still space when no icon is present.
@@ -44,12 +44,13 @@
   }
 
   &__popup {
-    background-color: var(--j-c-background);
+    background-color: var(--j-c-background-f1);
     border-radius: var(--j-border-radius-md);
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    margin: var(--j-space-4);
+    transform: translate(calc(-50% - var(--j-space-4)), calc(-50% - var(--j-space-4)));
     width: calc(100vw - (var(--j-space-4) * 2));
     max-width: var(--j-dialog-max-width);
     max-height: var(--j-dialog-max-height);
