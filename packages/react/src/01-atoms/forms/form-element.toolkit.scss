@@ -5,7 +5,7 @@
   &__element {
     display: block;
     background: transparent;
-    border: var(--j-border-width-md) solid var(--j-c-blueGrey-300);
+    border: var(--j-border-width-md) solid var(--j-c-blueGrey-700);
     border-radius: var(--j-border-radius-md);
     padding: var(--j-space-5);
     outline: none;
@@ -16,7 +16,7 @@
 
     &:hover,
     &:disabled {
-      border-color: var(--j-c-blueGrey-600);
+      border-color: var(--j-c-blueGrey-400);
     }
 
     &:focus,
@@ -26,17 +26,17 @@
   }
 
   &--error &__element {
-    border-color: var(--j-c-red-500);
+    border-color: var(--j-c-variant-red);
 
     &:hover {
-      border-color: var(--j-c-red-700);
+      border-color: var(--j-c-variant-red-interaction);
     }
   }
 
   &--error &__element {
     &:focus,
     &:focus-within {
-      border-color: var(--j-c-red-700);
+      border-color: var(--j-c-variant-red-interaction);
     }
   }
 

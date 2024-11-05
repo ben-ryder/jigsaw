@@ -26,7 +26,7 @@ export function JTooltip(props: JTooltipPropsWithChildren) {
   return (
     <Tooltip.Provider delayDuration={props.delayDuration ?? 400}>
       <Tooltip.Root>
-        <Tooltip.Trigger className="j-tooltip" asChild={props.renderAsChild}>
+        <Tooltip.Trigger className="j-tooltip" asChild={props.renderAsChild} type='button'>
           {props.children}
         </Tooltip.Trigger>
         <Tooltip.Portal>
