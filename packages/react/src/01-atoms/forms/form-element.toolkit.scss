@@ -4,7 +4,7 @@
 
   &__element {
     display: block;
-    background: transparent;
+    background-color: var(--j-c-navy-600);
     border: var(--j-border-width-md) solid var(--j-c-blueGrey-700);
     border-radius: var(--j-border-radius-md);
     padding: var(--j-space-5);
@@ -16,12 +16,16 @@
 
     &:hover,
     &:disabled {
-      border-color: var(--j-c-blueGrey-400);
+      border-color: var(--j-c-blueGrey-900);
     }
 
     &:focus,
     &:focus-within {
       border-color: var(--j-c-primary);
+    }
+
+    &:disabled {
+      background-color: transparent;
     }
   }
 

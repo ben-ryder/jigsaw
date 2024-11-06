@@ -29,7 +29,7 @@ export const parameters = {
     values: [
       {
         name: "jigsaw",
-        value: "#242830",
+        value: "#232530",
       },
     ],
   },

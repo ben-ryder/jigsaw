@@ -7,12 +7,12 @@ export default create({
   brandTarget: "_self",
 
   // Main Colours
-  colorPrimary: "#0c857a",
-  colorSecondary: "#0c857a",
+  colorPrimary: "#0a766d",
+  colorSecondary: "#0a766d",
 
   // UI
-  appBg: "#2b303b",
-  appContentBg: "#242830",
+  appBg: "#2D303E",
+  appContentBg: "#232530",
   appBorderColor: "#454f5f",
   appBorderRadius: 4,
 
@@ -26,8 +26,8 @@ export default create({
 
   // Toolbar default and active colors
   barTextColor: "#ccc",
-  barSelectedColor: "#0c857a",
-  barBg: "#2b303b",
+  barSelectedColor: "#0a766d",
+  barBg: "#2b2e3b",
 
   // Form colors
   inputBg: "white",

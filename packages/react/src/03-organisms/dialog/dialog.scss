@@ -3,6 +3,7 @@
 :root {
   --j-dialog-max-width: 600px;
   --j-dialog-max-height: 85vh;
+  --j-dialog-background: var(--j-c-background-f1);
 }
 
 .j-dialog {
@@ -22,7 +23,7 @@
     padding-bottom: var(--j-space-4);
     position: sticky;
     top: 0;
-    background-color: var(--j-c-background-f1);
+    background-color: var(--j-dialog-background);
     padding-top: var(--j-space-4);
 
     // The close button creates extra space, this ensures there is still space when no icon is present.
@@ -30,7 +31,7 @@
   }
 
   &__overlay {
-    background: var(--j-c-atom-900);
+    background: var(--j-c-background-b2);
     opacity: 0.8;
     position: fixed;
     top: 0;
@@ -43,7 +44,7 @@
   }
 
   &__popup {
-    background-color: var(--j-c-background-f1);
+    background-color: var(--j-dialog-background);
     border-radius: var(--j-border-radius-md);
     position: fixed;
     top: 50%;
@@ -85,6 +86,45 @@
 
     &__header {
       padding-top: var(--j-space-6);
+    }
+  }
+
+  .j-input,
+  .j-textarea,
+  .j-select,
+  .j-multiselect {
+    &__element {
+      background-color: var(--j-c-navy-400);
+      border-color: var(--j-c-blueGrey-600);
+
+      &:hover,
+      &:disabled {
+        border-color: var(--j-c-blueGrey-800);
+      }
+
+      &:focus,
+      &:focus-within {
+        border-color: var(--j-c-primary);
+      }
+
+      &:disabled {
+        background-color: transparent;
+      }
+    }
+
+    &--error &__element {
+      border-color: var(--j-c-variant-red) !important;
+
+      &:hover {
+        border-color: var(--j-c-variant-red-interaction) !important;;
+      }
+    }
+
+    &--error &__element {
+      &:focus,
+      &:focus-within {
+        border-color: var(--j-c-variant-red-interaction) !important;;
+      }
     }
   }
 }
