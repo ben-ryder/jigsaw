@@ -1,0 +1,23 @@
+.story-section {
+  margin-bottom: var(--j-space-8);
+}
+
+.story-section__label {
+  color: var(--j-c-blueGrey-700);
+  font-weight: bold;
+  font-size: var(--j-text-size-sm);
+}
+
+.story-section__content {
+  margin-top: var(--j-space-2);
+  border: var(--j-border-width-md) dashed var(--j-c-blueGrey-700);
+  border-radius: var(--j-border-radius-md);
+  padding: var(--j-space-8);
+}
+
+.story-section__info {
+  font-style: italic;
+  margin-top: var(--j-space-2);
+  color: var(--j-c-blueGrey-700);
+  font-size: var(--j-text-size-sm);
+}

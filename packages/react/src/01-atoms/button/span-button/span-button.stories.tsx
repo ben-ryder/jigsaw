@@ -1,5 +1,5 @@
 import { JSpanButton } from "./span-button";
-import { StorySection } from "../../../development/story-section";
+import { StorySection } from "../../../development/story-section/story-section";
 import { JButton } from "../button/button";
 
 export default {

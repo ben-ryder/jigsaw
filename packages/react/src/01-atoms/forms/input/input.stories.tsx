@@ -1,5 +1,5 @@
 import { JInput } from "./input";
-import { StorySection } from "../../../development/story-section";
+import { StorySection } from "../../../development/story-section/story-section";
 
 export default {
   title: "Atoms/Forms/Input",

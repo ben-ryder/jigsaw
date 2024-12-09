@@ -88,43 +88,4 @@
       padding-top: var(--j-space-6);
     }
   }
-
-  .j-input,
-  .j-textarea,
-  .j-select,
-  .j-multiselect {
-    &__element {
-      background-color: var(--j-c-navy-400);
-      border-color: var(--j-c-blueGrey-600);
-
-      &:hover,
-      &:disabled {
-        border-color: var(--j-c-blueGrey-800);
-      }
-
-      &:focus,
-      &:focus-within {
-        border-color: var(--j-c-primary);
-      }
-
-      &:disabled {
-        background-color: transparent;
-      }
-    }
-
-    &--error &__element {
-      border-color: var(--j-c-variant-red) !important;
-
-      &:hover {
-        border-color: var(--j-c-variant-red-interaction) !important;;
-      }
-    }
-
-    &--error &__element {
-      &:focus,
-      &:focus-within {
-        border-color: var(--j-c-variant-red-interaction) !important;;
-      }
-    }
-  }
 }

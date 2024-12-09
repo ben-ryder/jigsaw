@@ -1,0 +1,11 @@
+@use "../../00-foundations/breakpoints/breakpoints.toolkit" as *;
+
+@include breakpoint('md') {
+  .background-layers {
+    display: flex;
+  }
+}
+
+.background-layers__f1 {
+  background-color: var(--j-c-background-f1);
+}

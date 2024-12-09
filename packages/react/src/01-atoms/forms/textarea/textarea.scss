@@ -3,5 +3,8 @@
 .j-textarea {
   @include form-element();
 
-  resize: vertical;
+  &__element {
+    resize: vertical;
+    min-height: 47px;
+  }
 }

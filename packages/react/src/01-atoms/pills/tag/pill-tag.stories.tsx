@@ -1,5 +1,5 @@
 import { JPillTag } from "./pill-tag";
-import { StorySection } from "../../../development/story-section";
+import { StorySection } from "../../../development/story-section/story-section";
 import { JColourVariantsList } from "../../../00-foundations/colours/variants/colour-variants";
 
 export default {

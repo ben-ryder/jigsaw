@@ -1,5 +1,5 @@
 import "../src/jigsaw.scss";
-import "../src/development/development.scss";
+import "../src/development/story-section/story-section.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

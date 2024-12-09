@@ -5,11 +5,11 @@
  */
 @use "00-foundations/reset";
 
-@use "00-foundations/borders/borders.vars";
-@use "00-foundations/breakpoints/breakpoints.vars";
-@use "00-foundations/colours/colours.vars";
-@use "00-foundations/colours/variants/variants.vars";
-@use "00-foundations/colours/theme/theme.vars";
+@use "00-foundations/borders/borders.vars.css";
+@use "00-foundations/breakpoints/breakpoints.vars.css";
+@use "00-foundations/colours/colours.vars.css";
+@use "00-foundations/colours/variants/variants.vars.css";
+@use "00-foundations/colours/theme/theme.vars.css";
 @use "00-foundations/layers/layers.vars";
 @use "00-foundations/motion/motion.vars";
 @use "00-foundations/spacing/spacing.vars";

@@ -1,4 +1,4 @@
-import { StorySection } from "../../development/story-section";
+import { StorySection } from "../../development/story-section/story-section";
 import { useState } from "react";
 import { JDialog } from "./dialog";
 import { JProse } from "../../02-components/prose/prose";

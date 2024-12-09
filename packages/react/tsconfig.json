@@ -26,7 +26,7 @@
     "node_modules",
     "**/*.test.ts",
     "**/*.tests.ts",
-    "src/development/story-section.tsx",
+    "src/development/story-section/story-section.tsx",
     "**/*.stories.tsx",
     "build"
   ],

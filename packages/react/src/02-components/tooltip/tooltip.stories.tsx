@@ -1,7 +1,7 @@
 import { JTooltip } from "./tooltip";
 import { JIcon } from "../../01-atoms/icons/icon";
 import { HelpCircleIcon } from "lucide-react";
-import { StorySection } from "../../development/story-section";
+import { StorySection } from "../../development/story-section/story-section";
 import { JButton } from "../../01-atoms/button/button/button";
 
 export default {

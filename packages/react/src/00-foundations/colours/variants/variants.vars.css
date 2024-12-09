@@ -4,9 +4,9 @@ Colour variants
 @todo: worth removing repetitive text colour variables?
  */
 :root {
-  --j-c-variant-teal: var(--j-c-teal-500);
+  --j-c-variant-teal: var(--j-c-teal-400);
   --j-c-variant-teal-text: var(--j-c-mono-100);
-  --j-c-variant-teal-interaction: var(--j-c-teal-700);
+  --j-c-variant-teal-interaction: var(--j-c-teal-500);
   --j-c-variant-teal-text-interaction: var(--j-c-mono-100);
 
   --j-c-variant-white: var(--j-c-mono-100);
@@ -19,20 +19,20 @@ Colour variants
   --j-c-variant-blueGrey-interaction: var(--j-c-blueGrey-900);
   --j-c-variant-blueGrey-text-interaction: var(--j-c-mono-100);
 
-  --j-c-variant-red: var(--j-c-red-500);
+  --j-c-variant-red: var(--j-c-red-400);
   --j-c-variant-red-text: var(--j-c-mono-100);
-  --j-c-variant-red-interaction: var(--j-c-red-700);
+  --j-c-variant-redl-interaction: var(--j-c-red-500);
   --j-c-variant-red-text-interaction: var(--j-c-mono-100);
 
-  --j-c-variant-green: var(--j-c-green-500);
+  --j-c-variant-green: var(--j-c-green-400);
   --j-c-variant-green-text: var(--j-c-mono-100);
-  --j-c-variant-green-interaction: var(--j-c-green-700);
+  --j-c-variant-greenl-interaction: var(--j-c-green-500);
   --j-c-variant-green-text-interaction: var(--j-c-mono-100);
 
-  --j-c-variant-orange: var(--j-c-orange-400);
-  --j-c-variant-orange-text: var(--j-c-mono-900);
-  --j-c-variant-orange-interaction: var(--j-c-orange-700);
-  --j-c-variant-orange-text-interaction: var(--j-c-mono-900);
+  --j-c-variant-orange: var(--j-c-orange-200);
+  --j-c-variant-orange-text: #262626;
+  --j-c-variant-orange-interaction: var(--j-c-orange-300);
+  --j-c-variant-orange-text-interaction: #262626;
 
   --j-c-variant-yellow: var(--j-c-yellow-400);
   --j-c-variant-yellow-text: var(--j-c-mono-900);

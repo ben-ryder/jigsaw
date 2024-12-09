@@ -15,7 +15,6 @@ export function Spacing() {
   const sizes = Object.keys(SIZES).map((key) => {
     return {
       identifier: key,
-      // @ts-ignore
       value: SIZES[key],
     };
   }) as MotionData;

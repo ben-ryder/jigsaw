@@ -1,0 +1,83 @@
+import {Meta} from '@storybook/blocks';
+import {JPill} from "./01-atoms/pills/pill/pill.tsx";
+import {Documentation} from "./development/documentation/documentation.tsx";
+
+<Meta title="Home"/>
+
+<Documentation>
+
+    # Welcome to Jigsaw!
+    Jigsaw is a design system and component library for use in my personal
+    projects. It aims to provide universal styling and reusable components
+    that I can use to speed up developing my websites and applications.
+
+    You can explore the design system and all the components using this
+    website. To learn more and have a peek at the code, check out the
+    [GitHub Repository](https://github.com/Ben-Ryder/jigsaw).
+
+    ## Statuses
+    All parts of the component library have a status which shows how stable they are for use.
+    There are currently four statuses, shown below:
+
+    <table>
+        <thead>
+        <tr>
+            <th>Identifier</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <code>experimental</code>
+            </td>
+            <td>
+                In development, use cases still being ironed out, not at all
+                ready for production use.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>unstable</code>
+            </td>
+            <td>
+                Initially developed but still needs more refinement, could use
+                in production but things might change.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>stable</code>
+            </td>
+            <td>
+                Ready for use in production, unlikely to have major changes.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>deprecated</code>
+            </td>
+            <td>
+                Being phased out and/or replaced, use the replacement instead.
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    ## Credits
+    I couldn't have built a design system like this without using various
+    articles, resources and other design systems for help and inspiration.
+
+    - [Refactoring UI](https://www.refactoringui.com)
+        - Some really useful design tips and starting points for spacing, text size and shadow systems.
+    - [Tailwind CSS](https://tailwindcss.com)
+        - Used to cross-reference spacing and text size systems.
+        - Some of Jigsaw's colour palettes started with Tailwind colours, although all have been modified.
+    - [blog.superhuman.com](https://blog.superhuman.com/how-to-design-delightful-dark-themes)
+        - Some great tips on how to design a dark mode, especially around achieving elevation and depth with colour.
+    - [seeds.sproutsocial.com](https://seeds.sproutsocial.com/visual/motion)
+        - My current motion and animation system is taken from this design system.
+    - [ionicframework.com](https://ionicframework.com/docs/layout/css-utilities#ionic-breakpoints)
+        - My current breakpoints are taken from this design system.
+
+</Documentation>

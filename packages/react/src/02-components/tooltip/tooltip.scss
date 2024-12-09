@@ -25,10 +25,10 @@
     }
 
     &--dark {
-      background-color: var(--j-c-background-b2);
+      background-color: var(--j-c-slate-800);
 
       .j-tooltip__arrow {
-        fill: var(--j-c-background-b2);
+        fill: var(--j-c-slate-800);
       }
     }
   }
