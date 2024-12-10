@@ -3,13 +3,13 @@
   "description": "A design system and component libraries for use in my personal projects.",
   "version": "0.0.0",
   "license": "AGPL-3.0-only",
-  "author": "Ben-Ryder",
+  "author": "ben-ryder",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ben-Ryder/jigsaw.git"
+    "url": "git+https://github.com/ben-ryder/jigsaw.git"
   },
   "bugs": {
-    "url": "https://github.com/Ben-Ryder/jigsaw/issues"
+    "url": "https://github.com/ben-ryder/jigsaw/issues"
   },
   "engines": {
     "node": "^20.x"

@@ -3,7 +3,7 @@ name: New Component
 about: Suggest a new component
 title: "[COMPONENT] "
 labels: feature, new component
-assignees: Ben-Ryder
+assignees: ben-ryder
 
 ---
 

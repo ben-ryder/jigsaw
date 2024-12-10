@@ -3,7 +3,7 @@ import { create } from "@storybook/theming";
 export default create({
   base: "dark",
   brandTitle: "Jigsaw",
-  brandUrl: "https://github.com/Ben-Ryder/jigsaw",
+  brandUrl: "https://github.com/ben-ryder/jigsaw",
   brandTarget: "_self",
 
   // Main Colours

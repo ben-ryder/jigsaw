@@ -2,16 +2,16 @@
   "name": "@ben-ryder/jigsaw-react",
   "version": "0.25.0",
   "description": "A design system and component library for use in my personal projects.",
-  "author": "Ben-Ryder",
+  "author": "ben-ryder",
   "license": "AGPL-3.0-only",
   "type": "module",
-  "homepage": "https://github.com/Ben-Ryder/jigsaw#readme",
+  "homepage": "https://github.com/ben-ryder/jigsaw#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ben-Ryder/jigsaw.git"
+    "url": "git+https://github.com/ben-ryder/jigsaw.git"
   },
   "bugs": {
-    "url": "https://github.com/Ben-Ryder/jigsaw/issues"
+    "url": "https://github.com/ben-ryder/jigsaw/issues"
   },
   "engines": {
     "node": "^20.x"

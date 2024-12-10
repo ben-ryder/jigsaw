@@ -1,4 +1,5 @@
 import {Default as ExampleForm} from "../form/form.stories"
+import "./background-layers.development.scss"
 
 export default {
 	title: "Layouts/BackgroundLayers",
@@ -14,10 +15,13 @@ export function Default() {
 	return (
 		<div className="background-layers">
 			<div className="background-layers__background">
-				<ExampleForm/>
+				<ExampleForm />
 			</div>
 			<div className="background-layers__f1">
-				<ExampleForm/>
+				<ExampleForm />
+			</div>
+			<div className="background-layers__f2">
+				<ExampleForm />
 			</div>
 		</div>
 	);

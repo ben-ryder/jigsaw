@@ -28,9 +28,9 @@ giving me the space to practise writing CSS, using Storybook, applying atomic de
 You can explore the design system and all the components using the live Storybook instance: https://jigsaw.benryder.dev/.
 
 ## 📚 Documentation
-- [Usage Docs](https://github.com/Ben-Ryder/jigsaw/tree/main/docs/usage.md)
-- [Architecture Docs](https://github.com/Ben-Ryder/jigsaw/blob/main/docs/architecture.md)
-- [Examples](https://github.com/Ben-Ryder/jigsaw/blob/main/docs/examples.md)
+- [Usage Docs](https://github.com/ben-ryder/jigsaw/tree/main/docs/usage.md)
+- [Architecture Docs](https://github.com/ben-ryder/jigsaw/blob/main/docs/architecture.md)
+- [Examples](https://github.com/ben-ryder/jigsaw/blob/main/docs/examples.md)
 
 ## 💬 Contributions
 This project is currently open source, not open contribution.  
@@ -38,4 +38,4 @@ You're welcome to make suggestions, raise bugs and ask questions if you want
 but as I'm primarily developing this for use in my own projects I wouldn't really consider this library stable for other people as I may change things unexpectedly (although I do use semantic versioning).
 
 ## 📝 License
-This project is released under the [GNU AGPLv3 license](https://github.com/Ben-Ryder/jigsaw/blob/main/LICENSE.txt).
+This project is released under the [GNU AGPLv3 license](https://github.com/ben-ryder/jigsaw/blob/main/LICENSE.txt).

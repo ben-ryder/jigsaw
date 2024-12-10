@@ -1,21 +1,57 @@
 :root {
-  --j-c-teal-200: #259f94;
-  --j-c-teal-300: #0d9488;
-  --j-c-teal-400: #0c857a;
-  --j-c-teal-500: #0a766d;
-  --j-c-teal-600: #09685f;
-  --j-c-teal-700: #07564f;
-
-  --j-c-slate-50: #3D4053;
-  --j-c-slate-100: #383B4C;
-  --j-c-slate-200: #333545;
-  --j-c-slate-300: #2D303E;
-  --j-c-slate-400: #282A37;
-  --j-c-slate-500: #232530;
-  --j-c-slate-600: #20222C;
-  --j-c-slate-700: #1D1F28;
+  --j-c-slate-500: #383B4C;
+  --j-c-slate-600: #2D303E;
+  --j-c-slate-700: #232530;
   --j-c-slate-800: #191B23;
   --j-c-slate-900: #121419;
+
+  --j-c-teal-500: #14b9aa;
+  --j-c-teal-600: #0faa9b;
+  --j-c-teal-700: #0fa091;
+  --j-c-teal-800: #096d64;
+  --j-c-teal-900: #07564f;
+
+  --j-c-red-500: #ff8282;
+  --j-c-red-600: #ff6464;
+  --j-c-red-700: #ff4b4b;
+  --j-c-red-800: #a02828;
+  --j-c-red-900: #8c2323;
+
+  --j-c-green-500: #64b978;
+  --j-c-green-600: #50aa64;
+  --j-c-green-700: #46a05a;
+  --j-c-green-800: #32733c;
+  --j-c-green-900: #286432;
+
+  --j-c-blue-500: #46afeb;
+  --j-c-blue-600: #2da5e1;
+  --j-c-blue-700: #1e96d2;
+  --j-c-blue-800: #18719e;
+  --j-c-blue-900: #13597c;
+
+  --j-c-orange-500: #e0945f;
+  --j-c-orange-600: #db8142;
+  --j-c-orange-700: #d6722c;
+
+  --j-c-yellow-500: #fccc50;
+  --j-c-yellow-600: #edbb38;
+  --j-c-yellow-700: #ddae34;
+
+
+
+  --j-c-purple-200: #9d7ee5;
+  --j-c-purple-300: #916ee1;
+  --j-c-purple-400: #855ede;
+  --j-c-purple-500: #7855c8;
+  --j-c-purple-600: #6a4bb2;
+  --j-c-purple-700: #6245a4;
+
+  --j-c-pink-200: #d85797;
+  --j-c-pink-300: #d3428a;
+  --j-c-pink-400: #ce2d7d;
+  --j-c-pink-500: #b92971;
+  --j-c-pink-600: #a52464;
+  --j-c-pink-700: #95205a;
 
   --j-c-blueGrey-50: #9CA7B8;
   --j-c-blueGrey-100: #919CAD;
@@ -38,53 +74,4 @@
   --j-c-mono-700: #222;
   --j-c-mono-800: #1a1a1a;
   --j-c-mono-900: #111;
-
-  --j-c-red-200: #e55c5c;
-  --j-c-red-300: #e24747;
-  --j-c-red-400: #df3333;
-  --j-c-red-500: #c92e2e;
-  --j-c-red-600: #b22929;
-  --j-c-red-700: #a22525;
-
-  --j-c-green-200: #649d71;
-  --j-c-green-300: #50915f;
-  --j-c-green-400: #3d854d;
-  --j-c-green-500: #377845;
-  --j-c-green-600: #316a3e;
-  --j-c-green-700: #2b5d36;
-
-  --j-c-orange-200: #e79155;
-  --j-c-orange-300: #e48440;
-  --j-c-orange-400: #e1762b;
-  --j-c-orange-500: #cb6a27;
-  --j-c-orange-600: #b45e22;
-  --j-c-orange-700: #a4551f;
-
-  --j-c-yellow-200: #fccc50;
-  --j-c-yellow-300: #fbc53a;
-  --j-c-yellow-400: #fbbf24;
-  --j-c-yellow-500: #e2ac20;
-  --j-c-yellow-600: #c9991d;
-  --j-c-yellow-700: #b88c1b;
-
-  --j-c-blue-200: #4998c0;
-  --j-c-blue-300: #328bb8;
-  --j-c-blue-400: #1b7eb0;
-  --j-c-blue-500: #18719e;
-  --j-c-blue-600: #16658d;
-  --j-c-blue-700: #13597c;
-
-  --j-c-purple-200: #9d7ee5;
-  --j-c-purple-300: #916ee1;
-  --j-c-purple-400: #855ede;
-  --j-c-purple-500: #7855c8;
-  --j-c-purple-600: #6a4bb2;
-  --j-c-purple-700: #6245a4;
-
-  --j-c-pink-200: #d85797;
-  --j-c-pink-300: #d3428a;
-  --j-c-pink-400: #ce2d7d;
-  --j-c-pink-500: #b92971;
-  --j-c-pink-600: #a52464;
-  --j-c-pink-700: #95205a;
 }
