@@ -1,17 +1,17 @@
 .j-text-link {
   color: var(--j-c-text);
-  text-decoration-color: var(--j-c-primary);
+  text-decoration-color: var(--j-c-teal-300);
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
   font-weight: bold;
 
   &:hover,
   &:focus-visible {
-    color: var(--j-c-primary);
+    color: var(--j-c-teal-300);
 
     // Ensure the hover styles still applies when a <code> tag is within the link
     code {
-      color: var(--j-c-primary);
+      color: var(--j-c-teal-300);
     }
   }
 

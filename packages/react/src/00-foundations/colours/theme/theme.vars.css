@@ -1,7 +1,7 @@
 :root {
-  --j-c-primary: var(--j-c-teal-300);
+  --j-c-primary: var(--j-c-teal-800);
   --j-c-primary-text: var(--j-c-mono-100);
-  --j-c-primary-interaction: var(--j-c-teal-700);
+  --j-c-primary-interaction: var(--j-c-teal-900);
   --j-c-primary-text-interaction: var(--j-c-mono-100);
 
   --j-c-secondary: var(--j-c-mono-100);
@@ -15,11 +15,11 @@
   --j-c-tertiary: var(--j-c-mono-50);
 
   /* todo: remove background-b2 as special layer? it's only used by dialog overlay and dark tooltip variant */
-  --j-c-background-b2: var(--j-c-slate-900);
-  --j-c-background-b1: var(--j-c-slate-800);
-  --j-c-background: var(--j-c-slate-500);
-  --j-c-background-f1: var(--j-c-slate-300);
-  --j-c-background-f2: var(--j-c-slate-100);
+  --j-c-background-b2: var(--j-c-slate-800);
+  --j-c-background-b1: var(--j-c-slate-700);
+  --j-c-background: var(--j-c-slate-600);
+  --j-c-background-f1: var(--j-c-slate-500);
+  --j-c-background-f2: var(--j-c-slate-400);
 
   --j-c-text: var(--j-c-mono-200);
   --j-c-text-emphasis: var(--j-c-mono-100);

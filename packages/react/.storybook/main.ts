@@ -20,9 +20,7 @@ const config: StorybookConfig = {
     disableTelemetry: true,
     disableWhatsNewNotifications: true,
   },
-  docs: {
-    autodocs: "tag",
-  },
+  docs: {},
   staticDirs: ["../public"],
 };
 export default config;

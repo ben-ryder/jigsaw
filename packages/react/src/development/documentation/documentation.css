@@ -1,4 +1,28 @@
 
 .sbdocs-wrapper {
+  /* Override background colour of docs */
   background-color: var(--j-c-slate-600) !important;
+
+  /* Removing Storybook styles from code blocks */
+  code {
+    border: none;
+    line-height: inherit;
+    margin: unset;
+    font-size: inherit;
+    display: inline;
+  }
+
+  /* Removing Storybook styles from code blocks */
+  .sbdocs-a {
+    font-family: inherit;
+    line-height: inherit;
+    text-decoration-line: underline;
+  }
+
+  /* Removing Storybook styles from code blocks */
+  table {
+    p {
+      margin-bottom: 0;
+    }
+  }
 }

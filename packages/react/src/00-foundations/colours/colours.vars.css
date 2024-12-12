@@ -21,11 +21,16 @@
   --j-c-slate-grey-800: #848AA5;
   --j-c-slate-grey-900: #787E9B;
 
-  --j-c-teal-100: #14B9AA;
-  --j-c-teal-200: #11AC9E;
-  --j-c-teal-300: #0FA093;
-  --j-c-teal-800: #096D64;
-  --j-c-teal-900: #07564F;
+  --j-c-teal-50: #0FB9AA;
+  --j-c-teal-100: #0EAC9E;
+  --j-c-teal-200: #0DA093;
+  --j-c-teal-300: #0C9488;
+  --j-c-teal-400: #0B887D;
+  --j-c-teal-500: #0A7C72;
+  --j-c-teal-600: #097067;
+  --j-c-teal-700: #08645C;
+  --j-c-teal-800: #075951;
+  --j-c-teal-900: #064D46;
 
   --j-c-green-100: #64B972;
   --j-c-green-200: #53AB62;
@@ -59,19 +64,20 @@
 
   --j-c-orange-500: #E0945F;
   --j-c-orange-600: #DB8243;
-  --j-c-orange-700: #d6722c;
+  --j-c-orange-700: #D6722C;
 
   --j-c-yellow-500: #FCCC50;
   --j-c-yellow-600: #EDBB38;
   --j-c-yellow-700: #DDAE34;
 
-  --j-c-mono-100: #d6d6d6;
-  --j-c-mono-200: #bfbfbf;
-  --j-c-mono-300: #a7a7a7;
-  --j-c-mono-400: #909090;
-  --j-c-mono-500: #787878;
-  --j-c-mono-600: #616161;
-  --j-c-mono-700: #494949;
-  --j-c-mono-800: #323232;
-  --j-c-mono-900: #1a1a1a;
+  --j-c-mono-50: #D6D6D6;
+  --j-c-mono-100: #BFBFBF;
+  --j-c-mono-200: #A7A7A7;
+  --j-c-mono-300: #909090;
+  --j-c-mono-400: #787878;
+  --j-c-mono-500: #616161;
+  --j-c-mono-600: #494949;
+  --j-c-mono-700: #323232;
+  --j-c-mono-800: #262626;
+  --j-c-mono-900: #1A1A1A;
 }

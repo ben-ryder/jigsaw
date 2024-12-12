@@ -94,23 +94,43 @@
     "swatches": [
       {
         "name": "teal-900",
-        "color": "07564F"
+        "color": "064D46"
       },
       {
         "name": "teal-800",
-        "color": "096D64"
+        "color": "075951"
+      },
+      {
+        "name": "teal-700",
+        "color": "08645C"
+      },
+      {
+        "name": "teal-600",
+        "color": "097067"
+      },
+      {
+        "name": "teal-500",
+        "color": "0A7C72"
+      },
+      {
+        "name": "teal-400",
+        "color": "0B887D"
       },
       {
         "name": "teal-300",
-        "color": "0FA093"
+        "color": "0C9488"
       },
       {
         "name": "teal-200",
-        "color": "11AC9E"
+        "color": "0DA093"
       },
       {
         "name": "teal-100",
-        "color": "14B9AA"
+        "color": "0EAC9E"
+      },
+      {
+        "name": "teal-50",
+        "color": "0FB9AA"
       }
     ]
   },
@@ -270,6 +290,51 @@
       {
         "name": "yellow-100",
         "color": "FCCC50"
+      }
+    ]
+  },
+  {
+    "paletteName": "Mono",
+    "swatches": [
+      {
+        "name": "mono-900",
+        "color": "1A1A1A"
+      },
+      {
+        "name": "mono-800",
+        "color": "262626"
+      },
+      {
+        "name": "mono-700",
+        "color": "323232"
+      },
+      {
+        "name": "mono-600",
+        "color": "494949"
+      },
+      {
+        "name": "mono-500",
+        "color": "616161"
+      },
+      {
+        "name": "mono-400",
+        "color": "787878"
+      },
+      {
+        "name": "mono-300",
+        "color": "909090"
+      },
+      {
+        "name": "mono-200",
+        "color": "A7A7A7"
+      },
+      {
+        "name": "mono-100",
+        "color": "BFBFBF"
+      },
+      {
+        "name": "mono-50",
+        "color": "D6D6D6"
       }
     ]
   }
