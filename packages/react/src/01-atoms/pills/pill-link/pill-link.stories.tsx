@@ -1,6 +1,6 @@
 import { JPillLink } from "./pill-link";
 import { StorySection } from "../../../development/story-section/story-section";
-import { JColourVariantsList } from "../../../00-foundations/colours/variants/colour-variants";
+import { JColourVariants } from "../../../00-foundations/colours/variants/colour-variants";
 
 export default {
   title: "Atoms/Pills/PillLink",
@@ -17,7 +17,7 @@ export function Default() {
       <StorySection>
         <JPillLink href="#">Example Pill</JPillLink>
       </StorySection>
-      {JColourVariantsList.map((variant) => (
+      {JColourVariants.map((variant) => (
         <StorySection key={variant}>
           <JPillLink href="#" variant={variant}>
             Example Pill
@@ -36,7 +36,7 @@ export function Small() {
           Example Pill
         </JPillLink>
       </StorySection>
-      {JColourVariantsList.map((variant) => (
+      {JColourVariants.map((variant) => (
         <StorySection key={variant}>
           <JPillLink href="#" size="sm" variant={variant}>
             Example Pill

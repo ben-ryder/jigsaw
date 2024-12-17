@@ -1,5 +1,5 @@
 import { StorySection } from "../../../development/story-section/story-section";
-import { JColourVariantsList } from "../../../00-foundations/colours/variants/colour-variants";
+import { JColourVariants } from "../../../00-foundations/colours/variants/colour-variants";
 import { JPill } from "./pill";
 
 export default {
@@ -17,7 +17,7 @@ export function Default() {
       <StorySection>
         <JPill>Example Pill</JPill>
       </StorySection>
-      {JColourVariantsList.map((variant) => (
+      {JColourVariants.map((variant) => (
         <StorySection key={variant}>
           <JPill variant={variant}>Example Pill</JPill>
         </StorySection>
@@ -32,7 +32,7 @@ export function Small() {
       <StorySection>
         <JPill size="sm">Example Pill</JPill>
       </StorySection>
-      {JColourVariantsList.map((variant) => (
+      {JColourVariants.map((variant) => (
         <StorySection key={variant}>
           <JPill size="sm" variant={variant}>
             Example Pill
@@ -49,7 +49,7 @@ export function Interactive() {
       <StorySection>
         <JPill interactive={true}>Example Pill</JPill>
       </StorySection>
-      {JColourVariantsList.map((variant) => (
+      {JColourVariants.map((variant) => (
         <StorySection key={variant}>
           <JPill interactive={true} variant={variant}>
             Example Pill
@@ -68,7 +68,7 @@ export function SmallInteractive() {
           Example Pill
         </JPill>
       </StorySection>
-      {JColourVariantsList.map((variant) => (
+      {JColourVariants.map((variant) => (
         <StorySection key={variant}>
           <JPill interactive={true} size="sm" variant={variant}>
             Example Pill

@@ -1,0 +1,31 @@
+import { Meta } from '@storybook/blocks';
+import {Documentation} from "../../development/documentation/documentation.tsx";
+
+import "./spacing.development.css";
+import {SIZES} from "./spacing.ts";
+
+<Meta title="Foundations/Spacing" />
+
+<Documentation>
+  # Spacing
+  In order to keep the design system consistent and easy to develop with a spacing system is used. <br/>
+  This system is not linear, meaning more options are available for smaller sizes where the difference between two values is more pronounced.
+
+  A base value of <strong>2</strong> is used and all other values are calculated from that. For example:
+  - <code>j-space-4</code> is <strong>2 x 4 = 8px</strong>
+  - <code>j-space-16</code> is <strong>2 x 16 = 32px</strong>
+
+  Here is a full list of the available spacing options:
+
+  {Object.entries(SIZES).map(([identifier, value]) => (
+    <div className="size-item">
+      <span style={{ minWidth: `${value}` }}></span>
+      <code>
+        {identifier}
+        {` | `}
+        {value}
+      </code>
+    </div>
+  ))}
+
+</Documentation>

@@ -12,4 +12,4 @@ export const JColourVariantLabels = {
 } as const;
 
 export type JColourVariants = keyof typeof JColourVariantLabels
-export const JColourVariants = Object.keys(JColourVariantLabels) as unknown as JColourVariants;
+export const JColourVariants = Object.keys(JColourVariantLabels) as unknown as JColourVariants[];

@@ -7,7 +7,7 @@
   }
 }
 
-@mixin j-animation-spin {
+.j-toolkit-animation-spin {
   animation-duration: var(--j-motion-duration-slow);
   animation-name: j-animation-spin;
   animation-iteration-count: infinite;

@@ -39,7 +39,7 @@ export const JButton = forwardRef((
   return (
     <button ref={ref} className={className} {...htmlProps}>
       {children}
-      {props.loading && <LoadingIcon className="j-icon" />}
+      {props.loading && <LoadingIcon className="j-icon j-toolkit-animation-spin" />}
     </button>
   );
 })

@@ -7,7 +7,7 @@
 .size-item span {
   display: block;
   height: var(--j-space-8);
-  background-color: var(--j-c-primary);
+  background-color: var(--j-c-teal-500);
   margin-right: var(--j-space-4);
 }
 .size-items {

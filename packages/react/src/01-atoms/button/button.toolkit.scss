@@ -1,5 +1,3 @@
-@use "../../00-foundations/motion/motion.toolkit" as *;
-
 @mixin button-styles() {
   // Resets so button styles work when added to elements like spans
   display: inline-block;
@@ -118,8 +116,6 @@
       height: var(--j-text-size-rg);
       margin-left: var(--j-space-4);
       stroke-width: 3px;
-
-      @include j-animation-spin();
     }
   }
 }

@@ -3,7 +3,7 @@
   Foundations and Variables
 =============================
  */
-@use "00-foundations/reset";
+@use "00-foundations/reset.css";
 
 @use "00-foundations/borders/borders.vars.css";
 @use "00-foundations/breakpoints/breakpoints.vars.css";
@@ -11,10 +11,10 @@
 @use "00-foundations/colours/variants/variants.vars.css";
 @use "00-foundations/colours/theme/theme.vars.css";
 @use "00-foundations/layers/layers.vars";
-@use "00-foundations/motion/motion.vars";
-@use "00-foundations/spacing/spacing.vars";
-@use "00-foundations/typography/typography.vars" as *;
-@use "00-foundations/typography/typography" as *;
+@use "00-foundations/motion/motion.vars.css";
+@use "00-foundations/spacing/spacing.vars.css";
+@use "00-foundations/typography/typography.vars.css" as *;
+@use "00-foundations/typography/typography.css" as *;
 
 @use "01-atoms/hidden/hidden";
 @use "01-atoms/icons/icons.vars" as *;

@@ -1,6 +1,6 @@
 import { JPillButton } from "./pill-button";
 import { StorySection } from "../../../development/story-section/story-section";
-import { JColourVariantsList } from "../../../00-foundations/colours/variants/colour-variants";
+import { JColourVariants } from "../../../00-foundations/colours/variants/colour-variants";
 
 export default {
   title: "Atoms/Pills/PillButton",
@@ -21,7 +21,7 @@ export function Default() {
       <StorySection>
         <JPillButton onClick={buttonOnClick}>Example Pill</JPillButton>
       </StorySection>
-      {JColourVariantsList.map((variant) => (
+      {JColourVariants.map((variant) => (
         <StorySection key={variant}>
           <JPillButton onClick={buttonOnClick} variant={variant}>
             Example Pill
@@ -40,7 +40,7 @@ export function Small() {
           Example Pill
         </JPillButton>
       </StorySection>
-      {JColourVariantsList.map((variant) => (
+      {JColourVariants.map((variant) => (
         <StorySection key={variant}>
           <JPillButton size="sm" onClick={buttonOnClick} variant={variant}>
             Example Pill

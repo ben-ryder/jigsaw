@@ -1,6 +1,6 @@
 import { JPillTag } from "./pill-tag";
 import { StorySection } from "../../../development/story-section/story-section";
-import { JColourVariantsList } from "../../../00-foundations/colours/variants/colour-variants";
+import { JColourVariants } from "../../../00-foundations/colours/variants/colour-variants";
 
 export default {
   title: "Atoms/Pills/PillTag",
@@ -23,7 +23,7 @@ export function Default() {
           onRemove={(value) => {}}
         />
       </StorySection>
-      {JColourVariantsList.map((variant) => (
+      {JColourVariants.map((variant) => (
         <StorySection>
           <JPillTag
             data={{
@@ -52,7 +52,7 @@ export function Small() {
           size="sm"
         />
       </StorySection>
-      {JColourVariantsList.map((variant) => (
+      {JColourVariants.map((variant) => (
         <StorySection>
           <JPillTag
             data={{
