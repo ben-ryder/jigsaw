@@ -1,0 +1,42 @@
+import {Meta} from '@storybook/blocks';
+import {Documentation} from "../../development/documentation/documentation.tsx";
+import {JColours} from "./colours.ts";
+
+import "./colours.development.css"
+import { JColourVariants } from "./variants/colour-variants.ts";
+import { JPill } from "../../01-atoms/pills/pill/pill.tsx";
+
+<Meta title="Foundations/Colours/Variants" />
+
+<Documentation>
+    # Variants
+    Some components such as `JPill` and `JPillTag` allow for colour customisation. In order to ensure accessibility only
+    a limited number of colours are supported for these use cases.
+
+    <table className="colour-table">
+        <thead>
+        <tr>
+            <th>Colour</th>
+            <th>Token</th>
+            <th>Example Badge</th>
+        </tr>
+        </thead>
+        <tbody>
+        {JColourVariants.map((variant) => (
+            <tr>
+                <td>
+                  <span
+                      style={{ backgroundColor: `var(--j-c-variant-${variant})` }}
+                  ></span>
+                </td>
+                <td>
+                    <code>{`j-c-variant-${variant}`}</code>
+                </td>
+                <td>
+                    <JPill variant={variant}>Example</JPill>
+                </td>
+            </tr>
+        ))}
+        </tbody>
+    </table>
+</Documentation>
