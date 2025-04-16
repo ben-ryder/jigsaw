@@ -7,9 +7,8 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Node
 node_modules
-dist
-dist-ssr
 *.local
 
 # Editor directories and files
@@ -23,4 +22,10 @@ dist-ssr
 *.sln
 *.sw?
 
-*storybook.log
+# NPM Packages
+/*.tgz
+
+# Builds
+/dist
+/build
+/public/css
