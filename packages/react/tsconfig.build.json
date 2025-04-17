@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "NodeNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "outDir": "./build",
+    "declaration": true
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts",
+    "**/*.tests.ts",
+    "src/development/story-section/story-section.tsx",
+    "**/*.stories.tsx",
+    "build"
+  ],
+}

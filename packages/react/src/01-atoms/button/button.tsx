@@ -3,7 +3,7 @@ import {clsx} from "clsx";
 
 export interface ButtonProps extends ComponentProps<'button'> {}
 
-export default function Button({
+export function Button({
 	className,
 	...htmlProps
 }: ButtonProps) {

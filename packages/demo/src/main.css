@@ -1,1 +1,4 @@
 @import "tailwindcss";
+
+@import "@ben-ryder/jigsaw-react/tailwind.css";
+@source "../node_modules/@ben-ryder/jigsaw-react";
