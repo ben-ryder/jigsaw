@@ -1,4 +1,0 @@
-@import "tailwindcss";
-@import "../src/jigsaw.css";
-
-@plugin "@tailwindcss/typography";

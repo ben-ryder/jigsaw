@@ -1,7 +1,8 @@
 .button {
     display: flex;
     align-items: center;
-    padding: var(--spacing-4);
+    gap: var(--spacing-3);
+    padding: var(--spacing-5);
     border-radius: var(--radius-md);
     font-weight: bold;
     font-size: var(--text-sm);
@@ -9,15 +10,21 @@
     background-color: var(--color-teal-500);
     color: var(--color-mono-100);
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
         cursor: pointer;
         background-color: var(--color-teal-700);
+    }
+
+    &:focus-visible {
+        outline: var(--border-width-md) solid var(--color-mono-50);
     }
 
     &.--destructive {
         background-color: var(--color-red-500);
 
-        &:hover {
+        &:hover,
+        &:focus-visible {
             background-color: var(--color-red-700);
         }
     }
@@ -26,15 +33,17 @@
         background-color: var(--color-mono-100);
         color: var(--color-mono-900);
 
-        &:hover {
-            background-color: var(--color-mono-200);
+        &:hover,
+        &:focus-visible {
+            background-color: var(--color-mono-300);
         }
     }
 
     &.--tertiary {
         background-color: transparent;
 
-        &:hover {
+        &:hover,
+        &:focus-visible {
             color: var(--color-mono-200);
             text-decoration: underline;
         }
@@ -44,9 +53,17 @@
         background-color: var(--color-mono-400);
         color: var(--color-mono-100);
 
-        &:hover {
+        &:hover,
+        &:focus-visible {
             pointer-events: none;
             background-color: var(--color-mono-400);
         }
+    }
+}
+
+.button {
+    svg {
+        width: var(--text-lg);
+        height: var(--text-lg);
     }
 }

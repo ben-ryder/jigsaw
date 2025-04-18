@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react'
 
-import "./tailwind.css"
+import "../src/jigsaw.css"
 
 const preview: Preview = {
   parameters: {
@@ -9,6 +9,12 @@ const preview: Preview = {
        color: /(background|color)$/i,
        date: /Date$/i,
       },
+    },
+    backgrounds: {
+      values: [
+        { name: 'jigsaw', value: 'var(--color-navy-500)' },
+      ],
+      default: 'jigsaw'
     },
     options: {
       storySort: {

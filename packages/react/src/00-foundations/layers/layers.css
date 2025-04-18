@@ -1,0 +1,12 @@
+:root {
+    --layer-1: 20;
+    --layer-2: 40;
+    --layer-3: 60;
+    --layer-4: 80;
+    --layer-5: 100;
+
+    --shadow-sm: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+    --shadow-md: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+    --shadow-lg: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+    --shadow-xl: 0 10px 25px hsla(0, 0%, 0%, 0.2);
+}

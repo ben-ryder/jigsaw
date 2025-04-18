@@ -1,0 +1,18 @@
+:root {
+    --spacing-1: 2px;
+    --spacing-2: 4px;
+    --spacing-3: 6px;
+    --spacing-4: 8px;
+    --spacing-5: 10px;
+    --spacing-6: 12px;
+    --spacing-7: 14px;
+    --spacing-8: 16px;
+    --spacing-12: 24px;
+    --spacing-14: 28px;
+    --spacing-16: 32px;
+    --spacing-18: 36px;
+    --spacing-24: 48px;
+    --spacing-32: 64px;
+    --spacing-48: 96px;
+    --spacing-64: 128px;
+}

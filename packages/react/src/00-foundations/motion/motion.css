@@ -1,0 +1,23 @@
+:root {
+    --animate-ease-in: cubic-bezier(0.4, 0, 0.7, 0.2);
+    --animate-ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --animate-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --animate-linear: linear;
+    --animate-spin: spin var(--duration-slow) infinite linear;
+
+    --duration-fast: 0.2s;
+    --duration-medium: 0.5s;
+    --duration-slow: 1s;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.animate-spin {
+    animation: var(--animate-spin);
+}

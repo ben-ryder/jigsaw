@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 
-import {JButton} from './button.js';
+import {JButton} from './button';
 import { CalendarIcon, Loader2Icon } from "lucide-react";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
@@ -30,6 +30,27 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
+    children: 'Example button',
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    variant: 'secondary',
+    children: 'Example button',
+  },
+};
+
+export const Destructive: Story = {
+  args: {
+    variant: 'destructive',
+    children: 'Example button',
+  },
+};
+
+export const Tertiary: Story = {
+  args: {
+    variant: "tertiary",
     children: 'Example button',
   },
 };

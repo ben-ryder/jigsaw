@@ -22,9 +22,12 @@
     "LICENSE.txt"
   ],
   "scripts": {
-    "build": "rimraf ./public && cp -r ../react/public ./public && cp ../react/src/jigsaw.css ./tailwind.css && cp ../react/src/vars.css vars.css"
+    "build": "rimraf ./public && npm run build:public && npm run build:css",
+    "build:public": "cp -r ../react/public ./public",
+    "build:css": "lightningcss --minify --bundle ../react/src/jigsaw.css -o ./public/css/jigsaw.css"
   },
-  "dependencies": {
+  "devDependencies": {
+    "lightningcss-cli": "^1.29.3",
     "rimraf": "^6.0.1"
   }
 }
