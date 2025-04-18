@@ -10,17 +10,16 @@
   font-family: var(--j-text-font-primary);
   font-weight: bold;
   font-size: var(--j-text-size-sm);
-  background: var(--j-c-primary);
-  color: var(--j-c-primary-text);
+  background: var(--j-c-teal-600);
+  color: var(--j-c-slate-grey-50);
   border-radius: var(--j-border-radius-md);
-  border: var(--j-border-width-md) solid var(--j-c-primary);
+  border: var(--j-border-width-md) solid var(--j-c-teal-600);
   box-shadow: var(--j-shadow-md);
 
   &:hover,
   &:focus-visible {
-    background: var(--j-c-primary-interaction);
-    color: var(--j-c-primary-text-interaction);
-    border-color: var(--j-c-primary-interaction);
+    background: var(--j-c-teal-800);
+    border-color: var(--j-c-teal-800);
     cursor: pointer;
     box-shadow: none;
     outline: none;
@@ -31,34 +30,31 @@
   }
 
   &--secondary {
-    background: var(--j-c-secondary);
-    color: var(--j-c-secondary-text);
-    border-color: var(--j-c-secondary);
+    background: var(--j-c-slate-grey-100);
+    border-color: var(--j-c-slate-grey-100);
+    color: var(--j-c-slate-900);
 
     &:hover,
     &:focus-visible {
-      background: var(--j-c-secondary-interaction);
-      color: var(--j-c-secondary-text-interaction);
-      border-color: var(--j-c-secondary-interaction);
+      background: var(--j-c-slate-grey-400);
+      border-color: var(--j-c-slate-grey-400);
     }
   }
 
   &--destructive {
-    background: var(--j-c-destructive);
-    color: var(--j-c-destructive-text);
-    border-color: var(--j-c-destructive);
+    background: var(--j-c-red-800);
+    border-color: var(--j-c-red-800);
 
     &:hover,
     &:focus-visible {
-      background: var(--j-c-destructive-interaction);
-      color: var(--j-c-destructive-text-interaction);
-      border-color: var(--j-c-destructive-interaction);
+      background: var(--j-c-red-900);
+      border-color: var(--j-c-red-900);
     }
   }
 
   &--tertiary {
     background: transparent;
-    color: var(--j-c-tertiary);
+    color: var(--j-c-slate-grey-50);
     border-color: transparent;
     box-shadow: none;
 
@@ -91,17 +87,17 @@
   &:not(.j-button--tertiary).j-button--loading,
   &:not(.j-button--tertiary)[disabled],
   &:not(.j-button--tertiary).j-button--disabled{
-    background-color: var(--j-c-disabled);
-    color: var(--j-c-disabled-text);
-    border-color: var(--j-c-disabled);
+    background-color: var(--j-c-slate-grey-400);
+    border-color: var(--j-c-slate-grey-400);
+    color: var(--j-c-slate-400);
+    box-shadow: none;
 
     &:hover,
     &.j-button:hover {
-      background-color: var(--j-c-disabled);
-      color: var(--j-c-disabled-text);
-      border-color: var(--j-c-disabled);
+      background-color: var(--j-c-slate-grey-400);
+      border-color: var(--j-c-slate-grey-400);
+      color: var(--j-c-slate-400);
       cursor: initial;
-      box-shadow: var(--j-shadow-md);
       text-decoration: none;
     }
   }

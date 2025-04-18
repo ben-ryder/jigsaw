@@ -17,10 +17,10 @@ export function Default() {
 			<div className="background-layers__background">
 				<ExampleForm />
 			</div>
-			<div className="background-layers__f1">
+			<div className="background-layers__f1 layer-f1">
 				<ExampleForm />
 			</div>
-			<div className="background-layers__f2">
+			<div className="background-layers__f2 layer-f2">
 				<ExampleForm />
 			</div>
 		</div>

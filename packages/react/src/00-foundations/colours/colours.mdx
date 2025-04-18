@@ -1,46 +1,43 @@
-import {Meta} from '@storybook/blocks';
-import {Documentation} from "../../development/documentation/documentation.tsx";
-import {JColours} from "./colours.ts";
+import { Meta } from '@storybook/blocks';
+import { Documentation } from "../../development/documentation/documentation.tsx";
+import { JColours } from "./colours.ts";
 
 import "./colours.development.css"
 
 <Meta title="Foundations/Colours/All" />
 
 <Documentation>
+  ## All colours
 
-    # Colours
-    The **slate** colour palette is the most important and is the main colour used for the background and interface.<br/>
-    The **teal** colour palette is the next most important and is
-    the main "brand" colour of the design system.
+  Accessibility is important and all use of colour in Jigsaw must at least meet [WCAG AA
+  guidelines](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html).<br />
+  All colour palettes in Jigsaw have been crafted with this in mind, but care must be taken to ensure these colours are
+  used correctly when combined, especially for hover/focus styling and custom app-specific features.
 
-    Accessibility is important and all use of colour in Jigsaw must at least meet [WCAG AA guidelines](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html).<br/>
-    All colour palettes in Jigsaw have been crafted with this in mind, but care must be taken to ensure these colours are used correctly when combined, especially for hover/focus styling and custom app-specific features.
-
-    ## All colours
-    <table className="colour-table">
-      <thead>
-        <tr>
-          <th>Colour</th>
-          <th>Token</th>
-          <th>Hex Code</th>
+  <table className="colour-table">
+    <thead>
+    <tr>
+      <th>Colour</th>
+      <th>Token</th>
+      <th>Hex Code</th>
+    </tr>
+    </thead>
+    <tbody>
+    {Object.entries(JColours).map(([identifier, hexCode]) => {
+      return (
+        <tr key={identifier}>
+          <td>
+            <span style={{ backgroundColor: hexCode }}></span>
+          </td>
+          <td>
+            <code>{identifier}</code>
+          </td>
+          <td>
+            <code>{hexCode}</code>
+          </td>
         </tr>
-      </thead>
-      <tbody>
-        {Object.entries(JColours).map(([identifier, hexCode]) => {
-          return (
-            <tr key={identifier}>
-              <td>
-                <span style={{ backgroundColor: hexCode }}></span>
-              </td>
-              <td>
-                <code>{identifier}</code>
-              </td>
-              <td>
-                <code>{hexCode}</code>
-              </td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
+      );
+    })}
+    </tbody>
+  </table>
 </Documentation>
