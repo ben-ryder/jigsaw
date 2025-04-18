@@ -1,0 +1,30 @@
+{
+  "name": "@ben-ryder/jigsaw",
+  "version": "0.26.0",
+  "description": "A design system and component library for use in my personal projects.",
+  "author": "ben-ryder",
+  "license": "AGPL-3.0-only",
+  "homepage": "https://github.com/ben-ryder/jigsaw#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ben-ryder/jigsaw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ben-ryder/jigsaw/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.txt"
+  ],
+  "scripts": {
+    "build": "rimraf ./public && cp -r ../react/public ./public && cp ../react/src/jigsaw.css ./tailwind.css && cp ../react/src/vars.css vars.css"
+  },
+  "dependencies": {
+    "rimraf": "^6.0.1"
+  }
+}

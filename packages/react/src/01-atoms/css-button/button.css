@@ -1,0 +1,52 @@
+.button {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-4);
+    border-radius: var(--radius-md);
+    font-weight: bold;
+    font-size: var(--text-sm);
+
+    background-color: var(--color-teal-500);
+    color: var(--color-mono-100);
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--color-teal-700);
+    }
+
+    &.--destructive {
+        background-color: var(--color-red-500);
+
+        &:hover {
+            background-color: var(--color-red-700);
+        }
+    }
+
+    &.--secondary {
+        background-color: var(--color-mono-100);
+        color: var(--color-mono-900);
+
+        &:hover {
+            background-color: var(--color-mono-200);
+        }
+    }
+
+    &.--tertiary {
+        background-color: transparent;
+
+        &:hover {
+            color: var(--color-mono-200);
+            text-decoration: underline;
+        }
+    }
+
+    &:disabled {
+        background-color: var(--color-mono-400);
+        color: var(--color-mono-100);
+
+        &:hover {
+            pointer-events: none;
+            background-color: var(--color-mono-400);
+        }
+    }
+}

@@ -1,4 +1,12 @@
 @import "tailwindcss";
 
-@import "@ben-ryder/jigsaw-react/tailwind.css";
+@import "@ben-ryder/jigsaw/tailwind.css";
 @source "../node_modules/@ben-ryder/jigsaw-react";
+
+@plugin "@tailwindcss/typography";
+
+@theme static {
+    --color-background: var(--color-navy-500);
+    --color-panel: var(--color-navy-300);
+    --color-overlay: var(--color-navy-500);
+}

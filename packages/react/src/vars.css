@@ -1,12 +1,13 @@
-@import "tailwindcss";
-@plugin "@tailwindcss/typography";
+/**
+Vanilla CSS variables
+ */
 
-@theme static {
+:root {
     /** Breakpoints */
-    /*--breakpoint-sm: 576px;*/
-    /*--breakpoint-md: 768px;*/
-    /*--breakpoint-lg: 992px;*/
-    /*--breakpoint-xl: 1200px;*/
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
 
     /** Spacing */
     --spacing-*: initial;
@@ -187,25 +188,6 @@
     --color-yellow-500: #e2ac20;
     --color-yellow-600: #c9991d;
     --color-yellow-700: #b88c1b;
-}
-
-/**
-Custom variants for efficiently composing shared styles between hover and focus states.
- */
-@custom-variant hocus {
-    &:hover, &:focus {
-        @slot;
-    }
-}
-@custom-variant hocus-within {
-    &:hover, &:focus-within {
-        @slot;
-    }
-}
-@custom-variant focusw {
-    &:focus, &:focus-within {
-        @slot;
-    }
 }
 
 @font-face {

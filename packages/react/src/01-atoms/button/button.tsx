@@ -1,7 +1,7 @@
 import { ComponentProps } from "react";
 import { cva } from "class-variance-authority"
-import { twclsx } from "@/utils/twclsx.js";
 import { Slot } from "@radix-ui/react-slot";
+import { twclsx } from "../../utils/twclsx.js";
 
 export interface JButtonProps extends ComponentProps<'button'> {
 	variant?: "primary" | "secondary" | "tertiary" | "destructive";
@@ -10,7 +10,7 @@ export interface JButtonProps extends ComponentProps<'button'> {
 
 export const buttonStyles = cva(
 	[
-		"flex items-center gap-3 font-bold p-4 rounded-sm text-sm hover:cursor-pointer",
+		"flex items-center gap-3 font-bold p-4 rounded-md text-sm hover:cursor-pointer",
 		"disabled:bg-mono-400 disabled:pointer-events-none",
 		"[&_svg]:pointer-events-none [&_svg]:size-(--text-lg)",
 	],
