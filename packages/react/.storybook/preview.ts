@@ -10,6 +10,19 @@ const preview: Preview = {
        date: /Date$/i,
       },
     },
+    options: {
+      storySort: {
+        order: [
+          "Home",
+          "Accessibility",
+          "Foundations",
+          "Atoms",
+          "Components",
+          "Organisms",
+          "Layouts",
+        ],
+      },
+    }
   },
 };
 

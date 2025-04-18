@@ -1,89 +1,14 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-@theme {
-    --color-*: initial;
-    --color-slate-50: #676D8B;
-    --color-slate-100: #5B607C;
-    --color-slate-200: #4E536C;
-    --color-slate-300: #42475C;
-    --color-slate-400: #373A4C;
-    --color-slate-500: #2C2F3E;
-    --color-slate-600: #222530;
-    --color-slate-700: #191B23;
-    --color-slate-800: #121319;
-    --color-slate-900: #0D0E12;
+@theme static {
+    /** Breakpoints */
+    /*--breakpoint-sm: 576px;*/
+    /*--breakpoint-md: 768px;*/
+    /*--breakpoint-lg: 992px;*/
+    /*--breakpoint-xl: 1200px;*/
 
-    --color-grey-50: #EAECF6;
-    --color-grey-100: #DFE2EE;
-    --color-grey-200: #D4D7E5;
-    --color-grey-300: #CACDDD;
-    --color-grey-400: #BCC0D1;
-    --color-grey-500: #AEB2C6;
-    --color-grey-600: #A0A4BA;
-    --color-grey-700: #9297B0;
-    --color-grey-800: #848AA5;
-    --color-grey-900: #787E9B;
-
-    --color-teal-50: #0FB9AA;
-    --color-teal-100: #0EAC9E;
-    --color-teal-200: #0DA093;
-    --color-teal-300: #0C9488;
-    --color-teal-400: #0B887D;
-    --color-teal-500: #0A7C72;
-    --color-teal-600: #097067;
-    --color-teal-700: #08645C;
-    --color-teal-800: #075951;
-    --color-teal-900: #064D46;
-
-    --color-green-100: #64B972;
-    --color-green-200: #53AB62;
-    --color-green-300: #46A055;
-    --color-green-800: #32733D;
-    --color-green-900: #286432;
-
-    --color-red-100: #FF8282;
-    --color-red-200: #FF6464;
-    --color-red-300: #FF4B4B;
-    --color-red-800: #A02828;
-    --color-red-900: #8C2323;
-
-    --color-blue-100: #46B4EB;
-    --color-blue-200: #2EA4DF;
-    --color-blue-300: #1E96D2;
-    --color-blue-800: #17719E;
-    --color-blue-900: #12597C;
-
-    --color-purple-100: #AF9BDF;
-    --color-purple-200: #A38BD9;
-    --color-purple-300: #977DD5;
-    --color-purple-800: #7855C8;
-    --color-purple-900: #6245A4;
-
-    --color-pink-100: #E589B7;
-    --color-pink-200: #E074AA;
-    --color-pink-300: #DC609E;
-    --color-pink-800: #B92971;
-    --color-pink-900: #95205A;
-
-    --color-orange-500: #E0945F;
-    --color-orange-600: #DB8243;
-    --color-orange-700: #D6722C;
-
-    --color-yellow-500: #FCCC50;
-    --color-yellow-600: #EDBB38;
-    --color-yellow-700: #DDAE34;
-
-    --color-mono-50: #D6D6D6;
-    --color-mono-100: #BFBFBF;
-    --color-mono-200: #A7A7A7;
-    --color-mono-300: #909090;
-    --color-mono-400: #787878;
-    --color-mono-500: #616161;
-    --color-mono-600: #494949;
-    --color-mono-700: #323232;
-    --color-mono-800: #262626;
-    --color-mono-900: #1A1A1A;
-
+    /** Spacing */
     --spacing-*: initial;
     --spacing-1: 2px;
     --spacing-2: 4px;
@@ -97,9 +22,230 @@
     --spacing-14: 28px;
     --spacing-16: 32px;
     --spacing-18: 36px;
-    --spacing-20: 40px;
     --spacing-24: 48px;
     --spacing-32: 64px;
     --spacing-48: 96px;
     --spacing-64: 128px;
+
+    /** Border Radius */
+    --radius-*: initial;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 10px;
+
+    /**
+    Border Width
+    Tailwind uses spacing config for sizes by default, but these can be used via 'border-(border-width-sm)'
+    */
+    --border-width-sm: 1px;
+    --border-width-md: 2px;
+    --border-width-lg: 4px;
+    --border-width-xl: 8px;
+
+    /** Font Size */
+    --text-*: initial;
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-rg: 16px;
+    --text-md: 18px;
+    --text-lg: 20px;
+    --text-xl: 24px;
+    --text-2xl: 30px;
+    --text-3xl: 36px;
+    --text-4xl: 48px;
+
+    /** Font Weight */
+    --font-weight-*: initial;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /** Font Families */
+    --font-*: initial;
+    --font-sans: "Open Sans", sans-serif;
+    --font-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+
+    /** Shadows */
+    --shadow-*: initial;
+    --shadow-sm: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+    --shadow-md: 0 4px 6px hsla(0, 0%, 0%, 0.2);
+    --shadow-lg: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+    --shadow-xl: 0 10px 25px hsla(0, 0%, 0%, 0.2);
+
+    /**
+    Layers
+    Tailwind uses hardcoded z-index values, these can be used via 'z-(layer-1)'
+    */
+    --layer-1: 20;
+    --layer-2: 40;
+    --layer-3: 60;
+    --layer-4: 80;
+    --layer-5: 100;
+
+    /** Animations */
+    --animate-ease-in: cubic-bezier(0.4, 0, 0.7, 0.2);
+    --animate-ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --animate-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --animate-linear: linear;
+
+    /**
+    Animation Duration
+    Tailwind doesn't supply duration tokens, these can be used via 'duration-(duration-fast)'
+    */
+    --duration-fast: 0.15s;
+    --duration-medium: 0.3s;
+    --duration-slow: 0.6s;
+
+    /** Colours */
+    --color-*: initial;
+    --color-teal-200: #259f94;
+    --color-teal-300: #0d9488;
+    --color-teal-400: #0c857a;
+    --color-teal-500: #0a766d;
+    --color-teal-600: #09685f;
+    --color-teal-700: #07564f;
+
+    --color-navy-50: #3D4053;
+    --color-navy-100: #383B4C;
+    --color-navy-200: #333545;
+    --color-navy-300: #2D303E;
+    --color-navy-400: #282A37;
+    --color-navy-500: #232530;
+    --color-navy-600: #20222C;
+    --color-navy-700: #1D1F28;
+    --color-navy-800: #191B23;
+    --color-navy-900: #121419;
+
+    --color-grey-50: #9CA7B8;
+    --color-grey-100: #919CAD;
+    --color-grey-200: #8690A1;
+    --color-grey-300: #7A8596;
+    --color-grey-400: #6F7A8A;
+    --color-grey-500: #646E7F;
+    --color-grey-600: #596373;
+    --color-grey-700: #4D5868;
+    --color-grey-800: #424C5C;
+    --color-grey-900: #374151;
+
+    --color-mono-50: #fff;
+    --color-mono-100: #eee;
+    --color-mono-200: #ccc;
+    --color-mono-300: #aaa;
+    --color-mono-400: #666;
+    --color-mono-500: #444;
+    --color-mono-600: #333;
+    --color-mono-700: #222;
+    --color-mono-800: #1a1a1a;
+    --color-mono-900: #111;
+
+    --color-red-200: #e55c5c;
+    --color-red-300: #e24747;
+    --color-red-400: #df3333;
+    --color-red-500: #c92e2e;
+    --color-red-600: #b22929;
+    --color-red-700: #a22525;
+
+    --color-green-200: #649d71;
+    --color-green-300: #50915f;
+    --color-green-400: #3d854d;
+    --color-green-500: #377845;
+    --color-green-600: #316a3e;
+    --color-green-700: #2b5d36;
+
+    --color-blue-200: #4998c0;
+    --color-blue-300: #328bb8;
+    --color-blue-400: #1b7eb0;
+    --color-blue-500: #18719e;
+    --color-blue-600: #16658d;
+    --color-blue-700: #13597c;
+
+    --color-purple-200: #9d7ee5;
+    --color-purple-300: #916ee1;
+    --color-purple-400: #855ede;
+    --color-purple-500: #7855c8;
+    --color-purple-600: #6a4bb2;
+    --color-purple-700: #6245a4;
+
+    --color-pink-200: #d85797;
+    --color-pink-300: #d3428a;
+    --color-pink-400: #ce2d7d;
+    --color-pink-500: #b92971;
+    --color-pink-600: #a52464;
+    --color-pink-700: #95205a;
+
+    --color-orange-200: #e79155;
+    --color-orange-300: #e48440;
+    --color-orange-400: #e1762b;
+    --color-orange-500: #cb6a27;
+    --color-orange-600: #b45e22;
+    --color-orange-700: #a4551f;
+
+    --color-yellow-200: #fccc50;
+    --color-yellow-300: #fbc53a;
+    --color-yellow-400: #fbbf24;
+    --color-yellow-500: #e2ac20;
+    --color-yellow-600: #c9991d;
+    --color-yellow-700: #b88c1b;
+}
+
+/**
+Custom variants for efficiently composing shared styles between hover and focus states.
+ */
+@custom-variant hocus {
+    &:hover, &:focus {
+        @slot;
+    }
+}
+@custom-variant hocus-within {
+    &:hover, &:focus-within {
+        @slot;
+    }
+}
+@custom-variant focusw {
+    &:focus, &:focus-within {
+        @slot;
+    }
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/open-sans/open-sans-normal.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/open-sans/open-sans-normal-italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/open-sans/open-sans-medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/open-sans/open-sans-medium-italic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/open-sans/open-sans-bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/open-sans/open-sans-bold-italic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
 }

@@ -1,12 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from '@storybook/test';
 
-import {Button} from './button.tsx';
+import {JButton} from './button.tsx';
+import { CalendarIcon, Loader2Icon } from "lucide-react";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
   title: 'Atoms/Button',
-  component: Button,
+  component: JButton,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: 'centered',
@@ -18,14 +19,46 @@ const meta = {
   //   backgroundColor: { control: 'color' },
   // },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: { onClick: fn() },
-} satisfies Meta<typeof Button>;
+  args: {
+    onClick: fn(),
+    disabled: false
+  },
+} satisfies Meta<typeof JButton>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
+export const Default: Story = {
   args: {
     children: 'Example button',
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    children: 'Example button',
+    disabled: true
+  },
+};
+
+export const WithIconBefore: Story = {
+  args: {
+    children: <><CalendarIcon/> Example Button</>,
+  },
+};
+
+export const WithIconAfter: Story = {
+  args: {
+    children: <>Example Button <Loader2Icon className="animate-spin"/></>,
+    disabled: true
+  },
+};
+
+export const AsAnchor: Story = {
+  args: {
+    asChild: true,
+    children: (
+      <a href="#">Example Link</a>
+    ),
   },
 };

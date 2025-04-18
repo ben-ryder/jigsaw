@@ -7,12 +7,13 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Package manager
 node_modules
 *.local
 
+# Builds
 dist
 dist-ssr
-build
 
 # Editor directories and files
 .vscode/*
@@ -25,4 +26,6 @@ build
 *.sln
 *.sw?
 
+# Storybook
 *storybook.log
+dist-storybook
