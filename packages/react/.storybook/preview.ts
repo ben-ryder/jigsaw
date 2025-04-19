@@ -12,16 +12,17 @@ const preview: Preview = {
     },
     backgrounds: {
       values: [
-        { name: 'jigsaw', value: 'var(--color-navy-500)' },
+        { name: 'jigsaw-dark', value: 'var(--navy-500)' },
+        { name: 'jigsaw-light', value: 'var(--grey-50)' },
       ],
-      default: 'jigsaw'
+      default: 'jigsaw-dark'
     },
     options: {
       storySort: {
         order: [
           "Home",
           "Accessibility",
-          "Foundations",
+          "Tokens",
           "Atoms",
           "Components",
           "Organisms",

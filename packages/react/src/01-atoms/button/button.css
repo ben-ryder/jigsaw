@@ -1,62 +1,96 @@
+:root {
+    --button-focus-outline: var(--mono-50);
+
+    --button-text-primary: var(--mono-100);
+    --button-text-primary-interact: var(--mono-100);
+    --button-background-primary: var(--teal-500);
+    --button-background-primary-interact: var(--teal-700);
+
+    --button-text-secondary: var(--mono-900);
+    --button-text-secondary-interact: var(--mono-900);
+    --button-background-secondary: var(--mono-100);
+    --button-background-secondary-interact: var(--mono-200);
+
+    --button-text-destructive: var(--mono-100);
+    --button-text-destructive-interact: var(--mono-100);
+    --button-background-destructive: var(--red-500);
+    --button-background-destructive-interact: var(--red-700);
+
+    --button-text-tertiary: var(--mono-100);
+    --button-text-tertiary-interact: var(--mono-200);
+    --button-background-tertiary: transparent;
+    --button-background-tertiary-interact: transparent;
+
+    --button-text-disabled: var(--mono-100);
+    --button-background-disabled: var(--mono-400);
+}
+
 .button {
     display: flex;
     align-items: center;
-    gap: var(--spacing-3);
-    padding: var(--spacing-5);
+    gap: var(--space-3);
+    padding: var(--space-5);
     border-radius: var(--radius-md);
     font-weight: bold;
     font-size: var(--text-sm);
 
-    background-color: var(--color-teal-500);
-    color: var(--color-mono-100);
+    background-color: var(--button-background-primary);
+    color: var(--button-text-primary);
 
     &:hover,
     &:focus-visible {
         cursor: pointer;
-        background-color: var(--color-teal-700);
+        background-color: var(--button-background-primary-interact);
+        color: var(--button-text-primary-interact);
     }
 
     &:focus-visible {
-        outline: var(--border-width-md) solid var(--color-mono-50);
+        outline: var(--border-width-md) solid var(--button-focus-outline);
     }
 
     &.--destructive {
-        background-color: var(--color-red-500);
+        background-color: var(--button-background-destructive);
+        color: var(--button-text-destructive);
 
         &:hover,
         &:focus-visible {
-            background-color: var(--color-red-700);
+            background-color: var(--button-background-destructive-interact);
+            color: var(--button-text-destructive-interact);
         }
     }
 
     &.--secondary {
-        background-color: var(--color-mono-100);
-        color: var(--color-mono-900);
+        background-color: var(--button-background-secondary);
+        color: var(--button-text-secondary);
 
         &:hover,
         &:focus-visible {
-            background-color: var(--color-mono-300);
+            background-color: var(--button-background-secondary-interact);
+            color: var(--button-text-secondary-interact);
         }
     }
 
     &.--tertiary {
-        background-color: transparent;
+        background-color: var(--button-background-tertiary);
+        color: var(--button-text-tertiary);
 
         &:hover,
         &:focus-visible {
-            color: var(--color-mono-200);
             text-decoration: underline;
+            background-color: var(--button-background-tertiary-interact);
+            color: var(--button-text-tertiary-interact);
         }
     }
 
     &:disabled {
-        background-color: var(--color-mono-400);
-        color: var(--color-mono-100);
+        background-color: var(--button-background-disabled);
+        color: var(--button-text-disabled);
 
         &:hover,
         &:focus-visible {
             pointer-events: none;
-            background-color: var(--color-mono-400);
+            background-color: var(--button-background-disabled);
+            color: var(--button-text-disabled);
         }
     }
 }
