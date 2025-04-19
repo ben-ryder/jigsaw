@@ -1,8 +1,19 @@
-import type { Preview } from '@storybook/react'
+import type { Preview, ReactRenderer } from '@storybook/react'
+import { withThemeByClassName } from '@storybook/addon-themes';
 
 import "../src/jigsaw.css"
+import "./storybook.css"
 
 const preview: Preview = {
+  decorators: [
+    withThemeByClassName<ReactRenderer>({
+      themes: {
+        light: 'theme-light',
+        dark: 'theme-dark',
+      },
+      defaultTheme: 'dark',
+    }),
+  ],
   parameters: {
     controls: {
       matchers: {
@@ -10,13 +21,7 @@ const preview: Preview = {
        date: /Date$/i,
       },
     },
-    backgrounds: {
-      values: [
-        { name: 'jigsaw-dark', value: 'var(--navy-500)' },
-        { name: 'jigsaw-light', value: 'var(--grey-50)' },
-      ],
-      default: 'jigsaw-dark'
-    },
+    backgrounds: { disable: true },
     options: {
       storySort: {
         order: [

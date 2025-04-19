@@ -3,7 +3,7 @@ import { Slot } from "@radix-ui/react-slot";
 import { clsx } from "clsx";
 
 export interface JButtonProps extends ComponentProps<'button'> {
-	variant?: "primary" | "secondary" | "tertiary" | "destructive";
+	variant?: "primary" | "secondary" | "destructive";
 	asChild?: boolean;
 }
 

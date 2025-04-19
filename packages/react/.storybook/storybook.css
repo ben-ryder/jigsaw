@@ -1,0 +1,12 @@
+
+
+/** Apply theme to stories within documentation pages. */
+.theme-dark,
+.theme-dark .docs-story {
+    background-color: var(--navy-500);
+}
+
+.theme-light,
+.theme-light .docs-story {
+    background-color: var(--base-10);
+}

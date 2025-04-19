@@ -28,7 +28,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Primary: Story = {
   args: {
     children: 'Example button',
   },
@@ -44,13 +44,6 @@ export const Secondary: Story = {
 export const Destructive: Story = {
   args: {
     variant: 'destructive',
-    children: 'Example button',
-  },
-};
-
-export const Tertiary: Story = {
-  args: {
-    variant: "tertiary",
     children: 'Example button',
   },
 };

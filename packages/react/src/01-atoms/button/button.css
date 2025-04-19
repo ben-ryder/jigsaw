@@ -1,29 +1,4 @@
-:root {
-    --button-focus-outline: var(--mono-50);
-
-    --button-text-primary: var(--mono-100);
-    --button-text-primary-interact: var(--mono-100);
-    --button-background-primary: var(--teal-500);
-    --button-background-primary-interact: var(--teal-700);
-
-    --button-text-secondary: var(--mono-900);
-    --button-text-secondary-interact: var(--mono-900);
-    --button-background-secondary: var(--mono-100);
-    --button-background-secondary-interact: var(--mono-200);
-
-    --button-text-destructive: var(--mono-100);
-    --button-text-destructive-interact: var(--mono-100);
-    --button-background-destructive: var(--red-500);
-    --button-background-destructive-interact: var(--red-700);
-
-    --button-text-tertiary: var(--mono-100);
-    --button-text-tertiary-interact: var(--mono-200);
-    --button-background-tertiary: transparent;
-    --button-background-tertiary-interact: transparent;
-
-    --button-text-disabled: var(--mono-100);
-    --button-background-disabled: var(--mono-400);
-}
+@import "./button.tokens.css";
 
 .button {
     display: flex;
@@ -65,20 +40,9 @@
 
         &:hover,
         &:focus-visible {
+            text-decoration: underline;
             background-color: var(--button-background-secondary-interact);
             color: var(--button-text-secondary-interact);
-        }
-    }
-
-    &.--tertiary {
-        background-color: var(--button-background-tertiary);
-        color: var(--button-text-tertiary);
-
-        &:hover,
-        &:focus-visible {
-            text-decoration: underline;
-            background-color: var(--button-background-tertiary-interact);
-            color: var(--button-text-tertiary-interact);
         }
     }
 
