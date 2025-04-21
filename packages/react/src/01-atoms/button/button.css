@@ -9,14 +9,14 @@
     font-weight: bold;
     font-size: var(--text-sm);
 
-    background-color: var(--button-background-primary);
-    color: var(--button-text-primary);
+    background-color: var(--button-primary-bg);
+    color: var(--button-primary-text);
 
     &:hover,
     &:focus-visible {
         cursor: pointer;
-        background-color: var(--button-background-primary-interact);
-        color: var(--button-text-primary-interact);
+        background-color: var(--button-primary-bg-interact);
+        color: var(--button-primary-text-interact);
     }
 
     &:focus-visible {
@@ -24,37 +24,37 @@
     }
 
     &.--destructive {
-        background-color: var(--button-background-destructive);
-        color: var(--button-text-destructive);
+        background-color: var(--button-destructive-bg);
+        color: var(--button-destructive-text);
 
         &:hover,
         &:focus-visible {
-            background-color: var(--button-background-destructive-interact);
-            color: var(--button-text-destructive-interact);
+            background-color: var(--button-destructive-bg-interact);
+            color: var(--button-destructive-text-interact);
         }
     }
 
     &.--secondary {
-        background-color: var(--button-background-secondary);
-        color: var(--button-text-secondary);
+        background-color: var(--button-secondary-bg);
+        color: var(--button-secondary-text);
 
         &:hover,
         &:focus-visible {
             text-decoration: underline;
-            background-color: var(--button-background-secondary-interact);
-            color: var(--button-text-secondary-interact);
+            background-color: var(--button-secondary-bg-interact);
+            color: var(--button-secondary-text-interact);
         }
     }
 
     &:disabled {
-        background-color: var(--button-background-disabled);
-        color: var(--button-text-disabled);
+        background-color: var(--button-disabled-bg);
+        color: var(--button-disabled-text);
 
         &:hover,
         &:focus-visible {
             pointer-events: none;
-            background-color: var(--button-background-disabled);
-            color: var(--button-text-disabled);
+            background-color: var(--button-disabled-bg);
+            color: var(--button-disabled-text);
         }
     }
 }

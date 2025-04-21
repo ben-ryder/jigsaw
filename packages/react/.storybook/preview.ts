@@ -8,10 +8,11 @@ const preview: Preview = {
   decorators: [
     withThemeByClassName<ReactRenderer>({
       themes: {
-        light: 'theme-light',
-        dark: 'theme-dark',
+        system: 'surface-bg',
+        light: 'surface-bg theme-light',
+        dark: 'surface-bg theme-dark',
       },
-      defaultTheme: 'dark',
+      defaultTheme: 'system',
     }),
   ],
   parameters: {
@@ -26,12 +27,13 @@ const preview: Preview = {
       storySort: {
         order: [
           "Home",
+          "Structure",
           "Accessibility",
           "Tokens",
+          ["Colours", ["All", "Variants", "Surface"]],
           "Atoms",
           "Components",
-          "Organisms",
-          "Layouts",
+          "Templates",
         ],
       },
     }

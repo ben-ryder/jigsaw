@@ -1,27 +1,36 @@
-:root {
+:root,
+.theme-dark {
     --button-focus-outline: var(--mono-50);
 
-    --button-text-primary: var(--mono-100);
-    --button-text-primary-interact: var(--mono-100);
-    --button-background-primary: var(--teal-500);
-    --button-background-primary-interact: var(--teal-700);
+    --button-primary-text: var(--mono-100);
+    --button-primary-text-interact: var(--mono-100);
+    --button-primary-bg: var(--teal-500);
+    --button-primary-bg-interact: var(--teal-700);
 
-    --button-text-secondary: var(--mono-100);
-    --button-text-secondary-interact: var(--mono-200);
-    --button-background-secondary: transparent;
-    --button-background-secondary-interact: transparent;
+    --button-secondary-text: var(--mono-100);
+    --button-secondary-text-interact: var(--mono-200);
+    --button-secondary-bg: transparent;
+    --button-secondary-bg-interact: transparent;
 
-    --button-text-destructive: var(--mono-100);
-    --button-text-destructive-interact: var(--mono-100);
-    --button-background-destructive: var(--red-500);
-    --button-background-destructive-interact: var(--red-700);
+    --button-destructive-text: var(--mono-100);
+    --button-destructive-text-interact: var(--mono-100);
+    --button-destructive-bg: var(--red-500);
+    --button-destructive-bg-interact: var(--red-700);
 
-    --button-text-disabled: var(--mono-100);
-    --button-background-disabled: var(--mono-400);
+    --button-disabled-text: var(--mono-100);
+    --button-disabled-bg: var(--mono-400);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --button-focus-outline: var(--mono-900);
+        --button-secondary-text: var(--mono-700);
+        --button-secondary-text-interact: var(--mono-400);
+    }
 }
 
 .theme-light {
     --button-focus-outline: var(--mono-900);
-    --button-text-secondary: var(--mono-700);
-    --button-text-secondary-interact: var(--mono-400);
+    --button-secondary-text: var(--mono-700);
+    --button-secondary-text-interact: var(--mono-400);
 }

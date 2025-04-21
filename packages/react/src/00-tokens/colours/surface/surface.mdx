@@ -1,0 +1,62 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
+
+<Meta title="Tokens/Colours/Surface" />
+
+# Colours - Surface
+Surface colours are **semantic-level tokens** used to define the background colours of "surfaces"
+such as the main background colour, panels, dialogs, popovers etc.
+
+Components such as dialogs, cards and popover menus inherit colours from these surface tokens, but they
+will define component-level tokens such as `dialog-bg` rather than using them directly.
+This allows the design system to stay consistent, but offer an escape hatch for applications if a specific use case require
+a different colour.
+
+## Surfaces
+| Surface            | Description                                                                                  |
+|--------------------|----------------------------------------------------------------------------------------------|
+| `surface-base`     | The main background                                                                          |
+| `surface-panel`    | Used for UI elements like sidebars, main navigations and cards                               |
+| `surface-overlay`  | Used for UI elements which appear over other content such as dialogs, popovers, tooltips etc |
+| `surface-backdrop` | Used as the shadow colour for overlay UI elements                                            |
+
+### Preview
+<br/>
+
+<div class="theme-dark">
+  <ColorPalette>
+    <ColorItem
+      title="Dark Theme"
+      subtitle="Surfaces for dark theme"
+      colors={{
+        "surface-base": "var(--navy-500)",
+        "surface-panel": "var(--navy-300);",
+        "surface-overlay": "var(--navy-100)",
+        "surface-backdrop": "var(--navy-900)",
+      }}
+    />
+  </ColorPalette>
+</div>
+
+<div class="theme-light">
+  <ColorPalette>
+    <ColorItem
+      title="Light Theme"
+      subtitle="Surfaces for light theme"
+      colors={{
+        "surface-base": "var(--base-20)",
+        "surface-panel": "var(--base-30)",
+        "surface-overlay": "var(--base-20)",
+        "surface-backdrop": "var(--base-60)",
+      }}
+    />
+  </ColorPalette>
+</div>
+
+## Utility Classes
+Utility classes are provided so surfaces can be defined without repeating CSS rules. These classes
+will apply the background and text colours for the given surface layer.
+
+- `surface-base`
+- `surface-panel`
+- `surface-overlay`
+- `surface-backdrop`

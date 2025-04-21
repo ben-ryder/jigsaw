@@ -3,4 +3,35 @@ import {Meta} from '@storybook/blocks';
 <Meta title="Structure"/>
 
 # Structure
-- Using design tokens and atomic design.
+I define Jigsaw as a "design system", but what does  that mean to me?
+- **"Brand" Feel** - A visual "brand" for myself, and systems which define this like colours, spacing, borders, typography etc.
+- **Component Library** - An implementation of the design system into reusable React components.
+
+## Atomic Design
+Jigsaw uses principles of [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) to structure the design system, although it doesn't try to strictly conform to any single methodology:
+- **Tokens** - Design tokens are the foundational level and define primitive values.
+- **Atoms** - Basic building blocks which are generally composed together (button, form elements, icons etc)
+- **Components** - More complex and "complete" than atoms (dialog, accordion, tooltip etc)
+- **Templates** - A layout of multiple atoms and components. Generally used for examples rather than being designed for applications to consume.
+
+## Design Tokens
+Jigsaw uses a design token schema to keep things consistent, although not all components implement all tokens.
+Here are the schemas used:
+- `<component>-bg`
+- `<component>-bg-hover`
+- `<component>-bg-focus`
+- `<component>-text`
+- `<component>-text-hover`
+- `<component>-text-focus`
+- `<component>-border`
+- `<component>-border-hover`
+- `<component>-border-focus`
+- `<component>-<variant>-bg`
+- `<component>-<variant>-bg-hover`
+- `<component>-<variant>-bg-focus`
+- `<component>-<variant>-text`
+- `<component>-<variant>-text-hover`
+- `<component>-<variant>-text-focus`
+- `<component>-<variant>-border`
+- `<component>-<variant>-border-hover`
+- `<component>-<variant>-border-focus`

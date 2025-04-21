@@ -3,9 +3,18 @@ import {Meta} from '@storybook/blocks';
 <Meta title="Accessibility" />
 
 # Accessibility
-All of Jigsaw's components are built to be accessible and to follow [WAI-ARIA design patterns](https://www.w3.org/WAI/ARIA/apg/).
+Jigsaw is built to be accessible. This means ensuring things like adequate colour contrast and to follow [WAI-ARIA design patterns](https://www.w3.org/WAI/ARIA/apg/).
 
-To save time and reduce the risk of me making mistakes while implementing these patterns, Jigsaw uses third party libraries to help develop component functionality:
+<br/>
+## Light Mode and Dark Mode
+Jigsaw supports light mode and dark mode. It is developed dark mode first, but by default will respect the
+users preferred theme as defined by the [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) media query.
+
+The theme can also be explicitly set via the classes `theme-light` and `theme-dark` for all children.
+The allows the users device settings to be respected by default, while also giving applications the ability to give users an explicit choice.
+
+## Implementation
+To save time and reduce the risk of me making mistakes while implementing accessible patterns, Jigsaw uses third party libraries to help develop component functionality:
 
 - [Radix UI](https://www.radix-ui.com) primitives for most things that need to be accessible such as menus, modals etc.
 - [Downshift](https://www.downshift-js.com/use-combobox) to implement the Combobox component with multi select functionality.

@@ -1,13 +1,14 @@
 @import "00-tokens/preflight/preflight.css";
 
-@import "00-tokens/borders/borders.css";
-@import "00-tokens/breakpoints/breakpoints.css";
-@import "00-tokens/colours/colours.css";
-@import "00-tokens/colours/theme.css";
-@import "00-tokens/layers/layers.css";
-@import "00-tokens/motion/motion.css";
-@import "00-tokens/spacing/spacing.css";
-@import "00-tokens/typography/typography.css";
+@import "00-tokens/borders/borders.tokens.css";
+@import "00-tokens/breakpoints/breakpoints.tokens.css";
+@import "00-tokens/colours/all/colours.css";
+@import "00-tokens/colours/surface/surface.css";
+@import "00-tokens/colours/variants/variants.css";
+@import "00-tokens/layers/layers.tokens.css";
+@import "00-tokens/motion/motion.tokens.css";
+@import "00-tokens/spacing/spacing.tokens.css";
+@import "00-tokens/typography/typography.tokens.css";
 
 @import "./01-atoms/button/button.css";
 @import "./01-atoms/prose/prose.css";
