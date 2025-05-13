@@ -27,6 +27,7 @@ export default defineWorkspace([
         provider: 'playwright'
       },
       setupFiles: ['.storybook/vitest.setup.ts'],
+      css: true
     },
   },
 ]);

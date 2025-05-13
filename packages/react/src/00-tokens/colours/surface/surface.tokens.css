@@ -1,34 +1,27 @@
 :root {
-    --surface-base-bg: var(--navy-500);
-    --surface-base-text: var(--mono-100);
-    --surface-base-text-heading: var(--mono-100);
-    --surface-base-text-empasis: var(--mono-100);
-    --surface-base-link: var(--teal-200);
-    --surface-base-link-hover: var(--teal-200);
-    --surface-base-link-visited: var(--teal-200);
-
-    --surface-panel-bg: var(--navy-300);
-    --surface-overlay-bg: var(--navy-100);
-    --surface-backdrop-bg: var(--navy-900);
+    --j-surface-base-bg: var(--j-navy-30);
+    --j-surface-panel-bg: var(--j-navy-40);
+    --j-surface-overlay-bg: var(--j-navy-40);
+    --j-surface-backdrop-bg: var(--j-navy-20);
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --surface-base-bg: var(--base-20);
-        --surface-panel-bg: var(--base-30);
-        --surface-overlay-bg: var(--base-20);
-        --surface-backdrop-bg: var(--base-100);
+        --j-surface-base-bg: var(--j-white-60);
+        --j-surface-panel-bg: var(--j-white-50);
+        --j-surface-overlay-bg: var(--j-white-50);
+        --j-surface-backdrop-bg: var(--j-grey-10);
     }
 }
-.theme-light {
-    --surface-base-bg: var(--base-20);
-    --surface-panel-bg: var(--base-30);
-    --surface-overlay-bg: var(--base-20);
-    --surface-backdrop-bg: var(--base-60);
+.j-theme-light {
+    --j-surface-base-bg: var(--j-white-60);
+    --j-surface-panel-bg: var(--j-white-50);
+    --j-surface-overlay-bg: var(--j-white-50);
+    --j-surface-backdrop-bg: var(--j-grey-10);
 }
-.theme-dark {
-    --surface-base-bg: var(--navy-500);
-    --surface-panel-bg: var(--navy-300);
-    --surface-overlay-bg: var(--navy-100);
-    --surface-backdrop-bg: var(--navy-900);
+.j-theme-dark {
+    --j-surface-base-bg: var(--j-navy-30);
+    --j-surface-panel-bg: var(--j-navy-40);
+    --j-surface-overlay-bg: var(--j-navy-40);
+    --j-surface-backdrop-bg: var(--j-navy-20);
 }

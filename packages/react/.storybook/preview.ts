@@ -8,9 +8,9 @@ const preview: Preview = {
   decorators: [
     withThemeByClassName<ReactRenderer>({
       themes: {
-        system: 'surface-bg',
-        light: 'surface-bg theme-light',
-        dark: 'surface-bg theme-dark',
+        system: 'j-surface-base',
+        light: 'j-surface-base j-theme-light',
+        dark: 'j-surface-base j-theme-dark',
       },
       defaultTheme: 'system',
     }),

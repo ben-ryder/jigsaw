@@ -1,13 +1,13 @@
 @import "surface.tokens.css";
 
-.surface-base {
-    background-color: var(--surface-base-bg);
+.j-surface-base {
+    background-color: var(--j-surface-base-bg);
 }
 
-.surface-panel {
-    background-color: var(--surface-panel-bg);
+.j-surface-panel {
+    background-color: var(--j-surface-panel-bg);
 }
 
-.surface-overlay {
-    background-color: var(--surface-overlay-bg);
+.j-surface-overlay {
+    background-color: var(--j-surface-overlay-bg);
 }

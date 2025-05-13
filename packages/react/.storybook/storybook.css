@@ -2,5 +2,5 @@
 
 /** Apply theme to stories within documentation pages. */
 .docs-story {
-    background-color: var(--surface-base-bg);
+    background-color: var(--j-surface-base-bg);
 }
