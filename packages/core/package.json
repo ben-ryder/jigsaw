@@ -27,7 +27,7 @@
     "build:css": "lightningcss --minify --bundle ../react/src/jigsaw.css -o ./public/css/jigsaw.css"
   },
   "devDependencies": {
-    "lightningcss-cli": "^1.29.3",
+    "lightningcss-cli": "^1.30.1",
     "rimraf": "^6.0.1"
   }
 }

@@ -11,20 +11,17 @@
   "bugs": {
     "url": "https://github.com/ben-ryder/jigsaw/issues"
   },
-  "engines": {
-    "node": "^20.x"
-  },
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "build": "(cd packages/react && npm run build) && (cd packages/core && npm run build)",
     "test": "lerna run test",
     "version": "lerna version --no-private",
     "publish": "lerna publish --no-private"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.3",
-    "@commitlint/config-conventional": "^16.2.1",
-    "husky": "^7.0.4",
-    "lerna": "^6.4.1"
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "husky": "^9.1.7",
+    "lerna": "^8.2.3"
   }
 }

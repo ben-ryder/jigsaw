@@ -6,21 +6,16 @@ const config: StorybookConfig = {
     "../src/**/*.mdx",
     "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
   ],
-  addons: [
-    "@storybook/addon-essentials",
-    "@storybook/experimental-addon-test",
-    {
-      name: "@storybook/addon-docs",
-      options: {
-        mdxPluginOptions: {
-          mdxCompileOptions: {
-            remarkPlugins: [remarkGfm],
-          },
+  addons: ["@storybook/addon-vitest", {
+    name: "@storybook/addon-docs",
+    options: {
+      mdxPluginOptions: {
+        mdxCompileOptions: {
+          remarkPlugins: [remarkGfm],
         },
       },
     },
-    "@storybook/addon-themes"
-  ],
+  }, "@storybook/addon-themes"],
   framework: {
     name: "@storybook/react-vite",
     options: {}
