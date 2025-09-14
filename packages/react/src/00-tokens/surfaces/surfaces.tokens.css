@@ -8,16 +8,16 @@
 @media (prefers-color-scheme: light) {
     :root {
         --j-surface-base-bg: var(--j-white-60);
-        --j-surface-panel-bg: var(--j-white-50);
-        --j-surface-overlay-bg: var(--j-white-50);
-        --j-surface-backdrop-bg: var(--j-grey-10);
+        --j-surface-panel-bg: var(--j-white-40);
+        --j-surface-overlay-bg: var(--j-white-60);
+        --j-surface-backdrop-bg: var(--j-black-60);
     }
 }
 .j-theme-light {
     --j-surface-base-bg: var(--j-white-60);
-    --j-surface-panel-bg: var(--j-white-50);
-    --j-surface-overlay-bg: var(--j-white-50);
-    --j-surface-backdrop-bg: var(--j-grey-10);
+    --j-surface-panel-bg: var(--j-white-40);
+    --j-surface-overlay-bg: var(--j-white-60);
+    --j-surface-backdrop-bg: var(--j-black-60);
 }
 .j-theme-dark {
     --j-surface-base-bg: var(--j-navy-30);

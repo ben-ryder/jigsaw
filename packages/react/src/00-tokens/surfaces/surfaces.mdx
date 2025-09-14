@@ -1,14 +1,14 @@
 import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs/blocks";
 
-<Meta title="Tokens/Colours/Surface" />
+<Meta title="Tokens/Surfaces" />
 
-# Colours - Surface
+# Surfaces
 Surface colours are **semantic-level tokens** used to define the background colours of "surfaces"
 such as the main background colour, panels, dialogs, popovers etc.
 
 Components such as dialogs, cards and popover menus inherit colours from these surface tokens, but they
 will define component-level tokens such as `dialog-bg` rather than using them directly.
-This allows the design system to stay consistent, but offer an escape hatch for applications if a specific use case require
+This allows the design system to stay consistent, but offer an escape hatch for applications if a specific use case requires
 a different colour.
 
 ## Surfaces
@@ -28,25 +28,25 @@ a different colour.
       title="Dark Theme"
       subtitle="Surfaces for dark theme"
       colors={{
-        "surface-base": "var(--navy-500)",
-        "surface-panel": "var(--navy-300);",
-        "surface-overlay": "var(--navy-100)",
-        "surface-backdrop": "var(--navy-900)",
+        "surface-base-bg": "var(--j-navy-30)",
+        "surface-panel-bg": "var(--j-navy-40);",
+        "surface-overlay-bg": "var(--j-navy-40)",
+        "surface-backdrop-bg": "var(--j-navy-20)",
       }}
     />
   </ColorPalette>
 </div>
 
-<div class="theme-light">
+<div class="j-theme-light">
   <ColorPalette>
     <ColorItem
       title="Light Theme"
       subtitle="Surfaces for light theme"
       colors={{
-        "surface-base": "var(--base-20)",
-        "surface-panel": "var(--base-30)",
-        "surface-overlay": "var(--base-20)",
-        "surface-backdrop": "var(--base-60)",
+        "surface-base-bg": "var(--j-white-60)",
+        "surface-panel-bg": "var(--j-white-40)",
+        "surface-overlay-bg": "var(--j-white-60)",
+        "surface-backdrop-bg": "var(--j-black-60)",
       }}
     />
   </ColorPalette>

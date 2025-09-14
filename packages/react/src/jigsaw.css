@@ -2,9 +2,9 @@
 
 @import "00-tokens/borders/borders.tokens.css";
 @import "00-tokens/breakpoints/breakpoints.tokens.css";
-@import "00-tokens/colours/all/colours.css";
-@import "00-tokens/colours/surface/surface.css";
-@import "00-tokens/colours/variants/variants.css";
+@import "00-tokens/colours/colours.css";
+@import "00-tokens/variants/variants.css";
+@import "00-tokens/surfaces/surfaces.css";
 @import "00-tokens/layers/layers.tokens.css";
 @import "00-tokens/motion/motion.tokens.css";
 @import "00-tokens/spacing/spacing.tokens.css";
