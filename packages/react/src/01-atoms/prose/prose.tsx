@@ -16,7 +16,7 @@ export function JProse({
 }: JProseProps) {
 	return (
 		<div
-			className={clsx("prose", className)}
+			className={clsx("j-prose", className)}
 			{...htmlProps}
 			/* eslint-disable-next-line react-dom/no-dangerously-set-innerhtml -- We want to  */
 			dangerouslySetInnerHTML={html ? {__html: html } : undefined}

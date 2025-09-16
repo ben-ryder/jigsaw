@@ -1,13 +1,13 @@
 :root {
-  --j-text-size-xs: 12px;
-  --j-text-size-sm: 14px;
-  --j-text-size-rg: 16px;
-  --j-text-size-md: 18px;
-  --j-text-size-lg: 20px;
-  --j-text-size-xl: 24px;
-  --j-text-size-2xl: 30px;
-  --j-text-size-3xl: 36px;
-  --j-text-size-4xl: 48px;
+  --j-text-xs: 12px;
+  --j-text-sm: 14px;
+  --j-text-rg: 16px;
+  --j-text-md: 18px;
+  --j-text-lg: 20px;
+  --j-text-xl: 24px;
+  --j-text-2xl: 30px;
+  --j-text-3xl: 36px;
+  --j-text-4xl: 48px;
 
   --j-text-weight-normal: 400;
   --j-text-weight-medium: 500;

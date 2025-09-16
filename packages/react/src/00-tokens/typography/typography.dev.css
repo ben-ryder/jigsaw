@@ -1,0 +1,45 @@
+
+.text-item {
+  margin-bottom: var(--j-space-4);
+}
+
+.j-text-xs {
+  font-size: var(--j-text-xs);
+}
+.j-text-sm {
+  font-size: var(--j-text-sm);
+}
+.j-text-rg {
+  font-size: var(--j-text-rg);
+}
+.j-text-md {
+  font-size: var(--j-text-md);
+}
+.j-text-lg {
+  font-size: var(--j-text-lg);
+}
+.j-text-xl {
+  font-size: var(--j-text-xl);
+}
+.j-text-2xl {
+  font-size: var(--j-text-2xl);
+  line-height: 1.5;
+}
+.j-text-3xl {
+  font-size: var(--j-text-3xl);
+  line-height: 1.5;
+}
+.j-text-4xl {
+  font-size: var(--j-text-4xl);
+  line-height: 1.5;
+}
+
+.j-text-normal {
+  font-weight: var(--j-weight-normal);
+}
+.j-text-medium {
+  font-weight: var(--j-weight-medium);
+}
+.j-text-bold {
+  font-weight: var(--j-weight-bold);
+}

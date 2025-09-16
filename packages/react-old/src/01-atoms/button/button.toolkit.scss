@@ -9,7 +9,7 @@
   padding: var(--j-space-4) var(--j-space-6);
   font-family: var(--j-text-font-primary);
   font-weight: bold;
-  font-size: var(--j-text-size-sm);
+  font-size: var(--j-text-sm);
   background: var(--j-c-primary);
   color: var(--j-c-primary-text);
   border-radius: var(--j-border-radius-md);
@@ -112,8 +112,8 @@
     justify-content: center;
 
     .j-icon {
-      width: var(--j-text-size-rg);
-      height: var(--j-text-size-rg);
+      width: var(--j-text-rg);
+      height: var(--j-text-rg);
       margin-left: var(--j-space-4);
       stroke-width: 3px;
     }

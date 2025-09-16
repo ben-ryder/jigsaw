@@ -10,5 +10,9 @@
 @import "00-tokens/spacing/spacing.tokens.css";
 @import "00-tokens/typography/typography.tokens.css";
 
-@import "./01-atoms/button/button.css";
-@import "./01-atoms/prose/prose.css";
+@import "01-atoms/button/button.tokens.css";
+@import "01-atoms/button/button.css";
+@import "01-atoms/prose/prose.css";
+
+@import "02-components/callout/callout.tokens.css";
+@import "02-components/callout/callout.css";

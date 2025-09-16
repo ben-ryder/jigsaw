@@ -3,65 +3,65 @@
 .button {
     display: flex;
     align-items: center;
-    gap: var(--space-3);
-    padding: var(--space-5);
-    border-radius: var(--radius-md);
+    gap: var(--j-space-3);
+    padding: var(--j-space-5);
+    border-radius: var(--j-radius-md);
     font-weight: bold;
-    font-size: var(--text-sm);
+    font-size: var(--j-text-sm);
 
-    background-color: var(--button-primary-bg);
-    color: var(--button-primary-text);
+    background-color: var(--j-button-primary-bg);
+    color: var(--j-button-primary-text);
 
     &:hover,
     &:focus-visible {
         cursor: pointer;
-        background-color: var(--button-primary-bg-interact);
-        color: var(--button-primary-text-interact);
+        background-color: var(--j-button-primary-bg-interact);
+        color: var(--j-button-primary-text-interact);
     }
 
     &:focus-visible {
-        outline: var(--border-width-md) solid var(--button-focus-outline);
+        outline: var(--j-border-width-md) solid var(--j-button-focus-outline);
     }
 
     &.--destructive {
-        background-color: var(--button-destructive-bg);
-        color: var(--button-destructive-text);
+        background-color: var(--j-button-destructive-bg);
+        color: var(--j-button-destructive-text);
 
         &:hover,
         &:focus-visible {
-            background-color: var(--button-destructive-bg-interact);
-            color: var(--button-destructive-text-interact);
+            background-color: var(--j-button-destructive-bg-interact);
+            color: var(--j-button-destructive-text-interact);
         }
     }
 
     &.--secondary {
-        background-color: var(--button-secondary-bg);
-        color: var(--button-secondary-text);
+        background-color: var(--j-button-secondary-bg);
+        color: var(--j-button-secondary-text);
 
         &:hover,
         &:focus-visible {
             text-decoration: underline;
-            background-color: var(--button-secondary-bg-interact);
-            color: var(--button-secondary-text-interact);
+            background-color: var(--j-button-secondary-bg-interact);
+            color: var(--j-button-secondary-text-interact);
         }
     }
 
     &:disabled {
-        background-color: var(--button-disabled-bg);
-        color: var(--button-disabled-text);
+        background-color: var(--j-button-disabled-bg);
+        color: var(--j-button-disabled-text);
 
         &:hover,
         &:focus-visible {
             pointer-events: none;
-            background-color: var(--button-disabled-bg);
-            color: var(--button-disabled-text);
+            background-color: var(--j-button-disabled-bg);
+            color: var(--j-button-disabled-text);
         }
     }
 }
 
 .button {
     svg {
-        width: var(--text-lg);
-        height: var(--text-lg);
+        width: var(--j-text-lg);
+        height: var(--j-text-lg);
     }
 }

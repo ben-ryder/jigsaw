@@ -1,19 +1,20 @@
 :root {
-    --text-xs: 12px;
-    --text-sm: 14px;
-    --text-rg: 16px;
-    --text-md: 18px;
-    --text-lg: 20px;
-    --text-xl: 24px;
-    --text-2xl: 30px;
-    --text-3xl: 36px;
-    --text-4xl: 48px;
+    --j-text-xs: 12px;
+    --j-text-sm: 14px;
+    --j-text-rg: 16px;
+    --j-text-md: 18px;
+    --j-text-lg: 20px;
+    --j-text-xl: 24px;
+    --j-text-2xl: 30px;
+    --j-text-3xl: 36px;
+    --j-text-4xl: 48px;
 
-    --weight-normal: 400;
-    --weight-medium: 500;
+    --j-weight-normal: 400;
+    --j-weight-medium: 500;
+    --j-weight-bold: 700;
 
-    --font-sans: "Open Sans", sans-serif;
-    --font-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    --j-font-sans: "Open Sans", sans-serif;
+    --j-font-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 
@@ -64,7 +65,7 @@ Base Styles
 */
 html,
 body {
-    font-family: var(--font-sans);
-    font-size: var(--text-rg);
+    font-family: var(--j-font-sans);
+    font-size: var(--j-text-rg);
     line-height: 1;
 }

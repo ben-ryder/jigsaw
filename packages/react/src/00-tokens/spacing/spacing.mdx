@@ -1,0 +1,24 @@
+import {Meta, Unstyled} from "@storybook/addon-docs/blocks";
+import { SIZES } from "./spacing"
+import "./spacing.dev.css"
+
+<Meta title="Tokens/Spacing" />
+
+# Spacing
+In order to keep the design system consistent and easy to develop with a spacing system is used.
+This system is not linear, meaning more options are available for smaller sizes where the difference between two values is more pronounced.
+
+A base value of **2** is used and all other values are calculated from that. For example:
+  - **j-space-4** is **2 x 4 = 8px**
+  - **j-space-16** is **2 x 16 = 32px**
+
+Here is a full list of the available spacing options:
+
+<Unstyled>
+    {Object.entries(SIZES).map(([identifier, value]) => (
+        <div className="size-item">
+            <span style={{ minWidth: `${value}` }}></span>
+            <code>{identifier}{` | `}{value}</code>
+        </div>
+    ))}
+</Unstyled>

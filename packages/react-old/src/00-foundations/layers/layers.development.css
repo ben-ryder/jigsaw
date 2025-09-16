@@ -9,15 +9,15 @@
   height: var(--j-space-48);
 }
 
-.panel-item--shadow-sm {
+.panel-item--j-shadow-sm {
   box-shadow: var(--j-shadow-sm);
 }
-.panel-item--shadow-md {
+.panel-item--j-shadow-md {
   box-shadow: var(--j-shadow-md);
 }
-.panel-item--shadow-lg {
+.panel-item--j-shadow-lg {
   box-shadow: var(--j-shadow-lg);
 }
-.panel-item--shadow-xl {
+.panel-item--j-shadow-xl {
   box-shadow: var(--j-shadow-xl);
 }

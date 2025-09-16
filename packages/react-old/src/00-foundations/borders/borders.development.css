@@ -9,16 +9,16 @@
   height: var(--j-space-48);
 }
 
-.border-item--radius-sm {
+.border-item--j-radius-sm {
   border-radius: var(--j-border-radius-sm);
 }
-.border-item--radius-md {
+.border-item--j-radius-md {
   border-radius: var(--j-border-radius-md);
 }
-.border-item--radius-lg {
+.border-item--j-radius-lg {
   border-radius: var(--j-border-radius-lg);
 }
-.border-item--radius-xl {
+.border-item--j-radius-xl {
   border-radius: var(--j-border-radius-xl);
 }
 

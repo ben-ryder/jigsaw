@@ -63,7 +63,7 @@ export const WithIconBefore: Story = {
 
 export const WithIconAfter: Story = {
   args: {
-    children: <>Example Button <Loader2Icon className="animate-spin"/></>,
+    children: <>Example Button <Loader2Icon className="j-animate-spin"/></>,
     disabled: true
   },
 };

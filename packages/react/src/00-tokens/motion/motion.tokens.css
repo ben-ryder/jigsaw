@@ -1,13 +1,13 @@
 :root {
-    --animate-ease-in: cubic-bezier(0.4, 0, 0.7, 0.2);
-    --animate-ease-out: cubic-bezier(0, 0, 0.2, 1);
-    --animate-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-    --animate-linear: linear;
-    --animate-spin: spin var(--duration-slow) infinite linear;
+    --j-animate-ease-in: cubic-bezier(0.4, 0, 0.7, 0.2);
+    --j-animate-ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --j-animate-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --j-animate-linear: linear;
+    --j-animate-spin: spin var(--j-duration-slow) infinite linear;
 
-    --duration-fast: 0.2s;
-    --duration-medium: 0.5s;
-    --duration-slow: 1s;
+    --j-duration-fast: 0.2s;
+    --j-duration-medium: 0.5s;
+    --j-duration-slow: 1s;
 }
 
 @keyframes spin {
@@ -18,6 +18,6 @@
         transform:rotate(360deg);
     }
 }
-.animate-spin {
-    animation: var(--animate-spin);
+.j-animate-spin {
+    animation: var(--j-animate-spin);
 }
