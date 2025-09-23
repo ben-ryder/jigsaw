@@ -1,0 +1,11 @@
+:root {
+    --j-border-width-sm: 1px;
+    --j-border-width-md: 2px;
+    --j-border-width-lg: 4px;
+    --j-border-width-xl: 8px;
+
+    --j-radius-sm: 4px;
+    --j-radius-md: 6px;
+    --j-radius-lg: 8px;
+    --j-radius-xl: 10px;
+}

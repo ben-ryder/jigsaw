@@ -1,0 +1,8 @@
+# Package manager
+node_modules
+
+# Builds
+dist
+public
+tailwind.css
+vars.css

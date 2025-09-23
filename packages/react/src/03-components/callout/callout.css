@@ -1,0 +1,57 @@
+.j-callout {
+  display: flex;
+  background-color: var(--j-callout-bg);
+  box-shadow: var(--j-shadow-sm);
+  border: var(--j-border-width-md) solid var(--j-callout-info-bg);
+  border-radius: var(--j-radius-sm);
+  color: var(--j-c-text);
+  margin: var(--j-space-8) 0;
+
+  &.--warning {
+    border-color: var(--j-callout-warning-bg);
+
+    .j-callout__icon {
+      background-color: var(--j-callout-warning-bg);
+      border-right-color: var(--j-callout-warning-bg);
+    }
+  }
+
+  &.--critical {
+    border-color: var(--j-callout-critical-bg);
+
+    .j-callout__icon {
+      background-color: var(--j-callout-critical-bg);
+      border-right-color: var(--j-callout-critical-bg);
+    }
+  }
+
+  &.--success {
+    border-color: var(--j-callout-success-bg);
+
+    .j-callout__icon {
+      background-color: var(--j-callout-success-bg);
+      border-right-color: var(--j-callout-success-bg);
+    }
+  }
+}
+
+.j-callout__icon {
+  background-color: var(--j-callout-info-bg);
+  padding: var(--j-space-4);
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  color: var(--j-c-mono-50);
+  border-right: var(--j-border-width-md) solid var(--j-c-info);
+}
+
+.j-callout__content {
+  padding: var(--j-space-6);
+  width: 100%;
+
+  /* Remove the last child's bottom margin to ensure there's not a big gap at the bottom */
+  /* and the callouts vertical padding is consistent. */
+  :last-child {
+    margin-bottom: 0;
+  }
+}

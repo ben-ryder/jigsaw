@@ -1,11 +1,5 @@
 {
   "compilerOptions": {
-    // Base URLs and paths (added as per https://ui.shadcn.com/docs/installation/vite)
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-
     "outDir": "./dist",
     "declaration": true,
 

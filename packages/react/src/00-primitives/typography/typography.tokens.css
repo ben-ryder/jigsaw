@@ -1,0 +1,71 @@
+:root {
+    --j-text-xs: 12px;
+    --j-text-sm: 14px;
+    --j-text-rg: 16px;
+    --j-text-md: 18px;
+    --j-text-lg: 20px;
+    --j-text-xl: 24px;
+    --j-text-2xl: 30px;
+    --j-text-3xl: 36px;
+    --j-text-4xl: 48px;
+
+    --j-weight-normal: 400;
+    --j-weight-medium: 500;
+    --j-weight-bold: 700;
+
+    --j-font-sans: "Open Sans", sans-serif;
+    --j-font-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+}
+
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/open-sans/open-sans-normal.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/open-sans/open-sans-normal-italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/open-sans/open-sans-medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/open-sans/open-sans-medium-italic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/open-sans/open-sans-bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/open-sans/open-sans-bold-italic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+/*
+Base Styles
+*/
+html,
+body {
+    font-family: var(--j-font-sans);
+    font-size: var(--j-text-rg);
+    line-height: 1;
+}

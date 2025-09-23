@@ -1,0 +1,15 @@
+.size-item {
+  margin-bottom: var(--j-space-4);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.size-item span {
+  display: block;
+  height: var(--j-space-8);
+  background-color: var(--j-teal-40);
+  margin-right: var(--j-space-4);
+}
+.size-items {
+  overflow: scroll;
+}

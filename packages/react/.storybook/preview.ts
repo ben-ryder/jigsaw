@@ -1,8 +1,20 @@
-import type { Preview } from '@storybook/react'
+import type { Preview, ReactRenderer } from '@storybook/react-vite'
+import { withThemeByClassName } from '@storybook/addon-themes';
 
-import "../src/tailwind.css"
+import "../src/jigsaw.css"
+import "./storybook.css"
 
 const preview: Preview = {
+  decorators: [
+    withThemeByClassName<ReactRenderer>({
+      themes: {
+        system: 'j-surface-base',
+        light: 'j-surface-base j-theme-light',
+        dark: 'j-surface-base j-theme-dark',
+      },
+      defaultTheme: 'system',
+    }),
+  ],
   parameters: {
     controls: {
       matchers: {
@@ -10,16 +22,19 @@ const preview: Preview = {
        date: /Date$/i,
       },
     },
+    backgrounds: { disable: true },
     options: {
       storySort: {
         order: [
           "Home",
+          "Structure",
           "Accessibility",
-          "Foundations",
+          "Credits",
+          "Primitives",
+          "Global",
           "Atoms",
           "Components",
-          "Organisms",
-          "Layouts",
+          "Templates",
         ],
       },
     }

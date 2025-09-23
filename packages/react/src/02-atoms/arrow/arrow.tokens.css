@@ -1,0 +1,23 @@
+:root,
+.theme-dark {
+    --j-arrow-text: var(--j-navy-white-60);
+    --j-arrow-text-hover: var(--j-teal-50);
+    --j-arrow-underline: var(--j-teal-50);
+    --j-arrow-focus-outline: var(--j-navy-white-60);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --j-arrow-text: var(--j-navy-40);
+        --j-arrow-text-hover: var(--j-teal-30);
+        --j-arrow-underline: var(--j-teal-30);
+        --j-arrow-focus-outline: var(--j-navy-60);
+    }
+}
+
+.j-theme-light {
+    --j-arrow-text: var(--j-navy-40);
+    --j-arrow-text-hover: var(--j-teal-50);
+    --j-arrow-underline: var(--j-teal-50);
+    --j-arrow-focus-outline: var(--j-navy-60);
+}

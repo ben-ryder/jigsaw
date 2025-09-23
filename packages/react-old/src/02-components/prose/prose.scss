@@ -3,13 +3,13 @@
 
 .j-prose {
   p {
-    font-size: var(--j-text-size-rg);
+    font-size: var(--j-text-rg);
     margin-bottom: var(--j-space-8);
     color: var(--j-c-text);
     line-height: 2;
 
     code {
-      font-size: var(--j-text-size-sm);
+      font-size: var(--j-text-sm);
     }
   }
 
@@ -26,7 +26,7 @@
   }
 
   h1 {
-    font-size: var(--j-text-size-3xl);
+    font-size: var(--j-text-3xl);
     color: var(--j-c-text-heading);
     font-weight: bold;
     margin-top: var(--j-space-16);
@@ -35,7 +35,7 @@
   }
 
   h2 {
-    font-size: var(--j-text-size-2xl);
+    font-size: var(--j-text-2xl);
     color: var(--j-c-text-heading);
     font-weight: bold;
     margin-top: var(--j-space-16);
@@ -44,7 +44,7 @@
   }
 
   h3 {
-    font-size: var(--j-text-size-xl);
+    font-size: var(--j-text-xl);
     color: var(--j-c-text-heading);
     font-weight: bold;
     line-height: 1.5;
@@ -53,7 +53,7 @@
   }
 
   h4 {
-    font-size: var(--j-text-size-lg);
+    font-size: var(--j-text-lg);
     color: var(--j-c-text-heading);
     font-weight: bold;
     line-height: 1.75;
@@ -87,7 +87,7 @@
   figcaption {
     border-top: var(--j-border-width-lg) solid var(--j-c-primary);
     background-color: var(--j-c-background-f1);
-    font-size: var(--j-text-size-sm);
+    font-size: var(--j-text-sm);
     font-style: italic;
     color: var(--j-c-text);
     padding: var(--j-space-6);
@@ -110,7 +110,7 @@
     margin-bottom: var(--j-space-8);
 
     code {
-      font-size: var(--j-text-size-sm);
+      font-size: var(--j-text-sm);
       padding: var(--j-space-8);
       display: block;
       overflow: scroll;
@@ -138,7 +138,7 @@
 
     & > li {
       &::marker {
-        font-size: var(--j-text-size-xl);
+        font-size: var(--j-text-xl);
       }
     }
   }

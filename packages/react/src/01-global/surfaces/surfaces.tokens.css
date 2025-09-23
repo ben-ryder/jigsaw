@@ -1,0 +1,45 @@
+:root {
+    --j-surface-base-bg: var(--j-navy-30);
+    --j-surface-base-text: var(--j-navy-white-50);
+    --j-surface-base-text-empasis: var(--j-navy-white-60);
+    --j-surface-base-text-muted: var(--j-navy-white-40);
+    --j-surface-base-text-brand: var(--j-teal-50);
+    --j-surface-base-text-error: var(--j-red-60);
+
+    --j-surface-panel-bg: var(--j-navy-40);
+    --j-surface-panel-text: var(--j-navy-white-50);
+    --j-surface-panel-text-empasis: var(--j-navy-white-60);
+    --j-surface-panel-text-muted: var(--j-navy-white-40);
+    --j-surface-panel-text-brand: var(--j-teal-50);
+    --j-surface-panel-text-error: var(--j-red-60);
+
+    --j-surface-overlay-bg: var(--j-navy-40);
+    --j-surface-overlay-text: var(--j-navy-white-50);
+    --j-surface-overlay-text-empasis: var(--j-navy-white-60);
+    --j-surface-overlay-text-muted: var(--j-navy-white-40);
+    --j-surface-overlay-text-brand: var(--j-teal-50);
+    --j-surface-overlay-text-error: var(--j-red-60);
+
+    --j-surface-backdrop-bg: var(--j-navy-20);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --j-surface-base-bg: var(--j-white-60);
+        --j-surface-panel-bg: var(--j-white-40);
+        --j-surface-overlay-bg: var(--j-white-60);
+        --j-surface-backdrop-bg: var(--j-black-60);
+    }
+}
+.j-theme-light {
+    --j-surface-base-bg: var(--j-white-60);
+    --j-surface-panel-bg: var(--j-white-40);
+    --j-surface-overlay-bg: var(--j-white-60);
+    --j-surface-backdrop-bg: var(--j-black-60);
+}
+.j-theme-dark {
+    --j-surface-base-bg: var(--j-navy-30);
+    --j-surface-panel-bg: var(--j-navy-40);
+    --j-surface-overlay-bg: var(--j-navy-40);
+    --j-surface-backdrop-bg: var(--j-navy-20);
+}
